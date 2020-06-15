@@ -1,0 +1,7 @@
+* TODO stuff 
+- [ ] Common language + API.
+- [ ] Exhaustive Unit tests.
+- [ ] Reusable tests in ipython notebook.
+- [ ] Synthesizer package.
+- [ ] Scrambling pacakage.
+- [ ] Lidar Monitor into it's own file.  

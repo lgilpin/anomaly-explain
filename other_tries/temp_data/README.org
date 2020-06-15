@@ -1,0 +1,38 @@
+* Dependencies
+- Started by downloading the [[https://github.com/lyft/nuscenes-devkit][devkit]]
+#+BEGIN_SRC 
+pip install -U lyft_dataset_sdk
+#+END_SRC
+- Started looking at the tutorial [[https://github.com/lyft/nuscenes-devkit/blob/master/notebooks/tutorial_lyft.ipynb][here]]
+- This command does not work:
+  =level5data.render_sample(my_sample_token)=, which is in the
+  =process_scheme= function.  The following error message occurs:
+#+BEGIN_SRC 
+objc[52832]: Class QCocoaPageLayoutDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b5c0) and /anaconda3/lib/libQt5PrintSupport.5.9.7.dylib (0x1aab029ef0). One of the two will be used. Which one is undefined.
+objc[52832]: Class QCocoaPrintPanelDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b638) and /anaconda3/lib/libQt5PrintSupport.5.9.7.dylib (0x1aab029f40). One of the two will be used. Which one is undefined.
+objc[52832]: Class QCocoaApplicationDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b340) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca670). One of the two will be used. Which one is undefined.
+objc[52832]: Class QNSApplication is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b2f0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca6c0). One of the two will be used. Which one is undefined.
+objc[52832]: Class QCocoaMenuLoader is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b2a0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca760). One of the two will be used. Which one is undefined.
+objc[52832]: Class QNSImageView is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b660) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca850). One of the two will be used. Which one is undefined.
+objc[52832]: Class QNSStatusItem is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b6b0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca8a0). One of the two will be used. Which one is undefined.
+objc[52832]: Class QNSOpenSavePanelDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a1a72b480) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1aaafca940). One of the two will be used. Which one is undefined.
+#+END_SRC
+This may have something to do with jupyter notebooks, but for now, I
+am ignoring it since I am focusing on LiDAR.  
+- Another line not working:
+#+BEGIN_SRC 
+level5data.render_pointcloud_in_image(sample_token = sample["token"],
+                                       dot_size = 1,
+                                       camera_channel = 'CAM_FRONT')
+#+END_SRC
+and again, the same error message
+#+BEGIN_SRC 
+objc[53017]: Class QCocoaPageLayoutDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f05c0) and /anaconda3/lib/libQt5PrintSupport.5.9.7.dylib (0x1a5d0b6ef0). One of the two will be used. Which one is undefined.
+objc[53017]: Class QCocoaPrintPanelDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f0638) and /anaconda3/lib/libQt5PrintSupport.5.9.7.dylib (0x1a5d0b6f40). One of the two will be used. Which one is undefined.
+objc[53017]: Class QCocoaApplicationDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f0340) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b670). One of the two will be used. Which one is undefined.
+objc[53017]: Class QNSApplication is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f02f0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b6c0). One of the two will be used. Which one is undefined.
+objc[53017]: Class QCocoaMenuLoader is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f02a0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b760). One of the two will be used. Which one is undefined.
+objc[53017]: Class QNSImageView is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f0660) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b850). One of the two will be used. Which one is undefined.
+objc[53017]: Class QNSStatusItem is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f06b0) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b8a0). One of the two will be used. Which one is undefined.
+objc[53017]: Class QNSOpenSavePanelDelegate is implemented in both /anaconda3/lib/python3.7/site-packages/cv2/.dylibs/QtGui (0x1a297f0480) and /anaconda3/plugins/platforms/libqcocoa.dylib (0x1a70f4b940). One of the two will be used. Which one is undefined.
+#+END_SRC

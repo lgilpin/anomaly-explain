@@ -1,0 +1,23 @@
+# REASONABLE_LABELS
+#     use labels()
+#     when
+#         labels($a, $b, $c)
+
+reasonable
+    foreach
+		uber.labels($concept1, $concept2, $concept3)
+    assert
+		uber.IsA($concept1, $a)
+		uber.IsA($concept2, $a)
+		uber.IsA($concept3, $a)
+
+fc_extras
+    def nth(n):
+        if n % 10 not in (1, 2, 3) or 10 < n % 100 < 20: return "%dth" % n
+        if n % 10 == 1: return "%dst" % n
+        if n % 10 == 2: return "%dnd" % n
+        if n % 10 == 3: return "%drd" % n
+
+    def add_prefix(prefix, x, y):
+        if not prefix: return (x, y)
+	return (prefix + (x,), prefix + (y,))

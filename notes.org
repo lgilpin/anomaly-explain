@@ -1,0 +1,255 @@
+* Coding / ADE API
+** TODO Clean up Search
+*** TODO Unit tests
+*** Dependencies
+- Need a knowledge interpreter
+  - this is search.py in commonsense
+
+** TODO iPython Notebook integration 
+** TODO Reasonableness monitor architecture 
+- [ ] Reasonableness monitor architecture for components
+- [ ] Explanation synethesizer
+** TODO Use Vishnu's Uber data 
+** TODO do I need to cache commonsense?
+** TODO Add the existing part the conceptNet code 
+** Hierarchy
+1. Passenger safety and legality
+2. Perceived safety
+   1. Minimizing passengers and other drivers notions of being unsafe
+      1. e.g. increasing distance to a lead car
+      2. e.g. not being too close to a lane divider
+   2. Equates to increasing the margin of safety
+   3. From here the planning model considers the notion of perceived
+      safety,which here refers to minimizing passengers’ and other
+      drivers’perceptions of being unsafe, even when actual safety
+      isn’t at significant risk. (In practice, this might entail
+      increasing the distance to a lead car or ensuring the autonomous
+      car doesn’t get too close to a lane divider.) From [[https://venturebeat.com/2019/12/11/lyft-details-the-planning-model-behind-its-self-driving-cars/][ventureBeat]]
+3. Comfort
+   1. Eliminating nausea
+   2. A whole thing about different different notions of comfort 
+4. Route efficiency
+** OLDER Python coding 
+  [2020-02-04 Tue 13:22]
+- Starting with symbolic stuff from
+  [[https://towardsdatascience.com/explainable-ai-vs-explaining-ai-part-2-statistical-intuitive-vs-symbolic-reasoning-systems-8b05f8e0a3a0][data science]]
+- Start with the symbols from the uber example and work backwards from
+  the reasoner
+- [ ] Timing analysis
+- [ ] Validation of inconsistent labels 
+
+** Dependencies
+- Have to use =python3=
+- Need =sympy=
+
+** Requirements
+- [ ] README in excel, markdown etc.  with the relations, and their
+  meanings in natural language
+- [ ] Optional: relations to query with their important meanings for
+  the different applications.
+- [[https://stackoverflow.com/questions/44002622/passing-utf-8-table-to-python-from-org-mode][org mode help]]
+** TODO Anchor parsing 
+** TODO Relation file parsing
+*** TODO Relation URI vs Relation
+- Maybe URI should be used for something special 
+*** TODO Remove examples or something else 
+** TODO Be able to call the search stuff 
+** TODO Tests for searching conceptNet
+** TODO Tests for reading from the README 
+** TODO What about indexes for the relations and the anchors?
+** TODO How to represent rules based stuff for implementation 
+- [[https://stackoverflow.com/questions/53421492/python-rule-based-engine][Python
+  rules]] 
+*** TODO Rules list
+    
+** TODO Generate proxy explanations
+- [ ] For the vision system:
+- [ ] For the LiDAR system
+- [ ] For the system state 
+*** TODO Start with the vision system 
+    DEADLINE: <2020-02-10 Mon>
+- Triples
+  - Tree isA object
+  - Bike isA object (moving)
+  - unknown-object (may or may not be moving)
+  - Add triples with reasons 
+  - [ ] Translate into english
+*** Steps
+- Aligning explanations
+  - Find corresponding regions, times etc.
+  - In cases of conflicts, examine the needs hierarchy
+- Thinking rules...
+  - If conflict AND violates a top need, then need to intervene
+**** TODO If the conflict does not violate a top need, what happens?
+**** TODO How to decompose the needs hierarcy 
+***** Passenger safety
+- Safe driving (driving rules)
+- Minimize damage to the vehicle 
+- if violate driving rule:
+  - elif if possible damage to vehicle
+    - [ ] How is this modeled?
+    - [ ] Things that can cause harm to the vehicle:
+      - Large objects and large moving objects (so want to avoid)
+      - going too fast or too slow (wide threshold)
+** TODO Local monitor class 
+   There are a few system-level decisions that need to be made. 
+*** TODO The dependent files
+    - [ ] Which ones are dependent on the monitor / vs the synthesizer
+      - Domain: synthesizer
+      - Anchor points?
+      - 
+** Old Coding 
+** Dataset Scrambling 
+   [2020-05-12 Tue 11:48]   
+   - In the file =scramble.py=
+*** TODO Different types of scrambling
+- [ ] Per annotation in order
+  - Go through each annotation.
+- [ ] Per scene 
+* TODO Relations for the domains 
+  [2020-02-22 Sat 16:09]
+  - [[https://github.com/commonsense/conceptnet5/wiki/Relations][Relations]]
+  - IsA is always important 
+  - First defining LOCATIONS
+    - 'AtLocation'
+    - 'LocatedNear'
+  - Another idea; the data has an anchor point
+    - state object
+      - concept
+      - anchor
+      - time? 
+** TODO make the right queries
+- What we want: =http://api.conceptnet.io/c/en/bicycle?rel=/r/AtLocation=
+  - What we have =/query?node=/c/en/bicycle?rel=/r/AtLocation=
+** TODO may also want to search for synonyms 
+* TODO forward chaining versus backward chaining
+** TODO Reasonable rules for labels 
+*** TODO Do these first 
+- if labels: then must be at the same location
+- if move, subject must be able to move
+** Rules
+- Location check
+  - Exception for objects because they are broad. 
+** Forward chain rules first 
+** Steps
+- aggregate commonsense data
+- Run rules
+- More data
+  - Look for alternative context 
+** Adding PYKE
+
+*** Family example
+This example determines the relationships between people.
+
+family.py
+    This has the primary data used by the rest of the rules.  This data is
+    established as universal facts so that it remains after an engine.reset()
+    is done.
+
+fc_example.krb
+    Forward-chaining example.  This only uses forward-chaining rules, which
+    means that all possible relationships are determined when the rule base is
+    activated.
+
+bc_example.krb
+    Backward-chaining example.  This only uses backward-chaining rules, though
+    these rules are not very efficient.
+
+bc2_example.krb
+    Backward-chaining example.  This also only uses backward-chaining rules,
+    but a few rule optimizations have been made which results in this rule base
+    running 100 times faster than bc_example.krb.
+
+example.krb
+    Combined rule base.  This has some forward-chaining rules, some
+    (unoptimized) backward-chaining rules, and produces plans that return the
+    relationship when run.  (This is a poor use of plans, but demonstrates the
+    syntax and underlying principles).
+
+driver.py
+    Driver program.  Read this code to see how to call Pyke!
+
+**** Running
+#+BEGIN_SRC python
+>>> driver.bc2_test('chad')               # doctest: +ELLIPSIS
+        doing proof
+        chad, tyler are ('father', 'son')
+        chad, tiffany are ('father', 'daughter')
+        <BLANKLINE>
+        done
+        bc2_example: 0 fc_rules, 0 triggered, 0 rerun
+        bc2_example: 29 bc_rules, 35 goals, 140 rules matched
+                     10 successes, 140 failures
+        family: 9 fact names, 94 universal facts, 0 case_specific facts
+        bc time ..., ... goals/sec
+
+        # uses example.krb
+        >>> driver.test('paul')                   # doctest: +ELLIPSIS
+        doing proof
+        paul, nick are father, son
+        paul, katrina are father, daughter
+        <BLANKLINE>
+        done
+        example: 6 fc_rules, 262 triggered, 0 rerun
+        example: 21 bc_rules, 2828 goals, 6221 rules matched
+                 1414 successes, 6221 failures
+        family: 9 fact names, 94 universal facts, 422 case_specific facts
+        fc time ..., ... asserts/sec
+        bc time ..., ... goals/sec
+        total time ...
+
+
+        # this has three parameters that all default to None:
+        #     person1, person2 and relationship
+        >>> driver.general(person1='bruce',             # uses bc2_example.krb
+        ...             relationship=('father', 'son')) # doctest: +ELLIPSIS
+        doing proof
+        bruce, m_thomas are ('father', 'son')
+        bruce, david_a are ('father', 'son')
+        <BLANKLINE>
+        done
+        bc2_example: 0 fc_rules, 0 triggered, 0 rerun
+        bc2_example: 29 bc_rules, 105 goals, 390 rules matched
+                     82 successes, 390 failures
+        family: 9 fact names, 94 universal facts, 0 case_specific facts
+        bc time ... goals/sec
+#+END_SRC
+    The last function uses the bc2_example rule base.  You can pass whatever
+    combinations of values you like.  If you want to specify person1 and/or
+    person2, pass their name; otherwise any person will match.  For the
+    relationship, pass a tuple.  Use '$var_name' strings in the tuple for
+    pattern variables.  You can also have nested tuples (as some of the
+    relationships are nested tuples).
+*** Found PYKE3
+- [[https://sourceforge.net/projects/pyke/files/pyke/1.1.1/pyke3-1.1.1.zip/download][sourceforge]]
+- Installed with: =sudo python3 setup.py install=
+  - And then changed install to build and that seemed ok for now. 
+** Running Pyke
+* Pyke syntax
+- No spaces
+  - Turned spaces into =_=
+  - Same with hyphens, that will need to be changed 
+* PHW Rule-Production System
+- [[https://ai6034.mit.edu/wiki/index.php?title=Lab_1][From Lab1]]
+* TODO Split data from =test_reasoning.py=
+* TODO Car rules
+* DONE Quaternion 
+  CLOSED: [2020-03-17 Tue 13:40]
+  NOTE: Irrelevant (for now). 
+* Putting the Scenes together
+  [2020-03-17 Tue 13:31]
+** Monitor constraints
+** TODO Input random sizes 
+** TODO all computation in the monitor 
+** TODO Monitor will also need to store the reasons  (perhaps another)
+- The reasons are right now, split into support and dispute 
+** TODO size rules 
+** TODO Backchaining for the explanation synthesizer 
+** TODO Reason -> Translator 
+** TODO Near miss and generalizing this
+** TODO Synthesizer for scene monitor 
+** TODO Get state of the vehicle 
+** TODO Next to (for the images) 
+- This shouldn't be so hard, get the change in ego poses 
+* Jupyter 
+- [[https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html][paths]]

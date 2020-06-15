@@ -1,0 +1,10 @@
+labels(vehicle, unknown_object, bicycle)
+
+IsA(vehicle, object)
+IsA(bicycle, object)
+AtLocation(vehicle, street)
+AtLocation(bicycle, garage)
+AtLocation(bicycle, street)
+AtLocation(object, street)
+AtLocation(bicycle, a_toy_store)
+AtLocation(unknown_object, street)

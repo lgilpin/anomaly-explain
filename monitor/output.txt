@@ -1,0 +1,90 @@
+This sample has 69 labeled objects
+human.pedestrian.adult
+[1224.59321504, 3708.7238719600005, 2.6246720000000003]
+Visibility: {'description': 'visibility of whole object is between 0 and 40%', 'token': '1', 'level': 'v0-40'}
+Global translation is [373.256, 1130.419, 0.8]
+somewhat close
+To the right
+ 
+human.pedestrian.adult
+[1243.0709059199999, 3783.95025232, 2.8379266]
+Visibility: {'description': 'visibility of whole object is between 40 and 60%', 'token': '2', 'level': 'v40-60'}
+Global translation is [378.888, 1153.348, 0.865]
+somewhat close
+To the right
+ 
+vehicle.car
+[1160.74150696, 3715.0755782, 1.97506568]
+Visibility: {'description': 'visibility of whole object is between 60 and 80%', 'token': '3', 'level': 'v60-80'}
+Global translation is [353.794, 1132.355, 0.602]
+somewhat close
+To the right
+ 
+human.pedestrian.adult
+[1234.0223492, 3800.87610588, 3.07742792]
+Visibility: {'description': 'visibility of whole object is between 80 and 100%', 'token': '4', 'level': 'v80-100'}
+Global translation is [376.13, 1158.507, 0.938]
+somewhat close
+To the right
+ 
+movable_object.trafficcone
+[1345.3609354399998, 3926.40104428, 2.15223104]
+Visibility: {'description': 'visibility of whole object is between 80 and 100%', 'token': '4', 'level': 'v80-100'}
+Global translation is [410.066, 1196.767, 0.656]
+closer
+To the right
+
+** Outline
+
+This sample's 69 labeled objects are reasonable.  Sample explanations:
+The human.pedestrian.adult located at [373.256, 1130.419, 0.8] is
+approximately the right size.  It is somewhat close, located to the
+right.
+
+The vehicle.car located at is [353.794, 1132.355, 0.602] is
+approximately the right size.  It is somewhat close, located to the
+right, past the movable_object.
+
+At least one of this sample's 69 labeled objects are
+unreasonable.  Unreasonable explanations:
+
+The human.pedestrian.adult located at [373.256, 1130.419, 0.8] is not
+a reasonable size: it is too tall.  There is no commonsense supporting
+this judgement.    Ignoring objects detected to the right.
+The vehicle.car located at is [353.794, 1132.355, 0.602] is the
+correct size, but it's location is too far away to be on a
+street.  Ignoring objects detected to the right.
+
+
+Finished explaining scene at 2018-07-23 23:29:06.797517 with Parked
+truck, construction, intersection, turn left, following a van Summary
+of explanations at scene level with 225 distinct annotations
+
+The human.pedestrian.adult located at is [353.794, 1132.355, 0.602] is
+not the the correct size: it is too wide and it is too deep. It's
+location is too far away to be close to a street.  Ignoring objects
+detected to the right.
+
+The human.pedestrian.adult located at is [353.794, 1132.355, 0.602] is
+not the the correct size, and it's location is too far away to be
+close to a street.  Ignoring objects detected to the right.
+
+Finished explaining scene at 2018-07-23 23:29:06.797517 with Parked
+truck, construction, intersection, turn left, following a van Summary
+of explanations at scene level with 225 distinct annotations.
+
+This scene with with 225 distinct annotations 2018-07-23
+23:29:06.797517 is reasonable.  Explanation summary: Parked truck,
+construction, intersection, turn left, following a van.
+
+This scene with with 225 distinct annotations 2018-07-23
+23:29:06.797517 is reasonable.  Explanation synthesized:Reasonable
+scene with a car proceeding forward, turning left, and following a
+van.  Perceived a  parked truck, construction, and intersection..
+
+** TODO find explanations..
+Contribution explanations for autonomous BB
+Anomaly detection vs explanation
+Anomalies are detected in a better becaus of the epxlanations at lower
+levels.
+Show that...
