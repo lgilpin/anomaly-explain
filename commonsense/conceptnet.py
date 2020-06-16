@@ -10,6 +10,7 @@ rel_term = '?rel=/r/'
 limit_suffix = '&limit=1000'
 
 isA_search = '?rel=/r/IsA&limit=1000'
+default_anchor = 'object'
 limit = 20
 MAX_DEPTH = 3
 
@@ -140,7 +141,10 @@ def get_closest_anchor(concept, relation, anchors):
                     triple = [concept, 'IsA', anchor]
                     return make_fact(triple, "ConceptNet IsA link")
         else:
-            return "not found"
+            return "not found" # TODO this needs a better message
+    # If it is never found, make default object
+    triple = [concept, 'IsA', default_anchor]
+    return make_fact(triple, "Default anchor point")
 
 def check_IsA_relation(concept,anchor, edge):
     if edge['rel']['label'] == 'IsA':

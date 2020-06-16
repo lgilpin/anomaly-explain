@@ -22,6 +22,7 @@ import numpy as np
 import csv
 
 import commonsense.conceptnet as kb
+import synthesizer.synthesize as synthesize
 
 import monitor.reasonableness_monitor as monitor
 
@@ -132,6 +133,7 @@ def synthesize_explanations(*explanations, actions):
     for (is_reasonable, explanation) in explanations:
         logging.debug(is_reasonable)
         logging.debug(explanation)
+    action = synthesize.diagnose(explanations)
     return explanations
 
 # Return a list of symbolic triples supporting the explanation 
@@ -168,8 +170,7 @@ def run_uber_example():
     # object, as a vehicle, and then as a bicycle with varying
     # expectations of future travel path."
     vision = symbols('unknown_object vehicle bicycle')
-    visionExplain = monitor.snapshot_monitor(vision, anchors,
-    relations, True)
+    visionExplain = monitor.snapshot_monitor(vision, anchors,relations, True)
 
     lidar = symbols('object_moving 5_ft_tall top_left_quadrant')
     lidarExplain = (symbols('reasonable'), lidar)
