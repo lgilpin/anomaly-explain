@@ -129,7 +129,6 @@ def get_closest_anchor(concept, relation, anchors):
     Goes through all the relations and tries to find the closest one.
     If the anchor point is in the isA hierarchy at all, it 
     """
-    print("are we in the closest")
     for anchor in anchors:
         logging.debug("Searching for an IsA link between %s and %s"%(concept,anchor))
 

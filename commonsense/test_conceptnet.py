@@ -12,15 +12,27 @@ class TestConceptnet(unittest.TestCase):
     def test_find_anchor(self):
         """
         Tests the anchor point labeling for the uber example
+        and other default "objects"
         """
-        concepts = ['vehicle', 'bicycle']
-        anchors = ['animal', 'object', 'place', 'place', 'plant']
+        concepts = ['ball', 'bicycle', 'trash']
+        anchors = ['animal', 'object', 'place', 'plant']
         reason = 'ConceptNet IsA link'
-
+        default_reason = 'Default anchor point'
+        
         for concept in concepts:
             result = make_fact([concept, 'IsA', 'object'], reason)
             trial = find_anchor(concept, anchors)
             self.assertEqual(result, trial)
+
+        # LHG adds spring 2020: test the default anchor
+        bad_concepts = ['vehicle', 'mailbox']
+        for concept in bad_concepts:
+            result = make_fact([concept, 'IsA', 'object'],
+                           default_reason)
+            trial = find_anchor(concept, anchors)
+            self.assertEqual(result, trial)
+
+        
 
     def test_make_prolog_fact(self):
         """
@@ -31,8 +43,9 @@ class TestConceptnet(unittest.TestCase):
         reason = 'ConceptNet IsA link'
 
         for concept in concepts:
-            result = make_prolog_fact([concept, 'IsA', 'object'], reason)
-            trial = ("IsA("+concept+", object)", reason)
+            result = make_prolog_fact([concept, 'IsA', 'object'],
+                                      reason)
+            trial = ["IsA("+concept+", object)", reason]
             self.assertEqual(result, trial)
         
 class TestStringMethods(unittest.TestCase):
