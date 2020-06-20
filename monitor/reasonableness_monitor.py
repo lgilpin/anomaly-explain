@@ -24,6 +24,8 @@ TODO : Add in average size
 """
 class SnapshotMonitor:
     def __init__(self, labels, data, rules, system_name="vision perception"):
+        """I started created this as an object, but in reality, it doesn't
+        really use much of this """
         self.labels = labels
         self.data = data
         self.rules = rules
@@ -36,6 +38,8 @@ class SnapshotMonitor:
                           # and disputes
         self.support = None
         self.dispute = None
+
+        self.reasons = []  # Not really used, but keeping it around in case. 
         
         self.text_exp = ""  
 
@@ -47,6 +51,7 @@ class SnapshotMonitor:
         self.reasons.append(reason)
 
     def label_summary(self):
+
         """
         Returns a string summary of the labels in question
         """
