@@ -19,6 +19,9 @@ subject_anchors = ['animal', 'object', 'place', 'plant']
 verb_anchor = ['move', 'propel']
 REASON = "ConceptNet" 
 
+#Everything is a string
+# Relation: symbolic ==> Single Phrase
+# Concepts can be Multiple Words
 def search(concept, relation, reasons=None):
     """
     Search for a specific relation in the knowledge base
@@ -38,6 +41,11 @@ def search(concept, relation, reasons=None):
             concepts.append(end)
     return concepts
 
+# Facts are lists: A fact, last term is the reason, easily added to pandas this way
+# Some things returned as tuples
+# Clean is string manipulation
+# Triple is a RDF fact from concept net
+# Reason is a string phrase
 def make_fact(triple, reason):
     """
     Makes a basic data fact base in pandas data
