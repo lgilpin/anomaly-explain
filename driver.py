@@ -21,7 +21,7 @@ import pandas as pd
 import numpy as np
 import csv
 
-import commonsense.conceptnet as kb
+#import commonsense.conceptnet as kb
 import synthesizer.synthesize as synthesize
 
 import monitor.reasonableness_monitor as monitor
