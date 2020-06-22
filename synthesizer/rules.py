@@ -73,47 +73,9 @@ def isReasonable(labels, commonsense_data):
 
     return (reasonable, explanation)
 
-#### Backward Chaining #########################################
-
-def backchain_to_goal_tree(rules, hypothesis):            
-    """
-    LHG Code from 6.034, modified for the ADE system.
-
-    Takes a hypothesis (string) and a list of rules (list
-    of IF objects), returning an AND/OR tree representing the
-    backchain of possible statements we may need to test
-    to determine if this hypothesis is reachable or not.
-
-    This method should return an AND/OR tree, that is, an
-    AND or OR object, whose constituents are the subgoals that
-    need to be tested. The leaves of this tree should be strings
-    (possibly with unbound variables), *not* AND or OR objects.
-    Make sure to use simplify(...) to flatten trees where appropriate.
-    """
-    top_level = [hypothesis]
-    
-    for rule in rules:
-        matching = match(rule.consequent(), hypothesis)
-        
-        if matching is not None:
-            tree = []
-            next = populate(rule.antecedent(), matching)
-            ant_stuff = type(rule.antecedent())
-            
-            if ant_stuff is str: # leaf
-                tree.append(backchain_to_goal_tree(rules, next))
-            else: 
-                for hyp in next:
-                    tree.append(backchain_to_goal_tree(rules, hyp))
-                    
-            if ant_stuff == OR:
-                top_level.append(OR(tree))
-            else: top_level.append(AND(tree))
-    return simplify(OR(top_level))
-
 # Uncomment this to test out your backward chainer
-pretty_goal_tree(backchain_to_goal_tree(zookeeper_rules,
-                                        'opus is a penguin'))
+#pretty_goal_tree(backchain_to_goal_tree(zookeeper_rules,
+#                                        'opus is a penguin'))
 #pprint.pprint(zookeeper_rules)
 
 driving_rules_two_objs =  (

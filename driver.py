@@ -186,7 +186,10 @@ def run_uber_example():
     #expr = SOPform(sm, minterms) # find the expression
     end_time = process_time() # end time
     print('explanation :', explanation)
-    print('\nprocessing time (in seconds):', end_time-start_time)
+    print('\n monitor processing time (in seconds):', end_time-start_time)
+
+    syn_start_time = process_time()
+    synthesize.uber_synthesize(explanation)
 
 def main():
     """

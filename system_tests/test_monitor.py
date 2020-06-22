@@ -43,6 +43,7 @@ class TestSnapshotMonitor(unittest.TestCase):
         summary = 'bicycle, vehicle, unknown_object'
         self.assertEqual(monitor.label_summary(), summary)
 
+
 #     def test_find_anchor(self):
 #         """
 #         Tests the anchor point labeling for the uber example
