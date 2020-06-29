@@ -51,11 +51,13 @@ class SnapshotMonitor:
         self.reasons.append(reason)
 
     def label_summary(self):
-
         """
         Returns a string summary of the labels in question
         """
-        return ", ".join(str(x) for x in self.labels)
+        if self.labels:
+            return ", ".join(str(x) for x in self.labels)
+        else:
+            return 
 
     def make_explanation(self, explanations):
         """

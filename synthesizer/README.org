@@ -1,0 +1,13 @@
+
+* Downloading PROLOG for checking
+- Downloaded [[https://www.swi-prolog.org][Swipl]] with =brew install swi-prolog=.
+- Can be run with =swipl= in the command line.  
+- there are facts and rules.
+- [ ] I have to define the rules.  The *facts* will come from data.  
+** Example
+#+BEGIN_SRC prolog
+animal(X) :- cat(X).
+#+END_SRC
+
+** TODO Write a file
+- putting the name of the program file between square brackets.
