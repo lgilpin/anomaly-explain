@@ -100,18 +100,17 @@ def find_anchor(concept_phrase, anchors):
             concept = concept_phrase[-1]
         else:
             concept = concept_phrase
-        return get_closest_anchor(concept, 'IsA', anchors)
+        return get_closest_anchor(concept, anchors, 'IsA')
 
 
-# TODO: test_aggregate
-######## Does this take in fact or FACT TERM???####################################
-def aggregate(fact, relations):
+
+def aggregate(fact_term, relations):
     """
     Aggregates a commonsense reasons for a particular concept and the relations of interest
     """
     all_facts = []
     for relation in relations:
-        concept_phrase = clean(fact)
+        concept_phrase = clean(fact_term)
         new_facts = build_relation(concept_phrase, relation)
         all_facts += new_facts
     return all_facts
@@ -123,9 +122,9 @@ def clean(symbolic_phrase):
 
     May be unnecessary if instead focused on strings.
     """
-    str_phrase = str(symbolic_phrase).split('_')
+    str_phrase = str(symbolic_phrase).split(' ') #Splitting along the spaces allows proper access to the primary term
     if type(str_phrase) is list:
-        return str_phrase[-1]
+        return str_phrase[0] #changed this from last term to first term in the string to properly do the aggregation
     else:
         return str_phrase
 
@@ -145,8 +144,7 @@ def build_relation(phrase, relation):
     return facts
 
 
-# TODO: Get closest anchor
-def get_closest_anchor(concept, relation, anchors):
+def get_closest_anchor(concept, anchors, relation='IsA'):
     """
     Goes through all the relations and tries to find the closest one.
     If the anchor point is in the isA hierarchy at all, it
@@ -158,18 +156,17 @@ def get_closest_anchor(concept, relation, anchors):
         edges = obj['edges']
         if edges:
             for edge in edges:
-                if check_IsA_relation(concept, anchor, edge):
+                if check_IsA_relation(anchor, edge, concept):
                     triple = [concept, 'IsA', anchor]
                     return make_fact(triple, "ConceptNet IsA link")
         else:
-            return "not found"  # TODO this needs a better message
+            return "IsA relation not found between concept and anchors"
     # If it is never found, make default object
     triple = [concept, 'IsA', default_anchor]
     return make_fact(triple, "Default anchor point")
 
 
-# TODO: Check is a relation
-def check_IsA_relation(concept, anchor, edge):
+def check_IsA_relation(anchor, edge, concept=None):
     if edge['rel']['label'] == 'IsA':
         result = edge['end']['label']
         if anchor in result:
@@ -177,7 +174,6 @@ def check_IsA_relation(concept, anchor, edge):
     return False
 
 
-# TODO: Check clean concept
 def clean_concept(word):
     """
     Remove dashes into a phrase
@@ -191,7 +187,7 @@ def clean_concept(word):
 
 # Counts the amount of IsA hops from a start to an anchor point
 # This should be a shortest path algorithm
-# TODO: test get_shortest_hops
+
 def get_shortest_hops(start, relation='IsA'):
     shortest = None
     target = None
@@ -207,7 +203,7 @@ def get_shortest_hops(start, relation='IsA'):
 
 
 # Finds the shortest path for a specificed relation
-# TODO find_shortest_path
+
 def find_shortest_path(start, anchor, relation='IsA', path=None):
     if path == None:
         path = []
@@ -236,14 +232,14 @@ def find_shortest_path(start, anchor, relation='IsA', path=None):
     return shortest
 
 
-# TODO: tst_search_equals
+
 def search_equals(string1, string2):
     if (clean_search(string1) == clean_search(string2)):
         return True
     return False
 
 
-# TODO: test clean search
+
 def clean_search(input):
     cleaned = input.lower()
     if (cleaned.startswith("a ")):
@@ -255,7 +251,7 @@ def clean_search(input):
 
 # Checks if there is any correlation (just an edge)
 # Only to be used for verb primitives, otherwise not strong enough correlation
-# TODO: test has_any edge
+
 def has_any_edge(word, verb_primitive, verbose=False):
     word_text = word.replace(" ", "_").lower()
     logging.debug("ConceptNet Query: Searching for an edge between %s and the verb primitive %s"
@@ -275,8 +271,7 @@ def has_any_edge(word, verb_primitive, verbose=False):
 
 
 # First check if there is a direct connection via an IsA relation
-# TODO - This needs to be rigorously checked
-# TODO: Test has_isa_edge
+
 def has_IsA_edge(word, concept, verbose=False):
     word_text = word.replace(" ", "_").lower()
 
@@ -296,7 +291,6 @@ def has_IsA_edge(word, concept, verbose=False):
     return False
 
 
-# TODO: check has_edge
 def has_edge(word, concept, relation):
     word_text = word.replace(" ", "_").lower()
 
@@ -312,7 +306,7 @@ def has_edge(word, concept, relation):
 
 
 # Phrases don't always count
-# TODO: check isA_equals
+
 def isA_equals(concept, phrase):
     if concept in phrase:
         return True
@@ -320,7 +314,7 @@ def isA_equals(concept, phrase):
         return False
 
 
-# TODO: check containsConcept
+
 def containsConcept(concept, list):
     for item in list:
         if concept in item[0]:
@@ -330,7 +324,7 @@ def containsConcept(concept, list):
 
 # TODO - something strange about the query request
 # So hard-coded in a check for the relation
-# TODO: check search_relation
+
 def search_relation(word, relation):
     concepts = []
     word_text = word.replace(" ", "_").lower()
@@ -346,7 +340,6 @@ def search_relation(word, relation):
 
 # TODO fix this to not be hardcoded
 # A force that can move things
-# TODO: check isConfusion
 def isConfusion(item):
     confusions = ['hurricane', 'storm', 'earthquake']
     if item in confusions:
@@ -356,7 +349,6 @@ def isConfusion(item):
 
 
 # Added for the new primitives
-# TODO: Check can_move
 def can_move(subject):
     if has_IsA_edge(subject, 'vehicle') or has_IsA_edge(subject, 'animal'):
         return True
@@ -364,7 +356,7 @@ def can_move(subject):
         return False
 
 
-# TODO: Check can_propel
+
 # Assume this is a list for now
 def can_propel(contexts):
     for context in contexts:
