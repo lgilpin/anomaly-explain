@@ -1,0 +1,40 @@
+#+AUTHOR: Leilani H. Gilpin
+#+TITLE: Negociation
+
+"Any method of noegocation may be fairly judged by three criteria"
+cite:getting-to-yes.
+1. "Produce a wise agreement[fn:1] if agreement is possible."
+2. Efficient
+3. "Improve or at least not damage the relationships between parties."
+
+* API 
+- Set bottom line
+- Set BATMA - Best alternative to a negociated agreement.
+  - Inventing a list of actions you might conceivably take if no
+    agreement is reached.
+  - Imprving some of the more promising ideas and converting them into
+    alternatives.
+  - Seletcing, tentatively the one that seems best  
+
+* Examples
+** Job offer
+- If, by the end of the month,Company X does not make a /satisfactory/
+  job offer.
+  - Take a job with Company Y
+  - Look in another city
+  - Start business on your own. 
+
+* Bibliography 
+@book{getting-to-yes,
+  title={Getting to yes: Negotiating agreement without giving in},
+  author={Fisher, Roger and Ury, William L and Patton, Bruce},
+  year={2011},
+  publisher={Penguin}
+}
+
+* Footnotes
+
+[fn:1] "A wise agreement can be defined as one that meets the
+legitimate interests of each side to the extent possible, resolves
+conflicint interests fairly, is durable, and takes community interests
+into account. "
