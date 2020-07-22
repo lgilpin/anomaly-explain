@@ -84,25 +84,27 @@ taqueria(la_milpas_quatros, [jiminez, martin, antonio, miguel],
 
 available_at(X,Y) :- taqueria(Y,_,Z),isin(X,Z).
 
-%multi_available(X) :- available_at(X,Y),available_at(X,Z),Z \= Y.
-multi_available(X) :- available_at(X,Y), available_at(X,Z), remove_duplicates(Y,Z).
-%% multi_available(X) :- taqueria(L, EmpList, MenuList)
-%% 					, member(X, MenuList)
-%% 					, taqueria(L1, EmpList1, MenuList1)
-%% 					, member(X, MenuList1)
-%% 					, L \= L1.
+more_than_one(X) :- length(X,N), N>1.
+multi_available(X) :- bagof(Y, available_at(X,Y), List), more_than_one(List).
 
-overworked(X) :- throw(to_be_done). 
+works_at(X,Y) :- taqueria(Y,Z,_),isin(X,Z).
+overworked(X) :- bagof(Y,works_at(X,Y), List), more_than_one(List). 
 
-total_cost(X,K) :- throw(to_be_done).
+robust_cost(T,0) :- findall(Y,cost(Y,_),Z), not(isin(T,Z)).
+robust_cost(T,N) :- cost(T,N).
 
-has_ingredients(X,L) :- throw(to_be_done).
+sum_ingredients([],0).
+sum_ingredients([H|T],Sum) :- sum_ingredients(T,Rest), robust_cost(H,First), Sum is First+Rest.
 
-avoids_ingredients(X,L) :- throw(to_be_done). 
+total_cost(X,K) :- ingredients(X,Y), sum_ingredients(Y,K).
 
-p1(L,X) :- throw(to_be_done). 
+has_ingredients(X,L) :- ingredients(X,Y), union(Y,L,Y).
+avoids_ingredients(X,L) :- ingredients(X,Y),intersection(Y,L,[]).
 
-p2(L,Y) :- throw(to_be_done). 
+p1(L,X) :- bagof(L1, has_ingredients(L1,X), L). 
+
+% I think p2 should be NOT Y
+p2(L,Y) :- bagof(L2, avoids_ingredients(L2,Y), L). 
 
 find_items(L,X,Y) :- p1(L1,X),p2(L2,Y),intersection(L1,L2,L).  
 

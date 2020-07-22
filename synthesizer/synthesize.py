@@ -68,14 +68,21 @@ def diagnose(explanations, options=OPTIONS):
     if disagree(explanations):
         best = OPTIONS[-1]
     else: best = 'continue'
-    diagnosis_text = "The best option is to %s" %best
+    diagnosis_text = "The best option is to %s." %best
     return diagnosis_text
+
+def parse_reason(explanation):
+    """
+    The input explanation should be a triple.
+    """
+    (subject,_,_) = explanation
+    return "The "+str(subject)
 
 def synthesize(explanations):
     for (reason, explanation) in explanations:
         if is_threat(explanation):
-           return "Is a threatening object that should be avoided." 
-        print(explanation)
+            return parse_reason(explanation)+\
+                "Is a threatening object that should be avoided." 
     return "default"
 
 def is_threat(reason):
