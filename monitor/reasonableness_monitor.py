@@ -427,6 +427,8 @@ def add_commonsense(symbols, anchors, relations, labels=False):
     2.  Adds the important symbolic relations 
     """
     reasons = []
+    # if type(symbols) is not list:
+    #     return add_single_commonsense(symbols, anchors, relations, labels=False)
     #1: Anchoring
     for sym in symbols:
         concept = str(sym)
@@ -450,6 +452,41 @@ def add_commonsense(symbols, anchors, relations, labels=False):
     data = pd.DataFrame(reasons, columns = ['fact', 'reason'])  
     return data
     #else return []
+
+def add_single_commonsense(symbols, anchors, relations, labels=False):
+    """
+    This method adds commonsense information for a particular concept
+
+    TODO: find the base concept 
+
+    1.  Adds the anchor point information
+    2.  Adds the important symbolic relations 
+    """
+    reasons = []
+    if type(symbols) is not list:
+        return add_single_commonsense(symbols, anchors, relations, labels=False)
+    #1: Anchoring
+    for sym in symbols:
+        concept = str(sym)
+        anchor = kb.find_anchor(concept, anchors)
+        reasons.append(anchor)
+        print("REASONS ARE %s"%reasons)
+
+    #2: Adding commonsense for the relations of interest
+    if labels:
+        # Then this is a sort of description
+        for concept in symbols:
+            logging.debug("Accessing KB for this concept: %s" %concept)
+            reasons += kb.aggregate(concept, relations)
+    else:
+        if has_verb(symbols):
+        # Represent in conceptual primitives
+            return "Not implemented yet"
+
+    print("REASONS ARE %s"%reasons)
+    logging.debug(reasons)
+    data = pd.DataFrame(reasons, columns = ['fact', 'reason'])  
+    return data
 
 # is there anything similar between vision concepts
 # This is thedefinition of a near miss
