@@ -177,13 +177,13 @@ def get_labels(data_dict):
     print(ontology[-1])
     return [ontology[-1]]
 
-def snapshotMonitor(labels):
+def snapshotMonitor(labels, context=True):
     """
     For demo purposes
     """
     anchors = ['person', 'animal', 'object', 'place', 'plant']
     relations = ['AtLocation', 'LocatedNear'] 
-    return snapshot_monitor(labels, anchors, relations, True, True)
+    return snapshot_monitor(labels, anchors, relations, True, context)
 
 def snapshot_monitor(labels, anchors, relations, isLabels=False, context=False):
     """Local reasonableness monitor in python
