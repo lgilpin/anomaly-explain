@@ -81,6 +81,9 @@ class SnapshotMonitor:
         #    summary+=explanation+".  "
         if not self.reasonable:
             summary+=".  This component should be ignored."
+        else:
+          summary+="There is commonsense supporting the same %s between %s"\
+              %("location",self.label_summary())
         return (self.reasonable, summary)
 
     def get_fact_list(self):
@@ -90,7 +93,7 @@ class SnapshotMonitor:
         """
         return self.data['fact'].values.toList()
 
-    def test_reasonable_snapshot(self, data, symbols):
+    def test_reasonable_snapshot(self, data, symbols, context=False):
 
         """
         Tests whether this is a reasonable point in time given a set of rules.
@@ -111,10 +114,10 @@ class SnapshotMonitor:
         data = supplement(locations, data, 'Location rule fired')
         logging.debug("new data is %s"%data)
 
-        (judgement, explanations) = self.isReasonable(data, symbols)
+        (judgement, explanations) = self.isReasonable(data, symbols, context)
         return self.make_explanation(explanations)
     
-    def isReasonable(self, data, labels):
+    def isReasonable(self, data, labels, context=False):
         """
         Checks the data for certain reasonability checks:
         (1) are they the same anchor point
@@ -155,6 +158,8 @@ class SnapshotMonitor:
                 self.reasonable = False
         else:
             explanation.append(size_summary(labels))
+        if context:
+            self.reasonable = True
         return (self.reasonable, explanation)
 
 class SceneMonitor:
@@ -172,10 +177,15 @@ def get_labels(data_dict):
     print(ontology[-1])
     return [ontology[-1]]
 
-def snapshotMonitor(label):
-    return True
+def snapshotMonitor(labels):
+    """
+    For demo purposes
+    """
+    anchors = ['person', 'animal', 'object', 'place', 'plant']
+    relations = ['AtLocation', 'LocatedNear'] 
+    return snapshot_monitor(labels, anchors, relations, True, True)
 
-def snapshot_monitor(labels, anchors, relations, isLabels=False):
+def snapshot_monitor(labels, anchors, relations, isLabels=False, context=False):
     """Local reasonableness monitor in python
 
     There are two possibiltiies: 
@@ -194,7 +204,6 @@ def snapshot_monitor(labels, anchors, relations, isLabels=False):
         judgement = True 
         explanation = "Fits constructs"
     else:
-        print("SHOULDN'T HAVE")
         symbols = labels
         facts = add_commonsense(symbols, anchors, relations, isLabels) #wtf are labels?
         logging.debug("Snapshot monitor made with the following data: %s"%facts)
@@ -202,7 +211,7 @@ def snapshot_monitor(labels, anchors, relations, isLabels=False):
 
         # Forward chain
         # TODO: Prove automatically
-        (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols)
+        (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
 
     # Check for alternatives / near misses in the data
     # Set explanation and judgement 
