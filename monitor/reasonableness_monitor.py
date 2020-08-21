@@ -159,7 +159,8 @@ class SnapshotMonitor:
         else:
             explanation.append(size_summary(labels))
         if context:
-            self.reasonable = True
+            #self.reasonable = True
+            self.reasonable = kb.connected(labels)
         return (self.reasonable, explanation)
 
 class SceneMonitor:
@@ -458,6 +459,7 @@ def add_commonsense(symbols, anchors, relations, labels=False):
 
     print("REASONS ARE %s"%reasons)
     logging.debug(reasons)
+    print(reasons)
     data = pd.DataFrame(reasons, columns = ['fact', 'reason'])  
     return data
     #else return []
