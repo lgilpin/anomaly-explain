@@ -1,8 +1,11 @@
+from dataclasses import dataclass
 import requests
 import logging
+import pandas as pd
 import queue
 import re
 from itertools import *
+from typing import List
 
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
@@ -19,7 +22,27 @@ MAX_DEPTH = 3
 subject_anchors = ['animal', 'object', 'place', 'plant']
 verb_anchor = ['move', 'propel']
 REASON = "ConceptNet"
+DEFAULT_RELATIONS = ['AtLocation', 'LocatedNear']
 
+get_relation = lambda x: x['rel']['label']
+get_start = lambda x: x['start']['label']
+get_end = lambda x: x['end']['label']
+get_score = lambda x: x['weight']
+
+__all__ = ['Fact']
+
+@dataclass
+class Fact:
+    start: str
+    relation: str
+    end: str
+    score: float = 1.0
+
+    def to_list(self) -> List:
+        return [self.start, self.relation, self.end, self.score]
+
+def make_fact_from_edge(edge: dict) -> Fact:
+    return Fact(get_start(edge), get_relation(edge), get_end(edge), get_score(edge))
 
 # Everything is a string
 # Relation: symbolic ==> Single Phrase
@@ -43,6 +66,34 @@ def search(concept, relation, reasons=None):
             concepts.append(end)
     return concepts
 
+def search_with_score(concept: str, relations: List, num_hops: int = 1) -> List:
+    """
+    Searches for specific concepts in conceptNet with an added score.
+    Returns a list of facts
+    """
+    facts = []
+    for relation in relations:
+        logging.debug(f"searching for {concept} and relation {relation} with a score")
+        word_text = concept.replace(" ", "_").lower()
+        query = query_prefix + word_text + '?rel=' + relation + '&limit=1000'
+        obj = requests.get(query).json()
+    
+        edges = obj['edges']
+        for edge in edges:
+            if get_relation(edge) == relation:
+                facts.append(extract_data(edge))
+    return facts
+
+def extract_data(edge: dict) -> List:
+    """
+    Returns json data in a list format."""    
+    return make_fact_from_edge(edge).to_list() 
+
+def get_domain(facts: pd.DataFrame) -> str:
+    """
+    Returns the best domain for the facts.  Right now, it returns the highest scoring 'AtLocation' fact
+    """
+    return facts[facts['Relation']=='AtLocation'].max()['Word2']
 
 # Facts are lists: A fact, last term is the reason, easily added to pandas this way
 # Some things returned as tuples
@@ -57,6 +108,17 @@ def make_fact(triple, reason):
     [subject, predicate, obj] = triple
     fact_term = "%s %s %s" % (subject, predicate, clean_phrase(obj))
     return [fact_term, reason]
+
+
+def build_df(concepts: List, relations: List = DEFAULT_RELATIONS) -> pd.DataFrame:
+    """"
+    Makes a data frame of facts from conceptNet for a list of concepts
+    """
+    facts = []
+    for concept in concepts:
+        facts.append(find_anchor_with_score(concept, subject_anchors, True))
+        facts.extend(search_with_score(concept, relations))
+    return pd.DataFrame(facts, columns=['Word1', 'Relation', 'Word2', 'Score']) 
 
 
 def clean_phrase(description):
@@ -83,9 +145,10 @@ def make_prolog_fact(triple, reason):
     return [fact_term, reason]
 
 
-def find_anchor(concept_phrase, anchors):
+def find_anchor(concept_phrase, anchors, include_score: bool = False):
     """
     Search for a specific anchor from a set of anchors
+    TODO: include_score for the conceptNet weights
     """
     logging.debug("searching for an anchor point for %s" % concept_phrase)
 
@@ -102,6 +165,30 @@ def find_anchor(concept_phrase, anchors):
         else:
             concept = concept_phrase
         return get_closest_anchor(concept, anchors, 'IsA')
+
+def find_anchor_with_score(concept_phrase, anchors, include_score: bool = False):
+    """
+    Search for a specific anchor from a set of anchors
+    TODO: include_score for the conceptNet weights
+    """
+    logging.debug("searching for an anchor point for %s" % concept_phrase)
+
+    for anchor in anchors:
+        if anchor in concept_phrase:
+            logging.debug("anchor point %s is partof the concept phrase: %s"
+                          % (anchor, concept_phrase))
+            triple = [concept_phrase, 'IsA', anchor]
+            tripe.append("1.0")
+            return triple
+#            return make_fact(triple, "direct search")
+
+    for anchor in anchors:
+        if type(concept_phrase) is list:
+            concept = concept_phrase[-1]
+        else:
+            concept = concept_phrase
+        return get_closest_anchor(concept, anchors, 'IsA', include_score)
+
 
 
 
@@ -145,7 +232,7 @@ def build_relation(phrase, relation):
     return facts
 
 
-def get_closest_anchor(concept, anchors, relation='IsA'):
+def get_closest_anchor(concept, anchors, relation='IsA', include_score: bool = False):
     """
     Goes through all the relations and tries to find the closest one.
     If the anchor point is in the isA hierarchy at all, it
@@ -159,16 +246,23 @@ def get_closest_anchor(concept, anchors, relation='IsA'):
             for edge in edges:
                 if check_IsA_relation(anchor, edge, concept):
                     triple = [concept, 'IsA', anchor]
-                    return make_fact(triple, "ConceptNet IsA link")
+                    if include_score:
+                        triple.append(get_score(edge))
+                        return triple
+                    else:
+                        return make_fact(triple, "ConceptNet IsA link")
         else:
             print("IsA relation not found between concept and anchors")
-            return default_fact(concept)
+            return default_fact(concept, include_score)
     # If it is never found, make default object
-    return default_fact(concept)
+    return default_fact(concept, include_score)
 
-def default_fact(concept):
+def default_fact(concept, include_score: bool = False):
     triple = [concept, 'IsA', default_anchor]
-    return make_fact(triple, "Default anchor point")
+    if include_score:
+        return triple
+    else:
+        return make_fact(triple, "Default anchor point")
 
 def check_IsA_relation(anchor, edge, concept=None):
     if edge['rel']['label'] == 'IsA':
