@@ -93,7 +93,8 @@ def get_domain(facts: pd.DataFrame) -> str:
     """
     Returns the best domain for the facts.  Right now, it returns the highest scoring 'AtLocation' fact
     """
-    return facts[facts['Relation']=='AtLocation'].max()['Word2']
+    return facts.sort_values(by=['Score'], ascending=False).iloc[0]['Word2']
+    # return facts[facts['Relation']=='AtLocation'].max()['Word2']
 
 # Facts are lists: A fact, last term is the reason, easily added to pandas this way
 # Some things returned as tuples
