@@ -5,7 +5,7 @@
 # Email: lhg@mit.edu
 # Description: Local Reasonabeless monitors for the high-level synthesizer.
 
-import commonsense.conceptnet as kb # Change to the knowledgebase you would like
+import commonsense.conceptnet #as kb # Change to the knowledgebase you would like
 import logging
 import pandas as pd
 from reasoning import rules
@@ -41,7 +41,8 @@ class SnapshotMonitor:
 
         self.reasons = []  # Not really used, but keeping it around in case. 
         
-        self.text_exp = ""  
+        self.text_exp = "" 
+        self.kb = ConceptNet()  # Companion()
 
         #facts = add_commonsense(labels, anchors, relations, labels) #wtf are labels?
     def add_data(self, data_point):
@@ -160,7 +161,7 @@ class SnapshotMonitor:
             explanation.append(size_summary(labels))
         if context:
             #self.reasonable = True
-            self.reasonable = kb.connected(labels)
+            self.reasonable = self.kb.connected(labels)
         return (self.reasonable, explanation)
 
 class SceneMonitor:
@@ -442,7 +443,7 @@ def add_commonsense(symbols, anchors, relations, labels=False):
     #1: Anchoring
     for sym in symbols:
         concept = str(sym)
-        anchor = kb.find_anchor(concept, anchors)
+        anchor = self.kb.find_anchor(concept, anchors)
         reasons.append(anchor)
         print("REASONS ARE %s"%reasons)
 
@@ -451,7 +452,7 @@ def add_commonsense(symbols, anchors, relations, labels=False):
         # Then this is a sort of description
         for concept in symbols:
             logging.debug("Accessing KB for this concept: %s" %concept)
-            reasons += kb.aggregate(concept, relations)
+            reasons += self.kb.aggregate(concept, relations)
     else:
         if has_verb(symbols):
         # Represent in conceptual primitives
@@ -479,7 +480,7 @@ def add_single_commonsense(symbols, anchors, relations, labels=False):
     #1: Anchoring
     for sym in symbols:
         concept = str(sym)
-        anchor = kb.find_anchor(concept, anchors)
+        anchor = self.kb.find_anchor(concept, anchors)
         reasons.append(anchor)
         print("REASONS ARE %s"%reasons)
 
@@ -488,7 +489,7 @@ def add_single_commonsense(symbols, anchors, relations, labels=False):
         # Then this is a sort of description
         for concept in symbols:
             logging.debug("Accessing KB for this concept: %s" %concept)
-            reasons += kb.aggregate(concept, relations)
+            reasons += self.kb.aggregate(concept, relations)
     else:
         if has_verb(symbols):
         # Represent in conceptual primitives
