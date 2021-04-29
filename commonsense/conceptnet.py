@@ -6,6 +6,7 @@ import queue
 import re
 from itertools import *
 from typing import List
+from kb import *
 
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
@@ -108,13 +109,13 @@ class ConceptNet(KB):
     # Clean is string manipulation
     # Triple is a RDF fact from concept net
     # Reason is a string phrase
-    def make_fact(triple, reason):
+    def make_fact(self, triple, reason):
         """
         Makes a basic data fact base in pandas data
         """
         logging.debug("Making a new fact: %s with reason: %s" % (triple, reason))
         [subject, predicate, obj] = triple
-        fact_term = "%s %s %s" % (subject, predicate, clean_phrase(obj))
+        fact_term = "%s %s %s" % (subject, predicate, self.clean_phrase(obj))
         return [fact_term, reason]
 
 
@@ -129,7 +130,7 @@ class ConceptNet(KB):
         return pd.DataFrame(facts, columns=['Word1', 'Relation', 'Word2', 'Score']) 
 
 
-    def clean_phrase(description):
+    def clean_phrase(self, description):
         """
         Strips a description and removes spaces, stop words, etc
         TODO: Remove POS tagging and stuff.
@@ -172,7 +173,7 @@ class ConceptNet(KB):
                 concept = concept_phrase[-1]
             else:
                 concept = concept_phrase
-            return get_closest_anchor(concept, anchors, 'IsA')
+            return self.get_closest_anchor(concept, anchors, 'IsA')
 
     def find_anchor_with_score(concept_phrase, anchors, include_score: bool = False):
         """
@@ -240,7 +241,7 @@ class ConceptNet(KB):
         return facts
 
 
-    def get_closest_anchor(concept, anchors, relation='IsA', include_score: bool = False):
+    def get_closest_anchor(self, concept, anchors, relation='IsA', include_score: bool = False):
         """
         Goes through all the relations and tries to find the closest one.
         If the anchor point is in the isA hierarchy at all, it
@@ -252,27 +253,27 @@ class ConceptNet(KB):
             edges = obj['edges']
             if edges:
                 for edge in edges:
-                    if check_IsA_relation(anchor, edge, concept):
+                    if self.check_IsA_relation(anchor, edge, concept):
                         triple = [concept, 'IsA', anchor]
                         if include_score:
                             triple.append(get_score(edge))
                             return triple
                         else:
-                            return make_fact(triple, "ConceptNet IsA link")
+                            return self.make_fact(triple, "ConceptNet IsA link")
             else:
                 print("IsA relation not found between concept and anchors")
-                return default_fact(concept, include_score)
+                return self.default_fact(concept, include_score)
         # If it is never found, make default object
-        return default_fact(concept, include_score)
+        return self.default_fact(concept, include_score)
 
-    def default_fact(concept, include_score: bool = False):
+    def default_fact(self, concept, include_score: bool = False):
         triple = [concept, 'IsA', default_anchor]
         if include_score:
             return triple
         else:
-            return make_fact(triple, "Default anchor point")
+            return self.make_fact(triple, "Default anchor point")
 
-    def check_IsA_relation(anchor, edge, concept=None):
+    def check_IsA_relation(self, anchor, edge, concept=None):
         if edge['rel']['label'] == 'IsA':
             result = edge['end']['label']
             if anchor in result:

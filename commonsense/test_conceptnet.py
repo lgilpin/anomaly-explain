@@ -6,8 +6,9 @@ import unittest
 from typing import Dict, List
 
 import numpy as np
-from commonsense.conceptnet import *
-
+# from commonsense.conceptnet import *
+from conceptnet import ConceptNet
+from kb import *
 
 class TestConceptnet(unittest.TestCase):
     def test_find_anchor(self):
@@ -19,18 +20,19 @@ class TestConceptnet(unittest.TestCase):
         anchors = ['animal', 'object', 'place', 'plant']
         reason = 'ConceptNet IsA link'
         default_reason = 'Default anchor point'
+        cn = ConceptNet()
 
         for concept in concepts:
-            result = make_fact([concept, 'IsA', 'object'], reason)
-            trial = find_anchor(concept, anchors)
+            result = cn.make_fact([concept, 'IsA', 'object'], reason)
+            trial = cn.find_anchor(concept, anchors)
             self.assertEqual(result, trial)
 
         # LHG adds spring 2020: test the default anchor
         bad_concepts = ['vehicle', 'mailbox']
         for concept in bad_concepts:
-            result = make_fact([concept, 'IsA', 'object'],
+            result = cn.make_fact([concept, 'IsA', 'object'],
                                default_reason)
-            trial = find_anchor(concept, anchors)
+            trial = cn.find_anchor(concept, anchors)
             self.assertEqual(result, trial)
 
     def test_make_prolog_fact(self):
