@@ -268,7 +268,7 @@ class ConceptNet(KB):
         # If it is never found, make default object
         return self.default_fact(concept, include_score)
 
-    def find_anchor_2(self, concept, anchors, relation='IsA', include_score: bool = False):
+    def find_anchor_point(self, concept, anchors, relation='IsA', include_score: bool = False):
         """
         Goes through all the relations and tries to find the closest one.
         If the anchor point is in the isA hierarchy at all, it

@@ -15,11 +15,11 @@ class TestConceptnet(unittest.TestCase):
     def test_search_for_concept(self):
         cn = ConceptNet()
         for anchor in subject_anchors:
-            self.assertEqual(cn.find_anchor_2(anchor, subject_anchors), anchor)
+            self.assertEqual(cn.find_anchor_point(anchor, subject_anchors), anchor)
 
-        self.assertEqual(cn.find_anchor_2("dog", subject_anchors), "animal")
-        self.assertEqual(cn.find_anchor_2("table", subject_anchors), "object")
-        self.assertEqual(cn.find_anchor_2("tree", subject_anchors), "plant")
+        self.assertEqual(cn.find_anchor_point("dog", subject_anchors), "animal")
+        self.assertEqual(cn.find_anchor_point("table", subject_anchors), "object")
+        self.assertEqual(cn.find_anchor_point("tree", subject_anchors), "plant")
     
     def test_find_anchor(self):
         """
