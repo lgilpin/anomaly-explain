@@ -241,6 +241,8 @@ class ConceptNet(KB):
         return facts
 
 
+    
+
     def get_closest_anchor(self, concept, anchors, relation='IsA', include_score: bool = False):
         """
         Goes through all the relations and tries to find the closest one.
@@ -265,6 +267,27 @@ class ConceptNet(KB):
                 return self.default_fact(concept, include_score)
         # If it is never found, make default object
         return self.default_fact(concept, include_score)
+
+    def find_anchor_2(self, concept, anchors, relation='IsA', include_score: bool = False):
+        """
+        Goes through all the relations and tries to find the closest one.
+        If the anchor point is in the isA hierarchy at all, it
+        """
+        for anchor in anchors:
+            logging.debug("Searching for an IsA link between %s and %s" % (concept, anchor))
+
+            obj = requests.get(query_prefix + concept + rel_term + 'IsA' + limit_suffix).json()
+            edges = obj['edges']
+            if edges:
+                for edge in edges:
+                    if self.check_IsA_relation(anchor, edge, concept):
+                        return anchor
+            else:
+                print("IsA relation not found between concept and anchors")
+                return "object"
+        # If it is never found, make default object
+        return "object"
+    
 
     def default_fact(self, concept, include_score: bool = False):
         triple = [concept, 'IsA', default_anchor]
