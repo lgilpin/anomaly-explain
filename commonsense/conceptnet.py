@@ -46,6 +46,9 @@ def make_fact_from_edge(edge: dict) -> Fact:
     return Fact(get_start(edge), get_relation(edge), get_end(edge), get_score(edge))
 
 class ConceptNet(KB):
+    """
+    TODO: Possibly add an argument for local or online
+    """
     def search_for_concept(self, predicate, concept, source):
         self.search(concept, predicate, source)
 
