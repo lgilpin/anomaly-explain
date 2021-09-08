@@ -1,0 +1,11 @@
+% mother_child(trude, sally).
+ 
+% father_child(tom, sally).
+% father_child(tom, erica).
+% father_child(mike, tom).
+
+safe(V, S, T)      :- driving(S,T)
+
+% sibling(X, Y)      :- parent_child(Z, X), parent_child(Z, Y). 
+% parent_child(X, Y) :- father_child(X, Y).
+% parent_child(X, Y) :- mother_child(X, Y).

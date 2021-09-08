@@ -11,18 +11,31 @@ from conceptnet import ConceptNet, query_prefix, rel_term, limit_suffix, subject
 import requests
 from kb import *
 
-class TestConceptnet(unittest.TestCase):
-    def test_search_for_concept(self):
+class TestKB(unittest.TestCase):
+
+    """
+    TODO: Change the name (find_closest_anchor).
+    """
+    def test_find_anchor_point(self):
         cn = ConceptNet()
         for anchor in subject_anchors:
             self.assertEqual(cn.find_anchor_point(anchor, subject_anchors), anchor)
 
+    def test_find_anchor_point_animal(self):
+        cn = ConceptNet()
         self.assertEqual(cn.find_anchor_point("dog", subject_anchors), "animal")
+
+    def test_find_anchor_point_object(self):
+        cn = ConceptNet()
         self.assertEqual(cn.find_anchor_point("table", subject_anchors), "object")
+
+    def test_find_anchor_point_plant(self):
+        cn = ConceptNet()
         self.assertEqual(cn.find_anchor_point("tree", subject_anchors), "plant")
-    
+
     def test_find_anchor(self):
         """
+        OLDER
         Tests the anchor point labeling for the uber example
         and other default "objects"
         """
@@ -59,7 +72,10 @@ class TestConceptnet(unittest.TestCase):
         self.assertEqual(['human IsA animal', 'ConceptNet IsA link'], cn.get_closest_anchor(concept_c, anchors))
 
     def test_search_relation(self):
-
+        """
+        TODO: Maybe just add the ESSENTIALS
+        e.g., bicycle -> has wheels, etc.
+        """
         #This just tests that the function works, not necessarily the accuracy of the function
 
         a_answer = {'an environmentally friendly mode of trasportation', 'wheeled vehicle', 'a two wheeled method of transportation', 'a vehicle type', 'a two wheel vehicle', 'transportation', 'much smaller than a fire truck', 'steered y handlebars', 'toy', 'bike', 'bicycle', 'mountable transporter device', 'bicycle market category', 'bilaterally symmetric object', 'a two-wheeled vehicle,', 'good exercise', 'a bicycle', 'user powered device', 'a human powered vehicle', 'a vehicle with two wheels', 'an efficient form of human transportation', 'user guided device', 'vehicle'}

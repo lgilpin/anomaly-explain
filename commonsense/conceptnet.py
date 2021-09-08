@@ -6,7 +6,7 @@ import queue
 import re
 from itertools import *
 from typing import List
-from kb import *
+from commonsense.kb import *
 
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
@@ -38,9 +38,28 @@ class Fact:
     relation: str
     end: str
     score: float = 1.0
+    # TODO: add source
 
     def to_list(self) -> List:
         return [self.start, self.relation, self.end, self.score]
+
+    def all_concepts(self) -> List:
+        """
+
+        :return: A list of all concepts related to the fact.  To be iterated through.
+        :rtype: List
+        """
+        return [self.start, self.end]
+
+    def has_verb(self) -> bool:
+        """
+        TODO: Returns true if the fact has a verb for the relation (used for the conceptual primitives).
+        Currently just returns false
+        :return: True if verb (or not)
+        :rtype: bool
+        """
+        return False
+
 
 def make_fact_from_edge(edge: dict) -> Fact:
     return Fact(get_start(edge), get_relation(edge), get_end(edge), get_score(edge))
@@ -48,12 +67,19 @@ def make_fact_from_edge(edge: dict) -> Fact:
 class ConceptNet(KB):
     """
     TODO: Possibly add an argument for local or online
+      1.  URL for testing
+      2.  LIVE URL 
     """
     def search_for_concept(self, predicate, concept, source):
         self.search(concept, predicate, source)
 
     def find_closest_anchor(self, concept_phrase, anchors, include_score: bool):
         self.find_anchor(concept_phrase, anchors, include_score)
+
+    def find_anchor(self, concept_phrase, anchors, include_score: bool):
+        """"""
+
+        self.find_anchor_hops(concept_phrase, anchors, include_score)
         
     # Everything is a string
     # Relation: symbolic ==> Single Phrase
@@ -275,6 +301,8 @@ class ConceptNet(KB):
         """
         Goes through all the relations and tries to find the closest one.
         If the anchor point is in the isA hierarchy at all, it
+        Currently, this only looks for it within ONE hop.
+        TODO: Find the shortest hops
         """
         for anchor in anchors:
             logging.debug("Searching for an IsA link between %s and %s" % (concept, anchor))
@@ -285,9 +313,35 @@ class ConceptNet(KB):
                 for edge in edges:
                     if self.check_IsA_relation(anchor, edge, concept):
                         return anchor
+                # return highest score
             else:
                 print("IsA relation not found between concept and anchors")
                 return "object"
+        # If it is never found, make default object
+        return "object"
+
+    def find_anchor_point_hops(self, concept, anchors, relation='IsA', include_score: bool = False):
+        """
+        Goes through all the relations and tries to find the closest one.
+        If the anchor point is in the isA hierarchy at all, it
+        Currently, this only looks for it within ONE hop.
+        TODO: Find the shortest hops
+        """
+        for anchor in anchors:
+            logging.debug("Searching for an IsA link between %s and %s" % (concept, anchor))
+
+            obj = requests.get(query_prefix + concept + rel_term + 'IsA' + limit_suffix).json()
+            edges = obj['edges']
+            if edges:
+                for edge in edges:
+                    if self.check_IsA_relation(anchor, edge, concept):
+                        return anchor
+                # return highest score
+            else:
+                print("IsA relation not found between concept and anchors")
+                for edge in edges:
+                    self.find_anchor_point_hops(edge, anchors)
+                # return "object"
         # If it is never found, make default object
         return "object"
     
@@ -338,6 +392,8 @@ class ConceptNet(KB):
     # Finds the shortest path for a specificed relation
 
     def find_shortest_path(self, start, anchor, relation='IsA', path=None):
+        """
+        """
         if path == None:
             path = []
         path = path + [start]
@@ -367,6 +423,7 @@ class ConceptNet(KB):
 
 
     def search_equals(self, string1, string2):
+        """"""
         if (self.clean_search(string1) == self.clean_search(string2)):
             return True
         return False
