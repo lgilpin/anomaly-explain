@@ -264,6 +264,7 @@ class SnapshotMonitor:
 
         # Forward chain
         # TODO: Prove automatically
+        context = False
         (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
 
         # If there's a verb
