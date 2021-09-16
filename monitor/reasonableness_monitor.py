@@ -266,12 +266,21 @@ class SnapshotMonitor:
         # TODO: Prove automatically
         context = False
         (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
+        return self.toFact(facts)
+
 
         # If there's a verb
         # if starter_fact.hasVerb(): # Do something
         # else:
 
-
+    def toFact(self, facts_df: pd.DataFrame) -> List[Fact]:
+        all_facts = []
+        for fact in facts_df['fact']:
+            if fact is not None:
+                [start, relation, end] = fact.split(" ")
+                real_fact = Fact(start, relation, end)
+                all_facts.append(real_fact)
+        return all_facts
 
 class SceneMonitor:
     def __init__(self, data, rules, snapshots):

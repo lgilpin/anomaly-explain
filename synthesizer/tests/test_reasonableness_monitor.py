@@ -10,3 +10,10 @@ class TestSnapshotMonitor(TestCase):
         test_monitor.explain_fact(starter_fact) # List of facts with fact object.
         # self.fail()
 
+        test_monitor = monitor.SnapshotMonitor()
+        starter_fact2 = Fact("snake", "IsA", "reptile")
+        facts = test_monitor.explain_fact(starter_fact2)
+        print(facts)
+
+
+
