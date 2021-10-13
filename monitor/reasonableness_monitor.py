@@ -4,10 +4,15 @@
 # Section: 1
 # Email: lhg@mit.edu
 # Description: Local Reasonabeless monitors for the high-level synthesizer.
+from typing import List
 
 import commonsense.conceptnet as kb # Change to the knowledgebase you would like
+from commonsense.conceptnet import Fact, ConceptNet
+from dataclasses import dataclass, field
 import logging
 import pandas as pd
+
+from commonsense.kb import KB
 from reasoning import rules
 from reasoning.production import IF, AND, OR, NOT, THEN, DELETE, forward_chain, pretty_goal_tree
 
@@ -17,34 +22,68 @@ data_header = ['fact', 'reason'] # DATA HEADERS
 judgement = {True:'reasonable', False: 'unreasonable'}
 confidence = {1: 'poor visibility', 2: 'fair visibility',
               3: 'good visibility', 4: 'great visibility'}
-# safe vs unsafe -- user study.  
+# safe vs unsafe -- user study.
+
+DEFAULT_ANCHORS = ['person', 'animal', 'object', 'place', 'plant']
+DEFAULT_RELATIONS = ['AtLocation', 'LocatedNear']
 
 """
 TODO : Add in average size
 """
+@dataclass
 class SnapshotMonitor:
-    def __init__(self, labels, data, rules, system_name="vision perception"):
-        """I started created this as an object, but in reality, it doesn't
-        really use much of this """
-        self.labels = labels
-        self.data = data
-        self.rules = rules
-        self.system_name = system_name
+    """I started created this as an object, but in reality, it doesn't
+    really use much of this """
+    labels: List = field(default_factory=list)
+    data: List = field(default_factory=list)
+    rules: List = field(default_factory=list)  # This will have to be changed
+    system_name: str = "default"
 
-        self.reasonable = True
-        self.near_miss = False
-        self.anchors = [] # This might not be necessary 
-        self.sym_exp = [] # Right now, this is separated into supports
-                          # and disputes
-        self.support = None
-        self.dispute = None
+    reasonable: bool = True
+    near_miss: bool = False
+    anchors: List[str] = None  # This might not be necessary
+    sym_exp: List = field(default_factory=list)  # Right now, this is separated into supports
 
-        self.reasons = []  # Not really used, but keeping it around in case. 
-        
-        self.text_exp = ""  
+    # Again, this isn't really used: and disputes
+    support: List = None
+    dispute: List = None
+
+    reasons: List = field(default_factory=list)  # Not really used, but keeping it around in case.
+
+    text_exp: str = ""
+    kb: KB = ConceptNet()  # Companion()
+
+
+    # def __init__(self, labels, data, rules, system_name="vision perception"):
+    #     """I started created this as an object, but in reality, it doesn't
+    #     really use much of this """
+    #     self.labels = labels
+    #     self.data = data
+    #     self.rules = rules
+    #     self.system_name = system_name
+    #
+    #     self.reasonable = True
+    #     self.near_miss = False
+    #     self.anchors = [] # This might not be necessary
+    #     self.sym_exp = [] # Right now, this is separated into supports
+    #                       # and disputes
+    #     self.support = None
+    #     self.dispute = None
+    #
+    #     self.reasons = []  # Not really used, but keeping it around in case.
+    #
+    #     self.text_exp = ""
+    #     self.kb = ConceptNet()  # Companion()
 
         #facts = add_commonsense(labels, anchors, relations, labels) #wtf are labels?
     def add_data(self, data_point):
+        """
+
+        :param data_point:
+        :type data_point:
+        :return:
+        :rtype:
+        """
         self.data = data_point # Change that
 
     def add_reason(self, reason):
@@ -160,8 +199,88 @@ class SnapshotMonitor:
             explanation.append(size_summary(labels))
         if context:
             #self.reasonable = True
-            self.reasonable = kb.connected(labels)
+            self.reasonable = self.kb.connected(labels)
         return (self.reasonable, explanation)
+
+    def add_commonsense(self, symbols, anchors, relations, labels=False):
+        """
+        This method adds commonsense information for a particular concept
+
+        TODO: find the base concept
+
+        1.  Adds the anchor point information
+        2.  Adds the important symbolic relations
+        """
+        reasons = []
+        # if type(symbols) is not list:
+        #     return add_single_commonsense(symbols, anchors, relations, labels=False)
+        # 1: Anchoring
+        for sym in symbols:
+            concept = str(sym)
+            anchor = self.kb.find_anchor(concept, anchors)
+            reasons.append(anchor)
+            print("REASONS ARE %s" % reasons)
+
+        # 2: Adding commonsense for the relations of interest
+        if labels:
+            # Then this is a sort of description
+            for concept in symbols:
+                logging.debug("Accessing KB for this concept: %s" % concept)
+                reasons += self.kb.aggregate(concept, relations)
+        else:
+            if has_verb(symbols):
+                # Represent in conceptual primitives
+                return "Not implemented yet"
+
+        print("REASONS ARE %s" % reasons)
+        logging.debug(reasons)
+        print(reasons)
+        data = pd.DataFrame(reasons, columns=['fact', 'reason'])
+        return data
+        # else return []
+
+    def explain_fact(self, starter_fact: Fact):
+        """
+        TODO / Inprogress function to explain a "starter" fact or list of facts
+        1.  Get all concepts from the starter fact
+            - If it has a verb, use verb anchors
+            - If it doesn't use a verb, look *only* for commonsense connections
+        2.  Aggregate commonsense for each concept
+        3.  Run reasoner to see if there are any contradictions.
+        :param starter_fact: The fact to start with.
+        :return: TODO
+        """
+        if self.anchors is None:
+            self.anchors = DEFAULT_ANCHORS
+        # iterate through the fact...
+        # for concept in starter_fact.all_concepts():
+        #     # get all commonsense facts
+        #     print(concept)
+        #     symbols = labels
+        symbols = starter_fact.all_concepts()
+        facts = self.add_commonsense(symbols, self.anchors, DEFAULT_RELATIONS, True)  # what are labels?
+        logging.debug("Snapshot monitor made with the following data: %s" % facts)
+        monitor = SnapshotMonitor(symbols, facts, [], "vision system")
+
+        # Forward chain
+        # TODO: Prove automatically
+        context = False
+        (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
+        return self.toFact(facts)
+
+
+        # If there's a verb
+        # if starter_fact.hasVerb(): # Do something
+        # else:
+
+    def toFact(self, facts_df: pd.DataFrame) -> List[Fact]:
+        all_facts = []
+        for fact in facts_df['fact']:
+            if fact is not None:
+                [start, relation, end] = fact.split(" ")
+                real_fact = Fact(start, relation, end)
+                all_facts.append(real_fact)
+        return all_facts
 
 class SceneMonitor:
     def __init__(self, data, rules, snapshots):
@@ -206,7 +325,7 @@ def snapshot_monitor(labels, anchors, relations, isLabels=False, context=False):
         explanation = "Fits constructs"
     else:
         symbols = labels
-        facts = add_commonsense(symbols, anchors, relations, isLabels) #wtf are labels?
+        facts = add_commonsense(symbols, anchors, relations, isLabels) # what are labels?
         logging.debug("Snapshot monitor made with the following data: %s"%facts)
         monitor = SnapshotMonitor(symbols, facts, [], "vision system")
 
@@ -427,42 +546,6 @@ def test_reasonable(facts):
     print("fc time %.2f, %.0f asserts/sec") % \
           (fc_time, engine.get_kb('family').get_stats()[2] / fc_time)
 
-def add_commonsense(symbols, anchors, relations, labels=False):
-    """
-    This method adds commonsense information for a particular concept
-
-    TODO: find the base concept 
-
-    1.  Adds the anchor point information
-    2.  Adds the important symbolic relations 
-    """
-    reasons = []
-    # if type(symbols) is not list:
-    #     return add_single_commonsense(symbols, anchors, relations, labels=False)
-    #1: Anchoring
-    for sym in symbols:
-        concept = str(sym)
-        anchor = kb.find_anchor(concept, anchors)
-        reasons.append(anchor)
-        print("REASONS ARE %s"%reasons)
-
-    #2: Adding commonsense for the relations of interest
-    if labels:
-        # Then this is a sort of description
-        for concept in symbols:
-            logging.debug("Accessing KB for this concept: %s" %concept)
-            reasons += kb.aggregate(concept, relations)
-    else:
-        if has_verb(symbols):
-        # Represent in conceptual primitives
-            return "Not implemented yet"
-
-    print("REASONS ARE %s"%reasons)
-    logging.debug(reasons)
-    print(reasons)
-    data = pd.DataFrame(reasons, columns = ['fact', 'reason'])  
-    return data
-    #else return []
 
 def add_single_commonsense(symbols, anchors, relations, labels=False):
     """
@@ -479,7 +562,7 @@ def add_single_commonsense(symbols, anchors, relations, labels=False):
     #1: Anchoring
     for sym in symbols:
         concept = str(sym)
-        anchor = kb.find_anchor(concept, anchors)
+        anchor = self.kb.find_anchor(concept, anchors)
         reasons.append(anchor)
         print("REASONS ARE %s"%reasons)
 
@@ -488,7 +571,7 @@ def add_single_commonsense(symbols, anchors, relations, labels=False):
         # Then this is a sort of description
         for concept in symbols:
             logging.debug("Accessing KB for this concept: %s" %concept)
-            reasons += kb.aggregate(concept, relations)
+            reasons += self.kb.aggregate(concept, relations)
     else:
         if has_verb(symbols):
         # Represent in conceptual primitives

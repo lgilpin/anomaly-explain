@@ -6,8 +6,10 @@ import unittest
 from typing import Dict, List
 
 import numpy as np
-from commonsense.conceptnet import *
-
+# from commonsense.conceptnet import *
+from conceptnet import ConceptNet, query_prefix, rel_term, limit_suffix
+import requests
+from kb import *
 
 class TestConceptnet(unittest.TestCase):
     def test_find_anchor(self):
@@ -19,18 +21,19 @@ class TestConceptnet(unittest.TestCase):
         anchors = ['animal', 'object', 'place', 'plant']
         reason = 'ConceptNet IsA link'
         default_reason = 'Default anchor point'
+        cn = ConceptNet()
 
         for concept in concepts:
-            result = make_fact([concept, 'IsA', 'object'], reason)
-            trial = find_anchor(concept, anchors)
+            result = cn.make_fact([concept, 'IsA', 'object'], reason)
+            trial = cn.find_anchor(concept, anchors)
             self.assertEqual(result, trial)
 
         # LHG adds spring 2020: test the default anchor
         bad_concepts = ['vehicle', 'mailbox']
         for concept in bad_concepts:
-            result = make_fact([concept, 'IsA', 'object'],
+            result = cn.make_fact([concept, 'IsA', 'object'],
                                default_reason)
-            trial = find_anchor(concept, anchors)
+            trial = cn.find_anchor(concept, anchors)
             self.assertEqual(result, trial)
 
     def test_make_prolog_fact(self):
@@ -40,9 +43,10 @@ class TestConceptnet(unittest.TestCase):
         concepts = ['vehicle', 'bicycle']
         anchors = ['animal', 'object', 'place', 'place', 'plant']
         reason = 'ConceptNet IsA link'
-
+        cn = ConceptNet()
+        
         for concept in concepts:
-            result = make_prolog_fact([concept, 'IsA', 'object'],
+            result = cn.make_prolog_fact([concept, 'IsA', 'object'],
                                       reason)
             trial = ["IsA(" + concept + ", object)", reason]
             self.assertEqual(trial, result)
@@ -54,9 +58,10 @@ class TestConceptnet(unittest.TestCase):
         # Tests if the following concepts are recognized as objects with the making of facts
         concepts = ['vehicle', 'bicycle', 'person', 'motorcycle']
         reason = 'ConceptNet IsA link'
+        cn = ConceptNet()
 
         for concept in concepts:
-            result = make_fact([concept, 'IsA', 'object'],
+            result = cn.make_fact([concept, 'IsA', 'object'],
                                reason)
             answer = [concept + " IsA object", reason]
             self.assertEqual(answer, result)
@@ -66,6 +71,7 @@ class TestConceptnet(unittest.TestCase):
         """
         Tests cleaning out un-necessary words from text
         """
+        cn = ConceptNet()
         # Groups of cleaned an uncleaned words in tuples for easy testing
         set_a = ("the cat in hat", "cat_in_hat")
         set_b = ("a car speeding", "car_speeding")
@@ -75,7 +81,7 @@ class TestConceptnet(unittest.TestCase):
         set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
 
         for set in set_list:
-            result = clean_phrase(set[0])  # gives cleaned phrase
+            result = cn.clean_phrase(set[0])  # gives cleaned phrase
             answer = set[1]
             self.assertEqual(answer, result)
 
@@ -83,6 +89,8 @@ class TestConceptnet(unittest.TestCase):
         """
         Checks the clean function to make sure that it properly cleans out phrases and leaves strings alone
         """
+        cn = ConceptNet()
+        
         set_a = ("man isA object", "man")
         set_b = ("bicycle", "bicycle")
         set_c = ("car isA vehicle", "car")
@@ -91,7 +99,7 @@ class TestConceptnet(unittest.TestCase):
         set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
 
         for set in set_list:
-            result = clean(set[0])  # gives cleaned phrase
+            result = cn.clean(set[0])  # gives cleaned phrase
             answer = set[1]
             self.assertEqual(answer, result)
 
@@ -101,6 +109,7 @@ class TestConceptnet(unittest.TestCase):
         Answers directly from ConceptNet Website (https://conceptnet.io/)
 
         """
+        cn = ConceptNet()
         # TODO: Not all answers showing up properly from query itself
         # Answers
         a_answer = [['bicycle IsA two_wheel_vehicle', 'ConceptNet'], ['bicycle IsA bicycle', 'ConceptNet'],
@@ -120,7 +129,7 @@ class TestConceptnet(unittest.TestCase):
         set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
 
         for set in set_list:
-            result = build_relation(set[0][0], set[0][1])  # gives cleaned phrase
+            result = cn.build_relation(set[0][0], set[0][1])  # gives cleaned phrase
             answer = set[1]
             self.assertEqual(answer, result)
 
@@ -146,14 +155,15 @@ class TestConceptnet(unittest.TestCase):
 
         list_of_relations = ["IsA", "AtLocation", "CapableOf"]  # List of relations we will test with
 
+        cn = ConceptNet()
         # The prompts with the answers attached
-        set_a = aggregate('bicycle IsA two_wheel_vehicle', list_of_relations)
+        set_a = cn.aggregate('bicycle IsA two_wheel_vehicle', list_of_relations)
 
-        set_b = aggregate('dog IsA loyal_friend', list_of_relations)
+        set_b = cn.aggregate('dog IsA loyal_friend', list_of_relations)
 
-        set_c = aggregate('car CapableOf go_fast', list_of_relations)
+        set_c = cn.aggregate('car CapableOf go_fast', list_of_relations)
 
-        set_d = aggregate('vehicle AtLocation street', list_of_relations)
+        set_d = cn.aggregate('vehicle AtLocation street', list_of_relations)
 
         set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
 
@@ -168,19 +178,19 @@ class TestConceptnet(unittest.TestCase):
         concept_b = 'dog'
         concept_c = 'human'
         anchors = ['vehicle', 'animal', 'object', 'person']
-
+        cn = ConceptNet()
         # Trying to see if concepts has the isA relation with the above anchors
 
-        self.assertEqual(['car IsA vehicle', 'ConceptNet IsA link'], get_closest_anchor(concept_a, anchors))
-        self.assertEqual(['dog IsA animal', 'ConceptNet IsA link'], get_closest_anchor(concept_b, anchors))
-        self.assertEqual(['human IsA animal', 'ConceptNet IsA link'], get_closest_anchor(concept_c, anchors))
+        self.assertEqual(['car IsA vehicle', 'ConceptNet IsA link'], cn.get_closest_anchor(concept_a, anchors))
+        self.assertEqual(['dog IsA animal', 'ConceptNet IsA link'], cn.get_closest_anchor(concept_b, anchors))
+        self.assertEqual(['human IsA animal', 'ConceptNet IsA link'], cn.get_closest_anchor(concept_c, anchors))
 
     def test_check_IsA_relation(self):
-
+        cn = ConceptNet()
         concept = 'car'
         anchors = ['vehicle', 'animal', 'object', 'person']
         for anchor in anchors:
-            logging.debug("Searching for an IsA link between %s and %s" % (concept, anchor))
+            #logging.debug("Searching for an IsA link between %s and %s" % (concept, anchor))
 
             # Get IsA Relationship edges so all of these edges should return true for IsA
             obj = requests.get(query_prefix + concept + rel_term + 'IsA' + limit_suffix).json()
@@ -188,12 +198,12 @@ class TestConceptnet(unittest.TestCase):
 
             if edges:
                 for edge in edges:
-                    if check_IsA_relation(anchor,
+                    if cn.check_IsA_relation(anchor,
                                           edge):  # First call should filter out if works properly and second one should alway return True
-                        self.assertEqual(True, check_IsA_relation(anchor, edge))
+                        self.assertEqual(True, cn.check_IsA_relation(anchor, edge))
 
     def test_clean_concept(self):
-
+        cn = ConceptNet()
         set_a = ("dog", "dog")
         set_b = ("cat-in-the-hat", ["cat", "in", "the", "hat"])
         set_c = ("cat-fight-dog", ["cat", "fight", "dog"])
@@ -201,10 +211,10 @@ class TestConceptnet(unittest.TestCase):
         set_list = [set_a, set_b, set_c]
 
         for set in set_list:
-            self.assertEqual(set[1], clean_concept(set[0]))
+            self.assertEqual(set[1], cn.clean_concept(set[0]))
 
     def test_find_shortest_path(self):
-
+        cn = ConceptNet()
         concept = 'car'
         anchors = ['vehicle', 'animal', 'object', 'person']
 
@@ -213,22 +223,22 @@ class TestConceptnet(unittest.TestCase):
                           ['car', 'object'],
                           ['car', 'person']]
         for index, anchor in enumerate(anchors):
-            self.assertEqual(shortest_paths[index], find_shortest_path(concept, anchor))
+            self.assertEqual(shortest_paths[index], cn.find_shortest_path(concept, anchor))
 
     def test_get_shortest_hops(self):
-
+        cn = ConceptNet()
         concepts = ['car', 'dog', 'bicycle']
         answer_set = [('object', ['car', 'object']), ('animal', ['dog', 'animal']), ('object', ['bicycle', 'object'])]
 
         for index, concept in enumerate(concepts):
-            self.assertEqual(answer_set[index], get_shortest_hops(concept))
+            self.assertEqual(answer_set[index], cn.get_shortest_hops(concept))
 
     def test_clean_search(self):
-
+        cn = ConceptNet()
         test_set = [("a happy dog", "happy_dog"), ("an speeDinG CAR", "speeding_car"), ("smallChange", "smallchange")]
 
         for test in test_set:
-            self.assertEqual(test[1], clean_search(test[0]))
+            self.assertEqual(test[1], cn.clean_search(test[0]))
 
     def test_search_equals(self):
 
@@ -236,19 +246,19 @@ class TestConceptnet(unittest.TestCase):
                     ("happy dog", "unhappy dog")]
 
         # All the above should be equal searches except last one
-
+        cn = ConceptNet()
         for index, test in enumerate(test_set):
             if index == 3:
-                self.assertEqual(False, search_equals(test[0], test[1]))
+                self.assertEqual(False, cn.search_equals(test[0], test[1]))
             else:
-                self.assertEqual(True, search_equals(test[0], test[1]))
+                self.assertEqual(True, cn.search_equals(test[0], test[1]))
 
     def test_has_any_edge(self):
-
+        cn = ConceptNet()
         # Basically checks whether objects have relation with verbs
-        self.assertEqual(True, has_any_edge("car", "drive"))
-        self.assertEqual(True, has_any_edge("person", "run"))
-        self.assertEqual(False, has_any_edge("car", "eat"))
+        self.assertEqual(True, cn.has_any_edge("car", "drive"))
+        self.assertEqual(True, cn.has_any_edge("person", "run"))
+        self.assertEqual(False, cn.has_any_edge("car", "eat"))
 
     def test_has_IsA_edge(self):
         # TODO: for some reason dog is a car and cat is a dog ??
@@ -256,38 +266,41 @@ class TestConceptnet(unittest.TestCase):
                     ("cat", "animal", True), ("car", "animal", False), ("cat", "vehicle", False),
                     ("bicycle", "object", True), ("dog", "animal", True), ("dog", "car", False), ("cat", "dog", False)]
 
+        cn = ConceptNet()
         for set in test_set:
-            self.assertEqual(set[2], has_IsA_edge(set[0], set[1]))
+            self.assertEqual(set[2], cn.has_IsA_edge(set[0], set[1]))
 
     def test_has_edge(self):
+        cn = ConceptNet()
 
         test_set = [("car", "vehicle", True), ("car", "object", True), ("person", "object", False),
                     ("cat", "animal", True), ("car", "animal", False), ("cat", "vehicle", False),
                     ("bicycle", "object", True), ("dog", "animal", True), ("dog", "car", True), ("cat", "dog", True)]
 
         for set in test_set:
-            self.assertEqual(set[2], has_IsA_edge(set[0], set[1]))
+            self.assertEqual(set[2], cn.has_IsA_edge(set[0], set[1]))
 
     def test_isA_equals(self):
 
         test_set = [("dog", "dog in hat", True), ("cat", "cat in the hat", True), ("car", "not contain word", False),
                     ("bicycle", "bicycle isA mode of transport", True), ("motorcycle", "motorbike", False)]
+        cn = ConceptNet()
 
         for set in test_set:
-            self.assertEqual(set[2], isA_equals(set[0], set[1]))
+            self.assertEqual(set[2], cn.isA_equals(set[0], set[1]))
 
     def test_containsConcept(self):
-
+        cn = ConceptNet()
         list_of_facts = [['car IsA vehicle', 'ConceptNet IsA link'],['dog IsA animal', 'ConceptNet IsA link'],['human IsA animal', 'ConceptNet IsA link']]
 
         concepts = ["car","dog","human"]
         fail_concepts = ["cat","woman","bicycle"]
 
         for index,fact in enumerate(list_of_facts):
-            self.assertEqual(fact[0],containsConcept(concepts[index],list_of_facts))
+            self.assertEqual(fact[0], cn.containsConcept(concepts[index],list_of_facts))
 
         for index,fact in enumerate(list_of_facts):
-            self.assertEqual(False,containsConcept(fail_concepts[index],list_of_facts))
+            self.assertEqual(False, cn.containsConcept(fail_concepts[index],list_of_facts))
 
         #We check both concepts that should pass as well as fail in the testing above
 
@@ -307,26 +320,27 @@ class TestConceptnet(unittest.TestCase):
 
         answer_list = [a_answer,b_answer,c_answer,d_answer]
         set_list = [set_a,set_b,set_c,set_d]
+        cn = ConceptNet()
 
         for index,answer in enumerate(answer_list):
-            self.assertEqual(answer,set(search_relation(set_list[index][0][0],set_list[index][0][1])))
+            self.assertEqual(answer,set(cn.search_relation(set_list[index][0][0],set_list[index][0][1])))
 
     def test_isConfusion(self):
-
+        cn = ConceptNet()
         answer_set = [("hurricane",True),("storm",True),("earthquake",True),("cat",False),("dog",False),("car",False)]
 
         for set in answer_set:
-            self.assertEqual(set[1],isConfusion(set[0]))
+            self.assertEqual(set[1], cn.isConfusion(set[0]))
 
     def test_can_move(self):
-
+        cn = ConceptNet()
         answer_set = [("cat",True),("car",True),("dog",True),("human",True),("trash",False),("apple",False)]
 
         for set in answer_set:
-            self.assertEqual(set[1],can_move(set[0]))
+            self.assertEqual(set[1], cn.can_move(set[0]))
 
     def test_can_propel(self):
-
+        cn = ConceptNet()
         list_of_contexts_a = ['hurricane', 'sunny', 'storm', 'earthquake','raining']
         list_of_contexts_b = [ 'sunny', 'raining']
         list_of_contexts_c = ['hurricane', 'sunny','raining']
@@ -335,7 +349,7 @@ class TestConceptnet(unittest.TestCase):
         answers = [True,False,True]
 
         for index,list in enumerate(test_list):
-            self.assertEqual(answers[index],can_propel(list))
+            self.assertEqual(answers[index], cn.can_propel(list))
 
 
 class TestStringMethods(unittest.TestCase):
