@@ -1,0 +1,6838 @@
+bridge38.jpg
+                Label     Score
+0                 Sky  0.969990
+1          Atmosphere  0.948181
+2               Water  0.926743
+3               Cloud  0.906655
+4           Afterglow  0.888537
+5                Dusk  0.834558
+6             Sunrise  0.820268
+7              Sunset  0.814724
+8  Red sky at morning  0.805943
+9   Natural landscape  0.798941
+   Object     Score
+0  Bridge  0.747465
+
+bridge04.jpg
+                   Label     Score
+0                  Water  0.954154
+1                    Sky  0.952290
+2          Electric blue  0.744800
+3                Horizon  0.733185
+4                 Bridge  0.689247
+5                   City  0.661116
+6  Nonbuilding structure  0.638336
+7            Beam bridge  0.605444
+8                   Dusk  0.600291
+9                  Night  0.594018
+   Object     Score
+0  Bridge  0.935779
+
+bridge10.jpg
+               Label     Score
+0              Water  0.970828
+1               Tree  0.896626
+2           Building  0.853309
+3              Plant  0.845626
+4               Lake  0.815203
+5       Urban design  0.763697
+6  Natural landscape  0.763123
+7          Landscape  0.761774
+8              Grass  0.735250
+9        Arch bridge  0.715372
+   Object     Score
+0  Bridge  0.677802
+
+bridge11.jpg
+               Label     Score
+0              Water  0.981097
+1             Nature  0.899721
+2              Plant  0.887492
+3  Terrestrial plant  0.836867
+4             Travel  0.794021
+5               Tree  0.782750
+6          Landscape  0.753153
+7       Urban design  0.738556
+8  Natural landscape  0.715748
+9               Boat  0.706157
+   Object     Score
+0  Animal  0.788837
+
+bridge05.jpg
+               Label     Score
+0              Water  0.955570
+1              Plant  0.942427
+2                Sky  0.875821
+3  Natural landscape  0.864611
+4               Tree  0.847224
+5              Grass  0.815595
+6               Wood  0.813783
+7           Building  0.793489
+8            Asphalt  0.762552
+9          Landscape  0.762462
+  Object     Score
+0  Plant  0.689075
+1  Plant  0.552687
+2  Plant  0.527508
+
+bridge39.jpg
+               Label     Score
+0              Water  0.975747
+1              Plant  0.952410
+2               Tree  0.904619
+3             Nature  0.900293
+4           Land lot  0.853442
+5                Sky  0.849528
+6           Building  0.847871
+7  Natural landscape  0.846893
+8              Grass  0.834082
+9              Cloud  0.789684
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge13.jpg
+               Label     Score
+0              Water  0.962211
+1              Cloud  0.956697
+2                Sky  0.941102
+3             Nature  0.900391
+4              Plant  0.880038
+5               Tree  0.863696
+6           Building  0.860882
+7  Natural landscape  0.821109
+8               Lake  0.787889
+9       Urban design  0.760605
+   Object    Score
+0  Animal  0.60004
+
+bridge07.jpg
+                Label     Score
+0   Building material  0.817170
+1               Brick  0.812629
+2           Brickwork  0.783842
+3  Composite material  0.759202
+4                Wood  0.739402
+5                Font  0.722879
+6           Landscape  0.720084
+7               Slope  0.710349
+8            Building  0.698626
+9                Arch  0.698591
+   Object     Score
+0  Bridge  0.815761
+1  Animal  0.570896
+
+bridge06.jpg
+                          Label     Score
+0                         Water  0.970621
+1                         Plant  0.891595
+2                          Tree  0.871115
+3                           Sky  0.857533
+4                   Watercourse  0.824715
+5             Natural landscape  0.816696
+6                      Building  0.792186
+7  Fluvial landforms of streams  0.726099
+8            Composite material  0.724910
+9                   Arch bridge  0.723721
+   Object     Score
+0  Bridge  0.508354
+
+bridge12.jpg
+                          Label     Score
+0                         Water  0.973367
+1                         Cloud  0.968150
+2                           Sky  0.950733
+3             Natural landscape  0.823709
+4                     Landscape  0.740959
+5                   Arch bridge  0.714184
+6                          Lake  0.700969
+7                          Arch  0.700889
+8  Fluvial landforms of streams  0.686117
+9                        Bridge  0.669792
+   Object     Score
+0  Bridge  0.940364
+
+bridge16.jpg
+           Label     Score
+0          Water  0.981912
+1           Boat  0.955308
+2        Vehicle  0.941751
+3         Nature  0.900321
+4           Lake  0.841235
+5  Body of water  0.833263
+6     Watercraft  0.833184
+7           Tree  0.827362
+8    Real estate  0.782906
+9          Event  0.711124
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge02.jpg
+               Label     Score
+0              Water  0.981206
+1                Sky  0.924574
+2              Plant  0.900812
+3             Nature  0.899611
+4           Building  0.871060
+5  Natural landscape  0.836726
+6               Tree  0.772510
+7               Lake  0.761889
+8           Aqueduct  0.742377
+9          Landscape  0.732562
+   Object     Score
+0  Bridge  0.875941
+
+bridge03.jpg
+                          Label     Score
+0                         Water  0.975862
+1                         Cloud  0.950666
+2                           Sky  0.949346
+3                         Plant  0.895656
+4                          Tree  0.861466
+5  Fluvial landforms of streams  0.805601
+6             Natural landscape  0.784351
+7                          Lake  0.766008
+8                      Building  0.712655
+9                     Landscape  0.712132
+   Object     Score
+0  Bridge  0.897314
+
+bridge17.jpg
+               Label     Score
+0              Water  0.978409
+1    Water resources  0.945516
+2                Sky  0.875489
+3              Beach  0.872735
+4               Lake  0.812685
+5          Afterglow  0.806814
+6  Natural landscape  0.804139
+7               Wood  0.800374
+8            Horizon  0.791306
+9          Landscape  0.774740
+   Object     Score
+0  Bridge  0.814721
+
+bridge01.jpg
+          Label     Score
+0         Water  0.974831
+1         Cloud  0.966903
+2           Sky  0.947808
+3      Building  0.910541
+4        Nature  0.900685
+5        Travel  0.781931
+6  Urban design  0.762666
+7   Arch bridge  0.752660
+8     Landscape  0.742506
+9          City  0.738152
+   Object     Score
+0  Animal  0.704154
+
+bridge15.jpg
+                                       Label     Score
+0                                      Water  0.982668
+1                                       Boat  0.941750
+2                                    Vehicle  0.924806
+3                                 Watercraft  0.893750
+4                                       Lake  0.861165
+5  Boats and boating--Equipment and supplies  0.839904
+6                                   Building  0.820323
+7                     Atmospheric phenomenon  0.817195
+8                                    Morning  0.796530
+9                                        Sky  0.794701
+  Object     Score
+0   Boat  0.549118
+
+bridge29.jpg
+                 Label     Score
+0                Cloud  0.974170
+1                  Sky  0.953494
+2            Ecoregion  0.926102
+3  Natural environment  0.890054
+4    Natural landscape  0.786935
+5              Horizon  0.781016
+6                Plain  0.775006
+7            Landscape  0.773587
+8               Travel  0.771517
+9              Cumulus  0.755972
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge28.jpg
+                          Label     Score
+0                         Water  0.979008
+1                         Cloud  0.946653
+2                         Plant  0.906864
+3                        Nature  0.899756
+4                           Sky  0.879598
+5                      Building  0.876009
+6                          Tree  0.874070
+7                       Vehicle  0.865957
+8             Natural landscape  0.784232
+9  Fluvial landforms of streams  0.764733
+   Object     Score
+0  Bridge  0.591995
+1    Boat  0.543936
+
+bridge14.jpg
+            Label     Score
+0            Head  0.972104
+1          Helmet  0.895062
+2            Tree  0.877425
+3           Plant  0.875521
+4          Sleeve  0.872450
+5           Waist  0.866011
+6             Hat  0.849596
+7           Thigh  0.847748
+8            Knee  0.827623
+9  Street fashion  0.825029
+   Object     Score
+0    Shoe  0.893688
+1  Person  0.864431
+2    Shoe  0.856191
+3   Dress  0.724788
+
+bridge98.jpg
+             Label     Score
+0            Water  0.968998
+1            Cloud  0.962884
+2              Sky  0.961829
+3  Water resources  0.952049
+4         Building  0.933224
+5       Skyscraper  0.870232
+6           Liquid  0.850816
+7    Body of water  0.837912
+8      Tower block  0.808502
+9     Urban design  0.806496
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge67.jpg
+          Label     Score
+0           Sky  0.948734
+1      Building  0.941347
+2         Water  0.939944
+3  Urban design  0.813562
+4       Horizon  0.758736
+5          City  0.744526
+6     Landscape  0.729042
+7     Cityscape  0.696363
+8         Event  0.692326
+9         Cloud  0.678727
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge73.jpg
+                                       Label     Score
+0                                      Water  0.982547
+1                                       Boat  0.954825
+2                                        Sky  0.954245
+3                            Water resources  0.950515
+4                                 Watercraft  0.923566
+5                                       Tree  0.887382
+6                                    Vehicle  0.864378
+7                                       Lake  0.849360
+8  Boats and boating--Equipment and supplies  0.837436
+9                                Watercourse  0.829660
+  Object     Score
+0   Boat  0.653952
+
+bridge72.jpg
+      Label     Score
+0       Sky  0.972400
+1     Water  0.970963
+2     Cloud  0.914430
+3    Travel  0.801342
+4   Horizon  0.795014
+5  Building  0.749695
+6     Fence  0.748765
+7      Lake  0.722817
+8      City  0.709910
+9     Event  0.660115
+   Object     Score
+0  Person  0.700641
+1  Person  0.645647
+2  Person  0.618776
+
+bridge66.jpg
+         Label     Score
+0        Water  0.971222
+1     Building  0.949221
+2          Sky  0.932754
+3        Cloud  0.879794
+4   Skyscraper  0.843033
+5         City  0.761708
+6      Horizon  0.756067
+7  Tower block  0.751350
+8       Liquid  0.715612
+9        Event  0.678390
+   Object     Score
+0  Bridge  0.631102
+
+bridge99.jpg
+               Label     Score
+0              Water  0.980452
+1           Building  0.938556
+2             Nature  0.900033
+3     Infrastructure  0.887592
+4  Building material  0.722092
+5            Asphalt  0.717968
+6             Facade  0.712030
+7               Wood  0.708196
+8              Event  0.691401
+9              Metal  0.685350
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge58.jpg
+                   Label     Score
+0               Building  0.880021
+1                    Sky  0.879107
+2               Landmark  0.768789
+3                 Facade  0.764175
+4                 Travel  0.756409
+5                   City  0.732945
+6                Sharing  0.732022
+7                  Event  0.673405
+8  Medieval architecture  0.584772
+9      Building material  0.581593
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge70.jpg
+      Label     Score
+0  Building  0.949460
+1       Sky  0.877569
+2     Fence  0.859507
+3      City  0.746560
+4     House  0.725741
+5     Event  0.700230
+6     Metal  0.699709
+7   Asphalt  0.677753
+8    Facade  0.666203
+9  Handrail  0.623832
+   Object     Score
+0  Person  0.572228
+
+bridge64.jpg
+                   Label     Score
+0                  Water  0.976466
+1                    Sky  0.964223
+2                 Liquid  0.775860
+3               Building  0.768931
+4                Horizon  0.716696
+5                 Bridge  0.677994
+6     Composite material  0.662369
+7  Nonbuilding structure  0.650967
+8            Engineering  0.649218
+9                  Cloud  0.648324
+   Object    Score
+0  Bridge  0.84181
+1  Bridge  0.79526
+
+bridge65.jpg
+                                       Label     Score
+0                                      Water  0.981855
+1                                       Boat  0.955437
+2                                 Watercraft  0.910111
+3                                    Vehicle  0.884374
+4  Boats and boating--Equipment and supplies  0.879231
+5                                        Sky  0.877635
+6                                       Lake  0.851952
+7                     Atmospheric phenomenon  0.831746
+8                                     Paddle  0.827089
+9                                   Waterway  0.777733
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge71.jpg
+                Label     Score
+0            Building  0.928255
+1               House  0.792211
+2                 Sky  0.780108
+3             Fixture  0.749751
+4           Rectangle  0.729489
+5   Building material  0.707306
+6               Event  0.674648
+7              Facade  0.670200
+8                Wood  0.655234
+9  Composite material  0.621260
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge59.jpg
+         Label     Score
+0        Water  0.956850
+1     Building  0.924745
+2        Cloud  0.884122
+3     Mountain  0.816249
+4         Wood  0.792564
+5  Real estate  0.787140
+6          Sky  0.776265
+7        Fence  0.766150
+8    Landscape  0.753606
+9         City  0.729377
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge75.jpg
+               Label     Score
+0              Water  0.974658
+1                Sky  0.903784
+2             Nature  0.899611
+3  Natural landscape  0.879115
+4               Lake  0.818283
+5              Grass  0.768808
+6          Landscape  0.763632
+7            Horizon  0.732382
+8               Tree  0.697080
+9              Event  0.694430
+   Object     Score
+0  Animal  0.661877
+1  Animal  0.603627
+
+bridge61.jpg
+                          Label     Score
+0                         Water  0.976908
+1                         Plant  0.914216
+2                      Building  0.874233
+3                       Vehicle  0.862152
+4  Fluvial landforms of streams  0.855964
+5                          Lake  0.855814
+6             Natural landscape  0.853117
+7                         House  0.845098
+8                          Tree  0.817265
+9                         Grass  0.801051
+  Object     Score
+0   Boat  0.531008
+
+bridge49.jpg
+              Label     Score
+0             Cloud  0.970572
+1               Sky  0.949345
+2             Water  0.922736
+3   Black-and-white  0.827021
+4            Tunnel  0.781729
+5           Asphalt  0.779577
+6  Tints and shades  0.771629
+7          Building  0.763205
+8      Road surface  0.759329
+9              Road  0.751736
+   Object     Score
+0  Bridge  0.881966
+
+bridge48.jpg
+          Label     Score
+0         Water  0.977801
+1      Building  0.958364
+2         Tower  0.792576
+3  Urban design  0.790034
+4          City  0.764848
+5   Tower block  0.735929
+6     Cityscape  0.735056
+7    Metropolis  0.733982
+8        Bridge  0.732850
+9         Event  0.720888
+   Object     Score
+0  Bridge  0.722407
+
+bridge60.jpg
+             Label     Score
+0            Water  0.973837
+1  Water resources  0.948108
+2           Liquid  0.899590
+3              Sky  0.894987
+4            Fluid  0.867615
+5          Horizon  0.770294
+6             Lake  0.710385
+7             City  0.704870
+8         Darkness  0.689096
+9           Bridge  0.679950
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge74.jpg
+               Label     Score
+0              Water  0.980885
+1              Cloud  0.976850
+2                Sky  0.968782
+3      Body of water  0.877561
+4               Lake  0.850644
+5           Sunlight  0.844963
+6               Dusk  0.816237
+7          Afterglow  0.802687
+8  Natural landscape  0.800214
+9            Horizon  0.798060
+   Object     Score
+0  Animal  0.664571
+
+bridge89.jpg
+                Label     Score
+0            Building  0.822215
+1   Building material  0.729360
+2               Event  0.710998
+3               Metal  0.705040
+4                Wood  0.700843
+5         Engineering  0.700211
+6             Asphalt  0.658551
+7  Composite material  0.639560
+8               Steel  0.622511
+9              Facade  0.561332
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge62.jpg
+               Label     Score
+0              Cloud  0.936425
+1             Nature  0.899363
+2                Sky  0.896023
+3  Natural landscape  0.838290
+4           Building  0.784163
+5                Art  0.761026
+6           Painting  0.745106
+7          Landscape  0.722264
+8               Arch  0.689618
+9        Arch bridge  0.672218
+   Object     Score
+0  Animal  0.702834
+
+bridge76.jpg
+           Label     Score
+0          Water  0.980958
+1            Sky  0.965843
+2          Cloud  0.920362
+3       Building  0.918203
+4         Liquid  0.899429
+5        Horizon  0.760613
+6  Electric blue  0.723958
+7         Travel  0.712853
+8           Lake  0.707095
+9         Facade  0.706226
+     Object     Score
+0  Building  0.622043
+
+bridge77.jpg
+               Label     Score
+0                Sky  0.935210
+1              Cloud  0.927064
+2              Plant  0.887338
+3  Natural landscape  0.849159
+4              Grass  0.813596
+5               Tree  0.793067
+6          Landscape  0.714575
+7           Building  0.690479
+8              Event  0.669260
+9               Arch  0.666296
+   Object     Score
+0  Bridge  0.815261
+
+bridge63.jpg
+               Label     Score
+0  Natural landscape  0.855060
+1               Wood  0.848173
+2               Tree  0.817165
+3          Landscape  0.791437
+4   Tints and shades  0.773473
+5              Track  0.759203
+6            Asphalt  0.756749
+7              Grass  0.753431
+8              Plant  0.749534
+9             Travel  0.712225
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge88.jpg
+                Label     Score
+0                 Sky  0.975218
+1               Cloud  0.972450
+2            Building  0.943559
+3         Tower block  0.793461
+4        Urban design  0.774176
+5                City  0.767304
+6             Fixture  0.765213
+7              Facade  0.762824
+8  Composite material  0.759617
+9         Engineering  0.753820
+     Object     Score
+0  Building  0.556171
+
+bridge85.jpg
+        Label     Score
+0       Water  0.981812
+1       Cloud  0.974190
+2         Sky  0.969832
+3        Boat  0.950035
+4  Watercraft  0.916439
+5        Tree  0.885465
+6     Vehicle  0.880460
+7        Dusk  0.855731
+8       Plant  0.849301
+9    Sunlight  0.841289
+  Object     Score
+0   Boat  0.811445
+
+bridge91.jpg
+                Label     Score
+0                 Sky  0.903495
+1             Asphalt  0.847997
+2                Line  0.819109
+3        Road surface  0.809376
+4               Cloud  0.784136
+5         Engineering  0.779409
+6   Building material  0.773917
+7  Composite material  0.764090
+8              Bridge  0.754416
+9                Road  0.739481
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge46.jpg
+               Label     Score
+0               Wood  0.819209
+1            Asphalt  0.800573
+2              Plant  0.770405
+3          Landscape  0.754788
+4  Natural landscape  0.749084
+5              Grass  0.743387
+6               Tree  0.701497
+7               Road  0.695801
+8             Circle  0.681479
+9               Soil  0.675097
+   Object     Score
+0  Animal  0.716733
+1  Animal  0.581853
+
+bridge52.jpg
+         Label     Score
+0        Water  0.970510
+1   Skyscraper  0.958315
+2     Building  0.949767
+3          Sky  0.830959
+4  Tower block  0.820119
+5  Condominium  0.792006
+6        Tower  0.779253
+7     Midnight  0.756418
+8         City  0.745161
+9       Liquid  0.744341
+     Object     Score
+0  Building  0.718958
+1  Building  0.714036
+
+bridge53.jpg
+              Label     Score
+0             Water  0.979067
+1          Building  0.957464
+2  Tied-arch bridge  0.866622
+3              Lake  0.826144
+4            Liquid  0.815649
+5               Sky  0.798744
+6         Cityscape  0.768542
+7          Waterway  0.768529
+8       Arch bridge  0.759336
+9            Bridge  0.757402
+   Object     Score
+0  Animal  0.576114
+
+bridge47.jpg
+                 Label     Score
+0                  Sky  0.864519
+1                Water  0.821458
+2                 Tree  0.771639
+3  Automotive lighting  0.766163
+4                 Wood  0.703276
+5                 Font  0.671050
+6             Darkness  0.668706
+7                Event  0.658525
+8                 Soil  0.648809
+9                 Road  0.645118
+   Object     Score
+0  Animal  0.690044
+
+bridge90.jpg
+                   Label     Score
+0                  Water  0.973258
+1                  Cloud  0.972299
+2                    Sky  0.957124
+3               Building  0.834355
+4      Natural landscape  0.792737
+5              Landscape  0.768452
+6  Geological phenomenon  0.765085
+7                   Road  0.733300
+8                   Soil  0.674171
+9        Automotive tire  0.673886
+   Object     Score
+0  Animal  0.689592
+
+bridge84.jpg
+              Label     Score
+0             Water  0.979403
+1             Cloud  0.976990
+2               Sky  0.972481
+3          Building  0.949864
+4  Tied-arch bridge  0.915949
+5        Skyscraper  0.823720
+6              Tree  0.816203
+7       Arch bridge  0.769585
+8              Lake  0.759590
+9              City  0.754533
+   Object     Score
+0  Bridge  0.820595
+
+bridge92.jpg
+          Label     Score
+0      Building  0.945702
+1           Sky  0.927226
+2       Vehicle  0.855627
+3         House  0.782552
+4  Urban design  0.781060
+5        Facade  0.764011
+6          City  0.732850
+7   Arch bridge  0.687945
+8        Bridge  0.687340
+9         Event  0.674899
+   Object     Score
+0  Person  0.677154
+
+bridge86.jpg
+             Label     Score
+0         Building  0.959853
+1              Sky  0.956114
+2            Cloud  0.929888
+3            Water  0.929078
+4       Skyscraper  0.925992
+5  Black-and-white  0.851594
+6            Style  0.837829
+7      Tower block  0.820045
+8        Cityscape  0.815253
+9             City  0.758466
+     Object     Score
+0  Building  0.671320
+1  Building  0.618304
+
+bridge79.jpg
+        Label     Score
+0       Water  0.982764
+1     Vehicle  0.909755
+2    Building  0.902689
+3        Tree  0.824987
+4        Lake  0.824879
+5       Plant  0.823927
+6  Recreation  0.723623
+7        City  0.718090
+8     Leisure  0.714447
+9       Event  0.701250
+   Object     Score
+0  Bridge  0.541571
+
+bridge51.jpg
+           Label     Score
+0          Water  0.967261
+1       Building  0.897133
+2  Body of water  0.854582
+3           City  0.769085
+4       Midnight  0.766145
+5       Waterway  0.760945
+6          Event  0.731837
+7      Cityscape  0.730200
+8         Bridge  0.728064
+9       Darkness  0.706277
+   Object     Score
+0  Bridge  0.663629
+
+bridge45.jpg
+                    Label     Score
+0                    Wood  0.862152
+1                    Tree  0.843370
+2       Natural landscape  0.829985
+3         Black-and-white  0.822793
+4                   Plant  0.795181
+5                   Trunk  0.791890
+6            Road surface  0.765975
+7               Landscape  0.747974
+8                   Grass  0.742409
+9  Monochrome photography  0.740547
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge44.jpg
+                Label     Score
+0            Building  0.936740
+1                Wood  0.852913
+2             Asphalt  0.838284
+3        Road surface  0.798829
+4                Road  0.741383
+5                City  0.737609
+6         Engineering  0.735359
+7  Composite material  0.725478
+8               Plant  0.716411
+9           Rectangle  0.711529
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge50.jpg
+               Label     Score
+0           Building  0.917778
+1               Tree  0.905633
+2              Plant  0.902987
+3             Nature  0.900459
+4                Sky  0.839224
+5        Woody plant  0.812957
+6  Natural landscape  0.807745
+7            Asphalt  0.803348
+8       Road surface  0.802929
+9              Grass  0.765328
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge78.jpg
+               Label     Score
+0              Water  0.972793
+1              Cloud  0.957959
+2                Sky  0.945434
+3           Building  0.865220
+4               Tree  0.859627
+5               Lake  0.833703
+6  Natural landscape  0.831052
+7              Plant  0.799499
+8            Asphalt  0.788862
+9            Horizon  0.771551
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge87.jpg
+          Label     Score
+0         Plant  0.938776
+1           Sky  0.930422
+2      Building  0.918899
+3         Grass  0.827131
+4          Tree  0.814688
+5          City  0.745027
+6     Landscape  0.738356
+7  Urban design  0.714866
+8        Facade  0.712980
+9          Road  0.707596
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge93.jpg
+                   Label     Score
+0                    Sky  0.977773
+1                  Water  0.975691
+2                  Cloud  0.960281
+3                 Liquid  0.870940
+4                  Fluid  0.869479
+5            Engineering  0.726182
+6     Composite material  0.712298
+7                Cumulus  0.685384
+8  Nonbuilding structure  0.661512
+9                 Bridge  0.592267
+   Object     Score
+0  Bridge  0.872953
+
+bridge97.jpg
+               Label     Score
+0              Plant  0.950530
+1              Green  0.909445
+2             Nature  0.901133
+3               Tree  0.883343
+4  Terrestrial plant  0.845993
+5              Grass  0.837448
+6  Natural landscape  0.812300
+7        Groundcover  0.785524
+8               Wood  0.778864
+9             Forest  0.733801
+   Object     Score
+0  Animal  0.727160
+1  Animal  0.617886
+
+bridge83.jpg
+          Label     Score
+0         Plant  0.952907
+1      Building  0.925458
+2          Tree  0.892864
+3           Sky  0.851895
+4       Asphalt  0.834778
+5         Grass  0.832954
+6         House  0.813488
+7  Road surface  0.800149
+8          Road  0.749155
+9     Landscape  0.720343
+  Object    Score
+0  House  0.57142
+
+bridge54.jpg
+         Label     Score
+0     Building  0.852988
+1         City  0.766484
+2        Event  0.723200
+3     Darkness  0.661660
+4   Skyscraper  0.660366
+5      Leisure  0.617110
+6     Midnight  0.614952
+7        Night  0.579089
+8       Circle  0.531318
+9  Tower block  0.513049
+     Object     Score
+0  Lighting  0.733605
+
+bridge40.jpg
+               Label     Score
+0              Plant  0.901364
+1              Water  0.877827
+2               Wood  0.857207
+3  Natural landscape  0.835239
+4  Terrestrial plant  0.834801
+5              Trunk  0.816317
+6          Landscape  0.744113
+7               Tree  0.730965
+8               Twig  0.730883
+9             Forest  0.664958
+   Object     Score
+0  Animal  0.594646
+1  Animal  0.567660
+
+bridge68.jpg
+        Label     Score
+0       Cloud  0.971753
+1         Sky  0.967100
+2      Travel  0.817674
+3     Leisure  0.806395
+4     Asphalt  0.796757
+5  Recreation  0.780762
+6        Pole  0.743687
+7         Fun  0.741433
+8        City  0.725742
+9       Event  0.723573
+   Object     Score
+0  Person  0.811746
+1  Person  0.802970
+2  Person  0.770693
+3  Person  0.748434
+4  Person  0.742226
+5  Person  0.696793
+6  Person  0.692889
+7  Person  0.677602
+8  Person  0.644230
+9  Person  0.576665
+
+bridge69.jpg
+       Label     Score
+0      Water  0.974020
+1        Sky  0.956099
+2     Liquid  0.900624
+3    Horizon  0.782583
+4  Rectangle  0.775262
+5       Font  0.737265
+6   Symmetry  0.722570
+7        Art  0.719252
+8  Landscape  0.716650
+9       Lake  0.698555
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge41.jpg
+         Label     Score
+0          Sky  0.972852
+1     Building  0.956401
+2        Water  0.947616
+3        Cloud  0.940139
+4   Skyscraper  0.918360
+5      Product  0.907395
+6       Nature  0.900974
+7        Biome  0.827831
+8       Travel  0.826219
+9  Tower block  0.797168
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge55.jpg
+             Label     Score
+0            Cloud  0.975587
+1              Sky  0.968146
+2            Water  0.963070
+3         Building  0.916348
+4  Black-and-white  0.831869
+5          Horizon  0.781630
+6        Landscape  0.771954
+7             City  0.765852
+8             Road  0.746127
+9             Lake  0.732528
+     Object     Score
+0  Building  0.647764
+1    Bridge  0.570522
+
+bridge82.jpg
+                    Label     Score
+0                   Water  0.974818
+1         Water resources  0.945435
+2                     Sky  0.944252
+3                Building  0.912945
+4  Atmospheric phenomenon  0.839857
+5                    Lake  0.817677
+6            Thoroughfare  0.802356
+7                  Bridge  0.781574
+8                    Road  0.773436
+9            Street light  0.748778
+   Object     Score
+0  Bridge  0.510615
+
+bridge96.jpg
+       Label     Score
+0      Water  0.949680
+1      Cloud  0.948204
+2        Sky  0.926306
+3   Midnight  0.773468
+4       City  0.762430
+5    Horizon  0.746089
+6     Bridge  0.717076
+7  Landscape  0.703786
+8       Road  0.696346
+9   Darkness  0.691302
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge80.jpg
+            Label     Score
+0        Building  0.935460
+1             Sky  0.922118
+2  Infrastructure  0.886840
+3           Grass  0.821754
+4          Travel  0.770418
+5       Landscape  0.750979
+6           Brick  0.706235
+7            Arch  0.696249
+8        Aqueduct  0.683416
+9       Brickwork  0.665008
+     Object     Score
+0    Person  0.862422
+1  Building  0.521518
+
+bridge94.jpg
+      Label     Score
+0  Building  0.911000
+1     Plant  0.877406
+2       Sky  0.843687
+3  Land lot  0.842229
+4     House  0.819371
+5      Tree  0.816984
+6     Grass  0.813462
+7      Wood  0.810743
+8   Asphalt  0.759049
+9    Facade  0.723015
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge43.jpg
+          Label     Score
+0           Sky  0.961851
+1          Tree  0.865165
+2       Asphalt  0.840915
+3         Plant  0.839460
+4      Building  0.817482
+5         Grass  0.803512
+6     Landscape  0.762992
+7  Urban design  0.739852
+8          City  0.734231
+9          Road  0.732821
+   Object     Score
+0  Animal  0.604396
+
+bridge57.jpg
+        Label     Score
+0       Water  0.978285
+1       Cloud  0.978245
+2         Sky  0.965607
+3        Lake  0.800515
+4     Horizon  0.767083
+5      Travel  0.741602
+6   Landscape  0.737196
+7  Skyscraper  0.725708
+8       Beach  0.725697
+9        Wind  0.724432
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge100.jpg
+             Label     Score
+0            Cloud  0.977808
+1              Sky  0.967388
+2            Water  0.951319
+3             Tree  0.837316
+4       Rural area  0.773801
+5             Road  0.769271
+6    Girder bridge  0.769130
+7           Bridge  0.765015
+8             Lake  0.741779
+9  Concrete bridge  0.727151
+   Object     Score
+0  Bridge  0.929385
+
+bridge56.jpg
+               Label     Score
+0                Sky  0.924577
+1              Water  0.913794
+2              Cloud  0.903898
+3                Fog  0.873541
+4             Travel  0.775963
+5               Road  0.753837
+6          Landscape  0.733426
+7  Natural landscape  0.732861
+8               Haze  0.732359
+9               Mist  0.704961
+   Object     Score
+0  Person  0.554316
+
+bridge42.jpg
+               Label     Score
+0              Water  0.981585
+1              Plant  0.921428
+2           Building  0.920575
+3               Tree  0.894979
+4  Natural landscape  0.869924
+5               Lake  0.850840
+6           Land lot  0.843136
+7              House  0.824047
+8        Watercourse  0.819943
+9              Grass  0.817259
+   Object     Score
+0  Bridge  0.554461
+
+bridge95.jpg
+                    Label     Score
+0                   Water  0.972194
+1                   Cloud  0.966194
+2                     Sky  0.957430
+3                Building  0.921313
+4          Infrastructure  0.888406
+5  Atmospheric phenomenon  0.835820
+6                   World  0.832432
+7            Urban design  0.825754
+8                 Horizon  0.799827
+9               Landscape  0.799438
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge81.jpg
+               Label     Score
+0              Water  0.979918
+1                Sky  0.970069
+2           Building  0.840402
+3  Natural landscape  0.833395
+4               Lake  0.815529
+5       Urban design  0.781205
+6             Travel  0.757264
+7            Horizon  0.753782
+8               City  0.743818
+9          Landscape  0.738864
+   Object     Score
+0  Animal  0.601448
+1   Plant  0.554021
+
+bridge19.jpg
+       Label     Score
+0        Sky  0.967519
+1   Building  0.942824
+2      Cloud  0.942685
+3      Plant  0.913931
+4       Tree  0.887220
+5      Water  0.780639
+6      Grass  0.729887
+7    Asphalt  0.715382
+8       City  0.709031
+9  Landscape  0.696009
+   Object     Score
+0  Bridge  0.644858
+
+bridge25.jpg
+               Label     Score
+0              Water  0.958037
+1  Natural landscape  0.848155
+2           Mountain  0.834705
+3           Building  0.789240
+4              Plant  0.775507
+5          Landscape  0.749647
+6                Art  0.730920
+7                Sky  0.690475
+8        Visual arts  0.612444
+9               Tree  0.607744
+   Object     Score
+0  Animal  0.590032
+
+bridge31.jpg
+               Label     Score
+0              Water  0.976046
+1                Sky  0.967701
+2           Building  0.932932
+3              Plant  0.916179
+4             Nature  0.903212
+5               Tree  0.881313
+6               Lake  0.843906
+7  Natural landscape  0.787891
+8          Landscape  0.781468
+9              House  0.746717
+   Object     Score
+0   Plant  0.733271
+1  Bridge  0.520594
+2   Plant  0.505644
+
+bridge30.jpg
+      Label     Score
+0     Water  0.953724
+1       Sky  0.948828
+2   Vehicle  0.939270
+3       Car  0.935293
+4  Building  0.927565
+5     Cloud  0.877390
+6     Plant  0.872783
+7      Tree  0.867799
+8  Mountain  0.846175
+9   Asphalt  0.825541
+  Object     Score
+0    Car  0.864108
+1    Car  0.788274
+2    Car  0.510477
+
+bridge24.jpg
+         Label     Score
+0        Water  0.975644
+1          Sky  0.972738
+2     Building  0.933562
+3       Travel  0.823748
+4      Vehicle  0.775594
+5      Leisure  0.759649
+6         City  0.757304
+7         Lake  0.742967
+8  Engineering  0.712369
+9        Event  0.693279
+   Object     Score
+0  Person  0.820928
+
+bridge18.jpg
+                          Label     Score
+0                         Water  0.979441
+1                           Sky  0.958794
+2               Water resources  0.948509
+3                         Plant  0.942793
+4             Natural landscape  0.868408
+5                          Tree  0.855968
+6  Fluvial landforms of streams  0.842019
+7                   Watercourse  0.822604
+8                   Arch bridge  0.804495
+9                          Lake  0.798028
+   Object     Score
+0  Bridge  0.906623
+
+bridge32.jpg
+                 Label     Score
+0                  Sky  0.944557
+1             Building  0.942860
+2   Composite material  0.759813
+3          Engineering  0.751512
+4                 City  0.739820
+5        Electric blue  0.737720
+6          Tower block  0.728497
+7              Pattern  0.719581
+8                 Font  0.713829
+9  Commercial building  0.710976
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge26.jpg
+                   Label     Score
+0                  Wheel  0.921036
+1                Vehicle  0.881521
+2                Leisure  0.735719
+3                   Road  0.673569
+4          Electric blue  0.669151
+5                   Wood  0.665283
+6  Nonbuilding structure  0.647346
+7             Recreation  0.646821
+8           Bicycle tire  0.644964
+9                 Bridge  0.642370
+   Object     Score
+0  Person  0.870031
+1  Bridge  0.809601
+
+bridge27.jpg
+                          Label     Score
+0                         Water  0.980512
+1                        Nature  0.903284
+2             Natural landscape  0.858533
+3  Fluvial landforms of streams  0.844251
+4                     Waterfall  0.829401
+5                   Watercourse  0.828435
+6                         Plant  0.825219
+7                          Tree  0.823095
+8         Geological phenomenon  0.765104
+9                     Landscape  0.754296
+   Object    Score
+0  Animal  0.73181
+
+bridge33.jpg
+           Label     Score
+0          Water  0.959310
+1         Shorts  0.788131
+2  Entertainment  0.777214
+3       Midnight  0.748448
+4           Font  0.747784
+5          Event  0.736499
+6            Fun  0.733090
+7       Darkness  0.723475
+8     Recreation  0.690388
+9        T-shirt  0.684582
+   Object     Score
+0  Person  0.833369
+1   Pants  0.640244
+2     Top  0.603369
+
+bridge37.jpg
+                Label     Score
+0                Tree  0.773793
+1             Fixture  0.773070
+2   Building material  0.758306
+3            Building  0.722460
+4  Composite material  0.720074
+5               Fence  0.695238
+6                Door  0.693328
+7                Wood  0.688510
+8                Roof  0.654970
+9   Outdoor structure  0.646842
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge23.jpg
+               Label     Score
+0              Cloud  0.971588
+1              Water  0.966680
+2                Sky  0.963411
+3              Fluid  0.864318
+4           Building  0.768003
+5               Snow  0.753128
+6          Landscape  0.743603
+7             Travel  0.743437
+8            Horizon  0.742696
+9  Natural landscape  0.741408
+   Object     Score
+0  Animal  0.747676
+
+bridge22.jpg
+                Label     Score
+0               Water  0.979626
+1                Boat  0.945217
+2          Watercraft  0.931876
+3             Vehicle  0.925049
+4  Naval architecture  0.875408
+5   Mode of transport  0.841823
+6              Liquid  0.836034
+7                Lake  0.828289
+8            Building  0.814360
+9         Real estate  0.782697
+  Object     Score
+0  Barge  0.516186
+
+bridge36.jpg
+                          Label     Score
+0                         Water  0.974762
+1                         Plant  0.896432
+2                          Tree  0.867545
+3             Natural landscape  0.862826
+4                         Grass  0.820350
+5                          Wood  0.805608
+6  Fluvial landforms of streams  0.800844
+7                          Lake  0.785679
+8                       Asphalt  0.745028
+9                           Art  0.729360
+   Object     Score
+0  Animal  0.710531
+
+bridge20.jpg
+             Label     Score
+0              Sky  0.957878
+1           Nature  0.899274
+2            Plant  0.890858
+3             Tree  0.865901
+4         Building  0.808974
+5            Cloud  0.768523
+6  Concrete bridge  0.723687
+7            Water  0.710577
+8             Road  0.702738
+9        Landscape  0.665816
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge34.jpg
+                          Label     Score
+0                         Water  0.980240
+1                        Nature  0.902801
+2  Fluvial landforms of streams  0.880547
+3                          Tree  0.859019
+4                         Plant  0.849890
+5             Natural landscape  0.844940
+6                   Watercourse  0.827102
+7                      Building  0.755592
+8                     Landscape  0.733584
+9                          Lake  0.717315
+   Object    Score
+0  Animal  0.63318
+
+bridge08.jpg
+                          Label     Score
+0                         Water  0.981233
+1                      Building  0.953701
+2                         Plant  0.934301
+3                Infrastructure  0.894914
+4                   Watercourse  0.819477
+5  Fluvial landforms of streams  0.765211
+6                          Arch  0.737053
+7                   Arch bridge  0.736185
+8                        Bridge  0.728812
+9                      Aqueduct  0.728559
+   Object     Score
+0  Bridge  0.891703
+
+bridge09.jpg
+          Label     Score
+0         Water  0.977543
+1      Building  0.847353
+2       Asphalt  0.828739
+3          Lake  0.762428
+4     Landscape  0.716226
+5  Road surface  0.710100
+6         Event  0.709312
+7  Urban design  0.707022
+8         Grass  0.698602
+9          Road  0.689597
+   Object     Score
+0  Animal  0.566007
+
+bridge35.jpg
+             Label     Score
+0            Water  0.959745
+1           Liquid  0.897407
+2  Automotive tire  0.876787
+3              Art  0.775520
+4             Font  0.748715
+5            Glass  0.723444
+6         Flooring  0.714872
+7              Rim  0.705818
+8            Metal  0.698241
+9            Event  0.686623
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+bridge21.jpg
+                    Label     Score
+0                   Water  0.958961
+1              Atmosphere  0.948181
+2                   Cloud  0.904700
+3                     Sky  0.885809
+4                    Grey  0.842413
+5  Atmospheric phenomenon  0.829646
+6                   Fence  0.825377
+7         Black-and-white  0.821308
+8                   Grass  0.779800
+9                    Font  0.777309
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+classroom59.jpg
+       Label     Score
+0  Furniture  0.932201
+1   Building  0.921411
+2       Wood  0.843202
+3      Table  0.825392
+4      Chair  0.823006
+5   Flooring  0.821057
+6   Hardwood  0.726684
+7      Event  0.719644
+8       Room  0.616414
+9     Facade  0.582668
+      Object     Score
+0  Furniture  0.729003
+1  Furniture  0.651547
+
+classroom71.jpg
+      Label     Score
+0  Building  0.951972
+1     Table  0.866236
+2     House  0.797591
+3     Event  0.727896
+4   Ceiling  0.674480
+5      Room  0.621977
+6      City  0.591381
+7   Sharing  0.565630
+8     Metal  0.551811
+      Object     Score
+0     Person  0.697671
+1   Clothing  0.616558
+2      Chair  0.563173
+3     Person  0.525122
+4  Furniture  0.523404
+5     Person  0.502026
+
+classroom65.jpg
+                Label     Score
+0            Building  0.955242
+1             Fixture  0.860599
+2             Ceiling  0.729869
+3  Composite material  0.726274
+4               Event  0.705578
+5         Engineering  0.687670
+6                Room  0.594046
+7                City  0.544414
+8           Transport  0.526606
+9            Flooring  0.526223
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+classroom64.jpg
+                  Label     Score
+0              Building  0.933313
+1               Sharing  0.882131
+2                 Table  0.864316
+3                 Chair  0.742753
+4                 Event  0.741634
+5               Toddler  0.738755
+6                 Class  0.714493
+7  Academic institution  0.697388
+8                 Crowd  0.697092
+9                  Room  0.679243
+     Object     Score
+0    Person  0.900170
+1    Person  0.897465
+2    Person  0.895746
+3    Person  0.879825
+4    Person  0.848895
+5  Clothing  0.796918
+6  Clothing  0.785458
+7  Clothing  0.766284
+8  Clothing  0.761257
+9  Clothing  0.759149
+
+classroom70.jpg
+       Label     Score
+0      Table  0.959856
+1   Building  0.949689
+2  Furniture  0.931828
+3     Window  0.927456
+4       Wood  0.864333
+5      Floor  0.818049
+6   Flooring  0.802239
+7   Hardwood  0.789448
+8    Ceiling  0.732696
+9    Fixture  0.725096
+  Object     Score
+0  Table  0.806251
+1  Table  0.618756
+
+classroom58.jpg
+              Label     Score
+0     Output device  0.902674
+1           Gesture  0.852605
+2              Line  0.816470
+3             Table  0.809238
+4              Desk  0.806860
+5         Tableware  0.798505
+6       Engineering  0.784524
+7          Computer  0.776836
+8  Office equipment  0.771660
+9   Office supplies  0.752245
+   Object     Score
+0  Person  0.726992
+
+classroom66.jpg
+           Label     Score
+0       Building  0.948963
+1         Window  0.858585
+2          House  0.823765
+3        Sharing  0.766059
+4        Leisure  0.760051
+5          Crowd  0.743012
+6  Entertainment  0.742915
+7          Event  0.732606
+8            Art  0.730500
+9          Thigh  0.661719
+     Object     Score
+0    Person  0.825601
+1    Person  0.786073
+2    Person  0.745211
+3    Person  0.744652
+4    Person  0.734467
+5    Person  0.726471
+6  Clothing  0.707217
+7    Person  0.652862
+8  Clothing  0.644032
+9  Clothing  0.606131
+
+classroom72.jpg
+         Label     Score
+0     Building  0.950295
+1    Furniture  0.930658
+2        Table  0.803373
+3     Shelving  0.745151
+4  Publication  0.677768
+5         Room  0.660645
+6        Event  0.642714
+7         Book  0.626176
+8        Shelf  0.612687
+9      Ceiling  0.561935
+       Object     Score
+0       Table  0.699060
+1  Whiteboard  0.657633
+2       Table  0.646237
+3       Table  0.635737
+4  Whiteboard  0.547223
+
+classroom99.jpg
+        Label     Score
+0    Building  0.868515
+1     Leisure  0.823236
+2  Adaptation  0.793089
+3     Sharing  0.744879
+4     Toddler  0.739475
+5         Fun  0.709594
+6       Event  0.705945
+7        Room  0.695371
+8       Crowd  0.690360
+9         Art  0.679771
+     Object     Score
+0    Person  0.872005
+1    Person  0.864417
+2    Person  0.851351
+3    Person  0.851095
+4    Person  0.806619
+5  Clothing  0.732861
+6  Clothing  0.630380
+7  Clothing  0.625124
+8    Person  0.619056
+9    Person  0.579958
+
+classroom98.jpg
+            Label     Score
+0       Rectangle  0.872283
+1             Art  0.712945
+2            Font  0.692931
+3  Display device  0.640615
+4         Magenta  0.638128
+5     Visual arts  0.631241
+6         Pattern  0.617741
+7         Machine  0.612747
+8      Recreation  0.604369
+9     Advertising  0.561592
+      Object     Score
+0  Furniture  0.700497
+
+classroom73.jpg
+            Label     Score
+0           Table  0.924297
+1         Cuisine  0.760033
+2        Snapshot  0.742847
+3         Sharing  0.692425
+4            Desk  0.656923
+5            Room  0.637200
+6         Cooking  0.635415
+7       Tableware  0.622221
+8  Storage basket  0.615609
+9        Knit cap  0.587166
+      Object     Score
+0     Person  0.878024
+1        Hat  0.820189
+2  Table top  0.684599
+3     Person  0.589071
+4       Food  0.588570
+
+classroom67.jpg
+     Label     Score
+0    Jeans  0.976883
+1  Sharing  0.854891
+2      Fun  0.745025
+3    Happy  0.737833
+4    Event  0.729097
+5      Hat  0.726287
+6  Leisure  0.725129
+7     Baby  0.708204
+8  Sitting  0.668901
+9  Toddler  0.663597
+     Object     Score
+0    Person  0.850620
+1     Jeans  0.801290
+2    Person  0.796122
+3    Person  0.779460
+4     Jeans  0.777023
+5    Person  0.754846
+6    Person  0.731466
+7  Clothing  0.714746
+8    Person  0.607910
+9  Clothing  0.555456
+
+classroom63.jpg
+             Label     Score
+0         Building  0.945221
+1            Table  0.943442
+2        Furniture  0.930101
+3            Chair  0.872288
+4  Interior design  0.852897
+5           Window  0.847918
+6            Floor  0.815069
+7      Real estate  0.786881
+8         Flooring  0.769470
+9            Event  0.732877
+      Object     Score
+0  Furniture  0.609325
+
+classroom77.jpg
+           Label     Score
+0        Leisure  0.808072
+1            Art  0.801613
+2          Chair  0.770433
+3  Entertainment  0.746860
+4          Event  0.743013
+5          Crowd  0.707488
+6        Sharing  0.683765
+7     Recreation  0.674287
+8            Fun  0.632395
+9   Kindergarten  0.631046
+   Object     Score
+0  Person  0.643746
+1  Person  0.581503
+2  Person  0.569418
+3  Person  0.566129
+4   Chair  0.517925
+5  Person  0.510664
+
+classroom88.jpg
+        Label     Score
+0       Table  0.955159
+1    Building  0.926597
+2        Desk  0.845910
+3     Sharing  0.819679
+4       Chair  0.763207
+5     Leisure  0.742367
+6       Event  0.722802
+7  Recreation  0.678297
+8       Smile  0.675932
+9     T-shirt  0.668956
+     Object     Score
+0    Person  0.891749
+1    Person  0.875379
+2    Person  0.871897
+3    Person  0.828279
+4  Clothing  0.746847
+5    Person  0.732863
+6    Person  0.711842
+7  Clothing  0.696428
+8  Clothing  0.688714
+9  Clothing  0.659061
+
+classroom89.jpg
+          Label     Score
+0       Sharing  0.838273
+1         Chair  0.763485
+2         Event  0.730870
+3       Sitting  0.684436
+4       Service  0.637149
+5   Engineering  0.625840
+6          Room  0.594471
+7       T-shirt  0.560432
+8  Organization  0.503291
+           Object     Score
+0          Person  0.896597
+1          Person  0.872447
+2          Person  0.826237
+3        Clothing  0.687352
+4        Clothing  0.639161
+5           Chair  0.622002
+6        Clothing  0.616552
+7          Person  0.602391
+8        Clothing  0.598982
+9  Luggage & bags  0.588702
+
+classroom76.jpg
+          Label     Score
+0         Table  0.874732
+1       Sharing  0.856057
+2         Event  0.733656
+3     Tableware  0.719279
+4          Font  0.640566
+5          Room  0.608769
+6  Conversation  0.570992
+7       Leisure  0.563026
+8         Thumb  0.551257
+9    Recreation  0.550057
+     Object     Score
+0    Person  0.871282
+1    Person  0.856458
+2    Person  0.824863
+3  Clothing  0.819850
+4    Person  0.816772
+5  Clothing  0.791962
+6  Clothing  0.770808
+7  Clothing  0.765834
+8  Clothing  0.655947
+
+classroom62.jpg
+             Label     Score
+0         Building  0.944964
+1  Interior design  0.844203
+2            Table  0.803434
+3            Event  0.734070
+4          Ceiling  0.693733
+5            House  0.635076
+6             Room  0.617436
+7    Entertainment  0.589533
+8         Flooring  0.582898
+9             City  0.568266
+     Object     Score
+0    Person  0.736674
+1    Person  0.667762
+2    Person  0.610719
+3    Person  0.579259
+4  Clothing  0.501372
+
+classroom74.jpg
+             Label     Score
+0            Table  0.963720
+1         Building  0.958101
+2        Furniture  0.948430
+3            Chair  0.895045
+4  Interior design  0.858492
+5            House  0.837044
+6         Flooring  0.771318
+7            Event  0.724974
+8          Ceiling  0.715658
+9             Room  0.698618
+       Object     Score
+0  Whiteboard  0.874554
+1   Furniture  0.707676
+2   Furniture  0.707449
+3       Chair  0.635737
+
+classroom60.jpg
+             Label     Score
+0         Building  0.954952
+1            Table  0.944252
+2         Property  0.943203
+3        Furniture  0.936913
+4  Interior design  0.847187
+5           Window  0.812876
+6         Flooring  0.781974
+7            House  0.769476
+8             Room  0.670772
+9          Ceiling  0.668961
+  Object     Score
+0  Table  0.765946
+1  Table  0.731576
+2  Table  0.677227
+
+classroom48.jpg
+             Label     Score
+0         Building  0.959973
+1  Interior design  0.846299
+2            Chair  0.757973
+3            Event  0.732047
+4          Ceiling  0.694404
+5            Class  0.670203
+6          Sharing  0.648746
+7            Table  0.640998
+8             Room  0.635787
+9             City  0.632558
+       Object     Score
+0      Person  0.853049
+1      Person  0.851525
+2  Whiteboard  0.816555
+3      Person  0.769140
+4      Person  0.757707
+5      Person  0.744544
+6      Person  0.740964
+7      Person  0.687162
+8      Person  0.632548
+9      Person  0.603455
+
+classroom49.jpg
+               Label     Score
+0           Building  0.957593
+1              Table  0.914689
+2            Fixture  0.773919
+3             Window  0.748593
+4              Event  0.726638
+5  Building material  0.623198
+6            Ceiling  0.611204
+7              House  0.600126
+8        Engineering  0.598483
+9               Room  0.594343
+      Object     Score
+0      Table  0.785348
+1  Furniture  0.619545
+2  Furniture  0.549171
+3     Person  0.540896
+4  Furniture  0.515803
+
+classroom61.jpg
+             Label     Score
+0            Table  0.943681
+1         Property  0.942576
+2         Building  0.894475
+3         Lighting  0.866006
+4          Fixture  0.852293
+5  Interior design  0.851475
+6         Flooring  0.749411
+7            Event  0.728530
+8          Ceiling  0.721571
+9        Rectangle  0.684219
+      Object     Score
+0      Chair  0.726837
+1      Chair  0.720261
+2      Chair  0.693466
+3     Window  0.692752
+4  Furniture  0.678380
+5      Chair  0.661916
+
+classroom75.jpg
+            Label     Score
+0         Sharing  0.884031
+1             Ear  0.856080
+2             Fun  0.756968
+3         Toddler  0.726774
+4           Thumb  0.725642
+5           Event  0.724985
+6           Child  0.665433
+7            Room  0.659257
+8            Baby  0.645574
+9  School uniform  0.607885
+   Object     Score
+0  Person  0.851010
+1  Person  0.821113
+2  Person  0.802653
+
+classroom12.jpg
+             Label     Score
+0            Table  0.955523
+1         Building  0.950682
+2        Furniture  0.941844
+3           Window  0.902494
+4  Interior design  0.849280
+5            Floor  0.831330
+6         Flooring  0.825047
+7             Wood  0.818423
+8       Blackboard  0.790568
+9         Hardwood  0.777665
+      Object     Score
+0  Furniture  0.699058
+1      Chair  0.516294
+
+classroom06.jpg
+               Label     Score
+0           Building  0.934566
+1               Wood  0.806836
+2           Flooring  0.803910
+3            Fixture  0.745514
+4              Event  0.718511
+5            Ceiling  0.718318
+6               Roof  0.670403
+7             Facade  0.668722
+8              Table  0.663485
+9  Building material  0.647713
+      Object     Score
+0  Furniture  0.720722
+1  Table top  0.513858
+
+classroom07.jpg
+         Label     Score
+0     Building  0.957741
+1        Table  0.872336
+2         Wall  0.809022
+3          Art  0.789172
+4  Real estate  0.783918
+5        Event  0.719893
+6     Flooring  0.715582
+7        House  0.704105
+8        Clock  0.700019
+9         Room  0.694776
+      Object     Score
+0  Furniture  0.686288
+
+classroom13.jpg
+             Label     Score
+0         Building  0.964792
+1           Window  0.934945
+2          Fixture  0.900311
+3  Interior design  0.846288
+4         Flooring  0.797513
+5      Real estate  0.784191
+6            Event  0.741843
+7        Rectangle  0.707403
+8          Ceiling  0.689582
+9             Room  0.686658
+      Object     Score
+0     Window  0.724882
+1  Furniture  0.629961
+
+classroom39.jpg
+             Label     Score
+0         Building  0.947080
+1           Window  0.852541
+2  Interior design  0.846395
+3            House  0.830563
+4    Entertainment  0.824198
+5             Door  0.752951
+6            Event  0.735334
+7          Ceiling  0.729863
+8            Chair  0.728920
+9   Display device  0.724036
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+classroom05.jpg
+       Label     Score
+0   Building  0.944464
+1  Furniture  0.930537
+2      Table  0.890344
+3     Window  0.876299
+4      House  0.795478
+5   Flooring  0.773152
+6       Wood  0.768286
+7    Fixture  0.689758
+8   Hardwood  0.687032
+9       Room  0.665333
+      Object     Score
+0  Furniture  0.736986
+1  Furniture  0.651024
+2  Furniture  0.510815
+
+classroom11.jpg
+         Label     Score
+0        Table  0.963105
+1     Building  0.959490
+2    Furniture  0.943664
+3      Fixture  0.863075
+4        House  0.830525
+5       Window  0.741214
+6     Flooring  0.722880
+7        Event  0.718214
+8      Ceiling  0.709934
+9  Engineering  0.661896
+       Object     Score
+0       Table  0.813905
+1   Table top  0.789858
+2       Table  0.619148
+3  Whiteboard  0.616687
+
+classroom10.jpg
+             Label     Score
+0         Building  0.951395
+1            Table  0.938189
+2        Furniture  0.934668
+3  Interior design  0.850020
+4           Window  0.812112
+5            House  0.789109
+6         Flooring  0.719678
+7             Room  0.678764
+8            Event  0.667235
+9          Ceiling  0.626829
+                        Object     Score
+0  Kitchen & dining room table  0.704000
+1                        Chair  0.643476
+2                    Furniture  0.519600
+3                        Table  0.505754
+
+classroom04.jpg
+             Label     Score
+0         Building  0.959678
+1            Table  0.952467
+2         Property  0.941964
+3        Furniture  0.935136
+4           Window  0.927157
+5  Interior design  0.865943
+6             Wood  0.845055
+7          Fixture  0.836609
+8         Flooring  0.816324
+9             Wall  0.809629
+                        Object     Score
+0                        Chair  0.814360
+1                        Chair  0.812598
+2                        Table  0.796188
+3                        Chair  0.785686
+4                        Table  0.761218
+5                        Chair  0.748883
+6                        Table  0.746769
+7                        Table  0.679293
+8  Kitchen & dining room table  0.639993
+9                        Table  0.543308
+
+classroom38.jpg
+             Label     Score
+0         Building  0.870960
+1        Tableware  0.853928
+2  Interior design  0.850037
+3          Sharing  0.783839
+4            House  0.767398
+5           Tartan  0.764537
+6              Art  0.757243
+7          Leisure  0.744030
+8         Snapshot  0.742847
+9            Thigh  0.726126
+   Object     Score
+0  Person  0.681158
+
+classroom14.jpg
+         Label     Score
+0     Building  0.955166
+1     Property  0.942442
+2        Table  0.939046
+3  Real estate  0.789659
+4         Room  0.694358
+5   Recreation  0.691330
+6        Event  0.668089
+7     Flooring  0.650850
+8      Ceiling  0.623612
+9      Vehicle  0.586726
+                        Object     Score
+0  Kitchen & dining room table  0.703355
+
+classroom28.jpg
+       Label     Score
+0      Table  0.962127
+1  Furniture  0.949250
+2   Property  0.942599
+3   Building  0.909711
+4       Wood  0.831307
+5     Window  0.823761
+6      Event  0.711245
+7   Hardwood  0.677431
+8   Flooring  0.654863
+9      Class  0.644372
+      Object     Score
+0      Table  0.746369
+1  Furniture  0.593866
+
+classroom29.jpg
+      Label     Score
+0  Building  0.956224
+1     Light  0.911398
+2     Event  0.700109
+3   Fixture  0.662573
+4      Room  0.638745
+5     Shelf  0.631983
+6   Ceiling  0.603481
+7  Shelving  0.583360
+8   Science  0.571187
+9   Plastic  0.530871
+          Object     Score
+0      Table top  0.750745
+1      Furniture  0.626937
+2  Light fixture  0.513014
+
+classroom15.jpg
+         Label     Score
+0        Table  0.967617
+1    Furniture  0.949360
+2     Building  0.935763
+3  Real estate  0.782782
+4     Flooring  0.691790
+5         Wood  0.684620
+6        Event  0.679504
+7         Room  0.642641
+8        Class  0.639869
+9     Hardwood  0.590812
+  Object     Score
+0  Table  0.890631
+1  Table  0.646666
+2  Table  0.633190
+3  Table  0.609755
+4  Chair  0.572489
+
+classroom01.jpg
+             Label     Score
+0         Building  0.958131
+1            Table  0.955233
+2        Furniture  0.934571
+3            Water  0.875951
+4  Interior design  0.862639
+5          Fixture  0.849422
+6         Flooring  0.821025
+7           Window  0.819062
+8            Floor  0.812369
+9      Real estate  0.790155
+      Object     Score
+0  Furniture  0.599759
+1     Window  0.541416
+
+classroom17.jpg
+         Label     Score
+0     Building  0.953909
+1        Table  0.952539
+2       Window  0.866591
+3      Fixture  0.828619
+4         Wall  0.814168
+5  Real estate  0.796985
+6     Flooring  0.784470
+7      Ceiling  0.743065
+8        Event  0.736687
+9        House  0.689574
+       Object     Score
+0  Whiteboard  0.734256
+1   Furniture  0.667724
+2   Furniture  0.651406
+
+classroom03.jpg
+             Label     Score
+0         Building  0.954075
+1         Property  0.942269
+2        Furniture  0.934121
+3             Wood  0.872641
+4  Interior design  0.858346
+5            Table  0.835998
+6         Flooring  0.823542
+7            Floor  0.812207
+8         Hardwood  0.787245
+9      Real estate  0.786951
+      Object     Score
+0      Table  0.753703
+1  Furniture  0.627786
+
+classroom02.jpg
+        Label     Score
+0       Table  0.954795
+1   Furniture  0.945477
+2    Building  0.944796
+3    Property  0.943888
+4      Window  0.929630
+5     Fixture  0.863792
+6        Wood  0.724559
+7    Hardwood  0.713979
+8  Wood stain  0.708688
+9       Event  0.702448
+                        Object     Score
+0  Kitchen & dining room table  0.683598
+1                    Furniture  0.655970
+2                    Furniture  0.651386
+
+classroom16.jpg
+         Label     Score
+0     Building  0.933133
+1        Event  0.732777
+2      Fixture  0.701383
+3        Table  0.683414
+4     Flooring  0.661390
+5  Engineering  0.655874
+6         Room  0.646125
+7        Class  0.626812
+8     Hardwood  0.593924
+9      Science  0.587019
+      Object     Score
+0  Furniture  0.763915
+
+classroom33.jpg
+             Label     Score
+0         Building  0.955088
+1        Furniture  0.943288
+2           Window  0.938064
+3            Table  0.916779
+4          Product  0.907704
+5          Fixture  0.877064
+6            House  0.876582
+7  Interior design  0.846650
+8            Floor  0.818220
+9         Flooring  0.800527
+                        Object     Score
+0                        Chair  0.805548
+1                       Window  0.771864
+2                   Television  0.752568
+3  Kitchen & dining room table  0.697694
+
+classroom27.jpg
+             Label     Score
+0         Building  0.956662
+1            Table  0.932444
+2        Furniture  0.929219
+3          Fixture  0.870299
+4  Interior design  0.851911
+5         Flooring  0.789819
+6            Event  0.697717
+7             Room  0.654614
+8          Ceiling  0.651633
+9      Engineering  0.593446
+      Object     Score
+0  Table top  0.885716
+1  Furniture  0.631629
+2      Table  0.601882
+3  Table top  0.554296
+
+classroom26.jpg
+       Label     Score
+0   Building  0.953035
+1      Table  0.938182
+2  Furniture  0.933485
+3       Wood  0.852421
+4      House  0.850484
+5   Flooring  0.830858
+6      Floor  0.827541
+7   Hardwood  0.755573
+8     Window  0.707432
+9       Roof  0.671026
+      Object     Score
+0  Furniture  0.690706
+1  Table top  0.607565
+
+classroom32.jpg
+      Label     Score
+0  Building  0.938163
+1     Table  0.908614
+2     House  0.828269
+3   Sharing  0.819620
+4     Chair  0.803197
+5   Leisure  0.764295
+6     Event  0.730880
+7      Room  0.629726
+8       Fun  0.603507
+9     Crowd  0.580877
+     Object     Score
+0    Person  0.866879
+1  Clothing  0.815133
+2    Person  0.789524
+3  Clothing  0.783691
+4    Person  0.768821
+5  Clothing  0.747527
+6  Clothing  0.727629
+7    Person  0.706981
+8  Clothing  0.688647
+9  Clothing  0.679910
+
+classroom18.jpg
+            Label     Score
+0        Building  0.957398
+1           Table  0.942282
+2           Floor  0.812775
+3        Flooring  0.804218
+4         Fixture  0.794200
+5           House  0.765219
+6          Window  0.761931
+7         Ceiling  0.749092
+8           Event  0.699114
+9  Display device  0.618789
+       Object     Score
+0       Table  0.732951
+1  Whiteboard  0.675284
+
+classroom24.jpg
+         Label     Score
+0        Table  0.956309
+1     Building  0.955056
+2    Furniture  0.938810
+3  Real estate  0.788421
+4        Event  0.712503
+5      Fixture  0.677368
+6         Room  0.628269
+7     Flooring  0.562524
+8        House  0.561182
+9  Publication  0.555237
+      Object     Score
+0      Table  0.797856
+1  Furniture  0.585241
+
+classroom30.jpg
+         Label     Score
+0     Building  0.919183
+1        Water  0.805289
+2        Event  0.725162
+3        Metal  0.640207
+4         Room  0.610650
+5  Engineering  0.603012
+6      Science  0.560195
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+classroom31.jpg
+             Label     Score
+0         Building  0.961500
+1            Table  0.942944
+2           Window  0.866380
+3  Interior design  0.853963
+4      Real estate  0.794611
+5            House  0.751487
+6          Ceiling  0.749069
+7         Flooring  0.733259
+8            Event  0.730233
+9            Clock  0.712319
+       Object     Score
+0  Television  0.955441
+1   Furniture  0.698146
+2       Table  0.657743
+
+classroom25.jpg
+             Label     Score
+0         Building  0.951296
+1         Property  0.943521
+2            Shelf  0.895731
+3  Interior design  0.849108
+4         Shelving  0.835528
+5      Real estate  0.786180
+6            House  0.733739
+7           Retail  0.723833
+8          Leisure  0.708030
+9          Ceiling  0.706322
+      Object   Score
+0  Furniture  0.7668
+
+classroom19.jpg
+             Label     Score
+0         Building  0.957664
+1            Table  0.947018
+2         Property  0.945231
+3          Product  0.908035
+4  Interior design  0.857318
+5           Yellow  0.844826
+6            Floor  0.807907
+7      Real estate  0.787268
+8            House  0.747333
+9         Snapshot  0.742847
+      Object     Score
+0      Table  0.593216
+1  Furniture  0.563814
+
+classroom21.jpg
+                  Label     Score
+0              Building  0.959920
+1              Property  0.944951
+2                 Table  0.907154
+3       Interior design  0.883059
+4                 Chair  0.830726
+5              Snapshot  0.742847
+6                 Event  0.737787
+7                 Class  0.718740
+8  Academic institution  0.705753
+9               Fixture  0.693062
+      Object     Score
+0  Furniture  0.768754
+1      Chair  0.727965
+2  Furniture  0.610384
+
+classroom35.jpg
+            Label     Score
+0           Table  0.963847
+1        Building  0.960044
+2       Furniture  0.942306
+3           House  0.860107
+4     Real estate  0.787086
+5            Desk  0.782808
+6          Window  0.769531
+7  Display device  0.716888
+8           Event  0.699238
+9         Ceiling  0.663444
+                        Object     Score
+0  Kitchen & dining room table  0.813995
+1                Light fixture  0.602672
+2                        Chair  0.511793
+3                        Chair  0.501486
+
+classroom09.jpg
+      Label     Score
+0  Building  0.957839
+1  Flooring  0.753186
+2   Ceiling  0.740759
+3     Event  0.711184
+4   Fixture  0.689819
+5       Art  0.647089
+6     House  0.635748
+7  Hardwood  0.614682
+8      Room  0.610214
+9     Class  0.546999
+      Object     Score
+0  Furniture  0.724977
+1  Furniture  0.570249
+
+classroom08.jpg
+         Label     Score
+0     Building  0.926180
+1        Table  0.916938
+2      Sharing  0.816128
+3      Leisure  0.742419
+4        Event  0.681382
+5        Class  0.664955
+6         Room  0.653986
+7  Engineering  0.619430
+8   Recreation  0.604198
+9         Food  0.589624
+     Object     Score
+0    Person  0.855507
+1    Person  0.813177
+2    Person  0.792015
+3    Person  0.776982
+4    Person  0.741875
+5    Person  0.733453
+6  Clothing  0.701125
+7    Person  0.696947
+8    Person  0.690039
+9  Clothing  0.685582
+
+classroom34.jpg
+      Label     Score
+0  Building  0.943782
+1     Table  0.749711
+2     Event  0.730407
+3   Ceiling  0.693914
+4       Art  0.663809
+5      Room  0.661568
+6   Sharing  0.544708
+7     Crowd  0.543045
+8  Flooring  0.531388
+9      City  0.530832
+          Object     Score
+0         Person  0.797535
+1         Person  0.630117
+2  Light fixture  0.612061
+3          Table  0.608798
+4         Person  0.522724
+5         Person  0.509363
+6  Light fixture  0.506735
+
+classroom20.jpg
+         Label     Score
+0        Table  0.957890
+1    Furniture  0.945419
+2     Building  0.940257
+3        Shelf  0.873232
+4     Bookcase  0.833877
+5     Shelving  0.786679
+6  Publication  0.742412
+7          Art  0.703584
+8        Event  0.667692
+9         Room  0.633392
+      Object     Score
+0  Furniture  0.673330
+1      Chair  0.605973
+2     Person  0.561681
+
+classroom100.jpg
+      Label     Score
+0  Building  0.946915
+1     House  0.768762
+2     Event  0.722839
+3     Table  0.712875
+4      Room  0.632729
+5     Crowd  0.568858
+6   Ceiling  0.559206
+7      Wood  0.551676
+8       Art  0.548140
+9   Asphalt  0.543071
+     Object     Score
+0    Person  0.740876
+1    Person  0.736548
+2    Person  0.735784
+3    Person  0.729155
+4    Person  0.600458
+5  Clothing  0.580923
+6  Clothing  0.563727
+7    Person  0.554007
+8    Person  0.507538
+
+classroom36.jpg
+             Label     Score
+0            Smile  0.964069
+1         Building  0.869943
+2  Interior design  0.847044
+3          Sharing  0.837834
+4        Community  0.816549
+5           Window  0.799265
+6            Thigh  0.798791
+7            Event  0.737248
+8      Formal wear  0.687124
+9          Leisure  0.681759
+     Object     Score
+0    Person  0.862983
+1    Person  0.840791
+2    Person  0.826560
+3  Clothing  0.726772
+4  Clothing  0.722683
+5    Person  0.714533
+6  Clothing  0.714295
+7    Person  0.706735
+8  Clothing  0.686643
+9  Clothing  0.677756
+
+classroom22.jpg
+         Label     Score
+0     Building  0.957491
+1       Window  0.799285
+2        Event  0.714885
+3      Fixture  0.687682
+4      Ceiling  0.665401
+5         City  0.637202
+6     Flooring  0.625313
+7  Engineering  0.616788
+8        Metal  0.577854
+9        Class  0.554877
+  Object     Score
+0  Chair  0.659875
+
+classroom23.jpg
+       Label     Score
+0      Table  0.951928
+1   Property  0.943587
+2  Furniture  0.941289
+3   Building  0.910062
+4       Wood  0.869006
+5        Art  0.785517
+6   Flooring  0.779041
+7  Rectangle  0.760870
+8   Hardwood  0.757026
+9    Plywood  0.695630
+      Object     Score
+0  Furniture  0.713419
+
+classroom37.jpg
+      Label     Score
+0  Building  0.932598
+1      Wood  0.785877
+2     Event  0.706819
+3      City  0.697518
+4     Metal  0.670188
+5   Sharing  0.613559
+6  Flooring  0.607330
+7    Facade  0.570289
+8      Room  0.560655
+9     House  0.543009
+     Object     Score
+0    Person  0.788006
+1    Person  0.700716
+2    Person  0.651992
+3    Person  0.639157
+4    Person  0.592237
+5  Clothing  0.517853
+6  Clothing  0.514893
+7  Clothing  0.502089
+
+classroom78.jpg
+               Label     Score
+0           Building  0.942464
+1              House  0.748725
+2               Wood  0.747792
+3              Event  0.730201
+4            Fixture  0.727101
+5           Flooring  0.654135
+6           Hardwood  0.636868
+7             Window  0.605032
+8               Room  0.604500
+9  Building material  0.572622
+   Object     Score
+0  Person  0.650440
+1  Window  0.566636
+2  Person  0.532459
+
+classroom50.jpg
+       Label     Score
+0      Table  0.951029
+1   Building  0.896276
+2    Sharing  0.858117
+3  Tableware  0.786585
+4       Desk  0.767945
+5    Leisure  0.753097
+6   Snapshot  0.742848
+7     Bottle  0.741175
+8      Event  0.738915
+9       Food  0.716132
+     Object     Score
+0    Person  0.874073
+1    Person  0.869253
+2    Person  0.863076
+3    Person  0.858612
+4    Person  0.858191
+5    Person  0.851070
+6    Person  0.833427
+7    Person  0.824520
+8    Person  0.788964
+9  Clothing  0.730010
+
+classroom44.jpg
+                  Label     Score
+0                 Table  0.927618
+1              Building  0.913547
+2             Community  0.808647
+3               Sharing  0.793333
+4               Leisure  0.767979
+5                 Event  0.735662
+6                 Class  0.675889
+7                  Room  0.645104
+8            Recreation  0.639010
+9  Academic institution  0.546787
+     Object     Score
+0    Person  0.851050
+1    Person  0.818834
+2    Person  0.817806
+3    Person  0.791906
+4    Person  0.790750
+5    Person  0.787561
+6    Person  0.786935
+7    Person  0.770543
+8    Person  0.763197
+9  Clothing  0.710239
+
+classroom93.jpg
+          Label     Score
+0      Building  0.809189
+1       Leisure  0.797451
+2         Thigh  0.746461
+3         Event  0.729492
+4         Grass  0.728904
+5           Fun  0.723124
+6    Recreation  0.710362
+7  Kindergarten  0.688166
+8      Flooring  0.687257
+9          Room  0.683363
+   Object     Score
+0  Person  0.897582
+1  Person  0.874137
+2  Person  0.823016
+3  Person  0.802984
+4  Person  0.718626
+5  Person  0.637532
+6  Person  0.609113
+
+classroom87.jpg
+             Label     Score
+0    Entertainment  0.803846
+1         Building  0.749548
+2            Event  0.746097
+3            Music  0.737371
+4          Curtain  0.702824
+5            Crowd  0.665158
+6             Room  0.653666
+7  Public speaking  0.633840
+8     Public event  0.599999
+9     Presentation  0.586373
+     Object     Score
+0    Person  0.881851
+1    Person  0.837578
+2    Person  0.811428
+3    Person  0.774998
+4    Person  0.755093
+5    Person  0.725496
+6    Person  0.704613
+7  Clothing  0.703592
+8  Clothing  0.702137
+9    Person  0.684341
+
+classroom86.jpg
+                Label     Score
+0            Building  0.926823
+1             Fixture  0.877993
+2               Table  0.783143
+3             Ceiling  0.750337
+4               Event  0.677657
+5              Window  0.664530
+6  Composite material  0.659631
+7                Room  0.638064
+8            Flooring  0.637897
+9                City  0.633956
+  Object     Score
+0  Table  0.673231
+
+classroom92.jpg
+      Label     Score
+0  Building  0.957154
+1     Light  0.912232
+2  Lighting  0.863225
+3      Wood  0.838218
+4    Window  0.806566
+5  Flooring  0.794297
+6  Hardwood  0.737492
+7     Event  0.724772
+8     Table  0.694850
+9     House  0.686479
+       Object     Score
+0  Whiteboard  0.880913
+1   Furniture  0.669927
+2   Table top  0.640535
+3  Whiteboard  0.615539
+4   Furniture  0.552857
+
+classroom45.jpg
+       Label     Score
+0   Building  0.905707
+1       Wood  0.852866
+2    Sharing  0.726693
+3      Event  0.682034
+4   Hardwood  0.671671
+5       Room  0.666303
+6   Flooring  0.663721
+7  Brickwork  0.599957
+8      Brick  0.568345
+9     Artist  0.550582
+     Object     Score
+0    Person  0.864931
+1    Person  0.781775
+2    Person  0.645045
+3     Table  0.550352
+4  Clothing  0.533957
+
+classroom51.jpg
+             Label     Score
+0         Property  0.943040
+1         Building  0.941681
+2            Table  0.932663
+3         Lighting  0.865015
+4  Interior design  0.855821
+5           Window  0.835836
+6        Community  0.809132
+7            House  0.781692
+8            Event  0.733667
+9             Room  0.686057
+       Object     Score
+0  Television  0.939295
+1      Person  0.888643
+2    Clothing  0.651949
+3      Person  0.612603
+4      Person  0.519185
+
+classroom79.jpg
+         Label     Score
+0   Photograph  0.941615
+1       Muscle  0.920491
+2        Mouth  0.919550
+3        Organ  0.906018
+4        Human  0.895383
+5      Sharing  0.891985
+6        Table  0.854059
+7  Interaction  0.837229
+8    Community  0.831024
+9          Fun  0.803491
+     Object     Score
+0    Person  0.870409
+1  Clothing  0.830138
+2    Person  0.765979
+3  Clothing  0.723799
+4    Person  0.723203
+5    Person  0.708950
+6    Person  0.697684
+7  Clothing  0.571847
+8    Person  0.554138
+
+classroom47.jpg
+           Label     Score
+0       Building  0.921640
+1        Leisure  0.755414
+2            Art  0.717327
+3          Event  0.698069
+4  Swimming pool  0.634250
+5     Recreation  0.630097
+6           Roof  0.600337
+7   Urban design  0.558807
+8           Room  0.550103
+9           City  0.549836
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+classroom53.jpg
+                Label     Score
+0            Building  0.951405
+1             Fixture  0.886229
+2              Window  0.826176
+3               House  0.798331
+4            Flooring  0.762488
+5   Building material  0.762137
+6               Event  0.718356
+7  Composite material  0.713747
+8             Ceiling  0.703755
+9                Wood  0.634848
+      Object     Score
+0  Furniture  0.556829
+
+classroom84.jpg
+      Label     Score
+0  Building  0.899009
+1   Sharing  0.860325
+2     Thigh  0.767036
+3   Leisure  0.764190
+4     Event  0.730726
+5     Table  0.700831
+6       Fun  0.687959
+7      Room  0.673263
+8     Thumb  0.589165
+9   Sitting  0.580146
+     Object     Score
+0    Person  0.852723
+1    Person  0.845272
+2    Person  0.808538
+3  Clothing  0.799146
+4  Clothing  0.772465
+5    Person  0.757030
+6    Person  0.732960
+7  Clothing  0.731805
+8  Clothing  0.696371
+9  Clothing  0.676276
+
+classroom90.jpg
+        Label     Score
+0       Table  0.939620
+1     Sharing  0.871603
+2        Tree  0.808723
+3     Leisure  0.783579
+4         Hat  0.766394
+5       Event  0.705399
+6         Fun  0.675196
+7  Recreation  0.655419
+8     Eyewear  0.617713
+9     T-shirt  0.613153
+      Object     Score
+0     Person  0.834810
+1     Person  0.826488
+2   Clothing  0.809256
+3   Clothing  0.778174
+4  Table top  0.688732
+5   Clothing  0.683761
+
+classroom91.jpg
+                 Label     Score
+0             Building  0.863292
+1                 Font  0.771098
+2            Rectangle  0.694349
+3                 Flag  0.685757
+4              Machine  0.681850
+5  Automotive exterior  0.669621
+6                  Art  0.659374
+7               Facade  0.640805
+8          Advertising  0.626941
+9            Fast food  0.622262
+  Object   Score
+0   Flag  0.8075
+
+classroom85.jpg
+      Label     Score
+0  Building  0.923064
+1    Window  0.849602
+2   Fixture  0.831519
+3   Sharing  0.797726
+4  Flooring  0.752567
+5     Event  0.729457
+6       Art  0.661311
+7   Leisure  0.660744
+8     Thigh  0.646259
+9      Room  0.609733
+   Object     Score
+0  Person  0.881565
+1  Person  0.860954
+2  Person  0.801558
+3  Person  0.798241
+4  Person  0.757692
+
+classroom52.jpg
+                  Label     Score
+0        School uniform  0.931864
+1                Shorts  0.873834
+2               Toddler  0.799474
+3               Leisure  0.773971
+4                 Thigh  0.767423
+5                 Event  0.724913
+6               Uniform  0.689544
+7                 Crowd  0.678356
+8  Academic institution  0.677382
+9              Building  0.677314
+     Object     Score
+0    Person  0.793428
+1    Person  0.763494
+2    Person  0.746245
+3    Person  0.743133
+4    Person  0.735695
+5    Person  0.728025
+6    Person  0.706611
+7  Clothing  0.682799
+8  Clothing  0.670889
+9    Person  0.667067
+
+classroom46.jpg
+      Label     Score
+0       Leg  0.915558
+1  Building  0.848896
+2     Thigh  0.751917
+3      Wood  0.748153
+4  Flooring  0.730168
+5     Event  0.723962
+6   Leisure  0.693307
+7       Art  0.665237
+8      Room  0.647214
+9       Fun  0.636112
+     Object     Score
+0    Person  0.863615
+1    Person  0.842778
+2    Person  0.835176
+3  Footwear  0.687637
+4  Footwear  0.680404
+5     Jeans  0.540890
+
+classroom42.jpg
+       Label     Score
+0      Organ  0.903839
+1    Sharing  0.895852
+2   Building  0.889330
+3      Table  0.883659
+4      Shelf  0.827329
+5  Community  0.808864
+6      Chair  0.774998
+7   Bookcase  0.758676
+8   Shelving  0.744502
+9        Fun  0.739562
+     Object     Score
+0    Person  0.863669
+1    Person  0.837766
+2  Clothing  0.825199
+3  Clothing  0.806270
+4  Clothing  0.785956
+5  Clothing  0.764860
+6    Person  0.753897
+7  Clothing  0.736880
+8    Person  0.690791
+9  Clothing  0.672919
+
+classroom56.jpg
+       Label     Score
+0   Building  0.950627
+1      Plant  0.837037
+2      House  0.791459
+3      Event  0.737312
+4  Tableware  0.595584
+5       Room  0.591464
+6       Tree  0.581428
+7      Metal  0.553528
+8    Ceiling  0.547528
+9       City  0.542730
+      Object     Score
+0     Person  0.848147
+1     Person  0.825994
+2     Person  0.822062
+3     Person  0.744984
+4     Person  0.677715
+5     Person  0.670582
+6   Clothing  0.656076
+7   Clothing  0.618391
+8   Clothing  0.591841
+9  Table top  0.529470
+
+classroom81.jpg
+     Label     Score
+0  Product  0.907566
+1  Sharing  0.876628
+2  Leisure  0.800675
+3  Toddler  0.766981
+4      Art  0.758732
+5    Event  0.741674
+6    Table  0.720250
+7    Child  0.703407
+8     Room  0.701103
+9     Baby  0.693721
+     Object     Score
+0    Person  0.892374
+1    Person  0.888921
+2    Person  0.886994
+3    Person  0.878882
+4    Person  0.837680
+5    Person  0.813103
+6    Person  0.779345
+7  Clothing  0.689824
+8  Clothing  0.629253
+9  Clothing  0.619148
+
+classroom95.jpg
+                    Label     Score
+0                   Table  0.902077
+1                Building  0.856201
+2  Monochrome photography  0.720315
+3              Monochrome  0.708227
+4                   Event  0.680207
+5                   Chair  0.673275
+6                    Room  0.638774
+7                Flooring  0.615586
+8                Darkness  0.600695
+9                 Sitting  0.551323
+         Object     Score
+0     Furniture  0.646355
+1  Window blind  0.520472
+2        Person  0.500131
+
+classroom94.jpg
+           Label     Score
+0            Arm  0.946531
+1          Table  0.926088
+2          Organ  0.906843
+3       Building  0.896744
+4        Sharing  0.888227
+5     Human body  0.884393
+6        Toddler  0.809450
+7  Picture frame  0.770399
+8        Leisure  0.743969
+9       Snapshot  0.742848
+   Object     Score
+0  Person  0.866764
+1  Person  0.835506
+
+classroom80.jpg
+         Label     Score
+0   Human body  0.884455
+1      Gesture  0.852605
+2       Jersey  0.839852
+3      Sharing  0.814345
+4        Thigh  0.802080
+5   Sportswear  0.747291
+6      Leisure  0.747047
+7       Player  0.726964
+8  Sports gear  0.716260
+9        Event  0.714030
+     Object     Score
+0    Person  0.901916
+1    Person  0.873174
+2    Person  0.593614
+3  Clothing  0.588910
+
+classroom57.jpg
+       Label     Score
+0      Table  0.955952
+1  Furniture  0.938461
+2   Building  0.920842
+3      Chair  0.873728
+4    Sharing  0.853599
+5        Art  0.797903
+6    Leisure  0.786979
+7       Desk  0.770466
+8    T-shirt  0.765617
+9      House  0.755707
+     Object     Score
+0    Person  0.889517
+1    Person  0.878719
+2    Person  0.834141
+3    Person  0.791388
+4  Clothing  0.747305
+5  Clothing  0.734100
+6  Clothing  0.690209
+7  Clothing  0.547427
+
+classroom43.jpg
+                Label     Score
+0            Building  0.961793
+1             Fixture  0.867942
+2               House  0.837425
+3               Floor  0.808350
+4            Flooring  0.801481
+5                Wood  0.796481
+6            Hardwood  0.699289
+7             Ceiling  0.699110
+8  Composite material  0.697816
+9               Event  0.671073
+      Object     Score
+0  Furniture  0.606934
+1  Furniture  0.537585
+
+classroom55.jpg
+             Label     Score
+0         Building  0.950984
+1         Property  0.943784
+2            Table  0.913735
+3  Interior design  0.844189
+4      Real estate  0.786414
+5            Event  0.708598
+6           Window  0.666550
+7             Room  0.636973
+8         Shelving  0.635394
+9              Art  0.607922
+      Object     Score
+0     Person  0.845668
+1     Person  0.789760
+2     Person  0.783511
+3   Clothing  0.672459
+4   Clothing  0.670967
+5     Person  0.650203
+6  Furniture  0.602392
+
+classroom41.jpg
+         Label     Score
+0      Glasses  0.974540
+1        Smile  0.931197
+2        Table  0.917672
+3       Citrus  0.846315
+4        Lemon  0.838054
+5    Tableware  0.835792
+6         Wood  0.818332
+7     Flooring  0.786835
+8        Fruit  0.778115
+9  Sweet lemon  0.752762
+      Object     Score
+0     Person  0.901442
+1  Furniture  0.800727
+2   Clothing  0.641736
+3    Glasses  0.574642
+4       Ball  0.565201
+5  Furniture  0.546953
+6  Table top  0.516432
+
+classroom69.jpg
+         Label     Score
+0        Table  0.850284
+1  Real estate  0.787035
+2      Leisure  0.783912
+3          Fun  0.768248
+4     Snapshot  0.742847
+5        Thigh  0.735737
+6   Recreation  0.712170
+7    Tableware  0.707793
+8        Child  0.693308
+9         Room  0.692122
+      Object     Score
+0     Person  0.805011
+1  Table top  0.613641
+2  Container  0.533057
+
+classroom96.jpg
+        Label     Score
+0         Ear  0.887962
+1  Human body  0.885544
+2       Table  0.805463
+3         Fun  0.732031
+4       Event  0.717460
+5       Child  0.690312
+6       House  0.684376
+7       Shelf  0.675250
+8        Room  0.649637
+9     T-shirt  0.643468
+      Object     Score
+0     Person  0.825704
+1  Table top  0.622608
+
+classroom82.jpg
+          Label     Score
+0       Sharing  0.745725
+1      Building  0.739395
+2         Event  0.723946
+3          Room  0.631466
+4  Organization  0.520399
+     Object     Score
+0    Person  0.862701
+1    Person  0.856731
+2    Person  0.853511
+3    Person  0.846574
+4    Person  0.836155
+5    Person  0.828642
+6    Person  0.816264
+7    Person  0.815419
+8    Person  0.814125
+9  Clothing  0.767039
+
+classroom83.jpg
+                        Label     Score
+0                    Building  0.865888
+1             Interior design  0.848605
+2             Office supplies  0.847396
+3                   Rectangle  0.807913
+4  Computer monitor accessory  0.798223
+5                         Art  0.792149
+6                    Computer  0.773975
+7          Flat panel display  0.764525
+8           Personal computer  0.760545
+9              Display device  0.751863
+      Object     Score
+0  Furniture  0.673327
+
+classroom97.jpg
+                  Label     Score
+0           Handwriting  0.750322
+1              Building  0.733626
+2                 Event  0.733176
+3       Public speaking  0.697196
+4                  Room  0.669692
+5                 Chair  0.667853
+6              Flooring  0.658089
+7                 Class  0.639650
+8  Academic institution  0.633635
+9          Presentation  0.620882
+   Object     Score
+0  Person  0.706575
+1  Person  0.644299
+2  Person  0.622195
+3  Person  0.620170
+4  Person  0.579620
+
+classroom68.jpg
+               Label     Score
+0           Building  0.815604
+1                Art  0.783450
+2              Event  0.729313
+3            Sharing  0.716217
+4               City  0.640884
+5         Pedestrian  0.594869
+6              Crowd  0.592750
+7        Visual arts  0.573563
+8       Public event  0.570687
+9  Competition event  0.521115
+   Object     Score
+0  Person  0.874109
+1  Person  0.859176
+2  Person  0.803202
+3  Person  0.775046
+4  Person  0.762125
+5  Person  0.735215
+6  Person  0.720600
+7  Person  0.719545
+8   Pants  0.697421
+9  Person  0.662332
+
+classroom40.jpg
+       Label     Score
+0  Tableware  0.925210
+1        Hat  0.830318
+2    Sharing  0.791229
+3    Cooking  0.769248
+4    Cuisine  0.746520
+5      Event  0.722154
+6       Food  0.709880
+7       Room  0.649656
+8    Service  0.625257
+9    T-shirt  0.593451
+     Object     Score
+0    Person  0.872946
+1    Person  0.861129
+2    Person  0.731474
+3  Clothing  0.718419
+4  Clothing  0.662695
+5    Person  0.604919
+6    Person  0.604855
+
+classroom54.jpg
+      Label     Score
+0  Building  0.849657
+1   Sharing  0.843437
+2     Event  0.737869
+3   Toddler  0.736269
+4   T-shirt  0.704553
+5   Leisure  0.699105
+6      Room  0.693561
+7     Crowd  0.667812
+8     Child  0.657449
+9     Class  0.636207
+   Object     Score
+0  Person  0.885055
+1  Person  0.867109
+2  Person  0.856248
+3  Person  0.850581
+4  Person  0.841904
+5  Person  0.840091
+6  Person  0.837873
+7  Person  0.829543
+8  Person  0.828717
+9  Person  0.824108
+
+coffeeshop28.jpg
+             Label     Score
+0         Building  0.964274
+1  Interior design  0.845412
+2            House  0.833482
+3      Real estate  0.784647
+4            Event  0.717773
+5             Wood  0.702439
+6         Hardwood  0.682424
+7          Ceiling  0.666763
+8          Fixture  0.661336
+9             Room  0.658330
+      Object     Score
+0  Furniture  0.695792
+1  Furniture  0.505650
+
+coffeeshop14.jpg
+       Label     Score
+0  Tableware  0.910019
+1   Building  0.829158
+2      Table  0.794521
+3      Event  0.724526
+4    Sharing  0.705234
+5     Window  0.669945
+6      Glass  0.623366
+7   Hardwood  0.622951
+8       Room  0.588372
+9      Brick  0.586462
+     Object     Score
+0    Person  0.860432
+1  Clothing  0.761058
+2    Person  0.702459
+3       Hat  0.509093
+
+coffeeshop15.jpg
+        Label     Score
+0    Building  0.962280
+1   Furniture  0.939144
+2       Table  0.930603
+3       Chair  0.905081
+4   Cabinetry  0.884409
+5        Wood  0.880707
+6    Flooring  0.845987
+7  Wood stain  0.825918
+8       House  0.825645
+9       Floor  0.818971
+  Object     Score
+0  Chair  0.792850
+1  Chair  0.788707
+2  Chair  0.747535
+
+coffeeshop29.jpg
+                  Label     Score
+0            Espressino  0.950000
+1                  Food  0.946959
+2        Wiener melange  0.937167
+3             Tableware  0.936264
+4               Cortado  0.911039
+5  Single-origin coffee  0.904234
+6             Drinkware  0.903953
+7                Coffee  0.901028
+8        Cuban espresso  0.899865
+9            Ingredient  0.876671
+           Object     Score
+0      Coffee cup  0.887440
+1           Drink  0.824208
+2       Tableware  0.760190
+3  Home appliance  0.555955
+
+coffeeshop8.jpg
+             Label     Score
+0         Building  0.941364
+1            Table  0.858601
+2  Interior design  0.844081
+3          Leisure  0.759574
+4            Event  0.687252
+5          Ceiling  0.674727
+6         Flooring  0.644122
+7             Room  0.638486
+8            House  0.632579
+9            Chair  0.535749
+      Object     Score
+0     Person  0.734784
+1     Person  0.693475
+2     Person  0.657628
+3   Clothing  0.512649
+4  Table top  0.504138
+
+coffeeshop17.jpg
+      Label     Score
+0  Building  0.893663
+1   Fixture  0.865455
+2      Door  0.814074
+3      Font  0.796803
+4    Facade  0.745518
+5      Wood  0.692267
+6     Event  0.644388
+7      Room  0.625173
+8   Signage  0.544922
+9      Logo  0.525149
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop16.jpg
+           Label     Score
+0       Building  0.936903
+1          House  0.832797
+2           Wood  0.733878
+3          Event  0.724523
+4  Entertainment  0.717995
+5          Music  0.656568
+6       Darkness  0.648855
+7           Room  0.575720
+8       Midnight  0.526530
+9         Facade  0.524700
+   Object     Score
+0  Person  0.513714
+
+coffeeshop9.jpg
+           Label     Score
+0       Building  0.926164
+1          Event  0.705704
+2          House  0.682271
+3        Fixture  0.673703
+4       Flooring  0.672866
+5           Font  0.639979
+6        Ceiling  0.632340
+7           Room  0.614389
+8  Entertainment  0.575599
+9         Bottle  0.564465
+      Object     Score
+0      Chair  0.675271
+1  Furniture  0.588251
+
+coffeeshop12.jpg
+            Label     Score
+0        Property  0.942061
+1        Building  0.934131
+2           Table  0.906107
+3        Computer  0.828996
+4           House  0.804887
+5   Output device  0.804261
+6           Chair  0.750347
+7      Television  0.738479
+8           Event  0.706727
+9  Television set  0.700415
+       Object     Score
+0  Television  0.919109
+1      Person  0.820603
+2      Person  0.812927
+3       Table  0.661408
+4    Clothing  0.500436
+
+.DS_Store
+Empty DataFrame
+Columns: [Label, Score]
+Index: []
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop13.jpg
+             Label     Score
+0         Building  0.965876
+1            Table  0.945232
+2         Property  0.943344
+3            Plant  0.864197
+4  Interior design  0.844306
+5            House  0.839038
+6      Handwriting  0.785587
+7      Real estate  0.783244
+8         Flooring  0.764103
+9       Houseplant  0.762393
+   Object     Score
+0   Table  0.789557
+1   Chair  0.703578
+2   Table  0.595012
+3  Person  0.550054
+
+coffeeshop11.jpg
+       Label     Score
+0   Building  0.897604
+1   Flooring  0.746737
+2      Event  0.697547
+3      Crowd  0.695999
+4        Art  0.663868
+5     Retail  0.658636
+6    Ceiling  0.629847
+7       Font  0.623862
+8       City  0.617971
+9  Landscape  0.597401
+   Object     Score
+0  Person  0.869111
+
+coffeeshop39.jpg
+               Label     Score
+0           Property  0.942697
+1           Building  0.889124
+2    Interior design  0.849265
+3               Wood  0.761630
+4  Building material  0.689616
+5              Event  0.674525
+6            Ceiling  0.651739
+7               Room  0.634983
+8              Glass  0.615997
+9              Metal  0.598099
+   Object     Score
+0  Person  0.658981
+1  Person  0.633467
+2  Person  0.593105
+3  Person  0.578115
+
+coffeeshop38.jpg
+      Label     Score
+0  Building  0.925231
+1     House  0.740553
+2    Window  0.724969
+3     Event  0.708970
+4     Chair  0.678260
+5    Facade  0.670258
+6      Door  0.650682
+7      Font  0.638833
+8      City  0.618347
+9      Wood  0.614932
+      Object     Score
+0     Person  0.711405
+1   Clothing  0.565802
+2     Person  0.508725
+3  Furniture  0.500111
+
+coffeeshop10.jpg
+             Label     Score
+0            Table  0.957830
+1        Furniture  0.953573
+2         Building  0.951760
+3             Food  0.882915
+4            Chair  0.866799
+5             Wood  0.862058
+6            House  0.850373
+7  Interior design  0.846731
+8    Picture frame  0.827858
+9         Hardwood  0.738299
+   Object     Score
+0  Person  0.723278
+1  Person  0.669023
+2  Animal  0.665600
+3  Person  0.610414
+4   Chair  0.587618
+5   Table  0.527702
+
+coffeeshop63.jpg
+       Label     Score
+0   Building  0.952574
+1  Furniture  0.930239
+2       Wood  0.869938
+3      Table  0.801484
+4      House  0.712940
+5   Hardwood  0.708520
+6      Event  0.697251
+7   Flooring  0.683327
+8       Room  0.658986
+9   Darkness  0.649615
+      Object     Score
+0      Chair  0.770549
+1  Furniture  0.626381
+2  Furniture  0.519599
+
+coffeeshop77.jpg
+         Label     Score
+0         Food  0.951528
+1   Ingredient  0.884317
+2       Recipe  0.853493
+3      Cuisine  0.816769
+4     Building  0.809460
+5         Dish  0.802923
+6         Wood  0.800179
+7  Baked goods  0.793110
+8    Junk food  0.737569
+9      Cooking  0.702260
+      Object     Score
+0  Tableware  0.524281
+
+coffeeshop88.jpg
+           Label     Score
+0       Building  0.942731
+1          Plant  0.884592
+2          Table  0.872559
+3          House  0.809663
+4      Tableware  0.779891
+5  Entertainment  0.734798
+6          Event  0.726545
+7           Room  0.573215
+8          Glass  0.571630
+9          Music  0.570371
+      Object     Score
+0     Person  0.541114
+1  Tableware  0.511065
+
+coffeeshop89.jpg
+                    Label     Score
+0                Building  0.928638
+1         Black-and-white  0.862587
+2                   Style  0.840581
+3              Monochrome  0.778874
+4  Monochrome photography  0.773289
+5              Urban area  0.731831
+6                   Event  0.725302
+7                    City  0.716567
+8                   Crowd  0.692843
+9                  Street  0.687158
+     Object     Score
+0    Person  0.813062
+1  Clothing  0.743157
+2    Person  0.702023
+3    Person  0.685661
+4    Person  0.648070
+5  Clothing  0.551685
+
+coffeeshop76.jpg
+             Label     Score
+0         Property  0.941910
+1         Building  0.936237
+2            Light  0.910572
+3  Interior design  0.868751
+4         Lighting  0.867537
+5             Wall  0.808686
+6      Real estate  0.792785
+7          Ceiling  0.772727
+8            Event  0.731285
+9             Room  0.676115
+          Object     Score
+0     Chandelier  0.680146
+1  Light fixture  0.627039
+2  Light fixture  0.618384
+3     Chandelier  0.539201
+
+coffeeshop62.jpg
+          Label     Score
+0      Building  0.925135
+1         Table  0.893615
+2         Event  0.708034
+3  Organization  0.665549
+4   Engineering  0.603494
+5          Room  0.571237
+6       Funeral  0.564290
+7      Business  0.532673
+      Object     Score
+0      Chair  0.772259
+1  Furniture  0.653252
+2      Table  0.626146
+
+coffeeshop48.jpg
+          Label     Score
+0      Building  0.965106
+1           Sky  0.932439
+2         Cloud  0.912311
+3       Vehicle  0.843258
+4  Urban design  0.798202
+5          City  0.767964
+6        Facade  0.766236
+7    Skyscraper  0.745670
+8        Window  0.734484
+9   Condominium  0.726605
+     Object     Score
+0  Building  0.905426
+1    Person  0.776984
+2    Person  0.735494
+3  Building  0.605559
+4    Person  0.501532
+
+coffeeshop74.jpg
+          Label     Score
+0          Food  0.944843
+1     Tableware  0.938024
+2      Dishware  0.916367
+3    Ingredient  0.872153
+4        Recipe  0.868371
+5         Plate  0.803723
+6   Baked goods  0.697533
+7     Serveware  0.688777
+8  Comfort food  0.679173
+9         Event  0.646736
+      Object     Score
+0  Tableware  0.778512
+1       Food  0.702140
+2       Food  0.698520
+3       Food  0.652304
+4  Tableware  0.628103
+
+coffeeshop60.jpg
+                     Label     Score
+0                     Food  0.923337
+1                Drinkware  0.804920
+2                  Cuisine  0.795883
+3               Ingredient  0.779541
+4           Home appliance  0.761225
+5                    Glass  0.723523
+6                   Liquid  0.716943
+7  Food storage containers  0.667166
+8                   Recipe  0.661310
+9             Transparency  0.623279
+      Object     Score
+0  Container  0.709189
+1  Container  0.687282
+2  Container  0.674690
+3  Container  0.601761
+
+coffeeshop61.jpg
+               Label     Score
+0               Food  0.965108
+1             Recipe  0.868600
+2         Ingredient  0.868381
+3            Cuisine  0.785606
+4            Produce  0.734273
+5        Staple food  0.724704
+6              Plate  0.715849
+7               Dish  0.715630
+8  Terrestrial plant  0.687782
+9        Baked goods  0.663681
+    Object     Score
+0  Burrito  0.728133
+
+coffeeshop75.jpg
+             Label     Score
+0         Building  0.937613
+1         Lighting  0.873440
+2           Window  0.767779
+3            Event  0.694910
+4  Audio equipment  0.656048
+5         Flooring  0.651494
+6            House  0.638801
+7         Hardwood  0.600226
+8          Ceiling  0.597474
+9   Display device  0.589201
+       Object     Score
+0   Furniture  0.571541
+1  Countertop  0.557041
+
+coffeeshop49.jpg
+        Label     Score
+0   Tableware  0.936615
+1    Dishware  0.929047
+2       Table  0.918061
+3   Drinkware  0.915629
+4    Building  0.911409
+5         Cup  0.893708
+6       House  0.879600
+7  Coffee cup  0.872000
+8      Saucer  0.868278
+9      Window  0.851728
+       Object     Score
+0  Coffee cup  0.887561
+1   Table top  0.648259
+2      Saucer  0.509318
+
+coffeeshop71.jpg
+                      Label     Score
+0  Automotive parking light  0.978181
+1                  Building  0.964290
+2                       Car  0.955937
+3                   Vehicle  0.949878
+4             Motor vehicle  0.909743
+5                   Product  0.907251
+6                    Window  0.904342
+7                      Tire  0.899682
+8       Automotive lighting  0.877078
+9                     Wheel  0.871324
+  Object     Score
+0    Car  0.873764
+
+coffeeshop65.jpg
+           Label     Score
+0           Wood  0.815771
+1     Countertop  0.803030
+2            Gas  0.772956
+3  Entertainment  0.767372
+4       Flooring  0.760032
+5       Hardwood  0.757651
+6        Kitchen  0.738168
+7     Wood stain  0.728833
+8        Cuisine  0.719731
+9        Cooking  0.688750
+             Object     Score
+0  Expresso machine  0.750465
+
+coffeeshop59.jpg
+          Label     Score
+0       Sharing  0.797218
+1           Hat  0.772552
+2         Event  0.729501
+3           Fun  0.684983
+4          Room  0.654401
+5  Conversation  0.588280
+6         House  0.548790
+7       Sitting  0.542698
+     Object     Score
+0    Person  0.848168
+1    Person  0.798305
+2       Hat  0.796108
+3    Person  0.792426
+4  Clothing  0.680615
+5  Clothing  0.652426
+6  Clothing  0.639705
+7    Person  0.507601
+
+coffeeshop58.jpg
+          Label     Score
+0      Building  0.969526
+1         Cloud  0.954037
+2           Sky  0.940449
+3       Product  0.907600
+4        Window  0.846224
+5       Asphalt  0.833198
+6         House  0.831793
+7       Vehicle  0.806493
+8   Real estate  0.783132
+9  Urban design  0.769476
+     Object     Score
+0  Building  0.775588
+1  Building  0.633753
+2  Umbrella  0.567019
+
+coffeeshop64.jpg
+                Label     Score
+0               Water  0.938241
+1            Building  0.875926
+2          Watercraft  0.819166
+3  Naval architecture  0.753356
+4               Event  0.719333
+5           Landscape  0.706838
+6                Boat  0.702212
+7          Recreation  0.698096
+8                Wood  0.691170
+9                City  0.685696
+          Object     Score
+0  Light fixture  0.519018
+
+coffeeshop70.jpg
+               Label     Score
+0           Building  0.924653
+1               Wood  0.761397
+2            Fixture  0.759480
+3              House  0.742145
+4               Door  0.729615
+5              Event  0.718375
+6           Hardwood  0.702341
+7           Flooring  0.598251
+8               Room  0.589281
+9  Building material  0.577486
+      Object     Score
+0  Furniture  0.629816
+1  Furniture  0.548832
+
+coffeeshop66.jpg
+               Label     Score
+0           Building  0.955540
+1           Lighting  0.866469
+2            Fixture  0.837028
+3              House  0.828475
+4             Window  0.737157
+5              Event  0.716702
+6               Room  0.624083
+7  Building material  0.573612
+8            Ceiling  0.572705
+9        Engineering  0.553505
+          Object     Score
+0      Table top  0.857583
+1      Furniture  0.586518
+2  Light fixture  0.521254
+
+coffeeshop72.jpg
+      Label     Score
+0  Building  0.912500
+1    Bottle  0.834807
+2   Sharing  0.827303
+3     Event  0.728222
+4     House  0.714867
+5     Table  0.705559
+6      Room  0.646826
+7       Fun  0.621963
+8     Chair  0.591869
+9     Crowd  0.583119
+      Object     Score
+0   Clothing  0.851203
+1     Person  0.850792
+2     Person  0.845580
+3     Person  0.817415
+4   Clothing  0.811470
+5   Clothing  0.807380
+6   Clothing  0.783087
+7  Tableware  0.762959
+8     Person  0.671350
+9      Chair  0.644693
+
+coffeeshop99.jpg
+        Label     Score
+0        Food  0.936540
+1      Recipe  0.808725
+2  Ingredient  0.803344
+3     Cuisine  0.772496
+4        Font  0.771888
+5   Rectangle  0.708721
+6    Building  0.656965
+7     Cooking  0.644873
+8       Metal  0.642377
+9        Dish  0.641741
+           Object     Score
+0  Packaged goods  0.594456
+1            Food  0.528717
+
+coffeeshop98.jpg
+               Label     Score
+0           Building  0.931706
+1               Wood  0.882339
+2           Flooring  0.836119
+3              Floor  0.818763
+4           Hardwood  0.791466
+5            Leisure  0.782057
+6  Laminate flooring  0.727751
+7              Table  0.708642
+8              Event  0.703520
+9      Wood flooring  0.700321
+      Object     Score
+0     Person  0.877804
+1     Person  0.860721
+2     Person  0.831994
+3     Person  0.795479
+4   Clothing  0.746609
+5   Clothing  0.685088
+6   Clothing  0.681831
+7   Clothing  0.653000
+8     Person  0.628566
+9  Furniture  0.549491
+
+coffeeshop73.jpg
+               Label     Score
+0           Building  0.939858
+1              Light  0.910930
+2               Wood  0.881038
+3    Interior design  0.864242
+4           Flooring  0.840219
+5              House  0.826218
+6              Floor  0.823239
+7         Wood stain  0.805626
+8  Laminate flooring  0.788875
+9        Real estate  0.786777
+      Object     Score
+0  Furniture  0.751965
+
+coffeeshop67.jpg
+             Label     Score
+0            Plant  0.953064
+1         Building  0.952878
+2             Tree  0.870865
+3            House  0.868996
+4              Sky  0.857786
+5          Vehicle  0.852005
+6          Asphalt  0.833614
+7            Grass  0.803078
+8           Facade  0.770801
+9  Automotive tire  0.734672
+   Object     Score
+0  Laptop  0.709495
+
+coffeeshop42.jpg
+                  Label     Score
+0             Tableware  0.932476
+1  Single-origin coffee  0.922256
+2            Flat white  0.921882
+3               Cortado  0.921533
+4        Wiener melange  0.912946
+5       Caffè macchiato  0.910312
+6              Dishware  0.909140
+7                   Cup  0.907602
+8            Ingredient  0.905911
+9                Coffee  0.904631
+      Object     Score
+0  Tableware  0.613593
+
+coffeeshop56.jpg
+      Label     Score
+0  Building  0.923847
+1      Wood  0.839785
+2    Facade  0.727468
+3       Art  0.725081
+4     Event  0.702747
+5     House  0.701090
+6   Asphalt  0.663709
+7      Room  0.649129
+8     Plant  0.596151
+9  Hardwood  0.581627
+           Object     Score
+0          Person  0.851879
+1          Person  0.835929
+2  Packaged goods  0.655743
+3        Clothing  0.600900
+4        Clothing  0.594716
+5       Container  0.585728
+6          Basket  0.561097
+7       Furniture  0.510280
+
+coffeeshop81.jpg
+                    Label     Score
+0                   Mouth  0.910819
+1                  Circle  0.760248
+2                    Font  0.744383
+3               Auto part  0.731299
+4              Monochrome  0.721513
+5  Monochrome photography  0.718316
+6                Darkness  0.713957
+7                   Event  0.648440
+8                   Glass  0.628048
+9                     Art  0.562216
+  Object     Score
+0  Clock  0.503646
+
+coffeeshop95.jpg
+        Label     Score
+0       Table  0.954989
+1   Furniture  0.946260
+2    Building  0.923535
+3       Plant  0.901813
+4        Tree  0.826907
+5  Tablecloth  0.801133
+6       House  0.798680
+7        Food  0.747444
+8       Event  0.728165
+9     Leisure  0.726433
+      Object     Score
+0      Table  0.768282
+1  Furniture  0.702093
+2  Container  0.547698
+
+coffeeshop94.jpg
+        Label     Score
+0   Tableware  0.941209
+1        Food  0.929761
+2      Recipe  0.818092
+3  Ingredient  0.738587
+4     Cuisine  0.720789
+5        Dish  0.716285
+6       Event  0.698588
+7    Dishware  0.691585
+8     Cooking  0.682103
+9       Water  0.662045
+      Object     Score
+0  Tableware  0.739691
+1     Person  0.639537
+2       Food  0.617523
+3  Table top  0.598324
+4  Tableware  0.503832
+
+coffeeshop80.jpg
+      Label     Score
+0     Table  0.957415
+1  Building  0.935409
+2    Window  0.849102
+3   Sharing  0.794036
+4     House  0.778449
+5       Hat  0.768317
+6   Leisure  0.750336
+7     Event  0.715475
+8      Room  0.674263
+9   Sitting  0.642362
+      Object     Score
+0      Chair  0.830745
+1     Person  0.792043
+2     Person  0.787329
+3  Table top  0.771222
+4   Clothing  0.744015
+5   Clothing  0.721816
+6     Person  0.670865
+7      Table  0.626037
+8   Clothing  0.541359
+
+coffeeshop57.jpg
+        Label     Score
+0        Food  0.977683
+1   Tableware  0.971378
+2    Dishware  0.917490
+3   Drinkware  0.908242
+4  Ingredient  0.892037
+5         Cup  0.866767
+6   Serveware  0.858214
+7        Beer  0.851750
+8     Cuisine  0.847846
+9       Table  0.846525
+          Object     Score
+0      Tableware  0.813731
+1      Tableware  0.769662
+2      Tableware  0.764782
+3      Tableware  0.720315
+4      Tableware  0.645262
+5  Picture frame  0.635498
+6      Tableware  0.632524
+7           Food  0.623047
+8      Table top  0.605012
+9  Picture frame  0.546844
+
+coffeeshop43.jpg
+         Label     Score
+0     Building  0.944018
+1     Property  0.943518
+2        Plant  0.941925
+3         Wood  0.837257
+4       Flower  0.820997
+5        House  0.817140
+6  Real estate  0.784904
+7        Thigh  0.781919
+8      Curtain  0.773589
+9     Flooring  0.751296
+     Object     Score
+0    Person  0.850044
+1    Person  0.697607
+2  Clothing  0.622738
+3     Plant  0.534521
+
+coffeeshop69.jpg
+          Label     Score
+0         Smile  0.973389
+1         Table  0.962073
+2     Tableware  0.922934
+3       Sharing  0.850908
+4           Fun  0.740795
+5         Event  0.723009
+6         Thumb  0.708255
+7         Chair  0.693318
+8  Conversation  0.678279
+9          Desk  0.675546
+      Object     Score
+0     Person  0.867000
+1     Person  0.865329
+2   Clothing  0.839452
+3     Person  0.827892
+4   Clothing  0.761961
+5  Table top  0.759114
+6  Tableware  0.524035
+
+coffeeshop55.jpg
+           Label     Score
+0           Font  0.788710
+1       Building  0.782009
+2       Darkness  0.720601
+3          Event  0.717704
+4  Entertainment  0.667605
+5           City  0.640091
+6          Metal  0.639930
+7          Music  0.630835
+8          Crowd  0.630269
+9         Shadow  0.627361
+     Object     Score
+0    Person  0.751175
+1    Person  0.714962
+2    Person  0.617368
+3  Clothing  0.563986
+4  Clothing  0.526123
+5    Person  0.505857
+
+coffeeshop41.jpg
+                Label     Score
+0           Tableware  0.941888
+1           Drinkware  0.839958
+2               Drink  0.831488
+3             Barware  0.814515
+4  Alcoholic beverage  0.809656
+5       Martini glass  0.716762
+6  Distilled beverage  0.686682
+7            Hardwood  0.682890
+8               Event  0.674605
+9             Alcohol  0.671265
+      Object     Score
+0     Person  0.841386
+1   Clothing  0.638114
+2  Table top  0.624152
+3    Glasses  0.542242
+
+coffeeshop96.jpg
+       Label     Score
+0       Hand  0.956984
+1     Muscle  0.913795
+2      Mouth  0.912780
+3        Ear  0.873071
+4     Finger  0.834852
+5      Thigh  0.833324
+6  Tableware  0.817401
+7      Thumb  0.816107
+8        Fun  0.790721
+9      Smile  0.772393
+     Object     Score
+0    Person  0.711282
+1  Clothing  0.509537
+
+coffeeshop82.jpg
+        Label     Score
+0    Building  0.934733
+1       Shelf  0.841369
+2    Bookcase  0.773405
+3    Shelving  0.752533
+4       House  0.750451
+5       Event  0.710113
+6        Room  0.640237
+7     Ceiling  0.555888
+8  Recreation  0.550560
+9    Flooring  0.525175
+      Object     Score
+0     Person  0.796983
+1     Person  0.795439
+2     Person  0.623098
+3  Furniture  0.512597
+
+coffeeshop83.jpg
+         Label     Score
+0     Building  0.956636
+1       Window  0.920477
+2         Door  0.858284
+3         Wood  0.857424
+4        House  0.843047
+5      Fixture  0.840412
+6  Real estate  0.785105
+7     Flooring  0.775071
+8  Living room  0.771551
+9       Facade  0.761464
+      Object     Score
+0  Furniture  0.632787
+1  Furniture  0.524232
+2  Furniture  0.521963
+
+coffeeshop97.jpg
+             Label     Score
+0     Land vehicle  0.967010
+1              Car  0.955729
+2          Vehicle  0.955306
+3            Wheel  0.953891
+4         Building  0.951925
+5             Tire  0.951897
+6             Tree  0.877066
+7            Plant  0.877002
+8  Automotive tire  0.876034
+9          Asphalt  0.872498
+   Object     Score
+0     Car  0.878100
+1     Car  0.829552
+2     Car  0.822107
+3  Person  0.811500
+
+coffeeshop40.jpg
+             Label     Score
+0         Building  0.950491
+1        Furniture  0.943712
+2            Shelf  0.936603
+3         Shelving  0.875323
+4             Wood  0.869578
+5            House  0.867841
+6  Interior design  0.844070
+7            Table  0.831105
+8         Bookcase  0.828034
+9         Hardwood  0.787862
+  Object     Score
+0  Table  0.708125
+
+coffeeshop54.jpg
+                    Label     Score
+0     Automotive lighting  0.877357
+1                Building  0.866975
+2         Black-and-white  0.850506
+3                   Style  0.837786
+4                  Window  0.797241
+5        Tints and shades  0.773346
+6                    City  0.730142
+7              Monochrome  0.720364
+8  Monochrome photography  0.713724
+9                Darkness  0.712710
+      Object     Score
+0     Window  0.720266
+1  Table top  0.717114
+2      Table  0.712618
+3      Chair  0.636296
+4  Furniture  0.539368
+
+coffeeshop68.jpg
+         Label     Score
+0       Muscle  0.915584
+1          Hat  0.855360
+2      Sharing  0.794630
+3     Building  0.793730
+4        Smile  0.752669
+5        Event  0.707676
+6  Engineering  0.653847
+7      T-shirt  0.642065
+8          Job  0.622677
+9          Fun  0.603325
+             Object     Score
+0          Clothing  0.804431
+1            Person  0.797891
+2            Person  0.759318
+3          Clothing  0.741025
+4  Computer monitor  0.700689
+5            Person  0.679888
+6          Clothing  0.658705
+
+coffeeshop50.jpg
+             Label     Score
+0         Building  0.959876
+1        Furniture  0.955963
+2            Table  0.950427
+3         Property  0.942695
+4            Chair  0.912402
+5          Product  0.907227
+6            House  0.875422
+7  Interior design  0.874086
+8             Wood  0.853139
+9            Floor  0.808429
+                        Object     Score
+0                        Chair  0.904444
+1                        Chair  0.890801
+2                        Chair  0.798936
+3  Kitchen & dining room table  0.540615
+
+coffeeshop44.jpg
+        Label     Score
+0     Sharing  0.848206
+1     Leisure  0.816040
+2       Grass  0.801856
+3       Table  0.782300
+4       Shade  0.765494
+5       Event  0.733080
+6  Recreation  0.732013
+7         Fun  0.692320
+8   Landscape  0.688404
+9     Sitting  0.603706
+      Object     Score
+0     Person  0.778461
+1     Person  0.739243
+2     Person  0.632044
+3     Person  0.602188
+4  Furniture  0.546808
+5    Balloon  0.510957
+6   Umbrella  0.508476
+7     Person  0.503519
+
+coffeeshop78.jpg
+         Label     Score
+0      Glasses  0.981066
+1  Vision care  0.893810
+2      Gesture  0.851585
+3        Thumb  0.819350
+4       Finger  0.818754
+5      Eyewear  0.804890
+6          Hat  0.581441
+7        Drink  0.552737
+      Object     Score
+0    Glasses  0.917707
+1     Person  0.718953
+2  Tableware  0.571591
+3        Top  0.508867
+
+coffeeshop93.jpg
+       Label     Score
+0      Thigh  0.762831
+1   Flooring  0.711720
+2     Helmet  0.711612
+3      Event  0.702468
+4      Shelf  0.663314
+5      Waist  0.659558
+6      Drink  0.640547
+7  Human leg  0.616312
+8     Retail  0.610912
+9        Fun  0.601792
+           Object     Score
+0          Person  0.850832
+1           Pants  0.660458
+2  Luggage & bags  0.581325
+
+coffeeshop87.jpg
+       Label     Score
+0       Food  0.878349
+1       Wood  0.814407
+2  Tableware  0.796214
+3    Cooking  0.762357
+4    Cuisine  0.747062
+5       Dish  0.723983
+6   Hardwood  0.706385
+7     Recipe  0.685041
+8      Event  0.676202
+9   Flooring  0.658875
+              Object     Score
+0             Person  0.880831
+1  Kitchen Appliance  0.691346
+2          Tableware  0.567463
+
+coffeeshop86.jpg
+               Label     Score
+0                Hat  0.881172
+1              Water  0.804918
+2         Recreation  0.682755
+3              Event  0.669655
+4              Table  0.660934
+5            Sun hat  0.650777
+6             Bottle  0.620874
+7  Fashion accessory  0.603081
+8              Drink  0.586718
+9                Cap  0.584549
+   Object     Score
+0  Person  0.819102
+1     Hat  0.706655
+
+coffeeshop92.jpg
+               Label     Score
+0           Building  0.933188
+1            Fixture  0.804294
+2               Wood  0.745291
+3             Facade  0.737702
+4              House  0.687299
+5              Event  0.649562
+6               Door  0.627504
+7  Building material  0.621477
+8             Window  0.591196
+9               Room  0.558003
+   Object     Score
+0  Person  0.877207
+1  Person  0.700467
+2  Person  0.510282
+
+coffeeshop79.jpg
+               Label     Score
+0           Building  0.954807
+1              Light  0.911750
+2            Fixture  0.904952
+3           Lighting  0.875206
+4  Building material  0.788262
+5           Flooring  0.783075
+6        Real estate  0.782970
+7             Window  0.754799
+8        Engineering  0.743839
+9              Event  0.670338
+      Object     Score
+0  Furniture  0.682009
+
+coffeeshop45.jpg
+      Label     Score
+0  Building  0.953469
+1  Lighting  0.864781
+2   Fixture  0.843878
+3     House  0.821832
+4  Flooring  0.765656
+5      Wood  0.763602
+6  Hardwood  0.727770
+7     Event  0.715217
+8      Door  0.701879
+9   Ceiling  0.640818
+      Object     Score
+0     Person  0.762301
+1  Furniture  0.587962
+
+coffeeshop51.jpg
+      Label     Score
+0  Building  0.937204
+1      Wood  0.868899
+2     House  0.851958
+3     Floor  0.809429
+4  Flooring  0.808808
+5  Hardwood  0.781664
+6      Door  0.704844
+7     Event  0.690958
+8   Ceiling  0.675741
+9      Room  0.649450
+      Object     Score
+0  Furniture  0.728787
+
+coffeeshop47.jpg
+             Label     Score
+0        Furniture  0.932968
+1         Building  0.912546
+2  Interior design  0.846615
+3             Wood  0.784718
+4    Entertainment  0.776040
+5            House  0.748579
+6            Chair  0.746075
+7   Display device  0.730220
+8          Magenta  0.713693
+9              Art  0.695513
+  Object     Score
+0  Chair  0.810783
+1  Chair  0.710555
+
+coffeeshop53.jpg
+             Label     Score
+0         Building  0.954447
+1            Table  0.953882
+2        Furniture  0.944312
+3            House  0.884573
+4            Chair  0.880113
+5  Interior design  0.847385
+6           Violet  0.837761
+7         Flooring  0.764117
+8          Sharing  0.751148
+9            Event  0.733519
+          Object     Score
+0  Picture frame  0.871882
+1          Chair  0.811906
+2          Chair  0.784369
+3         Person  0.749041
+4          Table  0.727794
+5         Person  0.648019
+6         Person  0.626562
+7       Clothing  0.614189
+8      Furniture  0.556194
+
+coffeeshop84.jpg
+             Label     Score
+0         Building  0.946411
+1         Property  0.942227
+2            Plant  0.937332
+3          Vehicle  0.890460
+4            House  0.853909
+5  Interior design  0.852740
+6      Real estate  0.797250
+7           Flower  0.792310
+8             Wood  0.760992
+9            Water  0.748675
+      Object     Score
+0  Table top  0.551358
+1  Furniture  0.541119
+
+coffeeshop90.jpg
+             Label     Score
+0         Building  0.958290
+1            Table  0.947697
+2        Furniture  0.941086
+3  Interior design  0.848946
+4            House  0.801699
+5      Real estate  0.783069
+6            Event  0.735831
+7          Ceiling  0.722104
+8             Room  0.671887
+9             City  0.610394
+          Object     Score
+0  Picture frame  0.817904
+1         Person  0.803469
+2         Person  0.650637
+3      Furniture  0.574296
+
+coffeeshop91.jpg
+                Label     Score
+0   Facial expression  0.932329
+1              Muscle  0.915697
+2             Gesture  0.852605
+3             Sharing  0.845018
+4                Suit  0.785150
+5                 Fun  0.769805
+6               Event  0.744763
+7         Formal wear  0.739753
+8  Television program  0.714265
+9               Crowd  0.711709
+     Object     Score
+0    Person  0.831793
+1    Person  0.789833
+2  Clothing  0.690410
+3    Person  0.680960
+4  Clothing  0.596119
+5  Clothing  0.519929
+
+coffeeshop85.jpg
+                 Label     Score
+0               Window  0.945263
+1             Building  0.928543
+2              Fixture  0.913153
+3                House  0.805086
+4    Building material  0.796871
+5               Facade  0.790485
+6          Real estate  0.787618
+7                 Door  0.783480
+8            Brickwork  0.749320
+9  Automotive exterior  0.737165
+     Object     Score
+0  Building  0.542129
+1    Window  0.529315
+
+coffeeshop52.jpg
+         Label     Score
+0     Building  0.952215
+1         Door  0.856931
+2        House  0.846703
+3      Fixture  0.842717
+4       Window  0.833625
+5  Real estate  0.784878
+6       Facade  0.757235
+7        Event  0.702346
+8         Font  0.676946
+9         Roof  0.654806
+      Object     Score
+0  Furniture  0.623429
+1  Furniture  0.520777
+
+coffeeshop46.jpg
+      Label     Score
+0  Property  0.942054
+1   Product  0.907225
+2  Building  0.874564
+3   Leisure  0.741960
+4     Event  0.718566
+5    Facade  0.688032
+6     Thigh  0.641331
+7      Room  0.637026
+8   Sharing  0.629330
+9    Retail  0.619648
+     Object     Score
+0    Person  0.825793
+1    Person  0.820844
+2  Clothing  0.738101
+3  Clothing  0.674466
+4   Handbag  0.618050
+
+coffeeshop100.jpg
+           Label     Score
+0          Table  0.805447
+1         Window  0.795121
+2        Sharing  0.774831
+3          Event  0.726806
+4       Building  0.691963
+5          Thigh  0.669816
+6           Room  0.633534
+7         Laptop  0.615284
+8  Entertainment  0.575877
+9            Fun  0.571596
+     Object     Score
+0    Person  0.859302
+1    Person  0.819614
+2  Clothing  0.739954
+3    Person  0.704810
+4    Person  0.675427
+5  Clothing  0.671745
+6  Clothing  0.662140
+7  Clothing  0.635466
+8     Chair  0.602595
+9  Clothing  0.584675
+
+coffeeshop2.jpg
+                Label     Score
+0            Property  0.941924
+1                Wood  0.863905
+2            Building  0.821125
+3            Flooring  0.799099
+4            Hardwood  0.781498
+5   Building material  0.737087
+6             Fixture  0.731264
+7             Ceiling  0.714680
+8          Wood stain  0.712841
+9  Composite material  0.677136
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop21.jpg
+       Label     Score
+0  Furniture  0.953146
+1   Property  0.942899
+2   Building  0.941721
+3     Window  0.934304
+4      Table  0.932101
+5    Fixture  0.863560
+6      House  0.780912
+7       Wood  0.762380
+8   Flooring  0.742178
+9    Ceiling  0.725372
+                        Object     Score
+0  Kitchen & dining room table  0.847351
+1                       Window  0.768334
+2                        Chair  0.556601
+3  Kitchen & dining room table  0.531002
+
+coffeeshop35.jpg
+         Label     Score
+0        Plant  0.947200
+1     Building  0.924944
+2        Cloud  0.893199
+3          Sky  0.882180
+4        House  0.792016
+5  Real estate  0.785098
+6         Tree  0.766185
+7       Facade  0.754257
+8       Siding  0.706099
+9         Roof  0.696407
+  Object     Score
+0  House  0.605404
+
+coffeeshop34.jpg
+               Label     Score
+0           Building  0.941719
+1          Furniture  0.938506
+2            Fixture  0.861310
+3               Wood  0.836497
+4           Flooring  0.791631
+5              House  0.763867
+6           Hardwood  0.757721
+7              Plant  0.738717
+8  Building material  0.700404
+9              Event  0.689508
+          Object     Score
+0  Picture frame  0.667190
+1          Couch  0.663339
+2         Person  0.635869
+3         Person  0.590219
+4         Person  0.572344
+5      Furniture  0.526910
+6      Furniture  0.518284
+
+coffeeshop20.jpg
+        Label     Score
+0        Food  0.956456
+1    Building  0.926682
+2       Table  0.894122
+3         Hat  0.848266
+4     Sharing  0.786044
+5      Bottle  0.734277
+6       Event  0.716050
+7     Leisure  0.706161
+8   Tableware  0.701528
+9  Recreation  0.617898
+     Object     Score
+0    Person  0.876545
+1    Person  0.849036
+2    Person  0.845411
+3    Person  0.826528
+4    Person  0.812075
+5  Clothing  0.729970
+6  Clothing  0.705670
+7    Animal  0.695399
+8  Clothing  0.682775
+9    Person  0.656453
+
+coffeeshop3.jpg
+             Label     Score
+0            Table  0.964801
+1         Building  0.959212
+2         Property  0.942804
+3        Furniture  0.940011
+4  Interior design  0.867050
+5            House  0.822878
+6             Wood  0.744991
+7            Event  0.728429
+8          Ceiling  0.711547
+9            Chair  0.668904
+     Object     Score
+0    Person  0.851060
+1    Person  0.804799
+2  Clothing  0.771101
+3  Clothing  0.739232
+4  Clothing  0.663995
+5    Person  0.603602
+6     Table  0.524336
+7    Person  0.503739
+
+coffeeshop1.jpg
+             Label     Score
+0         Building  0.950338
+1             Wood  0.876619
+2        Cabinetry  0.874865
+3  Interior design  0.857281
+4            Floor  0.824489
+5         Flooring  0.821939
+6       Countertop  0.821907
+7       Wood stain  0.813923
+8      Real estate  0.794906
+9         Hardwood  0.788398
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop36.jpg
+         Label     Score
+0         Food  0.958467
+1     Property  0.942281
+2    Tableware  0.928468
+3   Ingredient  0.886454
+4      Cuisine  0.827364
+5  Baked goods  0.817268
+6     Dishware  0.815638
+7         Dish  0.793374
+8    Serveware  0.784170
+9        Plate  0.735572
+      Object    Score
+0  Tableware  0.69316
+
+coffeeshop22.jpg
+      Label     Score
+0  Building  0.941052
+1   Fixture  0.808223
+2     Event  0.731564
+3       Art  0.674775
+4     House  0.612366
+5   Ceiling  0.588980
+6      Room  0.585513
+7   Sharing  0.572630
+8    Window  0.520748
+     Object     Score
+0    Person  0.863750
+1    Person  0.846817
+2    Person  0.798426
+3    Person  0.775498
+4    Person  0.773197
+5    Person  0.709358
+6    Person  0.512728
+7  Clothing  0.506052
+
+coffeeshop23.jpg
+             Label     Score
+0            Cloud  0.970371
+1              Sky  0.952314
+2         Building  0.945855
+3  Automotive tire  0.808609
+4            House  0.777239
+5             Font  0.766833
+6          Asphalt  0.764293
+7           Facade  0.740308
+8             City  0.707457
+9            Event  0.672887
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop37.jpg
+      Label     Score
+0  Building  0.919813
+1  Flooring  0.755883
+2      Wood  0.729245
+3      Font  0.721808
+4     Event  0.721804
+5     House  0.672519
+6   Ceiling  0.671429
+7    Bumper  0.640298
+8      Logo  0.639768
+9      Door  0.630177
+      Object     Score
+0  Furniture  0.563245
+
+coffeeshop4.jpg
+             Label     Score
+0         Building  0.966929
+1         Property  0.942357
+2           Window  0.918167
+3          Fixture  0.901145
+4            House  0.863907
+5             Wood  0.862794
+6  Interior design  0.860068
+7            Floor  0.815455
+8         Flooring  0.812018
+9            Chair  0.798753
+       Object     Score
+0   Furniture  0.635462
+1   Furniture  0.633777
+2  Chandelier  0.573136
+
+coffeeshop33.jpg
+      Label     Score
+0  Building  0.905582
+1  Flooring  0.756840
+2   Leisure  0.752686
+3     Event  0.734590
+4   Sharing  0.725123
+5     Chair  0.708971
+6      Room  0.695742
+7     House  0.667103
+8  Computer  0.640535
+9       Fun  0.633216
+           Object     Score
+0          Person  0.890981
+1          Person  0.844430
+2          Person  0.816695
+3  Luggage & bags  0.816473
+4          Person  0.756642
+5        Clothing  0.647276
+6        Clothing  0.591550
+7        Clothing  0.591485
+8        Clothing  0.581600
+9  Luggage & bags  0.565969
+
+coffeeshop27.jpg
+             Label     Score
+0         Building  0.892032
+1            Table  0.864279
+2         Lighting  0.862673
+3  Interior design  0.844423
+4            House  0.783507
+5            Thigh  0.743661
+6            Event  0.733843
+7             Room  0.676672
+8             Font  0.667432
+9   Display device  0.666628
+      Object     Score
+0     Person  0.804789
+1     Person  0.742672
+2  Furniture  0.704400
+3   Clothing  0.668737
+4  Furniture  0.662735
+5   Clothing  0.654306
+
+coffeeshop26.jpg
+       Label     Score
+0        Cup  0.911629
+1  Tableware  0.868755
+2  Serveware  0.851333
+3   Dishware  0.839373
+4       Tree  0.833729
+5  Drinkware  0.814456
+6       Wood  0.804482
+7     Teacup  0.796181
+8   Adhesive  0.777109
+9  Jewellery  0.742240
+       Object     Score
+0  Coffee cup  0.802578
+1   Tableware  0.770079
+2       Drink  0.712472
+
+coffeeshop32.jpg
+         Label     Score
+0     Building  0.952689
+1        Water  0.921366
+2        Cloud  0.878729
+3   Skyscraper  0.815648
+4         City  0.784612
+5        House  0.758969
+6          Sky  0.758258
+7       Facade  0.741941
+8  Tower block  0.727849
+9        Event  0.718767
+      Object     Score
+0     Person  0.641217
+1  Furniture  0.637926
+
+coffeeshop5.jpg
+           Label     Score
+0       Building  0.915910
+1          Event  0.719983
+2          House  0.680681
+3  Entertainment  0.675980
+4          Chair  0.620983
+5           Room  0.615241
+6          Thigh  0.607921
+7       Flooring  0.590039
+8           Wood  0.567637
+9           Font  0.563230
+      Object    Score
+0  Furniture  0.60286
+
+coffeeshop7.jpg
+           Label     Score
+0          Table  0.932559
+1  Picture frame  0.921280
+2       Building  0.914344
+3      Tableware  0.826840
+4          House  0.822389
+5        Sharing  0.786404
+6       Dishware  0.782580
+7          Chair  0.759806
+8          Event  0.718790
+9            Art  0.700272
+      Object     Score
+0     Person  0.894576
+1     Person  0.868680
+2  Table top  0.796088
+3   Clothing  0.746882
+4   Clothing  0.743610
+5     Person  0.641848
+6   Clothing  0.600658
+
+coffeeshop24.jpg
+               Label     Score
+0           Building  0.922457
+1               Wood  0.846000
+2           Flooring  0.793605
+3        Real estate  0.785472
+4             Window  0.771717
+5              House  0.758396
+6            Fixture  0.758358
+7           Hardwood  0.754864
+8         Wood stain  0.695780
+9  Building material  0.683419
+       Object     Score
+0   Furniture  0.608396
+1  Chandelier  0.571499
+
+coffeeshop30.jpg
+       Label     Score
+0  Furniture  0.942145
+1   Building  0.919266
+2      Table  0.888162
+3  Tableware  0.751712
+4       Wood  0.747085
+5      Event  0.718925
+6   Hardwood  0.681059
+7       Room  0.647086
+8      House  0.637653
+9        Hat  0.622367
+                        Object     Score
+0                        Chair  0.787998
+1                       Person  0.708284
+2                       Person  0.699360
+3                        Chair  0.579108
+4  Kitchen & dining room table  0.516450
+
+coffeeshop18.jpg
+           Label     Score
+0          Smile  0.918769
+1  Picture frame  0.885425
+2          Thigh  0.834449
+3        Sharing  0.803258
+4          Thumb  0.773099
+5          Happy  0.753465
+6          Beard  0.750824
+7          Waist  0.747025
+8          Event  0.743319
+9        Leisure  0.730094
+   Object     Score
+0  Person  0.856121
+1  Person  0.812781
+
+coffeeshop19.jpg
+      Label     Score
+0  Building  0.947098
+1     House  0.838989
+2      Wood  0.782512
+3  Flooring  0.778196
+4  Hardwood  0.728831
+5     Event  0.720127
+6   Ceiling  0.659358
+7      Font  0.612564
+8      Room  0.542641
+9     Chair  0.515912
+      Object     Score
+0     Person  0.731119
+1  Furniture  0.727572
+2     Person  0.727509
+3     Person  0.595735
+4   Clothing  0.549388
+
+coffeeshop31.jpg
+         Label     Score
+0     Building  0.946394
+1       Window  0.943581
+2      Fixture  0.800712
+3       Facade  0.787428
+4      Asphalt  0.737770
+5      Vehicle  0.698086
+6         Font  0.680254
+7         City  0.668222
+8        Event  0.665259
+9  Sash window  0.659070
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+coffeeshop25.jpg
+      Label     Score
+0  Building  0.892605
+1  Lighting  0.865252
+2     Event  0.721800
+3      Font  0.705661
+4    Retail  0.684076
+5     Shelf  0.639215
+6     Drink  0.638753
+7      Logo  0.606116
+8  Shelving  0.604658
+9   Cooking  0.599441
+           Object     Score
+0          Person  0.846072
+1          Person  0.705805
+2        Clothing  0.539043
+3  Packaged goods  0.525976
+
+coffeeshop6.jpg
+             Label     Score
+0         Building  0.957922
+1          Product  0.907333
+2            House  0.871106
+3  Interior design  0.863513
+4            Table  0.844800
+5      Real estate  0.786777
+6         Flooring  0.766146
+7          Fixture  0.743035
+8             Room  0.708180
+9            Event  0.703957
+      Object     Score
+0      Table  0.716586
+1  Furniture  0.610315
+2  Furniture  0.579146
+3  Furniture  0.509568
+
+constructionsite11.jpg
+               Label     Score
+0           Building  0.956370
+1              Cloud  0.948360
+2                Sky  0.946601
+3        Real estate  0.784516
+4              Water  0.776631
+5             Facade  0.752078
+6          Landscape  0.719682
+7               City  0.711022
+8  Building material  0.682830
+9               Roof  0.672246
+     Object     Score
+0  Building  0.634271
+
+constructionsite05.jpg
+             Label     Score
+0         Building  0.940650
+1            Plant  0.885443
+2  Automotive tire  0.860484
+3          Asphalt  0.858825
+4             Tree  0.849413
+5     Road surface  0.840213
+6    Neighbourhood  0.813425
+7            Grass  0.803870
+8             City  0.775645
+9            House  0.774612
+     Object     Score
+0    Person  0.804639
+1    Person  0.794169
+2    Person  0.756071
+3  Building  0.558710
+
+constructionsite39.jpg
+                      Label     Score
+0                     Water  0.938284
+1                  Building  0.931840
+2  High-visibility clothing  0.827503
+3                   Asphalt  0.776956
+4                     Event  0.727774
+5                  Flooring  0.724400
+6                  Workwear  0.691337
+7                      Road  0.681767
+8                      Wood  0.640292
+9                     Metal  0.637455
+   Object     Score
+0  Person  0.862740
+1  Person  0.855298
+
+constructionsite38.jpg
+         Label     Score
+0        Cloud  0.979949
+1          Sky  0.966415
+2   Skyscraper  0.943442
+3     Building  0.942341
+4  Tower block  0.811538
+5  Real estate  0.783183
+6         City  0.772052
+7  Condominium  0.761697
+8         Dusk  0.759705
+9       Facade  0.749431
+     Object     Score
+0  Building  0.687445
+
+constructionsite04.jpg
+                 Label     Score
+0             Building  0.959628
+1                  Sky  0.812348
+2          Real estate  0.784538
+3          Tower block  0.777545
+4               Facade  0.772296
+5                 City  0.750004
+6  Commercial building  0.744322
+7         Urban design  0.695720
+8          Condominium  0.681888
+9                Plant  0.672962
+     Object    Score
+0  Building  0.70777
+
+constructionsite10.jpg
+                 Label     Score
+0                Light  0.910807
+1             Building  0.904906
+2                 Wood  0.780286
+3             Flooring  0.768210
+4               Bumper  0.766886
+5             Hardwood  0.712157
+6    Building material  0.686412
+7              Ceiling  0.682799
+8                Event  0.680671
+9  Automotive exterior  0.665401
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite06.jpg
+               Label     Score
+0                Car  0.970492
+1           Building  0.952893
+2            Vehicle  0.943997
+3           Property  0.942806
+4               Tire  0.940585
+5     Infrastructure  0.894455
+6              Plant  0.883438
+7                Sky  0.873345
+8  Mode of transport  0.864030
+9      Motor vehicle  0.861677
+  Object     Score
+0    Car  0.891177
+1    Car  0.734585
+
+constructionsite12.jpg
+      Label     Score
+0  Building  0.950326
+1     Water  0.936296
+2       Sky  0.929855
+3     Plant  0.880438
+4     Cloud  0.851414
+5      Tree  0.842016
+6   Vehicle  0.821097
+7     House  0.820046
+8   Asphalt  0.778464
+9      City  0.759430
+     Object     Score
+0  Building  0.596276
+
+constructionsite13.jpg
+        Label     Score
+0         Sky  0.916919
+1      Finger  0.840002
+2         Hat  0.801049
+3        Wood  0.773712
+4       Thumb  0.770558
+5       Elbow  0.740008
+6  Recreation  0.724241
+7     Asphalt  0.694041
+8        Knee  0.687168
+9    Hardwood  0.673244
+   Object     Score
+0  Person  0.803487
+1     Top  0.738611
+
+constructionsite07.jpg
+                 Label     Score
+0                  Sky  0.972014
+1             Building  0.896808
+2          Engineering  0.766675
+3   Composite material  0.749646
+4          Tower block  0.742166
+5                 City  0.735009
+6                Crane  0.717067
+7                Event  0.671005
+8               Facade  0.653290
+9  Commercial building  0.640743
+     Object     Score
+0  Building  0.699497
+
+constructionsite03.jpg
+             Label     Score
+0             Tire  0.954898
+1         Building  0.943059
+2          Vehicle  0.933241
+3              Car  0.932099
+4            Wheel  0.930057
+5  Automotive tire  0.891723
+6          Asphalt  0.861725
+7    Motor vehicle  0.828140
+8     Road surface  0.777679
+9            Truck  0.773335
+      Object     Score
+0  Golf cart  0.590264
+
+constructionsite17.jpg
+                           Label     Score
+0                         Helmet  0.966698
+1                       Hard hat  0.853679
+2                       Headgear  0.810724
+3                            Cap  0.764738
+4                          Plant  0.724682
+5                            Hat  0.722026
+6                     Recreation  0.704553
+7  Personal protective equipment  0.692332
+8                           Tree  0.691301
+9                          Event  0.676657
+     Object     Score
+0    Helmet  0.869932
+1    Person  0.861025
+2    Person  0.854777
+3    Person  0.806627
+4  Clothing  0.717444
+5  Clothing  0.643232
+6  Clothing  0.559494
+7       Hat  0.550159
+8    Person  0.523124
+
+constructionsite16.jpg
+          Label     Score
+0           Sky  0.947664
+1         Water  0.935550
+2      Building  0.905804
+3   Tower block  0.850601
+4       Vehicle  0.825718
+5  Urban design  0.817914
+6         Cloud  0.805391
+7   Engineering  0.782817
+8         Tower  0.781666
+9          City  0.771798
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite02.jpg
+                Label     Score
+0                 Sky  0.967880
+1            Building  0.948806
+2         Tower block  0.816941
+3         Condominium  0.772569
+4               Crane  0.763264
+5        Urban design  0.761486
+6                City  0.760339
+7              Facade  0.754716
+8         Engineering  0.754460
+9  Composite material  0.733014
+     Object     Score
+0  Building  0.882942
+1  Building  0.816795
+2  Building  0.720299
+
+constructionsite28.jpg
+         Label     Score
+0          Sky  0.953947
+1     Building  0.916218
+2      Vehicle  0.897665
+3        Plant  0.835066
+4  Real estate  0.786739
+5      Asphalt  0.781051
+6    Landscape  0.696668
+7         Road  0.685874
+8        Event  0.680623
+9        House  0.665612
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite14.jpg
+               Label     Score
+0                Sky  0.960344
+1           Building  0.953687
+2              Cloud  0.931028
+3              House  0.856757
+4  Building material  0.786721
+5               Tree  0.771091
+6             Facade  0.759687
+7               Roof  0.688713
+8              Event  0.672557
+9            Fixture  0.666606
+     Object     Score
+0  Building  0.665391
+
+constructionsite01.jpg
+                    Label     Score
+0                 Vehicle  0.941273
+1                    Tire  0.933592
+2                 Asphalt  0.818257
+3      Composite material  0.763030
+4         Automotive tire  0.749410
+5                   Crane  0.748038
+6                 Machine  0.747181
+7             Engineering  0.739920
+8  Construction equipment  0.687387
+9                   Event  0.665171
+  Object     Score
+0   Tire  0.731269
+
+constructionsite15.jpg
+             Label     Score
+0            Water  0.956873
+1  Automotive tire  0.884491
+2             Wood  0.856122
+3          Asphalt  0.848194
+4            Plant  0.840142
+5     Road surface  0.836141
+6         Building  0.789432
+7            Grass  0.788497
+8         Flooring  0.769723
+9             Tire  0.743279
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite29.jpg
+      Label     Score
+0  Building  0.948305
+1     Cloud  0.928176
+2     Plant  0.905888
+3      Wood  0.845104
+4     House  0.827220
+5      Tree  0.819486
+6    Facade  0.772875
+7       Sky  0.769916
+8   Vehicle  0.754370
+9     Grass  0.743296
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite72.jpg
+              Label     Score
+0               Car  0.958587
+1          Building  0.954361
+2          Property  0.943139
+3           Vehicle  0.929632
+4             Wheel  0.885004
+5              Tire  0.873721
+6           Asphalt  0.859080
+7       Real estate  0.799720
+8  Residential area  0.790319
+9       Condominium  0.786390
+     Object     Score
+0  Building  0.778392
+1       Car  0.584887
+
+constructionsite66.jpg
+                 Label     Score
+0                Water  0.967063
+1             Building  0.960796
+2           Skyscraper  0.935588
+3                  Sky  0.926556
+4                Tower  0.894065
+5          Tower block  0.842255
+6            Cityscape  0.822938
+7         Urban design  0.817384
+8  Commercial building  0.777670
+9          Condominium  0.775213
+     Object     Score
+0  Building  0.752449
+1  Building  0.539572
+
+constructionsite99.jpg
+               Label     Score
+0           Building  0.940910
+1          Brickwork  0.841834
+2              Water  0.820877
+3              Brick  0.809142
+4                Sky  0.773602
+5             Helmet  0.769315
+6  Building material  0.767194
+7          Tradesman  0.707181
+8               Wood  0.696779
+9         Bricklayer  0.695505
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite98.jpg
+       Label     Score
+0      Water  0.935390
+1   Building  0.844461
+2       Wood  0.830694
+3       Tree  0.798518
+4      Grass  0.796505
+5  Landscape  0.687380
+6    Asphalt  0.673990
+7    Leisure  0.673666
+8      House  0.671252
+9       Roof  0.657212
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite67.jpg
+                Label     Score
+0               Floor  0.811438
+1            Building  0.779947
+2       Entertainment  0.771808
+3                Wood  0.757473
+4            Flooring  0.749311
+5                Soil  0.691037
+6   Building material  0.665734
+7           Landscape  0.661824
+8  Composite material  0.650092
+9            Hardwood  0.647390
+      Object    Score
+0  Furniture  0.59662
+
+constructionsite73.jpg
+                    Label     Score
+0      Naval architecture  0.886144
+1                 Vehicle  0.835000
+2                    Boat  0.806594
+3                Building  0.778225
+4              Monochrome  0.732534
+5  Monochrome photography  0.705082
+6      Composite material  0.685688
+7                   Event  0.685365
+8                   Metal  0.643031
+9             Engineering  0.630788
+  Object     Score
+0   Ship  0.521148
+
+constructionsite65.jpg
+                    Label     Score
+0                    Boat  0.929994
+1                   Water  0.923816
+2                 Vehicle  0.898397
+3              Watercraft  0.864914
+4                    Mast  0.864245
+5                Sailboat  0.765333
+6                    Ship  0.695680
+7                     Rim  0.676910
+8                    Wind  0.668017
+9  Monochrome photography  0.659128
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite71.jpg
+       Label     Score
+0   Building  0.955897
+1      Water  0.955629
+2      Plant  0.920375
+3      House  0.874116
+4    Asphalt  0.867030
+5       Tree  0.850069
+6    Fixture  0.793201
+7      Grass  0.784812
+8     Facade  0.776517
+9  Landscape  0.743606
+  Object     Score
+0  House  0.622002
+
+constructionsite59.jpg
+       Label     Score
+0      Water  0.866455
+1      Plant  0.817239
+2      Grass  0.761842
+3   Building  0.749307
+4    Bedrock  0.690481
+5       Soil  0.685295
+6    Asphalt  0.684583
+7  Landscape  0.682043
+8       Tree  0.646519
+9       Door  0.608456
+   Object     Score
+0  Person  0.903365
+1  Animal  0.665822
+
+constructionsite58.jpg
+      Label     Score
+0      Tire  0.943795
+1  Building  0.942906
+2     Plant  0.941194
+3   Vehicle  0.927102
+4     Water  0.910677
+5      Tree  0.884477
+6     Wheel  0.840999
+7   Asphalt  0.836358
+8      Wood  0.833559
+9     House  0.815777
+      Object     Score
+0  Container  0.512143
+
+constructionsite70.jpg
+      Label     Score
+0  Building  0.946173
+1       Sky  0.920147
+2      Door  0.867639
+3     House  0.863984
+4      Tree  0.850555
+5      Wood  0.850089
+6   Vehicle  0.837043
+7    Window  0.836070
+8     Grass  0.809916
+9   Asphalt  0.797780
+   Object     Score
+0  Person  0.755844
+1  Person  0.736516
+
+constructionsite64.jpg
+           Label     Score
+0       Building  0.936694
+1        Vehicle  0.926759
+2           Wood  0.846723
+3          House  0.842526
+4        Asphalt  0.833290
+5          Floor  0.808596
+6   Road surface  0.796225
+7       Flooring  0.793965
+8  Motor vehicle  0.739658
+9           Road  0.738986
+           Object     Score
+0  Home appliance  0.548758
+1             Car  0.538334
+
+constructionsite48.jpg
+               Label     Score
+0          Ecoregion  0.921481
+1              Plant  0.917967
+2              Smile  0.883784
+3            Bedrock  0.810080
+4               Tree  0.802700
+5         Recreation  0.777836
+6          Landscape  0.771058
+7                Fun  0.762686
+8            Leisure  0.762248
+9  Natural landscape  0.738674
+   Object     Score
+0  Person  0.872609
+1  Person  0.824425
+2  Animal  0.578816
+
+constructionsite60.jpg
+                Label     Score
+0            Building  0.942694
+1             Vehicle  0.801571
+2               House  0.763878
+3           Landscape  0.758455
+4         Engineering  0.730937
+5  Composite material  0.723940
+6               Event  0.699397
+7                Wood  0.698342
+8               Water  0.677858
+9              Facade  0.658596
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite74.jpg
+       Label     Score
+0      Water  0.969199
+1   Building  0.933713
+2       Wood  0.856676
+3       Wall  0.810284
+4      House  0.798512
+5      Plant  0.795568
+6      Grass  0.793425
+7    Asphalt  0.788667
+8       Tree  0.777865
+9  Landscape  0.743024
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite75.jpg
+        Label     Score
+0    Building  0.949779
+1         Sky  0.856378
+2       Cloud  0.819008
+3  Skyscraper  0.800964
+4       House  0.794533
+5        Tree  0.747220
+6        City  0.746598
+7      Facade  0.723135
+8       Event  0.713178
+9       Plant  0.712938
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite61.jpg
+                 Label     Score
+0                Water  0.906230
+1             Building  0.898682
+2   Composite material  0.756105
+3   Naval architecture  0.751027
+4              Asphalt  0.738515
+5                Metal  0.706568
+6  Automotive exterior  0.691427
+7                 Wood  0.668162
+8                 Roof  0.660751
+9                Event  0.659429
+   Object     Score
+0  Animal  0.730324
+
+constructionsite49.jpg
+                Label     Score
+0                 Sky  0.969575
+1               Cloud  0.874640
+2                Wood  0.814456
+3            Building  0.783845
+4                City  0.739211
+5              Facade  0.691593
+6               Metal  0.675157
+7  Composite material  0.674005
+8         Engineering  0.670949
+9        Construction  0.661877
+   Object     Score
+0  Person  0.684351
+
+constructionsite100.jpg
+          Label     Score
+0         Cloud  0.959795
+1           Sky  0.955994
+2         Water  0.939172
+3      Building  0.909356
+4          Tree  0.820690
+5  Urban design  0.766294
+6        Facade  0.747660
+7          City  0.735468
+8     Landscape  0.720951
+9        Travel  0.695364
+     Object     Score
+0  Building  0.529333
+
+constructionsite77.jpg
+               Label     Score
+0                Sky  0.974132
+1              Cloud  0.966057
+2     Infrastructure  0.886848
+3            Vehicle  0.886796
+4            Asphalt  0.882876
+5  Mode of transport  0.846619
+6           Building  0.843750
+7           Land lot  0.841245
+8               Road  0.801977
+9       Thoroughfare  0.797740
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite63.jpg
+       Label     Score
+0        Sky  0.865939
+1   Building  0.828318
+2    Asphalt  0.792749
+3  Landscape  0.756516
+4       Road  0.752689
+5      Plant  0.732477
+6    Horizon  0.696812
+7       Soil  0.673833
+8      Event  0.670484
+9       City  0.624261
+   Object     Score
+0  Animal  0.733023
+1  Turtle  0.708503
+
+constructionsite88.jpg
+                           Label     Score
+0                          Water  0.958385
+1       High-visibility clothing  0.893154
+2                        Asphalt  0.851336
+3                         Helmet  0.790832
+4                     Recreation  0.769402
+5          Geological phenomenon  0.767558
+6  Personal protective equipment  0.732200
+7                            Fun  0.692708
+8             Blue-collar worker  0.690131
+9                           Soil  0.684082
+   Object     Score
+0  Person  0.840641
+
+constructionsite89.jpg
+                 Label     Score
+0                  Sky  0.928259
+1              Gesture  0.852605
+2               Helmet  0.844531
+3  Military camouflage  0.833740
+4      Military person  0.812394
+5              Marines  0.806165
+6     Military uniform  0.767144
+7                Squad  0.767089
+8                 Tree  0.749706
+9                Plant  0.747258
+   Object     Score
+0  Person  0.859154
+1  Person  0.779638
+
+constructionsite62.jpg
+                Label     Score
+0            Building  0.906809
+1                Wood  0.771356
+2                 Gas  0.716901
+3   Building material  0.711550
+4  Composite material  0.704103
+5               Metal  0.696898
+6         Sash window  0.671693
+7              Facade  0.670766
+8               House  0.630512
+9                Roof  0.620594
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite76.jpg
+             Label     Score
+0  Automotive tire  0.890080
+1         Building  0.881850
+2          Vehicle  0.843590
+3     Bicycle tire  0.770542
+4              Rim  0.763121
+5      Engineering  0.762761
+6            Wheel  0.711413
+7            Event  0.692199
+8          Machine  0.687635
+9    Motor vehicle  0.686197
+          Object     Score
+0  Light fixture  0.606748
+1  Light fixture  0.541915
+
+constructionsite53.jpg
+               Label     Score
+0              Water  0.883041
+1             Helmet  0.821550
+2                Fun  0.712416
+3              Event  0.709872
+4            Leisure  0.689741
+5         Recreation  0.685997
+6            Asphalt  0.677331
+7  Competition event  0.676660
+8                Hat  0.668131
+9               Soil  0.662013
+   Object     Score
+0  Helmet  0.784150
+1  Person  0.741301
+2  Helmet  0.681332
+3  Person  0.626235
+
+constructionsite47.jpg
+               Label     Score
+0            Product  0.908147
+1           Building  0.895078
+2                Sky  0.876611
+3               City  0.786800
+4            Vehicle  0.774540
+5            Asphalt  0.765587
+6  Metropolitan area  0.761255
+7             Travel  0.758964
+8        Engineering  0.754072
+9         Metropolis  0.734691
+   Object     Score
+0  Person  0.898229
+1  Person  0.836364
+2  Person  0.788454
+3  Person  0.748872
+4  Person  0.622558
+5  Person  0.568445
+6  Person  0.546993
+7  Person  0.544579
+8  Person  0.503769
+
+constructionsite90.jpg
+      Label     Score
+0       Sky  0.946442
+1  Building  0.860585
+2     Event  0.727757
+3      City  0.717758
+4    Facade  0.713571
+5      Roof  0.706484
+6     Metal  0.670768
+7  Downtown  0.598756
+8     Steel  0.576490
+9   Skyline  0.524344
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite84.jpg
+                 Label     Score
+0             Building  0.901885
+1                 Wood  0.841849
+2                Water  0.841588
+3  Automotive exterior  0.778570
+4               Bumper  0.771854
+5             Flooring  0.763926
+6              Asphalt  0.747768
+7              Vehicle  0.723825
+8             Hardwood  0.716508
+9      Automotive tire  0.691617
+   Object     Score
+0  Person  0.736096
+1  Person  0.577354
+
+constructionsite85.jpg
+               Label     Score
+0           Building  0.959297
+1            Vehicle  0.897490
+2              Water  0.856576
+3               Wood  0.851194
+4               Tree  0.781825
+5  Building material  0.759181
+6            Asphalt  0.758170
+7        Engineering  0.729127
+8               Roof  0.727141
+9             Facade  0.711259
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite91.jpg
+          Label     Score
+0         Fence  0.883140
+1          Mesh  0.881388
+2          Grey  0.841906
+3  Wire fencing  0.826599
+4          Wood  0.818834
+5         Cloud  0.811859
+6          Font  0.800677
+7       Pattern  0.760654
+8           Net  0.742709
+9          Wire  0.733505
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite46.jpg
+             Label     Score
+0            Wheel  0.972650
+1             Tire  0.965139
+2          Vehicle  0.937382
+3              Car  0.915343
+4  Automotive tire  0.910876
+5         Building  0.888974
+6    Motor vehicle  0.880606
+7          Asphalt  0.846744
+8     Road surface  0.823504
+9            Truck  0.793495
+  Object     Score
+0    Car  0.783193
+
+constructionsite52.jpg
+                Label     Score
+0            Building  0.918419
+1               Water  0.820994
+2                Wood  0.804891
+3  Composite material  0.768830
+4   Building material  0.729534
+5                Bird  0.719553
+6         Engineering  0.713627
+7               Metal  0.689841
+8               Event  0.669554
+9           Landscape  0.665395
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite44.jpg
+            Label     Score
+0        Building  0.940835
+1  Infrastructure  0.888309
+2           Water  0.878880
+3         Asphalt  0.819600
+4    Thoroughfare  0.793552
+5            Tree  0.773857
+6           Plant  0.762864
+7       Landscape  0.761946
+8            Road  0.745648
+9           Event  0.697344
+   Object     Score
+0  Person  0.572011
+1  Person  0.550901
+
+constructionsite50.jpg
+        Label     Score
+0       Cloud  0.974837
+1         Sky  0.971092
+2       Water  0.970579
+3      Liquid  0.821539
+4      Travel  0.756954
+5     Cumulus  0.734480
+6       Slope  0.724299
+7  Air travel  0.724251
+8        Wind  0.716535
+9   Wind wave  0.695073
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite78.jpg
+                Label     Score
+0                 Sky  0.958448
+1                Wood  0.771957
+2         Engineering  0.771935
+3   Building material  0.770199
+4  Composite material  0.769467
+5                City  0.754363
+6               Crane  0.711701
+7                Roof  0.698137
+8        Urban design  0.684294
+9            Building  0.667748
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite87.jpg
+           Label     Score
+0       Building  0.967584
+1     Skyscraper  0.908261
+2          Water  0.906608
+3          Plant  0.893606
+4        Vehicle  0.859557
+5    Tower block  0.852724
+6   Urban design  0.828491
+7    Condominium  0.815747
+8  Neighbourhood  0.807208
+9        Asphalt  0.791590
+     Object     Score
+0  Building  0.600837
+
+constructionsite93.jpg
+                Label     Score
+0               Cloud  0.977471
+1                 Sky  0.970965
+2             Vehicle  0.923070
+3               Truck  0.856463
+4              Travel  0.831396
+5             Asphalt  0.787481
+6           Landscape  0.755621
+7                Road  0.730804
+8  Commercial vehicle  0.682280
+9                Wind  0.677228
+   Object     Score
+0  Person  0.643862
+
+constructionsite92.jpg
+                 Label     Score
+0                Water  0.942080
+1             Building  0.935666
+2              Asphalt  0.853570
+3                 Wood  0.833522
+4             Hard hat  0.807831
+5               Helmet  0.803348
+6             Flooring  0.765353
+7         Road surface  0.755608
+8  Construction worker  0.734020
+9          Engineering  0.732772
+     Object     Score
+0    Person  0.857055
+1    Person  0.849475
+2    Person  0.721105
+3  Clothing  0.586530
+
+constructionsite86.jpg
+               Label     Score
+0              Cloud  0.972743
+1                Sky  0.970241
+2           Building  0.939444
+3         Skyscraper  0.889764
+4  Natural landscape  0.789362
+5              Water  0.763409
+6             Travel  0.750629
+7                Art  0.744242
+8               City  0.730851
+9          Landscape  0.725288
+   Object     Score
+0  Animal  0.606851
+
+constructionsite79.jpg
+             Label     Score
+0         Building  0.955554
+1           Window  0.885517
+2          Vehicle  0.869076
+3            House  0.848688
+4          Asphalt  0.827740
+5             Tire  0.827347
+6            Wheel  0.819635
+7              Sky  0.814535
+8      Condominium  0.785313
+9  Automotive tire  0.784504
+     Object     Score
+0  Building  0.630636
+
+constructionsite51.jpg
+                Label     Score
+0               Wheel  0.913742
+1            Building  0.898726
+2             Vehicle  0.890521
+3               Plant  0.872353
+4                Tire  0.866431
+5                Wood  0.846310
+6             Asphalt  0.834173
+7     Automotive tire  0.829391
+8                Tree  0.778009
+9  Composite material  0.757559
+   Object     Score
+0    Tire  0.537360
+1  Mirror  0.503816
+
+constructionsite45.jpg
+       Label     Score
+0        Sky  0.966501
+1      Cloud  0.963271
+2   Building  0.957689
+3      Water  0.920843
+4      House  0.870432
+5       Door  0.771360
+6     Facade  0.768957
+7      Event  0.703771
+8       Wood  0.681132
+9  Landscape  0.667909
+  Object     Score
+0  House  0.629891
+
+constructionsite69.jpg
+                    Label     Score
+0                Building  0.864860
+1                     Sky  0.855602
+2                   Cloud  0.770756
+3                    City  0.728591
+4                    Font  0.714843
+5  Monochrome photography  0.711610
+6              Monochrome  0.696391
+7                   Water  0.689583
+8                Darkness  0.680760
+9                 Asphalt  0.672068
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite41.jpg
+         Label     Score
+0     Building  0.935329
+1         Roof  0.719318
+2        House  0.714490
+3        Metal  0.692048
+4        Event  0.686970
+5         City  0.685197
+6      Asphalt  0.681747
+7  Engineering  0.663168
+8      Vehicle  0.649901
+9       Bridge  0.647467
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite55.jpg
+                Label     Score
+0            Building  0.961297
+1   Building material  0.804453
+2                Wood  0.803298
+3         Tower block  0.787183
+4        Urban design  0.778435
+5         Engineering  0.765658
+6  Composite material  0.754948
+7         Condominium  0.739335
+8                City  0.734014
+9              Facade  0.732338
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite82.jpg
+             Label     Score
+0             Tire  0.965260
+1         Building  0.962463
+2            Wheel  0.918604
+3           Window  0.914271
+4          Vehicle  0.910251
+5  Automotive tire  0.888284
+6          Asphalt  0.862197
+7    Motor vehicle  0.851637
+8     Road surface  0.851573
+9            House  0.832056
+     Object     Score
+0  Building  0.663198
+
+constructionsite96.jpg
+                 Label     Score
+0             Building  0.935451
+1               Window  0.925330
+2                 Wood  0.843063
+3                House  0.816555
+4              Fixture  0.809953
+5             Flooring  0.789083
+6             Hardwood  0.752476
+7  Automotive exterior  0.748991
+8           Wood stain  0.724474
+9               Facade  0.690932
+      Object    Score
+0  Furniture  0.52835
+
+constructionsite97.jpg
+                Label     Score
+0            Building  0.888666
+1             Vehicle  0.867454
+2                Wood  0.863269
+3             Asphalt  0.829615
+4         Engineering  0.761066
+5            Hardwood  0.727936
+6             Machine  0.721896
+7            Flooring  0.701560
+8   Building material  0.687949
+9  Composite material  0.683527
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite83.jpg
+           Label     Score
+0       Building  0.924063
+1          House  0.835319
+2           Wood  0.817632
+3           Tree  0.774939
+4           Roof  0.737100
+5          Plant  0.729593
+6        Asphalt  0.727088
+7          Grass  0.686765
+8  Motor vehicle  0.686174
+9           Road  0.675236
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite54.jpg
+               Label     Score
+0               Tree  0.900735
+1              Plant  0.878881
+2                Sky  0.861300
+3           Land lot  0.840789
+4  Natural landscape  0.824819
+5              Grass  0.808540
+6          Landscape  0.753004
+7  Terrestrial plant  0.746953
+8               Wood  0.725971
+9            Asphalt  0.716476
+   Object     Score
+0  Animal  0.635026
+1  Animal  0.590050
+
+constructionsite40.jpg
+          Label     Score
+0         Water  0.980330
+1      Building  0.957973
+2           Sky  0.949462
+3          Boat  0.866816
+4    Skyscraper  0.839495
+5         House  0.837696
+6  Urban design  0.818688
+7       Vehicle  0.803481
+8   Real estate  0.793890
+9          City  0.774428
+     Object     Score
+0  Building  0.524591
+
+constructionsite68.jpg
+           Label     Score
+0          Plant  0.934247
+1       Building  0.897329
+2        Vehicle  0.895031
+3           Tree  0.883762
+4            Sky  0.862945
+5        Asphalt  0.835450
+6          Wheel  0.817511
+7  Motor vehicle  0.782512
+8          House  0.752320
+9          Event  0.736007
+  Object     Score
+0   Tire  0.592115
+1   Tire  0.584583
+2  Wheel  0.522951
+
+constructionsite56.jpg
+       Label     Score
+0      Cloud  0.941410
+1   Building  0.931131
+2        Sky  0.912175
+3      House  0.852321
+4       Wood  0.832965
+5      Grass  0.803131
+6      Plain  0.771742
+7    Asphalt  0.762334
+8  Landscape  0.744283
+9  Grassland  0.721365
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite42.jpg
+         Label     Score
+0     Building  0.959539
+1        Water  0.954066
+2          Sky  0.916395
+3        Plant  0.916005
+4      Vehicle  0.894936
+5        Cloud  0.890955
+6      Asphalt  0.851940
+7         Tree  0.841418
+8        House  0.787479
+9  Real estate  0.784248
+     Object     Score
+0  Building  0.656688
+
+constructionsite95.jpg
+               Label     Score
+0           Building  0.917088
+1              Plant  0.874896
+2               Wood  0.872051
+3          Brickwork  0.851553
+4              House  0.840842
+5              Water  0.834904
+6               Tree  0.832553
+7              Grass  0.823174
+8              Floor  0.810653
+9  Building material  0.804383
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite81.jpg
+               Label     Score
+0           Building  0.959048
+1                Sky  0.896329
+2            Asphalt  0.794290
+3  Building material  0.773464
+4              Cloud  0.768495
+5              House  0.767456
+6             Facade  0.756767
+7               Door  0.733025
+8              Event  0.686804
+9        Engineering  0.683758
+     Object     Score
+0  Building  0.584264
+
+constructionsite80.jpg
+       Label     Score
+0        Sky  0.952723
+1   Building  0.938566
+2       Tree  0.831434
+3  Brickwork  0.793737
+4     Facade  0.750828
+5      Brick  0.726382
+6      House  0.712746
+7       Roof  0.702731
+8       Soil  0.677972
+9       Wood  0.632316
+   Object     Score
+0  Person  0.860683
+
+constructionsite94.jpg
+          Label     Score
+0           Sky  0.962424
+1      Building  0.948220
+2         Water  0.825991
+3  Urban design  0.808891
+4   Tower block  0.804554
+5          Tree  0.793547
+6   Condominium  0.761483
+7          City  0.752069
+8        Facade  0.702020
+9         Event  0.691337
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite43.jpg
+                Label     Score
+0               Water  0.965381
+1              Nature  0.901693
+2            Building  0.900955
+3             Vehicle  0.885866
+4               Cloud  0.851194
+5                Tree  0.833450
+6               Plant  0.814686
+7  Composite material  0.767296
+8                Wood  0.755901
+9               Slope  0.747616
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite57.jpg
+                Label     Score
+0            Building  0.902948
+1                Wood  0.852299
+2   Building material  0.743509
+3             Vehicle  0.726374
+4            Flooring  0.690209
+5               Grass  0.679818
+6                Soil  0.676950
+7                City  0.673339
+8               Metal  0.667771
+9  Composite material  0.660961
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite30.jpg
+               Label     Score
+0           Building  0.948719
+1           Property  0.941849
+2  Mode of transport  0.852794
+3                Sky  0.842571
+4              Track  0.841255
+5              Cloud  0.838787
+6       Thoroughfare  0.807177
+7               Tree  0.784927
+8               Road  0.781683
+9       Urban design  0.762272
+     Object     Score
+0  Building  0.680173
+1  Building  0.614192
+2  Building  0.548501
+
+constructionsite24.jpg
+          Label     Score
+0      Building  0.919232
+1  Road surface  0.877576
+2       Asphalt  0.860151
+3         Plant  0.848817
+4         Floor  0.826343
+5      Flooring  0.805765
+6         Grass  0.795669
+7          Roof  0.759025
+8         Water  0.753114
+9  Urban design  0.752710
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite18.jpg
+         Label     Score
+0     Building  0.954044
+1   Skyscraper  0.834026
+2        Plant  0.820441
+3         Tree  0.809569
+4         City  0.781572
+5  Tower block  0.779370
+6        Cloud  0.755484
+7          Sky  0.735658
+8       Facade  0.734159
+9        Event  0.716356
+     Object     Score
+0  Building  0.685445
+
+constructionsite19.jpg
+       Label     Score
+0   Building  0.937157
+1      Table  0.922092
+2      House  0.846305
+3      Event  0.713195
+4  Tableware  0.600530
+5  Landscape  0.588575
+6      Shade  0.576485
+7     Shorts  0.561670
+8       Room  0.552650
+9       Yard  0.532198
+   Object     Score
+0  Person  0.884263
+1    Tent  0.688542
+2   Table  0.526443
+
+constructionsite25.jpg
+          Label     Score
+0           Sky  0.977780
+1      Building  0.949660
+2         Cloud  0.934942
+3         Plant  0.911586
+4          Tree  0.817794
+5   Tower block  0.796567
+6         House  0.795527
+7  Urban design  0.791315
+8       Vehicle  0.789971
+9    Skyscraper  0.756854
+     Object     Score
+0  Building  0.779639
+
+constructionsite31.jpg
+                 Label     Score
+0                Cloud  0.927834
+1                  Sky  0.849259
+2             Building  0.828744
+3   Composite material  0.702399
+4    Building material  0.695077
+5  Archaeological site  0.670084
+6               Facade  0.636656
+7      Ancient history  0.617225
+8          Engineering  0.610094
+9              History  0.598268
+     Object     Score
+0  Building  0.651854
+
+constructionsite27.jpg
+       Label     Score
+0   Building  0.846813
+1    Asphalt  0.820415
+2       Wood  0.820049
+3  Brickwork  0.799615
+4      Brick  0.774448
+5      House  0.764905
+6        Hat  0.741602
+7  Landscape  0.713629
+8      Event  0.706891
+9       Soil  0.691217
+     Object     Score
+0    Person  0.834382
+1    Person  0.806033
+2    Person  0.782429
+3  Clothing  0.625996
+4  Clothing  0.617098
+5  Clothing  0.598587
+6  Clothing  0.581667
+7  Clothing  0.578915
+8  Clothing  0.562801
+
+constructionsite33.jpg
+       Label     Score
+0      Water  0.940516
+1   Building  0.874128
+2  Landscape  0.709867
+3      Event  0.695990
+4       Door  0.692499
+5        Art  0.679561
+6       Soil  0.678618
+7      Brick  0.660435
+8       Roof  0.654975
+9      House  0.645165
+   Object     Score
+0  Animal  0.674962
+
+constructionsite32.jpg
+               Label     Score
+0           Building  0.896747
+1               Wood  0.860452
+2            Asphalt  0.810344
+3           Flooring  0.801626
+4           Hardwood  0.783054
+5  Building material  0.750223
+6            Machine  0.723015
+7              Metal  0.676045
+8              Event  0.663792
+9        Engineering  0.637380
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite26.jpg
+               Label     Score
+0                Sky  0.943590
+1              Plant  0.933632
+2              Cloud  0.919130
+3               Tree  0.897196
+4            Vehicle  0.800570
+5              Grass  0.769176
+6          Landscape  0.769119
+7          Grassland  0.746131
+8  Natural landscape  0.714235
+9               Road  0.704395
+   Object     Score
+0  Person  0.871955
+1  Person  0.814518
+2  Person  0.786091
+
+constructionsite22.jpg
+      Label     Score
+0  Building  0.950567
+1      Wood  0.856968
+2     House  0.850613
+3  Flooring  0.804761
+4  Hardwood  0.740718
+5     Event  0.710338
+6      Room  0.608331
+7   Ceiling  0.608281
+8    Window  0.564741
+9     Metal  0.553187
+      Object     Score
+0  Furniture  0.668484
+1  Furniture  0.540883
+
+constructionsite36.jpg
+             Label     Score
+0          Vehicle  0.915431
+1             Tree  0.885240
+2          Asphalt  0.867911
+3             Tire  0.861810
+4              Sky  0.837524
+5     Road surface  0.828381
+6         Building  0.824764
+7    Motor vehicle  0.816839
+8              Car  0.779050
+9  Automotive tire  0.774472
+   Object     Score
+0  Person  0.878791
+
+constructionsite37.jpg
+         Label     Score
+0          Sky  0.970171
+1        Water  0.962182
+2     Building  0.913177
+3      Vehicle  0.749201
+4         City  0.745777
+5  Engineering  0.713514
+6         Wind  0.713393
+7        Event  0.699401
+8         Pole  0.693606
+9    Wind farm  0.678114
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite23.jpg
+          Label     Score
+0      Building  0.927272
+1         Plant  0.871274
+2    Skyscraper  0.813520
+3  Street light  0.792537
+4         House  0.787885
+5          Tree  0.762652
+6          City  0.728029
+7         Event  0.711528
+8        Facade  0.706112
+9     Landscape  0.690859
+   Object     Score
+0  Person  0.553104
+
+constructionsite09.jpg
+                Label     Score
+0               Cloud  0.967131
+1                 Sky  0.962129
+2            Building  0.949020
+3                Tree  0.849339
+4             Asphalt  0.838972
+5               Plant  0.785571
+6               Water  0.761336
+7  Composite material  0.747736
+8              Facade  0.740399
+9                Wood  0.734788
+      Object     Score
+0  Furniture  0.742458
+1   Building  0.677813
+
+constructionsite35.jpg
+               Label     Score
+0           Building  0.959354
+1              Water  0.918048
+2         Skyscraper  0.913150
+3              Plant  0.866296
+4       Urban design  0.828767
+5        Tower block  0.797327
+6        Real estate  0.783225
+7        Condominium  0.781952
+8               City  0.779472
+9  Metropolitan area  0.763077
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite21.jpg
+         Label     Score
+0     Building  0.943599
+1          Sky  0.930661
+2        Plant  0.928950
+3         Tree  0.900468
+4       Nature  0.899628
+5        Water  0.886876
+6      Asphalt  0.831902
+7        Cloud  0.831298
+8        House  0.824977
+9  Real estate  0.785344
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite20.jpg
+                    Label     Score
+0                   Cloud  0.972589
+1                     Sky  0.971698
+2                Building  0.925572
+3                   Crane  0.802363
+4      Composite material  0.731647
+5                 Machine  0.693261
+6  Construction equipment  0.691102
+7            Construction  0.648889
+8             Electricity  0.640419
+9                    City  0.629199
+     Object     Score
+0  Building  0.560246
+
+constructionsite34.jpg
+                Label     Score
+0               Cloud  0.965351
+1                 Sky  0.942871
+2            Triangle  0.784006
+3         Electricity  0.755838
+4            Building  0.747934
+5  Composite material  0.745475
+6         Engineering  0.734856
+7   Building material  0.711614
+8               Metal  0.704036
+9               Shade  0.698924
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
+constructionsite08.jpg
+             Label     Score
+0         Building  0.961567
+1           Window  0.926978
+2            Plant  0.877797
+3            Water  0.859724
+4          Vehicle  0.846723
+5             Tree  0.832801
+6            House  0.826783
+7          Asphalt  0.821422
+8           Facade  0.766085
+9  Automotive tire  0.759603
+Empty DataFrame
+Columns: [Object, Score]
+Index: []
+
