@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 import pandas as pd
-
+from typing import List
 
 @dataclass
 class Fact:
@@ -15,6 +15,9 @@ class Fact:
     # the results returned by get_infix_fact_list
     def get_infix_fact_list(self):
         return [[self.subject, self.predicate, self.object], self.reason, self.score]
+
+    def to_infix_flat_list(self) -> List:
+        return [self.subject, self.predicate, self.object, self.score]
 
     def to_data_frame(self):
 

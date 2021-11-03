@@ -7,6 +7,9 @@ import re
 from itertools import *
 from typing import List
 from commonsense.kb import *
+from commonsense.logical_classes import Fact
+#from kb import *
+
 
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
@@ -30,35 +33,25 @@ get_start = lambda x: x['start']['label']
 get_end = lambda x: x['end']['label']
 get_score = lambda x: x['weight']
 
-__all__ = ['Fact']
+    # def to_list(self) -> List:
+    #     return [self.start, self.relation, self.end, self.score]
 
-@dataclass
-class Fact:
-    start: str
-    relation: str
-    end: str
-    score: float = 1.0
-    # TODO: add source
+    # def all_concepts(self) -> List:
+    #     """
 
-    def to_list(self) -> List:
-        return [self.start, self.relation, self.end, self.score]
+    #     :return: A list of all concepts related to the fact.  To be iterated through.
+    #     :rtype: List
+    #     """
+    #     return [self.start, self.end]
 
-    def all_concepts(self) -> List:
-        """
-
-        :return: A list of all concepts related to the fact.  To be iterated through.
-        :rtype: List
-        """
-        return [self.start, self.end]
-
-    def has_verb(self) -> bool:
-        """
-        TODO: Returns true if the fact has a verb for the relation (used for the conceptual primitives).
-        Currently just returns false
-        :return: True if verb (or not)
-        :rtype: bool
-        """
-        return False
+    # def has_verb(self) -> bool:
+    #     """
+    #     TODO: Returns true if the fact has a verb for the relation (used for the conceptual primitives).
+    #     Currently just returns false
+    #     :return: True if verb (or not)
+    #     :rtype: bool
+    #     """
+    #     return False
 
 
 def make_fact_from_edge(edge: dict) -> Fact:
@@ -103,7 +96,7 @@ class ConceptNet(KB):
                 concepts.append(end)
         return concepts
 
-    def search_with_score(concept: str, relations: List, num_hops: int = 1) -> List:
+    def search_with_score(self, concept: str, relations: List, num_hops: int = 1) -> List:
         """
         Searches for specific concepts in conceptNet with an added score.
         Returns a list of facts
@@ -118,13 +111,14 @@ class ConceptNet(KB):
             edges = obj['edges']
             for edge in edges:
                 if get_relation(edge) == relation:
-                    facts.append(extract_data(edge))
+                    facts.append(self.extract_data(edge))
         return facts
 
-    def extract_data(edge: dict) -> List:
+    def extract_data(self, edge: dict) -> List:
         """
         Returns json data in a list format."""    
-        return make_fact_from_edge(edge).to_list() 
+        return make_fact_from_edge(edge).to_infix_flat_list()
+#return make_fact_from_edge(edge).to_list() 
 
     def get_domain(facts: pd.DataFrame) -> str:
         """
@@ -148,14 +142,14 @@ class ConceptNet(KB):
         return [fact_term, reason]
 
 
-    def build_df(concepts: List, relations: List = DEFAULT_RELATIONS) -> pd.DataFrame:
+    def build_df(self, concepts: List, relations: List = DEFAULT_RELATIONS) -> pd.DataFrame:
         """"
         Makes a data frame of facts from conceptNet for a list of concepts
         """
         facts = []
         for concept in concepts:
-            facts.append(find_anchor_with_score(concept, subject_anchors, True))
-            facts.extend(search_with_score(concept, relations))
+            facts.append(self.find_anchor_with_score(concept, subject_anchors, True))
+            facts.extend(self.search_with_score(concept, relations))
         return pd.DataFrame(facts, columns=['Word1', 'Relation', 'Word2', 'Score']) 
 
 
@@ -225,7 +219,7 @@ class ConceptNet(KB):
                 concept = concept_phrase[-1]
             else:
                 concept = concept_phrase
-            return get_closest_anchor(concept, anchors, 'IsA', include_score)
+            return self.get_closest_anchor(concept, anchors, 'IsA', include_score)
 
 
 
