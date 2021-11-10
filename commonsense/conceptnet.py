@@ -7,9 +7,7 @@ import re
 from itertools import *
 from typing import List
 from commonsense.kb import *
-from commonsense.logical_classes import Fact
-#from kb import *
-
+from commonsense.logical_classes import Fact, to_data_frame, default_fact
 
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
@@ -18,7 +16,7 @@ rel_term = '?rel=/r/'
 limit_suffix = '&limit=1000'
 
 isA_search = '?rel=/r/IsA&limit=1000'
-default_anchor = 'object'
+# default_anchor = 'object'
 limit = 20
 MAX_DEPTH = 3
 
@@ -33,27 +31,7 @@ get_start = lambda x: x['start']['label']
 get_end = lambda x: x['end']['label']
 get_score = lambda x: x['weight']
 
-    # def to_list(self) -> List:
-    #     return [self.start, self.relation, self.end, self.score]
-
-    # def all_concepts(self) -> List:
-    #     """
-
-    #     :return: A list of all concepts related to the fact.  To be iterated through.
-    #     :rtype: List
-    #     """
-    #     return [self.start, self.end]
-
-    # def has_verb(self) -> bool:
-    #     """
-    #     TODO: Returns true if the fact has a verb for the relation (used for the conceptual primitives).
-    #     Currently just returns false
-    #     :return: True if verb (or not)
-    #     :rtype: bool
-    #     """
-    #     return False
-
-
+# Might want to move to logical classes
 def make_fact_from_edge(edge: dict) -> Fact:
     return Fact(get_start(edge), get_relation(edge), get_end(edge), get_score(edge))
 
@@ -77,15 +55,22 @@ class ConceptNet(KB):
     # Everything is a string
     # Relation: symbolic ==> Single Phrase
     # Concepts can be Multiple Words
-    def search(self, concept, relation, reasons=None):
+    def search(self, concept, relation, reason=None) -> List[Fact]:
         """
-        Search for a specific relation in the knowledge base
+        Searches for a particular concept in ConceptNet
 
-        Aggregates 
+        :param concept: The concept to search for
+        :type concept: str
+        :param relation: The specific relation or predicate to search for
+        :type relation: str
+        :param reason: A reason to add to each fact that is aggregated
+        :type reason: str
+        :return: A list of facts for the starter concept for a particular relation
+        :rtype: List
         """
         logging.debug("searching for an anchor point for %s" % concept)
 
-        concepts = []
+        new_facts = []
         word_text = concept.replace(" ", "_").lower()
         obj = requests.get(query_prefix + word_text + '?rel=' + relation +
                            '&limit=100').json()
@@ -93,8 +78,9 @@ class ConceptNet(KB):
         for edge in edges:
             if edge['rel']['label'] == relation:  # this will have to be changed
                 end = edge['end']['label'].lower()
-                concepts.append(end)
-        return concepts
+                new_fact = Fact(concept, relation, end, reason=reason)
+                new_facts.append(new_fact)
+        return new_facts
 
     def search_with_score(self, concept: str, relations: List, num_hops: int = 1) -> List:
         """
@@ -148,9 +134,11 @@ class ConceptNet(KB):
         """
         facts = []
         for concept in concepts:
-            facts.append(self.find_anchor_with_score(concept, subject_anchors, True))
-            facts.extend(self.search_with_score(concept, relations))
-        return pd.DataFrame(facts, columns=['Word1', 'Relation', 'Word2', 'Score']) 
+            facts.append(self.find_anchor(concept, subject_anchors, True))
+            for relation in relations:
+                facts.extend(self.search(concept, relation))
+        return to_data_frame(facts)
+        # return pd.DataFrame([vars(fact) for fact in facts]) # This is the key
 
 
     def clean_phrase(self, description):
@@ -177,10 +165,19 @@ class ConceptNet(KB):
         return [fact_term, reason]
 
 
-    def find_anchor(self, concept_phrase, anchors, include_score: bool = False):
+    def find_anchor(self, concept_phrase, anchors, include_score: bool = False) -> Fact:
         """
-        Search for a specific anchor from a set of anchors
-        TODO: include_score for the conceptNet weights
+        Finds the anchor point (from a list of anchors) and returns a Fact of that anchor point as
+        Fact(concept_phrase, 'IsA', anchor_point)
+
+        :param concept_phrase: The phrase (or concept) to find an anchor point for
+        :type concept_phrase: str
+        :param anchors: the list of anchor points
+        :type anchors: List
+        :param include_score: whether to include the score or not
+        :type include_score: bool
+        :return: A fact with an IsA relation of the chosen anchor point
+        :rtype: Fact
         """
         logging.debug("searching for an anchor point for %s" % concept_phrase)
 
@@ -188,8 +185,7 @@ class ConceptNet(KB):
             if anchor in concept_phrase:
                 logging.debug("anchor point %s is partof the concept phrase: %s"
                               % (anchor, concept_phrase))
-                triple = [concept_phrase, 'IsA', anchor]
-                return self.make_fact(triple, "direct search")
+                return Fact(concept_phrase, 'IsA', anchor, "direct search")
 
         for anchor in anchors:
             if type(concept_phrase) is list:
@@ -197,31 +193,6 @@ class ConceptNet(KB):
             else:
                 concept = concept_phrase
             return self.get_closest_anchor(concept, anchors, 'IsA')
-
-    def find_anchor_with_score(self, concept_phrase, anchors, include_score: bool = False):
-        """
-        Search for a specific anchor from a set of anchors
-        TODO: include_score for the conceptNet weights
-        """
-        logging.debug("searching for an anchor point for %s" % concept_phrase)
-
-        for anchor in anchors:
-            if anchor in concept_phrase:
-                logging.debug("anchor point %s is partof the concept phrase: %s"
-                              % (anchor, concept_phrase))
-                triple = [concept_phrase, 'IsA', anchor]
-                tripe.append("1.0")
-                return triple
-    #            return make_fact(triple, "direct search")
-
-        for anchor in anchors:
-            if type(concept_phrase) is list:
-                concept = concept_phrase[-1]
-            else:
-                concept = concept_phrase
-            return self.get_closest_anchor(concept, anchors, 'IsA', include_score)
-
-
 
 
     def aggregate(self, fact_term, relations):
@@ -262,13 +233,24 @@ class ConceptNet(KB):
                 if new_fact not in facts:
                     facts.append(new_fact)
         return facts
-
-
     
 
-    def get_closest_anchor(self, concept, anchors, relation='IsA', include_score: bool = False):
+    def get_closest_anchor(self, concept, anchors, relation='IsA', include_score: bool = False) -> Fact:
         """
         Goes through all the relations and tries to find the closest one.
+
+        :param concept: The concept to search for
+        :type concept: str
+        :param anchors: A list of possible anchor points
+        :type anchors: List
+        :param relation: The relation or predicate to use for searching the hierarchy
+        :type relation: str
+        :param include_score: Whether to include the score from ConceptNet (or not)
+        :type include_score: bool
+        :return: A fact with the relation/predicate as chosen: Fact(concept, relation, anchor_point)
+        :rtype: Fact
+        """
+        """
         If the anchor point is in the isA hierarchy at all, it
         """
         for anchor in anchors:
@@ -279,17 +261,13 @@ class ConceptNet(KB):
             if edges:
                 for edge in edges:
                     if self.check_IsA_relation(anchor, edge, concept):
-                        triple = [concept, 'IsA', anchor]
-                        if include_score:
-                            triple.append(get_score(edge))
-                            return triple
-                        else:
-                            return self.make_fact(triple, "ConceptNet IsA link")
+                        score = get_score(edge) if include_score else 1.0
+                        return Fact(concept, 'IsA', anchor, reason="ConceptNet IsA link", score=score)
             else:
                 print("IsA relation not found between concept and anchors")
-                return self.default_fact(concept, include_score)
+                return default_fact(concept, include_score)
         # If it is never found, make default object
-        return self.default_fact(concept, include_score)
+        return default_fact(concept, include_score)
 
     def find_anchor_point(self, concept, anchors, relation='IsA', include_score: bool = False):
         """
@@ -340,12 +318,17 @@ class ConceptNet(KB):
         return "object"
     
 
-    def default_fact(self, concept, include_score: bool = False):
-        triple = [concept, 'IsA', default_anchor]
-        if include_score:
-            return triple
-        else:
-            return self.make_fact(triple, "Default anchor point")
+    # def default_fact(self, concept, include_score: bool = False) -> Fact:
+    #     """
+    #     Returns a fact of is to the default anchor.
+    #     TODO: We might want to move this to the logical classes?
+    #     """
+    #     return Fact(concept, 'IsA', default_anchor, "Default anchor point")
+        # triple = [concept, 'IsA', default_anchor]
+        # if include_score:
+        #     return triple
+        # else:
+        #     return self.make_fact(triple, "Default anchor point")
 
     def check_IsA_relation(self, anchor, edge, concept=None):
         if edge['rel']['label'] == 'IsA':

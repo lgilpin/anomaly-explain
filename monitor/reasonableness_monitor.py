@@ -168,7 +168,7 @@ class SnapshotMonitor:
         explanation = []
 
         # how many labels:
-        print("Are we here in reasonable",labels)
+        #print("Are we here in reasonable",labels)
         many_labels = True
         if labels:
             many_labels = True
@@ -219,7 +219,7 @@ class SnapshotMonitor:
             concept = str(sym)
             anchor = self.kb.find_anchor(concept, anchors)
             reasons.append(anchor)
-            print("REASONS ARE %s" % reasons)
+            # print("REASONS ARE %s" % reasons)
 
         # 2: Adding commonsense for the relations of interest
         if labels:
@@ -234,11 +234,10 @@ class SnapshotMonitor:
 
         print("REASONS ARE %s" % reasons)
         logging.debug(reasons)
-        print(reasons)
         data = pd.DataFrame(reasons, columns=['fact', 'reason'])
         return data
         # else return []
-
+        
     def explain_fact(self, starter_fact: Fact):
         """
         TODO / Inprogress function to explain a "starter" fact or list of facts
@@ -266,6 +265,7 @@ class SnapshotMonitor:
         # TODO: Prove automatically
         context = False
         (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
+        print(explanation)
         return self.toFact(facts)
 
 
@@ -277,10 +277,33 @@ class SnapshotMonitor:
         all_facts = []
         for fact in facts_df['fact']:
             if fact is not None:
-                [start, relation, end] = fact.split(" ")
+                tokens = fact.split(" ")
+                if len(tokens) == 3:
+                    [start, relation, end] = fact.split(" ")
+                else:
+                    end = tokens[-1]
+                    relation = tokens[-2]
+                    start = tokens[0] # This will have to be changed eventually 
                 real_fact = Fact(start, relation, end)
                 all_facts.append(real_fact)
         return all_facts
+
+    def explain_labels(self, labels):
+        df = pd.DataFrame()
+        for label in labels:
+            label_df= self.explain_fact(Fact(label, 'isA', 'object'))
+            print("DID IT GO THROUGH")
+            print(label_df)
+            df.append(make_df_from_fact_list(label_df))
+        print(df)
+
+def make_df_from_fact_list(facts):
+    output = pd.DataFrame()
+    for fact in facts:
+        dict_fact = fact.__dict__
+        output = output.append(dict_fact, ignore_index=True)
+    return output
+        
 
 class SceneMonitor:
     def __init__(self, data, rules, snapshots):
