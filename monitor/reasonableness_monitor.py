@@ -291,8 +291,7 @@ class SnapshotMonitor:
     def explain_labels(self, labels):
         df = pd.DataFrame()
         for label in labels:
-            label_df= self.explain_fact(Fact(label, 'isA', 'object'))
-            print("DID IT GO THROUGH")
+            label_df = self.explain_fact(Fact(label, 'isA', 'object'))
             print(label_df)
             df.append(make_df_from_fact_list(label_df))
         print(df)

@@ -47,10 +47,11 @@ class ConceptNet(KB):
     def find_closest_anchor(self, concept_phrase, anchors, include_score: bool):
         self.find_anchor(concept_phrase, anchors, include_score)
 
-    def find_anchor(self, concept_phrase, anchors, include_score: bool):
-        """"""
-
-        self.find_anchor_hops(concept_phrase, anchors, include_score)
+    # def find_anchor(self, concept_phrase, anchors, include_score: bool):
+    #     """"""
+    #     self.find_anchor(concept_phrase, anchors, include_score)
+        #
+        # self.find_anchor_hops(concept_phrase, anchors, include_score)
         
     # Everything is a string
     # Relation: symbolic ==> Single Phrase
@@ -118,14 +119,14 @@ class ConceptNet(KB):
     # Clean is string manipulation
     # Triple is a RDF fact from concept net
     # Reason is a string phrase
-    def make_fact(self, triple, reason):
-        """
-        Makes a basic data fact base in pandas data
-        """
-        logging.debug("Making a new fact: %s with reason: %s" % (triple, reason))
-        [subject, predicate, obj] = triple
-        fact_term = "%s %s %s" % (subject, predicate, self.clean_phrase(obj))
-        return [fact_term, reason]
+    # def make_fact(self, triple, reason):
+    #     """
+    #     Makes a basic data fact base in pandas data
+    #     """
+    #     logging.debug("Making a new fact: %s with reason: %s" % (triple, reason))
+    #     [subject, predicate, obj] = triple
+    #     fact_term = "%s %s %s" % (subject, predicate, self.clean_phrase(obj))
+    #     return [fact_term, reason]
 
 
     def build_df(self, concepts: List, relations: List = DEFAULT_RELATIONS) -> pd.DataFrame:
@@ -229,7 +230,7 @@ class ConceptNet(KB):
         for edge in edges:
             if edge['rel']['label'] == relation:
                 fact = edge['end']['label'].lower()
-                new_fact = self.make_fact([phrase, relation, fact], "ConceptNet")
+                new_fact = Fact(phrase, relation, fact, reason="ConceptNet")
                 if new_fact not in facts:
                     facts.append(new_fact)
         return facts
