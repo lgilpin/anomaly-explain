@@ -13,6 +13,7 @@ import logging
 import pandas as pd
 
 from commonsense.kb import KB
+from commonsense.logical_classes import to_data_frame
 from reasoning import rules
 from reasoning.production import IF, AND, OR, NOT, THEN, DELETE, forward_chain, pretty_goal_tree
 
@@ -53,7 +54,17 @@ class SnapshotMonitor:
     text_exp: str = ""
     kb: KB = ConceptNet()  # Companion()
 
-
+    def kb_name(self) -> str:
+        """
+        This may want to be more verbose
+        :return:
+        :rtype:
+        """
+        if type(self.kb) == ConceptNet:
+            return "ConceptNet"
+        else: return "NextKB"
+    # ^ Have this in the constructor
+# kb = CompanionKB    
     # def __init__(self, labels, data, rules, system_name="vision perception"):
     #     """I started created this as an object, but in reality, it doesn't
     #     really use much of this """
@@ -204,6 +215,7 @@ class SnapshotMonitor:
 
     def add_commonsense(self, symbols, anchors, relations, labels=False):
         """
+        TODO: eliminate this is a repeat method
         This method adds commonsense information for a particular concept
 
         TODO: find the base concept
@@ -234,7 +246,9 @@ class SnapshotMonitor:
 
         print("REASONS ARE %s" % reasons)
         logging.debug(reasons)
-        data = pd.DataFrame(reasons, columns=['fact', 'reason'])
+        data = to_data_frame(reasons)
+        print(data)
+        # data = pd.DataFrame(reasons, columns=['fact', 'reason'])
         return data
         # else return []
         
@@ -257,16 +271,20 @@ class SnapshotMonitor:
         #     print(concept)
         #     symbols = labels
         symbols = starter_fact.all_concepts()
-        facts = self.add_commonsense(symbols, self.anchors, DEFAULT_RELATIONS, True)  # what are labels?
+        facts = self.kb.search_for_concept(starter_fact.predicate, starter_fact.subject, self.kb_name())
+        #facts = self.add_commonsense(symbols, self.anchors, DEFAULT_RELATIONS, True)  # what are labels?
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
-        monitor = SnapshotMonitor(symbols, facts, [], "vision system")
-
+        # monitor = SnapshotMonitor(symbols, facts, [], "vision system")
+        print(facts)
+        return to_data_frame(facts)
         # Forward chain
         # TODO: Prove automatically
         context = False
-        (judgement, explanation) = monitor.test_reasonable_snapshot(facts, symbols, context)
-        print(explanation)
-        return self.toFact(facts)
+        # self.kb.build_df()
+        # (judgement, explanation) = self.test_reasonable_snapshot(facts, symbols, context)
+        # print(explanation)
+        # return self.toFact(facts)
+        # return facts
 
 
         # If there's a verb

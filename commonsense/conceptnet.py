@@ -42,10 +42,11 @@ class ConceptNet(KB):
       2.  LIVE URL 
     """
     def search_for_concept(self, predicate, concept, source):
-        self.search(concept, predicate, source)
+        print(f"Searching for predicate: {predicate} and concept:{concept}")
+        return self.search(concept, predicate, source)
 
-    def find_closest_anchor(self, concept_phrase, anchors, include_score: bool):
-        self.find_anchor(concept_phrase, anchors, include_score)
+    def find_closest_anchor(self, concept_phrase, anchors, include_score: bool=False):
+        return self.find_anchor(concept_phrase, anchors, include_score)
 
     # def find_anchor(self, concept_phrase, anchors, include_score: bool):
     #     """"""
@@ -79,7 +80,8 @@ class ConceptNet(KB):
         for edge in edges:
             if edge['rel']['label'] == relation:  # this will have to be changed
                 end = edge['end']['label'].lower()
-                new_fact = Fact(concept, relation, end, reason=reason)
+                start = edge['start']['label'].lower()
+                new_fact = Fact(start, relation, end, reason=reason)
                 new_facts.append(new_fact)
         return new_facts
 
@@ -133,14 +135,28 @@ class ConceptNet(KB):
         """"
         Makes a data frame of facts from conceptNet for a list of concepts
         """
-        facts = []
-        for concept in concepts:
-            facts.append(self.find_anchor(concept, subject_anchors, True))
-            for relation in relations:
-                facts.extend(self.search(concept, relation))
+        facts = self.build_facts(concepts, relations)
         return to_data_frame(facts)
         # return pd.DataFrame([vars(fact) for fact in facts]) # This is the key
 
+    def build_facts(self, concepts: List, relations: List = DEFAULT_RELATIONS, reason: str = "") -> List[Fact]:
+        """
+        Makes a list of facts for a list of concepts.
+        Heelper method for build_df
+        :param concepts:
+        :type concepts: List[str]
+        :param relations:
+        :type relations:
+        :return:
+        :rtype:
+        """
+        facts = []
+        reason_str = reason if reason != "" else "ConceptNet search"
+        for concept in concepts:
+            facts.append(self.find_anchor(concept, subject_anchors, True))
+            for relation in relations:
+                facts.extend(self.search(concept, relation, reason=reason_str))
+        return facts
 
     def clean_phrase(self, description):
         """
@@ -265,7 +281,7 @@ class ConceptNet(KB):
                         score = get_score(edge) if include_score else 1.0
                         return Fact(concept, 'IsA', anchor, reason="ConceptNet IsA link", score=score)
             else:
-                print("IsA relation not found between concept and anchors")
+                print(f"IsA relation not found between concept: {concept} and anchors.")
                 return default_fact(concept, include_score)
         # If it is never found, make default object
         return default_fact(concept, include_score)
@@ -544,3 +560,80 @@ class ConceptNet(KB):
             if self.isConfusion(context):
                 return True
         return False
+
+    def explain_location(self, concepts: List, df: pd.DataFrame) -> str:
+        """
+        This a new explain function for demonstration purposes.  It will be moved to the monitor eventually.
+        :param concepts: the set of concepts to search for
+        :type concepts: List
+        :param df: the dataframe of facts
+        :type df: pd.Dataframe
+        :return: A string of the explanation
+        :rtype: str
+        """
+        bad_ones = []
+        location = df[df['predicate'] == 'AtLocation']['object'].value_counts().idxmax()
+
+        # We assume that the concepts are aggregated in order. (by score).
+
+        for concept in concepts[1::]:
+            # get the highest AtLocation from the dataframe
+            locations = df[(df['predicate'] == 'AtLocation') & (df['subject'] == concept)]
+            if locations.empty:
+                locations = df[(df['predicate'] == 'AtLocation') & (df['subject'] == "a "+concept)]
+            # print(locations)
+            if locations.empty:
+                bad_ones.append(concept)
+        return f"All concepts share a common location of {location} except for {bad_ones}.  " \
+               f"These concepts are unreasonble."
+
+    def explain_location_by_rank(self, concepts: List) -> str:
+        """
+        This a new explain function for finding the best location in order.
+        It counts the number of times it geets such a location.
+        This will be moved to the monitor eventually.
+        :param concepts: the set of concepts to search.  We assume that their scores are in order
+        :type concepts: List
+        :return: A string of the explanation
+        :rtype: str
+        """
+        bad_ones = []
+        concept = concepts[0]  # This highest ranked one
+        df = self.build_df([concept])
+        all_facts = self.build_facts([concept], reason=concept)
+        intersection = all_facts
+        df['concept'] = concept
+        df['count'] = 1
+        print(df)
+        #
+        #
+        # location = df[df['predicate'] == 'AtLocation']['object'].value_counts().idxmax()
+        #
+        # # We assume that the concepts are aggregated in order. (by score).
+
+        for concept in concepts[1::]:
+            facts = self.build_facts([concept], reason=concept)
+            for fact in facts:
+                for prev_fact in intersection:
+                    if fact == prev_fact:
+                        print("Does this ever happen")
+                        new_fact = Fact(fact.subject, fact.predicate, fact.object,
+                                        reason=f"{prev_fact.reason}, {concept}",
+                                        score=prev_fact.score+fact.score,
+                                        count=prev_fact.count+1)
+                        intersection.append(new_fact)
+                        intersection.remove(prev_fact)
+            print("After ")
+            print(to_data_frame(intersection))
+
+
+
+        #     # get the highest AtLocation from the dataframe
+        #     locations = df[(df['predicate'] == 'AtLocation') & (df['subject'] == concept)]
+        #     if locations.empty:
+        #         locations = df[(df['predicate'] == 'AtLocation') & (df['subject'] == "a "+concept)]
+        #     # print(locations)
+        #     if locations.empty:
+        #         bad_ones.append(concept)
+        # return f"All concepts share a common location of {location} except for {bad_ones}.  " \
+        #        f"These concepts are unreasonble."

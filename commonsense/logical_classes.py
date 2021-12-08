@@ -4,6 +4,7 @@ from typing import List
 
 DEFAULT_ANCHOR = 'object'
 
+
 @dataclass
 class Fact:
 
@@ -12,6 +13,7 @@ class Fact:
     object: str
     reason: str = None
     score: float = 1.0
+    count: int = 1
 
     # Removed to_list because one can just extract the results returned by to_list from
     # the results returned by get_infix_fact_list
@@ -35,6 +37,46 @@ class Fact:
         :rtype: List
         """
         return [self.subject, self.object]
+
+    def __eq__(self, other):
+        """
+        Equality method.  Strips out all the prefixes (a or the)
+
+        :param other: Another fact
+        :type other:
+        :return:
+        :rtype:
+        """
+        if self.predicate != other.predicate:
+            return False
+        elif self.subject == other.subject and self.object == other.object:
+            return True
+        else:
+            cleaned1 = self.clean_fact()
+            cleaned2 = other.clean_fact()
+            if cleaned1.subject == cleaned2.subject and cleaned1.object == cleaned2.object:
+                return True
+            else: return False
+
+    def clean_fact(self):
+        return Fact(clean_concept(self.subject), self.predicate, clean_concept(self.object), self.reason, self.score)
+
+def clean_concept(concept: str) -> str:
+    """
+    Removes the starting strings from conceptNet text
+
+    :param concept: The input string
+    :type concept: str
+    :return: A cleaned concept (with a or the)
+    :rtype: str
+    """
+    if concept.startswith("a "):
+        subject = concept.replace("a ", "")
+        return subject
+    elif concept.startswith("the "):
+        subject = concept.replace("the ", "")
+        return subject
+
 
 def default_fact(concept, include_score: bool = False) -> Fact:
     """
@@ -62,5 +104,5 @@ def to_data_frame(facts: List) -> pd.DataFrame:
     df = pd.DataFrame([vars(fact) for fact in facts])
 
     # Make sure the subject is the first column
-    target_cols = ['subject', 'predicate','object', 'reason', 'score']
+    target_cols = ['subject', 'predicate','object', 'reason', 'score', 'count']
     return df[target_cols]

@@ -1,12 +1,13 @@
 # nuScenes dev-kit.
 # Code written by Leilani H. Gilpin, 2019/2020.
+from commonsense.logical_classes import Fact
 
 import random
 import unittest
 from typing import Dict, List
 
 import numpy as np
-from reasonableness_monitor import *
+from monitor.reasonableness_monitor import SnapshotMonitor
 
 class TestSnapshotMonitor(unittest.TestCase):
     def test_blank(self):
@@ -69,6 +70,14 @@ class TestSnapshotMonitor(unittest.TestCase):
 #         # check that s.split fails when the separator is not a string
 #         with self.assertRaises(TypeError):
 #             s.split(2)
+
+    def test_explain_fact(self):
+        fact = Fact("penguin", "IsA", "animal")
+        cn_monitor = SnapshotMonitor()
+        new_facts  = cn_monitor.explain_fact(fact)
+        print(new_facts)
+
+        pass
 
 if __name__ == '__main__':
     unittest.main()
