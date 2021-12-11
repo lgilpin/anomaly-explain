@@ -74,8 +74,8 @@ class ConceptNet(KB):
 
         new_facts = []
         word_text = concept.replace(" ", "_").lower()
-        obj = requests.get(query_prefix + word_text + '?rel=' + relation +
-                           '&limit=100').json()
+        obj = requests.get(query_prefix + word_text + '?rel=/r/' + relation +
+                           '&limit=1000').json()
         edges = obj['edges']
         for edge in edges:
             if edge['rel']['label'] == relation:  # this will have to be changed
@@ -83,6 +83,32 @@ class ConceptNet(KB):
                 start = edge['start']['label'].lower()
                 new_fact = Fact(start, relation, end, reason=reason)
                 new_facts.append(new_fact)
+        return new_facts
+
+    def search_all(self, concept, reason=None) -> List[Fact]:
+        """
+        Searches for a particular concept in ConceptNet
+
+        :param concept: The concept to search for
+        :type concept: str
+        :param relation: The specific relation or predicate to search for
+        :type relation: str
+        :param reason: A reason to add to each fact that is aggregated
+        :type reason: str
+        :return: A list of facts for the starter concept for a particular relation
+        :rtype: List
+        """
+        new_facts = []
+        word_text = concept.replace(" ", "_").lower()
+        obj = requests.get(query_prefix + word_text +
+                           '&limit=1000').json()
+        edges = obj['edges']
+        for edge in edges:
+            relation = edge['rel']['label']
+            end = edge['end']['label'].lower()
+            start = edge['start']['label'].lower()
+            new_fact = Fact(start, relation, end, reason=reason)
+            new_facts.append(new_fact)
         return new_facts
 
     def search_with_score(self, concept: str, relations: List, num_hops: int = 1) -> List:
@@ -139,7 +165,7 @@ class ConceptNet(KB):
         return to_data_frame(facts)
         # return pd.DataFrame([vars(fact) for fact in facts]) # This is the key
 
-    def build_facts(self, concepts: List, relations: List = DEFAULT_RELATIONS, reason: str = "") -> List[Fact]:
+    def build_facts(self, concepts: List, relations: List = DEFAULT_RELATIONS, reason: str = "", include_anchor = True) -> List[Fact]:
         """
         Makes a list of facts for a list of concepts.
         Heelper method for build_df
@@ -153,12 +179,14 @@ class ConceptNet(KB):
         facts = []
         reason_str = reason if reason != "" else "ConceptNet search"
         for concept in concepts:
-            facts.append(self.find_anchor(concept, subject_anchors, True))
+            if include_anchor:
+                facts.append(self.find_anchor(concept, subject_anchors, True))
+            # facts.extend(self.search_all(concept, reason=reason_str))
             for relation in relations:
                 facts.extend(self.search(concept, relation, reason=reason_str))
         return facts
 
-    def clean_phrase(self, description):
+    def clean(self, description):
         """
         Strips a description and removes spaces, stop words, etc
         TODO: Remove POS tagging and stuff.
@@ -211,17 +239,6 @@ class ConceptNet(KB):
                 concept = concept_phrase
             return self.get_closest_anchor(concept, anchors, 'IsA')
 
-
-    def aggregate(self, fact_term, relations):
-        """
-        Aggregates a commonsense reasons for a particular concept and the relations of interest
-        """
-        all_facts = []
-        for relation in relations:
-            concept_phrase = self.clean(fact_term)
-            new_facts = self.build_relation(concept_phrase, relation)
-            all_facts += new_facts
-        return all_facts
 
     ########### Is this how we want the cleaning ###########################
     def clean(self, symbolic_phrase):
@@ -590,7 +607,7 @@ class ConceptNet(KB):
     def explain_location_by_rank(self, concepts: List) -> str:
         """
         This a new explain function for finding the best location in order.
-        It counts the number of times it geets such a location.
+        It counts the number of times it gets such a location.
         This will be moved to the monitor eventually.
         :param concepts: the set of concepts to search.  We assume that their scores are in order
         :type concepts: List
@@ -599,32 +616,22 @@ class ConceptNet(KB):
         """
         bad_ones = []
         concept = concepts[0]  # This highest ranked one
-        df = self.build_df([concept])
+        # df = self.build_df([concept])
         all_facts = self.build_facts([concept], reason=concept)
         intersection = all_facts
-        df['concept'] = concept
-        df['count'] = 1
-        print(df)
-        #
-        #
-        # location = df[df['predicate'] == 'AtLocation']['object'].value_counts().idxmax()
-        #
-        # # We assume that the concepts are aggregated in order. (by score).
+        unique_locations = set([fact.object for fact in all_facts if fact.predicate=='AtLocation'])
+        # unique_location_facts = [Fact(concept, 'AtLocation', fact.object, reason=concept, count=1) for fact in unique_locations]
 
         for concept in concepts[1::]:
             facts = self.build_facts([concept], reason=concept)
-            for fact in facts:
-                for prev_fact in intersection:
-                    if fact == prev_fact:
-                        print("Does this ever happen")
-                        new_fact = Fact(fact.subject, fact.predicate, fact.object,
-                                        reason=f"{prev_fact.reason}, {concept}",
-                                        score=prev_fact.score+fact.score,
-                                        count=prev_fact.count+1)
-                        intersection.append(new_fact)
-                        intersection.remove(prev_fact)
-            print("After ")
-            print(to_data_frame(intersection))
+            intersection = self.fact_intersection(facts, intersection, concept, relation='AtLocation')
+
+            print(f"After {concept}")
+            if intersection is None:
+                print(f"No common location found for {concept}")
+            else:
+                intersections = to_data_frame(intersection)
+                print(intersections)
 
 
 
@@ -637,3 +644,33 @@ class ConceptNet(KB):
         #         bad_ones.append(concept)
         # return f"All concepts share a common location of {location} except for {bad_ones}.  " \
         #        f"These concepts are unreasonble."
+
+    def fact_intersection(self, base_facts: List, new_facts: List, concept: str, relation:str = "") -> List:
+        """
+        Finds the intersection of two lists of facts.  It will filter on a relation if it's given.
+
+        :param base_facts: The base list of facts
+        :type base_facts: List[Fact]
+        :param new_facts: The second list of facts
+        :type new_facts: List[Fact]
+        :param concept: The starter concept (for the explanation).
+        :type concept: str
+        :param relation: The relation to check for
+        :type relation: str
+        :return: A list of the intersection
+        :rtype: str
+        """
+        intersection = []
+        for fact in new_facts:
+            for prev_fact in base_facts:
+                if fact == prev_fact:
+                    logging.debug(f"Does this ever happen with {fact}")
+                    new_fact = Fact(fact.subject, fact.predicate, fact.object,
+                                    reason=f"{prev_fact.reason}, {concept}",
+                                    score=prev_fact.score + fact.score,
+                                    count=prev_fact.count + 1)
+                    if relation != "" and fact.predicate == relation:
+                        intersection.append(new_fact)
+                    elif relation == "":
+                        intersection.append(new_fact)
+        return intersection

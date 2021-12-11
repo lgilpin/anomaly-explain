@@ -123,7 +123,6 @@ class TestConceptnet(unittest.TestCase):
             answer = set[1]
             self.assertEqual(answer, result)
 
-    @unittest.skip("Outdated")
     def test_aggregate(self):
         """
         TODO: Make 4 different tasks.
@@ -131,42 +130,50 @@ class TestConceptnet(unittest.TestCase):
         :rtype:
         """
 
-        a_answer = [['bicycle IsA two_wheel_vehicle', 'ConceptNet'], ['bicycle IsA bicycle', 'ConceptNet'],
-                    ['bicycle IsA transportation', 'ConceptNet'], ['bicycle AtLocation garage', 'ConceptNet'],
-                    ['bicycle AtLocation street', 'ConceptNet'], ['bicycle AtLocation toy_store', 'ConceptNet']]
-        b_answer = [['dog IsA loyal_friend', 'ConceptNet'], ['dog IsA pet', 'ConceptNet'],
-                    ['dog IsA mammal', 'ConceptNet'], ['dog IsA dog', 'ConceptNet'], ['dog IsA canine', 'ConceptNet'],
-                    ['dog AtLocation kennel', 'ConceptNet'], ['dog AtLocation table', 'ConceptNet'],
-                    ['dog CapableOf bark', 'ConceptNet'], ['dog CapableOf guard_your_house', 'ConceptNet'],
-                    ['dog CapableOf be_a_pet', 'ConceptNet'], ['dog CapableOf run', 'ConceptNet'],
-                    ['dog CapableOf guide_a_blind_person', 'ConceptNet']]
-        c_answer = [['car IsA car', 'ConceptNet'], ['car AtLocation city', 'ConceptNet'],
-                    ['car AtLocation parking_lot', 'ConceptNet'], ['car AtLocation repair_shop', 'ConceptNet'],
-                    ['car AtLocation road', 'ConceptNet'], ['car AtLocation car', 'ConceptNet'],
-                    ['car AtLocation freeway', 'ConceptNet'], ['car AtLocation car_show', 'ConceptNet'],
-                    ['car CapableOf go_fast', 'ConceptNet'], ['car CapableOf crash', 'ConceptNet'],
-                    ['car CapableOf roll_over', 'ConceptNet'], ['car CapableOf slow_down', 'ConceptNet']]
-        d_answer = [['vehicle IsA vehicle', 'ConceptNet'], ['vehicle AtLocation street', 'ConceptNet'],
-                    ['vehicle AtLocation vehicle', 'ConceptNet'], ['vehicle CapableOf receive_damage', 'ConceptNet']]
+        a_answer = [Fact('bicycle', 'IsA', 'two_wheel_vehicle'), # All ends in conceptNet
+                    Fact('bicycle', 'IsA', 'bicycle'), #, 'ConceptNet'],
+                    Fact('bicycle', 'IsA', 'transportation'),# 'ConceptNet'],
+                    Fact('bicycle', 'AtLocation', 'garage'), #, 'ConceptNet'],
+                    Fact('bicycle', 'AtLocation', 'street'), #'ConceptNet'],
+                    Fact('bicycle', 'AtLocation', 'toy_store') ] #'ConceptNet']]
+        # b_answer = [['dog IsA loyal_friend', 'ConceptNet'], ['dog IsA pet', 'ConceptNet'],
+        #             ['dog IsA mammal', 'ConceptNet'], ['dog IsA dog', 'ConceptNet'], ['dog IsA canine', 'ConceptNet'],
+        #             ['dog AtLocation kennel', 'ConceptNet'], ['dog AtLocation table', 'ConceptNet'],
+        #             ['dog CapableOf bark', 'ConceptNet'], ['dog CapableOf guard_your_house', 'ConceptNet'],
+        #             ['dog CapableOf be_a_pet', 'ConceptNet'], ['dog CapableOf run', 'ConceptNet'],
+        #             ['dog CapableOf guide_a_blind_person', 'ConceptNet']]
+        # c_answer = [['car IsA car', 'ConceptNet'], ['car AtLocation city', 'ConceptNet'],
+        #             ['car AtLocation parking_lot', 'ConceptNet'], ['car AtLocation repair_shop', 'ConceptNet'],
+        #             ['car AtLocation road', 'ConceptNet'], ['car AtLocation car', 'ConceptNet'],
+        #             ['car AtLocation freeway', 'ConceptNet'], ['car AtLocation car_show', 'ConceptNet'],
+        #             ['car CapableOf go_fast', 'ConceptNet'], ['car CapableOf crash', 'ConceptNet'],
+        #             ['car CapableOf roll_over', 'ConceptNet'], ['car CapableOf slow_down', 'ConceptNet']]
+        # d_answer = [['vehicle IsA vehicle', 'ConceptNet'], ['vehicle AtLocation street', 'ConceptNet'],
+        #             ['vehicle AtLocation vehicle', 'ConceptNet'], ['vehicle CapableOf receive_damage', 'ConceptNet']]
 
-        list_of_relations = ["IsA", "AtLocation", "CapableOf"]  # List of relations we will test with
+        list_of_relations = ["IsA"]  # List of relations we will test with
 
         cn = ConceptNet()
         # The prompts with the answers attached
-        set_a = cn.aggregate('bicycle IsA two_wheel_vehicle', list_of_relations)
+        set_a = cn.aggregate(Fact('bicycle', 'IsA', 'two_wheel_vehicle'), list_of_relations)
 
-        set_b = cn.aggregate('dog IsA loyal_friend', list_of_relations)
+        # set_b = cn.aggregate('dog IsA loyal_friend', list_of_relations)
+        #
+        # set_c = cn.aggregate('car CapableOf go_fast', list_of_relations)
+        #
+        # set_d = cn.aggregate('vehicle AtLocation street', list_of_relations)
 
-        set_c = cn.aggregate('car CapableOf go_fast', list_of_relations)
+        set_list = set_a #[set_a, set_b, set_c, set_d]  # Add all sets to a list
 
-        set_d = cn.aggregate('vehicle AtLocation street', list_of_relations)
+        # answer_list = [a_answer, b_answer, c_answer, d_answer]  # Adds all answers to a list
+        answer_list = a_answer
+        # assert set_a in answer_list
+        # self.assertEqual(set_list, answer_list)
 
-        set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
-
-        answer_list = [a_answer, b_answer, c_answer, d_answer]  # Adds all answers to a list
-
-        for index in range(len(set_list)):
-            self.assertEqual(set_list[index], answer_list[index])
+        set_b = cn.aggregate(Fact('blue', 'IsA', 'color'), ['SimilarTo'])
+        b_answer = [Fact('northern', 'SimilarTo', 'blue'),
+                    Fact('blue', 'SimilarTo', 'northern')]
+        self.assertEqual(set_b, b_answer)
 
 
     def test_get_closest_anchor(self):
