@@ -32,7 +32,7 @@ class KB:
 		"""
 		pass
 
-	def aggregate(self, fact: Fact, relations: List, reason: str = "") -> List[Fact]:
+	def aggregate(self, fact: Fact, relations: List, reason: str = None) -> List[Fact]:
 		"""
 		Aggregates commonsense reasons for a particular concept and the relations of interest.
 
@@ -40,7 +40,7 @@ class KB:
 		:type fact_term: str
 		:param relations: The list of predicates to search for
 		:type relations: List[str]
-		:param reason: A reason for the search (probably the name of the KB)
+		:param reason: A reason for the search (probably the name of the KB).  Default is None
 		:type reason: str
 		:return: A list of facts aggregated for each predicate in the list of relations.
 		:rtype: List[Fact]
