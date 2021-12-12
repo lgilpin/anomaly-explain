@@ -24,6 +24,7 @@ class KB:
 	def clean(self, concept: str) -> str:
 		"""
 		Strings/ concepts are treated differently in ConceptNet/NextKB (with capitalization).
+		In conceptNet, spaces need to be convert to _
 
 		:param concept: The concept to prepare and clean.
 		:type concept: str

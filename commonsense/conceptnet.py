@@ -186,17 +186,17 @@ class ConceptNet(KB):
                 facts.extend(self.search(concept, relation, reason=reason_str))
         return facts
 
-    def clean(self, description):
+    def clean(self, concept: str) -> str:
         """
         Strips a description and removes spaces, stop words, etc
         TODO: Remove POS tagging and stuff.
         """
         # remove "the" and "a" or "an"
-        cleaned = description
+        cleaned = concept
         starters = ['a ', 'the ', 'an ', 'and ']
         for starter in starters:
-            if description.startswith(starter):
-                cleaned = description.replace(starter, '')
+            if cleaned.startswith(starter):
+                cleaned = cleaned.replace(starter, '')
         return cleaned.replace(' ', '_')
 
 
@@ -238,20 +238,6 @@ class ConceptNet(KB):
             else:
                 concept = concept_phrase
             return self.get_closest_anchor(concept, anchors, 'IsA')
-
-
-    ########### Is this how we want the cleaning ###########################
-    def clean(self, symbolic_phrase):
-        """
-        Helper function for cleaning the symbols.
-
-        May be unnecessary if instead focused on strings.
-        """
-        str_phrase = str(symbolic_phrase).split(' ') #Splitting along the spaces allows proper access to the primary term
-        if type(str_phrase) is list:
-            return str_phrase[0] #changed this from last term to first term in the string to properly do the aggregation
-        else:
-            return str_phrase
 
 
     def build_relation(self, phrase, relation):
@@ -350,19 +336,7 @@ class ConceptNet(KB):
                 # return "object"
         # If it is never found, make default object
         return "object"
-    
 
-    # def default_fact(self, concept, include_score: bool = False) -> Fact:
-    #     """
-    #     Returns a fact of is to the default anchor.
-    #     TODO: We might want to move this to the logical classes?
-    #     """
-    #     return Fact(concept, 'IsA', default_anchor, "Default anchor point")
-        # triple = [concept, 'IsA', default_anchor]
-        # if include_score:
-        #     return triple
-        # else:
-        #     return self.make_fact(triple, "Default anchor point")
 
     def check_IsA_relation(self, anchor, edge, concept=None):
         if edge['rel']['label'] == 'IsA':
@@ -570,7 +544,6 @@ class ConceptNet(KB):
             return False
 
 
-
     # Assume this is a list for now
     def can_propel(self,contexts):
         for context in contexts:
@@ -644,33 +617,3 @@ class ConceptNet(KB):
         #         bad_ones.append(concept)
         # return f"All concepts share a common location of {location} except for {bad_ones}.  " \
         #        f"These concepts are unreasonble."
-
-    def fact_intersection(self, base_facts: List, new_facts: List, concept: str, relation:str = "") -> List:
-        """
-        Finds the intersection of two lists of facts.  It will filter on a relation if it's given.
-
-        :param base_facts: The base list of facts
-        :type base_facts: List[Fact]
-        :param new_facts: The second list of facts
-        :type new_facts: List[Fact]
-        :param concept: The starter concept (for the explanation).
-        :type concept: str
-        :param relation: The relation to check for
-        :type relation: str
-        :return: A list of the intersection
-        :rtype: str
-        """
-        intersection = []
-        for fact in new_facts:
-            for prev_fact in base_facts:
-                if fact == prev_fact:
-                    logging.debug(f"Does this ever happen with {fact}")
-                    new_fact = Fact(fact.subject, fact.predicate, fact.object,
-                                    reason=f"{prev_fact.reason}, {concept}",
-                                    score=prev_fact.score + fact.score,
-                                    count=prev_fact.count + 1)
-                    if relation != "" and fact.predicate == relation:
-                        intersection.append(new_fact)
-                    elif relation == "":
-                        intersection.append(new_fact)
-        return intersection
