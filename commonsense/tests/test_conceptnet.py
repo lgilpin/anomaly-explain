@@ -49,7 +49,6 @@ class TestConceptnet(unittest.TestCase):
             self.assertEqual(trial, result)
 
 
-    # TODO: Come back and update once Leilani cleaned up function
     def test_clean(self):
         """
         Tests cleaning out un-necessary words from text
@@ -64,7 +63,7 @@ class TestConceptnet(unittest.TestCase):
         set_list = [set_a, set_b, set_c, set_d]  # Add all sets to a list
 
         for set in set_list:
-            result = cn.clean(set[0])  # gives cleaned phrase
+            result = cn.clean_concept(set[0])  # gives cleaned phrase
             answer = set[1]
             self.assertEqual(answer, result)
 
@@ -155,6 +154,8 @@ class TestConceptnet(unittest.TestCase):
                                           edge):  # First call should filter out if works properly and second one should alway return True
                         self.assertEqual(True, cn.check_IsA_relation(anchor, edge))
 
+
+    @unittest.skip("Outdated.")
     def test_clean_concept(self):
         cn = ConceptNet()
         set_a = ("dog", "dog")

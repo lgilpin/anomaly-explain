@@ -263,6 +263,8 @@ class SnapshotMonitor:
         :param starter_fact: The fact to start with.
         :return: TODO
         """
+        fact = self.kb.clean(starter_fact)
+
         if self.anchors is None:
             self.anchors = DEFAULT_ANCHORS
         # iterate through the fact...
@@ -270,8 +272,9 @@ class SnapshotMonitor:
         #     # get all commonsense facts
         #     print(concept)
         #     symbols = labels
-        symbols = starter_fact.all_concepts()
-        facts = self.kb.search_for_concept(starter_fact.predicate, starter_fact.subject, self.kb_name())
+        symbols = fact.all_concepts()
+        facts = self.kb.search(fact)
+        # facts = self.kb.search_for_concept(fact.predicate, fact.subject, self.kb_name())
         #facts = self.add_commonsense(symbols, self.anchors, DEFAULT_RELATIONS, True)  # what are labels?
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
         # monitor = SnapshotMonitor(symbols, facts, [], "vision system")

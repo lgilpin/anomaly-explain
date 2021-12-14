@@ -21,15 +21,16 @@ class KB:
 		pass
 
 
-	def clean(self, concept: str) -> str:
+	def clean(self, fact: Fact) -> Fact:
 		"""
 		Strings/ concepts are treated differently in ConceptNet/NextKB (with capitalization).
-		In conceptNet, spaces need to be convert to _
+		For example, in NextKB, the subject and object should be upper case (and all lower case predicate).
+		In conceptNet, spaces need to be convert to _.  Capitalization *shouldn't* matter.
 
-		:param concept: The concept to prepare and clean.
-		:type concept: str
-		:return: The cleaned string for the particular KB
-		:rtype: str
+		:param fact: The input to clean or parse for a particular KB
+		:type fact: Fact
+		:return: A cleaned fact for the particular KB
+		:rtype: Fact
 		"""
 		pass
 

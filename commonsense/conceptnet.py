@@ -186,7 +186,7 @@ class ConceptNet(KB):
                 facts.extend(self.search(concept, relation, reason=reason_str))
         return facts
 
-    def clean(self, concept: str) -> str:
+    def clean_concept(self, concept: str) -> str:
         """
         Strips a description and removes spaces, stop words, etc
         TODO: Remove POS tagging and stuff.
@@ -198,6 +198,18 @@ class ConceptNet(KB):
             if cleaned.startswith(starter):
                 cleaned = cleaned.replace(starter, '')
         return cleaned.replace(' ', '_')
+
+    def clean(self, fact: Fact) -> Fact:
+        """
+        Cleans a fact for conceptNet.  The subject and object should be cleaned using clean_cnoncept/
+        TODO: We eventually may want to check that the predicate is appropriate.
+
+        :param fact: The input fact to clean and prepare for ConceptNet reasoning
+        :type fact: Fact
+        :return: A cleaned fact
+        :rtype: Fact
+        """
+        return Fact(self.clean_concept(fact.subject), fact.predicate, self.clean_concept(fact.object))
 
 
     def make_prolog_fact(self, triple, reason):
@@ -346,15 +358,15 @@ class ConceptNet(KB):
         return False
 
 
-    def clean_concept(self,word):
-        """
-        Remove dashes into a phrase
-        """
-        if "-" in word:
-            phrase = word.split("-")
-            return phrase
-        else:
-            return word.lower()
+    # def clean_concept(self,word):
+    #     """
+    #     Remove dashes into a phrase
+    #     """
+    #     if "-" in word:
+    #         phrase = word.split("-")
+    #         return phrase
+    #     else:
+    #         return word.lower()
 
 
     # Counts the amount of IsA hops from a start to an anchor point
