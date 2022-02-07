@@ -2,8 +2,7 @@ from dataclasses import dataclass
 import requests
 import logging
 import pandas as pd
-import queue
-import re
+
 from itertools import *
 from typing import List
 from commonsense.kb import *
@@ -23,7 +22,6 @@ MAX_DEPTH = 3
 # TODO - this should exist elsewhere
 subject_anchors = ['animal', 'object', 'place', 'plant']
 verb_anchor = ['move', 'propel']
-REASON = "ConceptNet"
 DEFAULT_RELATIONS = ['AtLocation', 'LocatedNear']
 
 get_relation = lambda x: x['rel']['label']
@@ -41,19 +39,17 @@ class ConceptNet(KB):
       1.  URL for testing
       2.  LIVE URL 
     """
+    ANCHORS = subject_anchors
+    REASON = "ConceptNet"
+
     def search_for_concept(self, predicate, concept, source):
         print(f"Searching for predicate: {predicate} and concept:{concept}")
         return self.search(concept, predicate, source)
 
-    def find_closest_anchor(self, concept_phrase, anchors, include_score: bool=False):
+    def find_closest_anchor(self, concept_phrase, anchors=ANCHORS, include_score: bool=False):
         return self.find_anchor(concept_phrase, anchors, include_score)
 
-    # def find_anchor(self, concept_phrase, anchors, include_score: bool):
-    #     """"""
-    #     self.find_anchor(concept_phrase, anchors, include_score)
-        #
-        # self.find_anchor_hops(concept_phrase, anchors, include_score)
-        
+
     # Everything is a string
     # Relation: symbolic ==> Single Phrase
     # Concepts can be Multiple Words
@@ -133,7 +129,7 @@ class ConceptNet(KB):
         """
         Returns json data in a list format."""    
         return make_fact_from_edge(edge).to_infix_flat_list()
-#return make_fact_from_edge(edge).to_list() 
+
 
     def get_domain(facts: pd.DataFrame) -> str:
         """
