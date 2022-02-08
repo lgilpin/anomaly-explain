@@ -95,9 +95,9 @@ class ConceptNet(KB):
         :rtype: List
         """
         new_facts = []
+        # get all the relations
         word_text = concept.replace(" ", "_").lower()
-        obj = requests.get(query_prefix + word_text +
-                           '&limit=1000').json()
+        obj = requests.get(query_prefix + word_text).json()
         edges = obj['edges']
         for edge in edges:
             relation = edge['rel']['label']
