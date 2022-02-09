@@ -8,6 +8,7 @@ from typing import List
 from commonsense.kb import *
 from commonsense.logical_classes import Fact, to_data_frame, default_fact
 
+query_cn = 'http://api.conceptnet.io'
 query_prefix_old = 'http://api.conceptnet.io/c/en/'
 query_prefix_older = 'http://api.conceptnet.io/query?node=/c/en/'
 query_prefix = 'http://api.conceptnet.io/c/en/'
@@ -81,7 +82,7 @@ class ConceptNet(KB):
                 new_facts.append(new_fact)
         return new_facts
 
-    def search_all(self, concept, reason=None) -> List[Fact]:
+    def search_all(self, concept, reason=None, page_limit: int = 10) -> List[Fact]:
         """
         Searches for a particular concept in ConceptNet
 
@@ -98,13 +99,20 @@ class ConceptNet(KB):
         # get all the relations
         word_text = concept.replace(" ", "_").lower()
         obj = requests.get(query_prefix + word_text).json()
-        edges = obj['edges']
-        for edge in edges:
-            relation = edge['rel']['label']
-            end = edge['end']['label'].lower()
-            start = edge['start']['label'].lower()
-            new_fact = Fact(start, relation, end, reason=reason)
-            new_facts.append(new_fact)
+        while obj:
+            edges = obj['edges']
+            # get all pages
+            for edge in edges:
+                relation = edge['rel']['label']
+                end = edge['end']['label'].lower()
+                start = edge['start']['label'].lower()
+                new_fact = Fact(start, relation, end, reason=reason)
+                new_facts.append(new_fact)
+            if 'nextPage' in obj['view']:
+                next_page = obj['view']['nextPage']
+                obj = requests.get(query_cn+next_page).json()
+            else:
+                break
         return new_facts
 
     def search_with_score(self, concept: str, relations: List, num_hops: int = 1) -> List:
