@@ -82,7 +82,7 @@ class ConceptNet(KB):
                 new_facts.append(new_fact)
         return new_facts
 
-    def search_all(self, concept, reason=None, page_limit: int = 10) -> List[Fact]:
+    def search_all(self, concept, reason=None, page_limit: int = 20) -> List[Fact]:
         """
         Searches for a particular concept in ConceptNet
 
@@ -99,7 +99,7 @@ class ConceptNet(KB):
         # get all the relations
         word_text = concept.replace(" ", "_").lower()
         obj = requests.get(query_prefix + word_text).json()
-        while obj:
+        for i in range(0, page_limit-1):
             edges = obj['edges']
             # get all pages
             for edge in edges:
@@ -472,6 +472,16 @@ class ConceptNet(KB):
                           % (word, verb_primitive))
             logging.debug("Going to search for the next the verb primitive")
             return False
+
+    def has_edges(self, word, target, num_hops = 2):
+        if self.has_any_edge(word, target):
+            return True
+        else:
+            all_facts = self.search_all(word)
+            for hop_word in list(to_data_frame(all_facts)['subject'].unique()) + list(to_data_frame(all_facts)['object'].unique()):
+                if self.has_any_edge(hop_word, target):
+                    return True
+        return False
 
 
     # First check if there is a direct connection via an IsA relation
