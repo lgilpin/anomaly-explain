@@ -253,3 +253,4 @@ driver.py
 - This shouldn't be so hard, get the change in ego poses 
 * Jupyter 
 - [[https://jupyter.readthedocs.io/en/latest/projects/jupyter-directories.html][paths]]
+* TODO Add other notes
