@@ -1,12 +1,26 @@
-# anomaly-explain
-ADE architecture.  
+#+TITLE: Anomaly Explain
+#+AUTHOR: Leilani H. Gilpin
+#+EMAIL: lgilpin@ucsc.edu
+#+STARTUP: hidestars indent
 
-- [ ] Will further update.  
-- [ ] Setting new github repo.
+This is the anomaly detection through explanations (ADE)
+architecture.  It compromises of two systems:
+1. A system level architecture (ADE) which uses a synthesizer to
+  reconcile failures amongst a set of reasonableness monitors.
+2. Reasonableness monitors for each subsystem.
+
+** Commonsense
+
 
 Run conceptNet tests with:
 #+BEGIN_SRC
 python3 system_tests/test_conceptnet.py -m unittest
 #+END_SRC
 
-** TODO Test suite
+** Reasonableness monitor
+** Synthesizer
+** Tasks
+*** TODO Test suite
+- Tests are scattered throughout the repo.  The most recent tests are
+  in commonsense/tests and should probably be put somewhere else in
+  the repo. 
