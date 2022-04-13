@@ -31,7 +31,19 @@ monitors can be catered to a particular set of relations or not.
 * Tasks
 ** TODO Common representation for using facts
 ** TODO Chain together explanations
+What we want (a,b,c) AND (c,e,f) -> a,b,c,e,f
+penguins are birds and birds are animals -> penguins are animals.
+- [ ] These are called "facts" (subject, predicate, object).
+  - They are also stored in dataframes.  (But we go between them, that
+    might not be the best idea).
+- Lego example: waiting for better labels. 
 ** TODO Test suite
 - Tests are scattered throughout the repo.  The most recent tests are
   in commonsense/tests and should probably be put somewhere else in
-  the repo. 
+  the repo.
+- There should also probably be one command to run all the tests (for
+  the monitor, for commonsense, and the explainer).
+- [ ] Small commonsense text file (so that if we don't have internet,
+  it can still run).
+  - Parse the conceptNet .csv file, and extract out 10-20 facts for
+    testing.  
