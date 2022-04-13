@@ -3,3 +3,10 @@ ADE architecture.
 
 - [ ] Will further update.  
 - [ ] Setting new github repo.
+
+Run conceptNet tests with:
+#+BEGIN_SRC
+python3 system_tests/test_conceptnet.py -m unittest
+#+END_SRC
+
+** TODO Test suite

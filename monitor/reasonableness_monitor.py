@@ -293,6 +293,29 @@ class SnapshotMonitor:
         # If there's a verb
         # if starter_fact.hasVerb(): # Do something
         # else:
+    def explain_all_events(self, facts: List) -> None:
+        df = to_data_frame(facts)
+        events = df.groupby("subject")
+        # print("Debugging found %d events", events.count())
+        for event in events:
+            (name, event_df) = event
+            event_type = "looking" if name.startswith("looking") else "speaking"
+            print("Explaining", name)
+            observer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
+            doer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
+            print("  %s is observing a %s event"%(observer, event_type))
+            # print(event_df)
+            if event_type == "looking":
+                looker = event_df[event_df['predicate'] == 'looker'][['object']].values[0][0]
+                direction = event_df[event_df['predicate'] == 'direction'][['object']]
+                # if direction is not None:
+                #     direction_str = direction.values[0][0]
+                # print("%s looking in %s direction"%(looker, direction))
+            else:
+                speaker = event_df[event_df['predicate'] == 'speaker'][['object']].values[0][0]
+                utterance = event_df[event_df['predicate'] == 'utterance'][['object']].values[0][0]
+                print("  %s spoke %s" % (speaker, utterance))
+
 
     def toFact(self, facts_df: pd.DataFrame) -> List[Fact]:
         all_facts = []

@@ -1,4 +1,4 @@
-from commonsense.logical_classes import Fact
+from commonsense.logical_classes import Fact, parse_file_to_fact_list
 import pandas as pd
 import unittest
 
@@ -33,6 +33,13 @@ class TestFact(unittest.TestCase):
         self.assertTrue(type(dataframe) is pd.DataFrame, 'to_data_frame returned an incorrect type')
 
         pass
+
+    def test_read_file(self):
+        facts = parse_file_to_fact_list("datasets/output_feb25.txt")
+        test_fact = Fact('lookingInDEvent1', 'isa', 'LookingInDirectionEvent')
+        self.assertTrue(test_fact in facts)
+        pass
+
 
 if __name__ == "__main__":
     unittest.main()

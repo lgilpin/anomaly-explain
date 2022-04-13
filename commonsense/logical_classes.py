@@ -1,3 +1,4 @@
+import sys
 from dataclasses import dataclass
 import pandas as pd
 from typing import List
@@ -106,3 +107,26 @@ def to_data_frame(facts: List) -> pd.DataFrame:
     # Make sure the subject is the first column
     target_cols = ['subject', 'predicate','object', 'reason', 'score', 'count']
     return df[target_cols]
+
+def parse_file_to_fact_list(fileName: str) -> List[Fact]:
+    """
+    Parses a file and turns it into a list of facts to parse
+    :param str:
+    :type str:
+    :return:
+    :rtype:
+    """
+    fact_list = []
+    file1 = open("/Users/leilani/workspace/anomaly-explain/datasets/PAX/output_feb25.txt", 'r')
+    lines = file1.readlines()
+
+    count = 0
+    # Strips the newline character
+    for line in lines:
+        if line.strip() != "":
+            tokens = line.strip().replace("(", "").replace(")", "").split()
+            fact = Fact(tokens[1], tokens[0], tokens[2])
+            fact_list.append(fact)
+    file1.close()
+    return fact_list
+
