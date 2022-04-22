@@ -4,6 +4,7 @@ import pandas as pd
 from typing import List
 
 DEFAULT_ANCHOR = 'object'
+DATA_DIR = 'datasets/'
 
 
 @dataclass
@@ -130,3 +131,22 @@ def parse_file_to_fact_list(fileName: str) -> List[Fact]:
     file1.close()
     return fact_list
 
+def create_facts_from_file(filename: str) -> List[Fact]:
+    """
+    Reads in a file and creates a list of new facts.
+    :param filename:
+    :type filename:
+    :return:
+    :rtype:
+    """
+    facts = []
+    pathName = '/Users/leilani/workspace/anomaly-explain/datasets/PAX/' + filename
+    with open(pathName) as file:
+        lines = file.readlines()
+    for line in lines:
+        tokens = line.strip().split(",")
+        if len(tokens) == 2:
+            facts.append(Fact(tokens[0], 'isA', tokens[1]))
+        else:
+            facts.append(Fact(tokens[0], tokens[1], tokens[2]))
+    return facts

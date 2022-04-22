@@ -15,7 +15,9 @@ ConceptNet (conceptnet.py).
 
 The commonsense data is stored as a list of facts (see Fact in
 logical_classes.py) for a particular query or queries.  The list of
-facts can be operated on as a list or as a dataframe.  
+facts can be operated on as a list or as a dataframe.
+
+Domain specific facts are in datasets/PAX/gaze_facts.txt
 
 Run conceptNet tests with:
 #+BEGIN_SRC

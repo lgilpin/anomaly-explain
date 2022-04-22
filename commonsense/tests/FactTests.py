@@ -1,4 +1,4 @@
-from commonsense.logical_classes import Fact, parse_file_to_fact_list
+from commonsense.logical_classes import Fact, parse_file_to_fact_list, create_facts_from_file
 import pandas as pd
 import unittest
 
@@ -39,6 +39,14 @@ class TestFact(unittest.TestCase):
         test_fact = Fact('lookingInDEvent1', 'isa', 'LookingInDirectionEvent')
         self.assertTrue(test_fact in facts)
         pass
+
+    def test_read_fact_file(self):
+        facts = create_facts_from_file("gaze_facts.txt")
+        relation = 'isA'
+        true_facts = [Fact('down', relation, 'looking at the task'),
+                    Fact('center', relation, 'looking at the robot'),
+                    Fact('down and right', relation, 'looking at the picture')]
+        self.assertEqual(facts, true_facts)
 
 
 if __name__ == "__main__":
