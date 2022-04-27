@@ -13,7 +13,7 @@ import logging
 import pandas as pd
 
 from commonsense.kb import KB
-from commonsense.logical_classes import to_data_frame
+from commonsense.logical_classes import to_data_frame, get_fact_query, Event
 from reasoning import rules
 from reasoning.production import IF, AND, OR, NOT, THEN, DELETE, forward_chain, pretty_goal_tree
 
@@ -293,10 +293,9 @@ class SnapshotMonitor:
         # If there's a verb
         # if starter_fact.hasVerb(): # Do something
         # else:
-    def explain_all_events(self, facts: List) -> None:
+    def explain_all_events(self, facts: List, add_facts: List = None) -> None:
         df = to_data_frame(facts)
         events = df.groupby("subject")
-        # print("Debugging found %d events", events.count())
         for event in events:
             (name, event_df) = event
             event_type = "looking" if name.startswith("looking") else "speaking"
@@ -304,17 +303,71 @@ class SnapshotMonitor:
             observer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
             doer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
             print("  %s is observing a %s event"%(observer, event_type))
-            # print(event_df)
+
+            # Check for alignment between additional facts
             if event_type == "looking":
                 looker = event_df[event_df['predicate'] == 'looker'][['object']].values[0][0]
                 direction = event_df[event_df['predicate'] == 'direction'][['object']]
-                # if direction is not None:
-                #     direction_str = direction.values[0][0]
-                # print("%s looking in %s direction"%(looker, direction))
+                if not direction.empty:
+                    direction_str = direction.values[0][0].lower()
+                    print("  %s looking in %s direction"%(looker, direction_str))
+                    if add_facts:
+                        # check if the direction is in the additional facts
+                        fact = get_fact_query(direction_str, add_facts)
+                        if fact:
+                            reason = fact.object
+                            print("  Since %s is looking in %s direction, %s is %s"%(looker, direction_str, looker, reason))
             else:
                 speaker = event_df[event_df['predicate'] == 'speaker'][['object']].values[0][0]
                 utterance = event_df[event_df['predicate'] == 'utterance'][['object']].values[0][0]
                 print("  %s spoke %s" % (speaker, utterance))
+            print(event_df)
+
+    def explain_event(self, event: Event, add_facts: List = None):
+        name = event.event_type
+        event_df = to_data_frame(event.facts)
+        # type_name = event_df[event_df['predicate'] == 'isA'][['object']].values[0]
+        # name = "looking" if type_name.startswith("looking") else "speaking"
+        print("Explaining", name)
+        observer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
+        doer = event_df[event_df['predicate'] == 'observedBy'][['object']].values[0][0]
+        print("  %s is observing a %s event" % (observer, name))
+
+        # Check for alignment between additional facts
+        if name == "looking":
+            looker = event_df[event_df['predicate'] == 'looker'][['object']].values[0][0]
+            direction = event_df[event_df['predicate'] == 'direction'][['object']]
+            if not direction.empty:
+                direction_str = direction.values[0][0].lower()
+                print("  %s looking in %s direction" % (looker, direction_str))
+                if add_facts:
+                    # check if the direction is in the additional facts
+                    fact = get_fact_query(direction_str, add_facts)
+                    if fact:
+                        reason = fact.object
+                        print(
+                            "  Since %s is looking in %s direction, %s is %s" % (looker, direction_str, looker, reason))
+        else:
+            speaker = event_df[event_df['predicate'] == 'speaker'][['object']].values[0][0]
+            utterance = event_df[event_df['predicate'] == 'utterance'][['object']].values[0][0]
+            print("  %s spoke %s" % (speaker, utterance))
+
+    def explain_events(self, events: List, add_facts: List = None) -> None:
+        last_direction = None
+        last_direction_event = None
+        user = "user"
+        for event in events:
+            self.explain_event(event, add_facts)
+            for fact in event.facts:
+                if fact.predicate == 'direction':
+                    current_direction = fact.object
+                    current_event = event
+                    if last_direction != current_direction and last_direction is not None:
+                        print("  %s THEN %s"%(last_direction, current_direction))
+                    last_direction = current_direction
+                    last_direction_event = event
+                elif fact.predicate == 'utterance':
+                    print("  %s speaks, so %s may want help."%(user, user))
 
 
     def toFact(self, facts_df: pd.DataFrame) -> List[Fact]:

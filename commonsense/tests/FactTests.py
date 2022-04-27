@@ -1,4 +1,4 @@
-from commonsense.logical_classes import Fact, parse_file_to_fact_list, create_facts_from_file
+from commonsense.logical_classes import Fact, parse_file_to_fact_list, create_facts_from_file, to_data_frame
 import pandas as pd
 import unittest
 
@@ -38,6 +38,24 @@ class TestFact(unittest.TestCase):
         facts = parse_file_to_fact_list("datasets/output_feb25.txt")
         test_fact = Fact('lookingInDEvent1', 'isa', 'LookingInDirectionEvent')
         self.assertTrue(test_fact in facts)
+        pass
+
+    def test_read_file_with_limt(self):
+        facts = parse_file_to_fact_list("datasets/output_feb25.txt", 10)
+        test_fact = Fact('lookingInDEvent1', 'isa', 'LookingInDirectionEvent')
+        self.assertTrue(test_fact in facts)
+        print(len(facts))
+        self.assertTrue(len(facts) == 10)
+        df = to_data_frame(facts)
+        pass
+
+    def test_read_file_with_limt(self):
+        facts = parse_file_to_fact_list("datasets/output_feb25.txt", 30)
+        test_fact = Fact('lookingInDEvent1', 'isa', 'LookingInDirectionEvent')
+        self.assertTrue(test_fact in facts)
+        print(len(facts))
+        self.assertTrue(len(facts) == 30)
+        df = to_data_frame(facts)
         pass
 
     def test_read_fact_file(self):

@@ -63,6 +63,48 @@ class Fact:
     def clean_fact(self):
         return Fact(clean_concept(self.subject), self.predicate, clean_concept(self.object), self.reason, self.score)
 
+@dataclass
+class Event:
+    facts: List[Fact]
+    timestamp: int = 0
+    event_type: str = None
+    label: str = None
+    actor: str = None
+
+    def __post_init__(self):
+        for fact in self.facts:
+            if fact.predicate == 'timestamp':
+                self.timestamp = fact.object
+            if fact.predicate == 'isa':
+                self.event_type = 'looking' if fact.subject.startswith("looking") else 'speaking'
+        self.set_label()
+
+    def set_label(self):
+        query = 'direction' if self.event_type == 'looking' else 'utterance'
+        for fact in self.facts:
+            if fact.predicate == query:
+                self.label = fact.object
+
+
+@dataclass
+class EventReasoner:
+    facts: List[Fact]
+    is_changed: bool = False
+
+    def assert_fact(self, fact):
+        if not fact in self.facts:
+            self.facts += [fact]
+            self.is_changed = True
+
+    # def forward_chain(self):
+    #     while self.is_changed:
+    #         is_changed = False
+    #         for fact in self.facts:
+    #             if fact.predicate == "direction":
+
+
+
+
 def clean_concept(concept: str) -> str:
     """
     Removes the starting strings from conceptNet text
@@ -109,7 +151,7 @@ def to_data_frame(facts: List) -> pd.DataFrame:
     target_cols = ['subject', 'predicate','object', 'reason', 'score', 'count']
     return df[target_cols]
 
-def parse_file_to_fact_list(fileName: str) -> List[Fact]:
+def parse_file_to_fact_list(fileName: str, limit: int = -1) -> List[Fact]:
     """
     Parses a file and turns it into a list of facts to parse
     :param str:
@@ -129,7 +171,48 @@ def parse_file_to_fact_list(fileName: str) -> List[Fact]:
             fact = Fact(tokens[1], tokens[0], tokens[2])
             fact_list.append(fact)
     file1.close()
-    return fact_list
+    if limit > 0:
+        return fact_list[0:limit]
+    else:
+        return fact_list
+
+
+def parse_file_to_event_list(fileName: str, event_limit: int = -1) -> List[Fact]:
+    """
+    Parses a file and turns it into a list of facts to parse
+    :param str:
+    :type str:
+    :return:
+    :rtype:
+    """
+    fact_list_per_event = []
+    file1 = open("/Users/leilani/workspace/anomaly-explain/datasets/PAX/output_feb25.txt", 'r')
+    lines = file1.readlines()
+    events = []
+
+    count = 0
+    # Strips the newline character
+    for line in lines:
+        if line.strip() != "":
+            tokens = line.strip().replace("(", "").replace(")", "").split()
+            fact = Fact(tokens[1], tokens[0], tokens[2])
+            fact_list_per_event.append(fact)
+        else: # ending of an event
+            new_event = Event(fact_list_per_event)
+            events.append(new_event)
+            fact_list_per_event = []
+
+    file1.close()
+    if event_limit > 0:
+        return events[0:event_limit]
+    else:
+        return events
+
+def get_fact_query(query: str, facts: List[Fact]) -> Fact:
+    for fact in facts:
+        if fact.subject == query or fact.object == query:
+            return fact
+    return None
 
 def create_facts_from_file(filename: str) -> List[Fact]:
     """
@@ -146,7 +229,7 @@ def create_facts_from_file(filename: str) -> List[Fact]:
     for line in lines:
         tokens = line.strip().split(",")
         if len(tokens) == 2:
-            facts.append(Fact(tokens[0], 'isA', tokens[1]))
+            facts.append(Fact(tokens[0].strip(), 'isA', tokens[1].strip()))
         else:
-            facts.append(Fact(tokens[0], tokens[1], tokens[2]))
+            facts.append(Fact(tokens[0].strip(), tokens[1], tokens[2].strip()))
     return facts
