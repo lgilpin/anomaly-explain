@@ -176,6 +176,38 @@ def parse_file_to_fact_list(fileName: str, limit: int = -1) -> List[Fact]:
     else:
         return fact_list
 
+def parse_raw_file_to_event_list(fileName: str, event_limit: int = -1) -> List[Fact]:
+    """
+    Parses a file and turns it into a list of facts to parse
+    :param str:
+    :type str:
+    :return:
+    :rtype:
+    """
+    fact_list_per_event = []
+    file1 = open("/Users/leilani/workspace/anomaly-explain/datasets/allnewsemanticdatawithmultimodal/allnewsemanticdatawithmultimodal0025.txt", 'r')
+    lines = file1.readlines()
+    events = []
+
+    count = 0
+    # Strips the newline character
+    for line in lines:
+        if line.strip() != "":
+            tokens = line.strip().replace("(", "").replace(")", "").split()
+            fact = Fact(tokens[1], tokens[0], tokens[2])
+            fact_list_per_event.append(fact)
+        else: # ending of an event
+            print(line)
+            new_event = Event(fact_list_per_event)
+            events.append(new_event)
+            fact_list_per_event = []
+
+    file1.close()
+    if event_limit > 0:
+        return events[0:event_limit]
+    else:
+        return events
+
 
 def parse_file_to_event_list(fileName: str, event_limit: int = -1) -> List[Fact]:
     """
