@@ -214,7 +214,8 @@ def parse_raw_file_to_event_list(fileName: str, event_limit: int = -1) -> List[F
         return events
 
 
-def parse_file_to_event_list(fileName: str, event_limit: int = -1) -> List[Fact]:
+def parse_file_to_event_list(fileName: str="/Users/leilani/workspace/anomaly-explain/datasets/PAX/output_feb25.txt",
+ event_limit: int = -1) -> List[Fact]:
     """
     Parses a file and turns it into a list of facts to parse
     :param str:
@@ -223,7 +224,7 @@ def parse_file_to_event_list(fileName: str, event_limit: int = -1) -> List[Fact]
     :rtype:
     """
     fact_list_per_event = []
-    file1 = open("/Users/leilani/workspace/anomaly-explain/datasets/PAX/output_feb25.txt", 'r')
+    file1 = open(fileName, 'r')
     lines = file1.readlines()
     events = []
 
@@ -270,3 +271,24 @@ def create_facts_from_file(filename: str) -> List[Fact]:
         else:
             facts.append(Fact(tokens[0].strip(), tokens[1], tokens[2].strip()))
     return facts
+
+def sort_key(event: Event):
+    #helper for sort_event_list
+    return event.timestamp
+
+def sort_event_list(eventList: list):
+    #sorts a list of events by timestamp
+    return eventList.sort(key=sort_key)
+
+def create_sorted_events_file(filename: str="sorted_events.txt", eventList: list):
+    #assumes that eventList is unsorted
+    #this WILL overwrite any previous text on the given filename
+    sorted_list=sort_event_list(eventList)
+    file=open(filename, "w")
+    for event in sortedList:
+        file.write('\n')
+        file.write(event.timestamp)
+        file.write(event.event_type)
+        file.write(event.label)
+        file.write(event.actor)
+        file.write(event.facts)
