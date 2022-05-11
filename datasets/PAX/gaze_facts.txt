@@ -1,0 +1,3 @@
+down, looking at the task
+center, looking at the robot
+right, looking at the picture

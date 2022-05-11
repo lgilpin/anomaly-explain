@@ -76,7 +76,12 @@ class Event:
             if fact.predicate == 'timestamp':
                 self.timestamp = fact.object
             if fact.predicate == 'isa':
-                self.event_type = 'looking' if fact.subject.startswith("looking") else 'speaking'
+                if fact.subject.startswith("looking"):
+                    self.event_type = 'looking'
+                elif fact.subject.startswith("speaking"):
+                    self.event_type = 'speaking'
+                else:
+                    self.event_type = 'final'
         self.set_label()
 
     def set_label(self):
