@@ -2,6 +2,7 @@ import sys
 from dataclasses import dataclass
 import pandas as pd
 from typing import List
+import os
 
 DEFAULT_ANCHOR = 'object'
 DATA_DIR = 'datasets/'
@@ -280,15 +281,91 @@ def sort_event_list(eventList: list):
     #sorts a list of events by timestamp
     return eventList.sort(key=sort_key)
 
-def create_sorted_events_file(filename: str="sorted_events.txt", eventList: list):
-    #assumes that eventList is unsorted
-    #this WILL overwrite any previous text on the given filename
-    sorted_list=sort_event_list(eventList)
-    file=open(filename, "w")
-    for event in sortedList:
-        file.write('\n')
-        file.write(event.timestamp)
-        file.write(event.event_type)
-        file.write(event.label)
-        file.write(event.actor)
-        file.write(event.facts)
+# def create_sorted_events_file(filename: str="sorted_events.txt", eventList: List):
+#     #assumes that eventList is unsorted
+#     #this WILL overwrite any previous text on the given filename
+#     sorted_list=sort_event_list(eventList)
+#     file=open(filename, "w")
+#     for event in sortedList:
+#         file.write('\n')
+#         file.write(event.timestamp)
+#         file.write(event.event_type)
+#         file.write(event.label)
+#         file.write(event.actor)
+#         file.write(event.facts)
+
+def preprocess(fileName: str = "allnewsemanticdatawithmultimodal0025.txt") -> List:
+    """
+    Preprocesses a raw file.
+
+    :param fileName: the input filename
+    :type fileName: str
+    :return: A list of events
+    :rtype: List[Event]
+    """
+    prefix = os.getcwd()
+    file1 = open(prefix+"/datasets/PAX/allnewsemanticdatawithmultimodal/"+fileName, 'r')
+    lines = file1.readlines()
+    events = []
+    lookingPointCounter = 1
+    lookingDirectionCounter = 1
+    speaksCounter = 1
+
+    count = 0
+    # Strips the newline character
+    for line in lines:  # each one is a new event
+        tokens = line.strip().replace("(", "").replace(")", "").split()
+        if tokens[2] == 'lookingAtPoint':
+            eventName = 'lookingAtPEvent%d' % lookingPointCounter
+            [Fact(eventName, 'isa', 'LookingAtPointEvent')]
+            facts = make_looking_event_from_line(eventName, 'lookingAtPoint',
+                                                 tokens[1], tokens[3], tokens[4], tokens[5], tokens[6], tokens[7])
+            event = Event(facts, tokens[7])
+            events.append(event)
+            lookingPointCounter += 1
+        elif tokens[2] == 'lookingInDirection':
+            eventName = 'lookingAtPEvent%d' % lookingDirectionCounter
+            facts = make_direction_event_from_line(eventName, 'lookingInDirection',
+                                                   tokens[1], tokens[3], tokens[4], tokens[5])
+            event = Event(facts, tokens[5])
+            events.append(event)
+            lookingDirectionCounter += 1
+        elif tokens[2] == 'speaksUtterance':  # utterance
+            eventName = 'speaksUttEvent%d' % speaksCounter
+            facts = make_utterance_event_from_line(eventName, 'speaksUtteranceEvent',
+                                                   tokens[1], tokens[3], tokens[4], tokens[5])
+            event = Event(facts, tokens[5])
+            events.append(event)
+            speaksCounter += 1
+        else:
+            facts = [Fact(tokens[2], tokens[1], tokens[3]),
+                     Fact(eventName, 'timestamp', tokens[4])]
+            event = Event(facts, tokens[4])
+            events.append(event)
+    return events
+
+
+def make_looking_event_from_line(eventName, eventType, observer, looker, x, y, z, timestamp):
+    return [Fact(eventName, 'isa', eventType),
+            Fact(eventName, 'observedBy', observer),
+            Fact(eventName, 'looker', looker),
+            Fact(eventName, 'pointX', x),
+            Fact(eventName, 'pointY', y),
+            Fact(eventName, 'pointZ', z),
+            Fact(eventName, 'timestamp', timestamp)]
+
+
+def make_direction_event_from_line(eventName, eventType, observer, looker, direction, timestamp):
+    return [Fact(eventName, 'isa', eventType),
+            Fact(eventName, 'observedBy', observer),
+            Fact(eventName, 'looker', looker),
+            Fact(eventName, 'direction', direction),
+            Fact(eventName, 'timestamp', timestamp)]
+
+
+def make_utterance_event_from_line(eventName, eventType, observer, speaker, utterance, timestamp):
+    return [Fact(eventName, 'isa', eventType),
+            Fact(eventName, 'observedBy', observer),
+            Fact(eventName, 'speaker', speaker),
+            Fact(eventName, 'utterance', utterance),
+            Fact(eventName, 'timestamp', timestamp)]
