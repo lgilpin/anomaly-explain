@@ -296,7 +296,7 @@ def sort_event_list(eventList: list):
 
 def preprocess(fileName: str = "allnewsemanticdatawithmultimodal0025.txt") -> List:
     """
-    Preprocesses a raw file.
+    Preprocesses a raw file.  Data is located in datasets/PAX/allnewsemanticdatawithmultimodal/
 
     :param fileName: the input filename
     :type fileName: str
