@@ -76,13 +76,15 @@ class Event:
         for fact in self.facts:
             if fact.predicate == 'timestamp':
                 self.timestamp = fact.object
-            if fact.predicate == 'isa':
+            elif fact.predicate == 'isa':
                 if fact.subject.startswith("looking"):
                     self.event_type = 'looking'
-                elif fact.subject.startswith("speaking"):
+                elif fact.subject.startswith("speaks"):
                     self.event_type = 'speaking'
                 else:
                     self.event_type = 'final'
+            elif fact.predicate.startswith("needs"):
+                self.event_type = 'helpLabel'
         self.set_label()
 
     def set_label(self):
@@ -310,6 +312,7 @@ def preprocess(fileName: str = "allnewsemanticdatawithmultimodal0025.txt") -> Li
     lookingPointCounter = 1
     lookingDirectionCounter = 1
     speaksCounter = 1
+    helpLabelCounter = 1
 
     count = 0
     # Strips the newline character
@@ -338,6 +341,7 @@ def preprocess(fileName: str = "allnewsemanticdatawithmultimodal0025.txt") -> Li
             events.append(event)
             speaksCounter += 1
         else:
+            eventName = 'needsHelpLabel%d' % helpLabelCounter
             facts = [Fact(tokens[2], tokens[1], tokens[3]),
                      Fact(eventName, 'timestamp', tokens[4])]
             event = Event(facts, tokens[4])
