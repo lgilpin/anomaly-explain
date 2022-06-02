@@ -33,6 +33,10 @@ class Fact:
 
         return dataframe
 
+    def to_next_kb_fact(self, collection_override=None):
+        return f'({self.predicate} {self.subject} ' \
+               f'{collection_override if collection_override and self.predicate == "isa" else self.object})'
+
     def all_concepts(self) -> List:
         """
         Takes a fact and returns all the relevant concepts (e.g., the subject and object).
@@ -335,8 +339,9 @@ def preprocess(fileName: str = "allnewsemanticdatawithmultimodal0025.txt") -> Li
             lookingDirectionCounter += 1
         elif tokens[2] == 'speaksUtterance':  # utterance
             eventName = 'speaksUttEvent%d' % speaksCounter
+            utterance = " ".join(tokens[4:-1])
             facts = make_utterance_event_from_line(eventName, 'speaksUtteranceEvent',
-                                                   tokens[1], tokens[3], tokens[4], tokens[5])
+                                                   tokens[1], tokens[3], utterance, tokens[-1])
             event = Event(facts, tokens[5])
             events.append(event)
             speaksCounter += 1
