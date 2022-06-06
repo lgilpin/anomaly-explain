@@ -259,7 +259,7 @@ def get_fact_query(query: str, facts: List[Fact]) -> Fact:
             return fact
     return None
 
-def create_facts_from_file(filename: str) -> List[Fact]:
+def create_facts_from_file(filename: str, pathname: str = "workspace/anomaly-explain/datasets/PAX/") -> List[Fact]:
     """
     Reads in a file and creates a list of new facts.
     :param filename:
@@ -268,15 +268,19 @@ def create_facts_from_file(filename: str) -> List[Fact]:
     :rtype:
     """
     facts = []
-    pathName = '/Users/leilani/workspace/anomaly-explain/datasets/PAX/' + filename
+    reason = 'Given'
+    pathName = '%s/%s%s'%(os.getenv("HOME"), pathname, filename)
     with open(pathName) as file:
         lines = file.readlines()
     for line in lines:
         tokens = line.strip().split(",")
         if len(tokens) == 2:
-            facts.append(Fact(tokens[0].strip(), 'isA', tokens[1].strip()))
+            facts.append(Fact(tokens[0].strip(), 'isA', tokens[1].strip(), reason=reason))
         else:
-            facts.append(Fact(tokens[0].strip(), tokens[1], tokens[2].strip()))
+            if len(tokens) > 3:
+                reason = tokens[3].strip()
+            facts.append(Fact(tokens[0].strip(), tokens[1], tokens[2].strip(), reason=reason))
+        return facts
     return facts
 
 def sort_key(event: Event):

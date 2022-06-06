@@ -273,9 +273,8 @@ class SnapshotMonitor:
         #     print(concept)
         #     symbols = labels
         symbols = fact.all_concepts()
-        facts = self.kb.search(fact)
-        # facts = self.kb.search_for_concept(fact.predicate, fact.subject, self.kb_name())
-        #facts = self.add_commonsense(symbols, self.anchors, DEFAULT_RELATIONS, True)  # what are labels?
+        facts = self.kb.search(fact.subject, relation='IsA', reason=self.kb_name())
+        facts += self.kb.search(fact.object, relation='IsA', reason=self.kb_name())
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
         # monitor = SnapshotMonitor(symbols, facts, [], "vision system")
         print(facts)
