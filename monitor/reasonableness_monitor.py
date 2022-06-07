@@ -277,7 +277,6 @@ class SnapshotMonitor:
         facts += self.kb.search(fact.object, relation='IsA', reason=self.kb_name())
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
         # monitor = SnapshotMonitor(symbols, facts, [], "vision system")
-        print(facts)
         return to_data_frame(facts)
         # Forward chain
         # TODO: Prove automatically
@@ -292,6 +291,17 @@ class SnapshotMonitor:
         # If there's a verb
         # if starter_fact.hasVerb(): # Do something
         # else:
+    def explain(self, facts: List, add_facts: List = None, preference: Fact = None):
+        if len(facts) == 1:
+            starter_facts = self.explain_fact(facts[0])
+            domain_specific_facts = to_data_frame(add_facts)
+            all_facts = pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
+            print(all_facts)
+        else: # if we have more than one fact then we want to explain all the events
+            self.explain_events(facts, add_facts)
+        print("Preference is %s"%preference.to_string())
+
+
     def explain_all_events(self, facts: List, add_facts: List = None) -> None:
         df = to_data_frame(facts)
         events = df.groupby("subject")

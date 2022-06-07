@@ -68,6 +68,9 @@ class Fact:
     def clean_fact(self):
         return Fact(clean_concept(self.subject), self.predicate, clean_concept(self.object), self.reason, self.score)
 
+    def to_string(self):
+        return "(%s %s %s)"%(self.subject, self.predicate, self.object)
+
 @dataclass
 class Event:
     facts: List[Fact]
@@ -280,7 +283,6 @@ def create_facts_from_file(filename: str, pathname: str = "workspace/anomaly-exp
             if len(tokens) > 3:
                 reason = tokens[3].strip()
             facts.append(Fact(tokens[0].strip(), tokens[1], tokens[2].strip(), reason=reason))
-        return facts
     return facts
 
 def sort_key(event: Event):

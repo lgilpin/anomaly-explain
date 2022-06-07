@@ -2,3 +2,4 @@ Levodopa, IsA, pill, Given
 appt, IsA, activity, Given
 appt, atTime, 1pm, calendar
 appt, onDay, Wednesday, calendar
+1pm, IsA, afternoon
