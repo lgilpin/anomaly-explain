@@ -1,0 +1,5900 @@
+
+timestamp: 0
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 10
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 100
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1000
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1001
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1002
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1003
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1004
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1005
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1006
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1007
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1008
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1009
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 101
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1010
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1011
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1012
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1013
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1014
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1015
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1016
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1017
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1018
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1019
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 102
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1020
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1021
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1022
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1023
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1024
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1025
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1026
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1027
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1028
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1029
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 103
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1030
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1031
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1032
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1033
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1034
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1035
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1036
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1037
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1038
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1039
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 104
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1040
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1041
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1042
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1043
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1044
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1045
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1046
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1047
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1048
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1049
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 105
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1050
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1051
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1052
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1053
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1054
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1055
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1056
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1057
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1058
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1059
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 106
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1060
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1061
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1062
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1063
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1064
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1065
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1066
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1067
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1068
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1069
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 107
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1070
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1071
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1072
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1073
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1074
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1075
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1076
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1077
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1078
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1079
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 108
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1080
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1081
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1082
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1083
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1084
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1085
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1086
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1087
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1088
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1089
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 109
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1090
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1091
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1092
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1093
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1094
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1095
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1096
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1097
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1098
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1099
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 11
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 110
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1100
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1101
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1102
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1103
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1104
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1105
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1106
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1107
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1108
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1109
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 111
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1110
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1111
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1112
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1113
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1114
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1115
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1116
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1117
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1118
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1119
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 112
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1120
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1121
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1122
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1123
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1124
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1125
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1126
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1127
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1128
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1129
+event type: looking
+event label: Right
+event actor: None
+
+timestamp: 113
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1130
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1131
+event type: looking
+event label: Right
+event actor: None
+
+timestamp: 1132
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1133
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1134
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1135
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1136
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1137
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1138
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1139
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 114
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1140
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1141
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1142
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1143
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 1144
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1145
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 1146
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1147
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 1148
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1149
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 115
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1150
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1151
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1152
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1153
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1154
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1155
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1156
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1157
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1158
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1159
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 116
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1160
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1161
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1162
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1163
+event type: looking
+event label: UpLeft
+event actor: None
+
+timestamp: 1164
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1165
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1166
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1167
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 1168
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1169
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 117
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1170
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1171
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 1172
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1173
+event type: looking
+event label: UpRight
+event actor: None
+
+timestamp: 1174
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1175
+event type: looking
+event label: UpRight
+event actor: None
+
+timestamp: 1176
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1177
+event type: looking
+event label: UpLeft
+event actor: None
+
+timestamp: 1178
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 1179
+event type: looking
+event label: Right
+event actor: None
+
+timestamp: 118
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 119
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 12
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 120
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 121
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 122
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 123
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 124
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 125
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 126
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 127
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 128
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 129
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 13
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 130
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 131
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 132
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 133
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 134
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 135
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 136
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 137
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 138
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 139
+event type: speaking
+event label: "bits
+event actor: None
+
+timestamp: 14
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 140
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 141
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 142
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 143
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 144
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 145
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 146
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 147
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 148
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 149
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 15
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 150
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 151
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 152
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 153
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 154
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 155
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 156
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 157
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 158
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 159
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 16
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 160
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 161
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 162
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 163
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 164
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 165
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 166
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 167
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 168
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 169
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 17
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 170
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 171
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 172
+event type: speaking
+event label: "now
+event actor: None
+
+timestamp: 173
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 174
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 175
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 176
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 177
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 178
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 179
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 18
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 180
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 181
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 182
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 183
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 184
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 185
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 186
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 187
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 188
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 189
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 19
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 190
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 191
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 192
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 193
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 194
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 195
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 196
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 197
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 198
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 199
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 2
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 20
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 200
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 201
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 202
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 203
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 204
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 205
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 206
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 207
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 208
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 209
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 21
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 210
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 211
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 212
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 213
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 214
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 215
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 216
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 217
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 218
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 219
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 22
+event type: speaking
+event label: "nife
+event actor: None
+
+timestamp: 220
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 221
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 222
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 223
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 224
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 225
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 226
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 227
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 228
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 229
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 23
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 230
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 231
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 232
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 233
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 234
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 235
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 236
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 237
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 238
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 239
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 24
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 240
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 241
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 242
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 243
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 244
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 245
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 246
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 247
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 248
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 249
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 25
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 250
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 251
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 252
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 253
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 254
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 255
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 256
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 257
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 258
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 259
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 26
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 260
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 261
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 262
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 263
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 264
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 265
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 266
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 267
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 268
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 269
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 27
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 270
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 271
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 272
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 273
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 274
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 275
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 276
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 277
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 278
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 279
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 28
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 280
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 281
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 282
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 283
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 284
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 285
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 286
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 287
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 288
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 289
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 29
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 290
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 291
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 292
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 293
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 294
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 295
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 296
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 297
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 298
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 299
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 3
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 30
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 300
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 301
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 302
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 303
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 304
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 305
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 306
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 307
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 308
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 309
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 31
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 310
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 311
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 312
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 313
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 314
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 315
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 316
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 317
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 318
+event type: speaking
+event label: "balsom
+event actor: None
+
+timestamp: 319
+event type: speaking
+event label: "great
+event actor: None
+
+timestamp: 32
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 320
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 321
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 322
+event type: speaking
+event label: "ne"
+event actor: None
+
+timestamp: 323
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 324
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 325
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 326
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 327
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 328
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 329
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 33
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 330
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 331
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 332
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 333
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 334
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 335
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 336
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 337
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 338
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 339
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 34
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 340
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 341
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 342
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 343
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 344
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 345
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 346
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 347
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 348
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 349
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 35
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 350
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 351
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 352
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 353
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 354
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 355
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 356
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 357
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 358
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 359
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 36
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 360
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 361
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 362
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 363
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 364
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 365
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 366
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 367
+event type: speaking
+event label: "ne"
+event actor: None
+
+timestamp: 368
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 369
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 37
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 370
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 371
+event type: looking
+event label: Right
+event actor: None
+
+timestamp: 372
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 373
+event type: speaking
+event label: "nd"
+event actor: None
+
+timestamp: 374
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 375
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 376
+event type: speaking
+event label: "nd"
+event actor: None
+
+timestamp: 377
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 378
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 379
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 38
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 380
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 381
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 382
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 383
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 384
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 385
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 386
+event type: speaking
+event label: "h"
+event actor: None
+
+timestamp: 387
+event type: speaking
+event label: "nife"
+event actor: None
+
+timestamp: 388
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 389
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 39
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 390
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 391
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 392
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 393
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 394
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 395
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 396
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 397
+event type: looking
+event label: DownLeft
+event actor: None
+
+timestamp: 398
+event type: speaking
+event label: "u"
+event actor: None
+
+timestamp: 399
+event type: speaking
+event label: "e"
+event actor: None
+
+timestamp: 4
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 40
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 400
+event type: speaking
+event label: "d"
+event actor: None
+
+timestamp: 401
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 402
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 403
+event type: speaking
+event label: "e"
+event actor: None
+
+timestamp: 404
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 405
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 406
+event type: speaking
+event label: "d"
+event actor: None
+
+timestamp: 407
+event type: speaking
+event label: "nd"
+event actor: None
+
+timestamp: 408
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 409
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 41
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 410
+event type: speaking
+event label: "the
+event actor: None
+
+timestamp: 411
+event type: speaking
+event label: "and
+event actor: None
+
+timestamp: 412
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 413
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 414
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 415
+event type: looking
+event label: UpRight
+event actor: None
+
+timestamp: 416
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 417
+event type: looking
+event label: UpRight
+event actor: None
+
+timestamp: 418
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 419
+event type: looking
+event label: UpRight
+event actor: None
+
+timestamp: 42
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 420
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 421
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 422
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 423
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 424
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 425
+event type: looking
+event label: UpLeft
+event actor: None
+
+timestamp: 426
+event type: speaking
+event label: "bi
+event actor: None
+
+timestamp: 427
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 428
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 429
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 43
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 430
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 431
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 432
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 433
+event type: speaking
+event label: "you
+event actor: None
+
+timestamp: 434
+event type: speaking
+event label: "ne"
+event actor: None
+
+timestamp: 435
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 436
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 437
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 438
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 439
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 44
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 440
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 441
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 442
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 443
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 444
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 445
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 446
+event type: looking
+event label: Up
+event actor: None
+
+timestamp: 447
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 448
+event type: speaking
+event label: "h"
+event actor: None
+
+timestamp: 449
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 45
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 450
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 451
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 452
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 453
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 454
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 455
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 456
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 457
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 458
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 459
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 46
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 460
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 461
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 462
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 463
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 464
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 465
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 466
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 467
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 468
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 469
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 47
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 470
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 471
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 472
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 473
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 474
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 475
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 476
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 477
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 478
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 479
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 48
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 480
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 481
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 482
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 483
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 484
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 485
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 486
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 487
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 488
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 489
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 49
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 490
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 491
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 492
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 493
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 494
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 495
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 496
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 497
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 498
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 499
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 5
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 50
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 500
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 501
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 502
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 503
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 504
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 505
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 506
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 507
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 508
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 509
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 51
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 510
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 511
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 512
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 513
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 514
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 515
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 516
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 517
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 518
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 519
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 52
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 520
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 521
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 522
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 523
+event type: speaking
+event label: "ne"
+event actor: None
+
+timestamp: 524
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 525
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 526
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 527
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 528
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 529
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 53
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 530
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 531
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 532
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 533
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 534
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 535
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 536
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 537
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 538
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 539
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 54
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 540
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 541
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 542
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 543
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 544
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 545
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 546
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 547
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 548
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 549
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 55
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 550
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 551
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 552
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 553
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 554
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 555
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 556
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 557
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 558
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 559
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 56
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 560
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 561
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 562
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 563
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 564
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 565
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 566
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 567
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 568
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 569
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 57
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 570
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 571
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 572
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 573
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 574
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 575
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 576
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 577
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 578
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 579
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 58
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 580
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 581
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 582
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 583
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 584
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 585
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 586
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 587
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 588
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 589
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 59
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 590
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 591
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 592
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 593
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 594
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 595
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 596
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 597
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 598
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 599
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 6
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 60
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 600
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 601
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 602
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 603
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 604
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 605
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 606
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 607
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 608
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 609
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 61
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 610
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 611
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 612
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 613
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 614
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 615
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 616
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 617
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 618
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 619
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 62
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 620
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 621
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 622
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 623
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 624
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 625
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 626
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 627
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 628
+event type: speaking
+event label: "he"
+event actor: None
+
+timestamp: 629
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 63
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 630
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 631
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 632
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 633
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 634
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 635
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 636
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 637
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 638
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 639
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 64
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 640
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 641
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 642
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 643
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 644
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 645
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 646
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 647
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 648
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 649
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 65
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 650
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 651
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 652
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 653
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 654
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 655
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 656
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 657
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 658
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 659
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 66
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 660
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 661
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 662
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 663
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 664
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 665
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 666
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 667
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 668
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 669
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 67
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 670
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 671
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 672
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 673
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 674
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 675
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 676
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 677
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 678
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 679
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 68
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 680
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 681
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 682
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 683
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 684
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 685
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 686
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 687
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 688
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 689
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 69
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 690
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 691
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 692
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 693
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 694
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 695
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 696
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 697
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 698
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 699
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 7
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 70
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 700
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 701
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 702
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 703
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 704
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 705
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 706
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 707
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 708
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 709
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 71
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 710
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 711
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 712
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 713
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 714
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 715
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 716
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 717
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 718
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 719
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 72
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 720
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 721
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 722
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 723
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 724
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 725
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 726
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 727
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 728
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 729
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 73
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 730
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 731
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 732
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 733
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 734
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 735
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 736
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 737
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 738
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 739
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 74
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 740
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 741
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 742
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 743
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 744
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 745
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 746
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 747
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 748
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 749
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 75
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 750
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 751
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 752
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 753
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 754
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 755
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 756
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 757
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 758
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 759
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 76
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 760
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 761
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 762
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 763
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 764
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 765
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 766
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 767
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 768
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 769
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 77
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 770
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 771
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 772
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 773
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 774
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 775
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 776
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 777
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 778
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 779
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 78
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 780
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 781
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 782
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 783
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 784
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 785
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 786
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 787
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 788
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 789
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 79
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 790
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 791
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 792
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 793
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 794
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 795
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 796
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 797
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 798
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 799
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 8
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 80
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 800
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 801
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 802
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 803
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 804
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 805
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 806
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 807
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 808
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 809
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 81
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 810
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 811
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 812
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 813
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 814
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 815
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 816
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 817
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 818
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 819
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 82
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 820
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 821
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 822
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 823
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 824
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 825
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 826
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 827
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 828
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 829
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 83
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 830
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 831
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 832
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 833
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 834
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 835
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 836
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 837
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 838
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 839
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 84
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 840
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 841
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 842
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 843
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 844
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 845
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 846
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 847
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 848
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 849
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 85
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 850
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 851
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 852
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 853
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 854
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 855
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 856
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 857
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 858
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 859
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 86
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 860
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 861
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 862
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 863
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 864
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 865
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 866
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 867
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 868
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 869
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 87
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 870
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 871
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 872
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 873
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 874
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 875
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 876
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 877
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 878
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 879
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 88
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 880
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 881
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 882
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 883
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 884
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 885
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 886
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 887
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 888
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 889
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 89
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 890
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 891
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 892
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 893
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 894
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 895
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 896
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 897
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 898
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 899
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 9
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 90
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 900
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 901
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 902
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 903
+event type: speaking
+event label: "
+event actor: None
+
+timestamp: 904
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 905
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 906
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 907
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 908
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 909
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 91
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 910
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 911
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 912
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 913
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 914
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 915
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 916
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 917
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 918
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 919
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 92
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 920
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 921
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 922
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 923
+event type: looking
+event label: Left
+event actor: None
+
+timestamp: 924
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 925
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 926
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 927
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 928
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 929
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 93
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 930
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 931
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 932
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 933
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 934
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 935
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 936
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 937
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 938
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 939
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 94
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 940
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 941
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 942
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 943
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 944
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 945
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 946
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 947
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 948
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 949
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 95
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 950
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 951
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 952
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 953
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 954
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 955
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 956
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 957
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 958
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 959
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 96
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 960
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 961
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 962
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 963
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 964
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 965
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 966
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 967
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 968
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 969
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 97
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 970
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 971
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 972
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 973
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 974
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 975
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 976
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 977
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 978
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 979
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 98
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 980
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 981
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 982
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 983
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 984
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 985
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 986
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 987
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 988
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 989
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 99
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 990
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 991
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 992
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 993
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 994
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 995
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 996
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 997
+event type: looking
+event label: Center
+event actor: None
+
+timestamp: 998
+event type: looking
+event label: None
+event actor: None
+
+timestamp: 999
+event type: looking
+event label: Center
+event actor: None
