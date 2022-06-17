@@ -65,11 +65,14 @@ class Fact:
                 return True
             else: return False
 
+    def __hash__(self):
+        return hash(self.to_string)
+
     def clean_fact(self):
         return Fact(clean_concept(self.subject), self.predicate, clean_concept(self.object), self.reason, self.score)
 
     def to_string(self):
-        return "(%s %s %s)"%(self.subject, self.predicate, self.object)
+        return "%s %s %s"%(self.subject, self.predicate, self.object)
 
 @dataclass
 class Event:
@@ -135,6 +138,7 @@ def clean_concept(concept: str) -> str:
     elif concept.startswith("the "):
         subject = concept.replace("the ", "")
         return subject
+    return concept
 
 
 def default_fact(concept, include_score: bool = False) -> Fact:

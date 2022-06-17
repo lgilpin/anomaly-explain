@@ -6,12 +6,11 @@
 # Description: Local Reasonabeless monitors for the high-level synthesizer.
 from typing import List
 
-import commonsense.conceptnet as kb # Change to the knowledgebase you would like
-from commonsense.conceptnet import Fact, ConceptNet
 from dataclasses import dataclass, field
 import logging
 import pandas as pd
 
+from commonsense.conceptnet import Fact, ConceptNet
 from commonsense.kb import KB
 from commonsense.logical_classes import to_data_frame, get_fact_query, Event
 from reasoning import rules
@@ -272,34 +271,29 @@ class SnapshotMonitor:
         #     # get all commonsense facts
         #     print(concept)
         #     symbols = labels
-        symbols = fact.all_concepts()
         facts = self.kb.search(fact.subject, relation='IsA', reason=self.kb_name())
         facts += self.kb.search(fact.object, relation='IsA', reason=self.kb_name())
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
         # monitor = SnapshotMonitor(symbols, facts, [], "vision system")
-        return to_data_frame(facts)
-        # Forward chain
-        # TODO: Prove automatically
-        context = False
-        # self.kb.build_df()
-        # (judgement, explanation) = self.test_reasonable_snapshot(facts, symbols, context)
-        # print(explanation)
-        # return self.toFact(facts)
-        # return facts
+        return facts
+        # return to_data_frame(facts)
 
 
-        # If there's a verb
-        # if starter_fact.hasVerb(): # Do something
-        # else:
     def explain(self, facts: List, add_facts: List = None, preference: Fact = None):
         if len(facts) == 1:
-            starter_facts = self.explain_fact(facts[0])
-            domain_specific_facts = to_data_frame(add_facts)
-            all_facts = pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
+            starter_facts = to_data_frame(self.explain_fact(facts[0]))
+            print(starter_facts)
+            if add_facts:
+                domain_specific_facts = to_data_frame(add_facts)
+                all_facts = pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
+            else:
+                all_facts = to_data_frame(starter_facts)
             print(all_facts)
         else: # if we have more than one fact then we want to explain all the events
             self.explain_events(facts, add_facts)
-        print("Preference is %s"%preference.to_string())
+        if preference:
+            print("Preference is %s"%preference.to_string())
+        explanation = self.chain()
 
 
     def explain_all_events(self, facts: List, add_facts: List = None) -> None:
@@ -397,7 +391,7 @@ class SnapshotMonitor:
     def explain_labels(self, labels):
         df = pd.DataFrame()
         for label in labels:
-            label_df = self.explain_fact(Fact(label, 'isA', 'object'))
+            label_df = to_data_frame(self.explain_fact(Fact(label, 'isA', 'object')))
             print(label_df)
             df.append(make_df_from_fact_list(label_df))
         print(df)
