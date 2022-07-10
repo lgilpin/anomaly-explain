@@ -1,5900 +1,4145 @@
 
-timestamp: 0
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 10
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 100
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1000
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1001
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1002
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1003
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1004
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1005
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1006
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1007
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1008
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1009
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 101
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1010
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1011
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1012
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1013
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1014
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1015
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1016
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1017
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1018
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1019
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 102
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1020
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1021
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1022
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1023
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1024
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1025
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1026
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1027
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1028
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1029
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 103
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1030
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1031
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1032
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1033
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1034
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1035
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1036
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1037
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1038
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1039
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 104
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1040
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1041
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1042
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1043
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1044
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1045
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1046
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1047
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1048
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1049
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 105
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1050
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1051
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1052
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1053
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1054
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1055
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1056
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1057
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1058
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1059
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 106
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1060
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1061
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1062
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1063
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1064
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1065
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1066
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1067
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1068
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1069
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 107
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1070
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1071
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1072
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1073
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1074
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1075
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1076
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1077
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1078
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1079
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 108
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1080
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1081
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1082
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1083
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1084
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1085
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1086
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1087
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1088
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1089
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 109
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1090
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1091
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1092
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1093
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1094
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1095
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1096
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1097
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1098
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1099
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 11
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 110
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1100
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1101
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1102
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1103
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1104
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1105
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1106
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1107
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1108
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1109
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 111
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1110
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1111
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1112
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1113
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1114
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1115
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1116
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1117
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1118
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1119
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 112
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1120
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1121
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1122
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1123
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1124
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1125
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1126
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1127
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1128
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1129
-event type: looking
-event label: Right
-event actor: None
-
-timestamp: 113
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1130
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1131
-event type: looking
-event label: Right
-event actor: None
-
-timestamp: 1132
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1133
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1134
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1135
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1136
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1137
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1138
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1139
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 114
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1140
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1141
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1142
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1143
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 1144
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1145
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 1146
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1147
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 1148
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1149
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 115
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1150
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1151
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1152
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1153
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1154
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1155
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1156
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1157
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1158
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1159
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 116
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1160
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1161
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1162
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1163
-event type: looking
-event label: UpLeft
-event actor: None
-
-timestamp: 1164
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1165
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1166
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1167
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 1168
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1169
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 117
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1170
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1171
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 1172
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1173
-event type: looking
-event label: UpRight
-event actor: None
-
-timestamp: 1174
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1175
-event type: looking
-event label: UpRight
-event actor: None
-
-timestamp: 1176
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1177
-event type: looking
-event label: UpLeft
-event actor: None
-
-timestamp: 1178
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 1179
-event type: looking
-event label: Right
-event actor: None
-
-timestamp: 118
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 119
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 12
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 120
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 121
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 122
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 123
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 124
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 125
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 126
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 127
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 128
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 129
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 13
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 130
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 131
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 132
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 133
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 134
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 135
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 136
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 137
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 138
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 139
-event type: speaking
-event label: "bits
-event actor: None
-
-timestamp: 14
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 140
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 141
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 142
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 143
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 144
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 145
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 146
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 147
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 148
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 149
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 15
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 150
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 151
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 152
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 153
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 154
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 155
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 156
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 157
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 158
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 159
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 16
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 160
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 161
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 162
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 163
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 164
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 165
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 166
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 167
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 168
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 169
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 17
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 170
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 171
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 172
-event type: speaking
-event label: "now
-event actor: None
-
-timestamp: 173
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 174
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 175
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 176
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 177
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 178
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 179
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 18
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 180
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 181
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 182
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 183
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 184
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 185
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 186
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 187
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 188
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 189
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 19
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 190
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 191
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 192
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 193
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 194
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 195
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 196
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 197
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 198
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 199
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 2
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 20
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 200
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 201
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 202
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 203
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 204
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 205
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 206
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 207
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 208
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 209
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 21
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 210
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 211
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 212
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 213
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 214
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 215
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 216
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 217
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 218
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 219
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 22
-event type: speaking
-event label: "nife
-event actor: None
-
-timestamp: 220
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 221
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 222
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 223
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 224
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 225
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 226
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 227
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 228
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 229
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 23
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 230
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 231
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 232
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 233
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 234
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 235
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 236
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 237
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 238
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 239
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 24
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 240
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 241
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 242
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 243
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 244
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 245
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 246
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 247
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 248
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 249
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 25
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 250
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 251
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 252
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 253
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 254
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 255
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 256
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 257
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 258
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 259
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 26
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 260
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 261
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 262
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 263
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 264
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 265
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 266
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 267
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 268
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 269
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 27
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 270
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 271
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 272
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 273
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 274
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 275
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 276
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 277
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 278
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 279
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 28
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 280
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 281
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 282
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 283
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 284
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 285
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 286
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 287
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 288
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 289
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 29
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 290
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 291
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 292
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 293
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 294
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 295
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 296
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 297
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 298
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 299
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 3
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 30
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 300
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 301
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 302
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 303
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 304
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 305
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 306
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 307
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 308
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 309
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 31
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 310
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 311
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 312
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 313
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 314
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 315
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 316
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 317
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 318
-event type: speaking
-event label: "balsom
-event actor: None
-
-timestamp: 319
-event type: speaking
-event label: "great
-event actor: None
-
-timestamp: 32
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 320
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 321
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 322
-event type: speaking
-event label: "ne"
-event actor: None
-
-timestamp: 323
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 324
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 325
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 326
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 327
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 328
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 329
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 33
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 330
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 331
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 332
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 333
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 334
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 335
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 336
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 337
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 338
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 339
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 34
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 340
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 341
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 342
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 343
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 344
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 345
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 346
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 347
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 348
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 349
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 35
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 350
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 351
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 352
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 353
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 354
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 355
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 356
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 357
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 358
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 359
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 36
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 360
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 361
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 362
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 363
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 364
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 365
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 366
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 367
-event type: speaking
-event label: "ne"
-event actor: None
-
-timestamp: 368
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 369
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 37
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 370
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 371
-event type: looking
-event label: Right
-event actor: None
-
-timestamp: 372
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 373
-event type: speaking
-event label: "nd"
-event actor: None
-
-timestamp: 374
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 375
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 376
-event type: speaking
-event label: "nd"
-event actor: None
-
-timestamp: 377
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 378
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 379
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 38
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 380
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 381
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 382
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 383
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 384
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 385
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 386
-event type: speaking
-event label: "h"
-event actor: None
-
-timestamp: 387
-event type: speaking
-event label: "nife"
-event actor: None
-
-timestamp: 388
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 389
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 39
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 390
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 391
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 392
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 393
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 394
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 395
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 396
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 397
-event type: looking
-event label: DownLeft
-event actor: None
-
-timestamp: 398
-event type: speaking
-event label: "u"
-event actor: None
-
-timestamp: 399
-event type: speaking
-event label: "e"
-event actor: None
-
-timestamp: 4
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 40
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 400
-event type: speaking
-event label: "d"
-event actor: None
-
-timestamp: 401
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 402
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 403
-event type: speaking
-event label: "e"
-event actor: None
-
-timestamp: 404
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 405
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 406
-event type: speaking
-event label: "d"
-event actor: None
-
-timestamp: 407
-event type: speaking
-event label: "nd"
-event actor: None
-
-timestamp: 408
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 409
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 41
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 410
-event type: speaking
-event label: "the
-event actor: None
-
-timestamp: 411
-event type: speaking
-event label: "and
-event actor: None
-
-timestamp: 412
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 413
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 414
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 415
-event type: looking
-event label: UpRight
-event actor: None
-
-timestamp: 416
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 417
-event type: looking
-event label: UpRight
-event actor: None
-
-timestamp: 418
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 419
-event type: looking
-event label: UpRight
-event actor: None
-
-timestamp: 42
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 420
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 421
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 422
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 423
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 424
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 425
-event type: looking
-event label: UpLeft
-event actor: None
-
-timestamp: 426
-event type: speaking
-event label: "bi
-event actor: None
-
-timestamp: 427
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 428
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 429
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 43
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 430
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 431
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 432
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 433
-event type: speaking
-event label: "you
-event actor: None
-
-timestamp: 434
-event type: speaking
-event label: "ne"
-event actor: None
-
-timestamp: 435
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 436
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 437
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 438
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 439
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 44
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 440
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 441
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 442
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 443
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 444
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 445
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 446
-event type: looking
-event label: Up
-event actor: None
-
-timestamp: 447
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 448
-event type: speaking
-event label: "h"
-event actor: None
-
-timestamp: 449
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 45
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 450
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 451
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 452
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 453
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 454
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 455
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 456
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 457
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 458
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 459
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 46
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 460
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 461
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 462
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 463
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 464
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 465
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 466
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 467
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 468
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 469
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 47
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 470
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 471
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 472
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 473
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 474
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 475
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 476
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 477
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 478
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 479
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 48
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 480
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 481
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 482
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 483
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 484
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 485
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 486
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 487
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 488
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 489
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 49
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 490
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 491
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 492
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 493
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 494
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 495
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 496
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 497
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 498
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 499
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 5
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 50
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 500
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 501
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 502
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 503
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 504
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 505
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 506
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 507
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 508
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 509
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 51
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 510
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 511
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 512
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 513
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 514
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 515
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 516
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 517
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 518
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 519
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 52
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 520
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 521
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 522
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 523
-event type: speaking
-event label: "ne"
-event actor: None
-
-timestamp: 524
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 525
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 526
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 527
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 528
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 529
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 53
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 530
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 531
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 532
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 533
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 534
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 535
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 536
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 537
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 538
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 539
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 54
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 540
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 541
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 542
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 543
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 544
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 545
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 546
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 547
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 548
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 549
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 55
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 550
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 551
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 552
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 553
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 554
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 555
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 556
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 557
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 558
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 559
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 56
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 560
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 561
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 562
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 563
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 564
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 565
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 566
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 567
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 568
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 569
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 57
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 570
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 571
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 572
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 573
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 574
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 575
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 576
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 577
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 578
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 579
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 58
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 580
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 581
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 582
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 583
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 584
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 585
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 586
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 587
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 588
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 589
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 59
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 590
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 591
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 592
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 593
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 594
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 595
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 596
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 597
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 598
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 599
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 6
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 60
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 600
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 601
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 602
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 603
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 604
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 605
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 606
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 607
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 608
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 609
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 61
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 610
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 611
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 612
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 613
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 614
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 615
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 616
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 617
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 618
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 619
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 62
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 620
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 621
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 622
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 623
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 624
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 625
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 626
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 627
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 628
-event type: speaking
-event label: "he"
-event actor: None
-
-timestamp: 629
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 63
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 630
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 631
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 632
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 633
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 634
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 635
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 636
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 637
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 638
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 639
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 64
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 640
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 641
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 642
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 643
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 644
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 645
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 646
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 647
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 648
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 649
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 65
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 650
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 651
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 652
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 653
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 654
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 655
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 656
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 657
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 658
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 659
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 66
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 660
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 661
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 662
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 663
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 664
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 665
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 666
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 667
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 668
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 669
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 67
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 670
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 671
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 672
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 673
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 674
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 675
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 676
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 677
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 678
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 679
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 68
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 680
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 681
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 682
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 683
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 684
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 685
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 686
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 687
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 688
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 689
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 69
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 690
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 691
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 692
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 693
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 694
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 695
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 696
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 697
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 698
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 699
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 7
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 70
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 700
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 701
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 702
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 703
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 704
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 705
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 706
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 707
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 708
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 709
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 71
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 710
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 711
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 712
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 713
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 714
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 715
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 716
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 717
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 718
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 719
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 72
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 720
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 721
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 722
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 723
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 724
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 725
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 726
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 727
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 728
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 729
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 73
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 730
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 731
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 732
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 733
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 734
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 735
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 736
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 737
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 738
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 739
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 74
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 740
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 741
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 742
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 743
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 744
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 745
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 746
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 747
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 748
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 749
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 75
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 750
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 751
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 752
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 753
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 754
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 755
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 756
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 757
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 758
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 759
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 76
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 760
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 761
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 762
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 763
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 764
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 765
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 766
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 767
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 768
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 769
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 77
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 770
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 771
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 772
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 773
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 774
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 775
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 776
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 777
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 778
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 779
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 78
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 780
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 781
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 782
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 783
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 784
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 785
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 786
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 787
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 788
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 789
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 79
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 790
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 791
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 792
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 793
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 794
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 795
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 796
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 797
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 798
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 799
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 8
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 80
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 800
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 801
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 802
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 803
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 804
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 805
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 806
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 807
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 808
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 809
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 81
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 810
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 811
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 812
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 813
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 814
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 815
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 816
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 817
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 818
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 819
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 82
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 820
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 821
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 822
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 823
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 824
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 825
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 826
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 827
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 828
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 829
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 83
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 830
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 831
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 832
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 833
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 834
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 835
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 836
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 837
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 838
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 839
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 84
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 840
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 841
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 842
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 843
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 844
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 845
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 846
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 847
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 848
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 849
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 85
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 850
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 851
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 852
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 853
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 854
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 855
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 856
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 857
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 858
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 859
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 86
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 860
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 861
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 862
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 863
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 864
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 865
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 866
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 867
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 868
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 869
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 87
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 870
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 871
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 872
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 873
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 874
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 875
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 876
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 877
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 878
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 879
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 88
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 880
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 881
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 882
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 883
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 884
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 885
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 886
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 887
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 888
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 889
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 89
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 890
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 891
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 892
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 893
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 894
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 895
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 896
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 897
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 898
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 899
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 9
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 90
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 900
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 901
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 902
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 903
-event type: speaking
-event label: "
-event actor: None
-
-timestamp: 904
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 905
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 906
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 907
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 908
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 909
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 91
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 910
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 911
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 912
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 913
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 914
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 915
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 916
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 917
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 918
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 919
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 92
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 920
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 921
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 922
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 923
-event type: looking
-event label: Left
-event actor: None
-
-timestamp: 924
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 925
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 926
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 927
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 928
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 929
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 93
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 930
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 931
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 932
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 933
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 934
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 935
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 936
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 937
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 938
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 939
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 94
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 940
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 941
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 942
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 943
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 944
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 945
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 946
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 947
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 948
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 949
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 95
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 950
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 951
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 952
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 953
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 954
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 955
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 956
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 957
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 958
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 959
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 96
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 960
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 961
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 962
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 963
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 964
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 965
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 966
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 967
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 968
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 969
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 97
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 970
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 971
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 972
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 973
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 974
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 975
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 976
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 977
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 978
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 979
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 98
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 980
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 981
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 982
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 983
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 984
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 985
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 986
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 987
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 988
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 989
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 99
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 990
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 991
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 992
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 993
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 994
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 995
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 996
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 997
-event type: looking
-event label: Center
-event actor: None
-
-timestamp: 998
-event type: looking
-event label: None
-event actor: None
-
-timestamp: 999
-event type: looking
-event label: Center
-event actor: None
+0
+looking
+
+1
+looking
+Center
+
+2
+looking
+
+3
+looking
+Center
+
+4
+looking
+
+5
+looking
+Center
+
+6
+looking
+
+7
+looking
+Center
+
+8
+looking
+
+9
+looking
+Center
+
+10
+looking
+
+11
+looking
+Center
+
+12
+looking
+
+13
+looking
+Center
+
+14
+looking
+
+15
+looking
+Center
+
+16
+looking
+
+17
+looking
+Center
+
+18
+looking
+
+19
+looking
+Center
+
+20
+looking
+
+21
+looking
+Center
+
+22
+speaking
+"nife
+
+23
+looking
+
+24
+looking
+Center
+
+25
+looking
+
+26
+looking
+Center
+
+27
+looking
+
+28
+looking
+Center
+
+29
+looking
+
+30
+looking
+Center
+
+31
+looking
+
+32
+looking
+Center
+
+33
+looking
+
+34
+looking
+Center
+
+35
+looking
+
+36
+looking
+Center
+
+37
+looking
+
+38
+looking
+Center
+
+39
+looking
+
+40
+looking
+Center
+
+41
+looking
+
+42
+looking
+Center
+
+43
+looking
+
+44
+looking
+Center
+
+45
+looking
+
+46
+looking
+Center
+
+47
+looking
+
+48
+looking
+Center
+
+49
+looking
+
+50
+looking
+Center
+
+51
+looking
+
+52
+looking
+Center
+
+53
+looking
+
+54
+looking
+Center
+
+55
+looking
+
+56
+looking
+Center
+
+57
+looking
+
+58
+looking
+Center
+
+59
+looking
+
+60
+looking
+Center
+
+61
+looking
+
+62
+looking
+Center
+
+63
+looking
+
+64
+looking
+Center
+
+65
+looking
+
+66
+looking
+Center
+
+67
+looking
+
+68
+looking
+Center
+
+69
+looking
+
+70
+looking
+Center
+
+71
+looking
+
+72
+looking
+Center
+
+73
+looking
+
+74
+looking
+Center
+
+75
+looking
+
+76
+looking
+Center
+
+77
+looking
+
+78
+looking
+Center
+
+79
+looking
+
+80
+looking
+Center
+
+81
+looking
+
+82
+looking
+Center
+
+83
+looking
+
+84
+looking
+Center
+
+85
+looking
+
+86
+looking
+Center
+
+87
+looking
+
+88
+looking
+Center
+
+89
+looking
+
+90
+looking
+Center
+
+91
+looking
+
+92
+looking
+Center
+
+93
+looking
+
+94
+looking
+Center
+
+95
+looking
+
+96
+looking
+Center
+
+97
+looking
+Center
+
+98
+looking
+
+99
+looking
+
+100
+looking
+Center
+
+101
+looking
+
+102
+looking
+Center
+
+103
+looking
+
+104
+looking
+Center
+
+105
+looking
+
+106
+looking
+Center
+
+107
+looking
+
+108
+looking
+Center
+
+109
+looking
+
+110
+looking
+Center
+
+111
+looking
+
+112
+looking
+Center
+
+113
+looking
+
+114
+looking
+Center
+
+115
+looking
+
+116
+looking
+Center
+
+117
+looking
+
+118
+looking
+Center
+
+119
+looking
+
+120
+looking
+Center
+
+121
+looking
+
+122
+looking
+Center
+
+123
+looking
+
+124
+looking
+Center
+
+125
+looking
+Center
+
+126
+looking
+
+127
+looking
+Center
+
+128
+looking
+
+129
+looking
+
+130
+looking
+Center
+
+131
+looking
+
+132
+looking
+Center
+
+133
+looking
+
+134
+looking
+Center
+
+135
+looking
+Center
+
+136
+looking
+
+137
+looking
+
+138
+looking
+Center
+
+139
+speaking
+"bits
+
+140
+looking
+
+141
+looking
+Center
+
+142
+looking
+
+143
+looking
+Center
+
+144
+looking
+
+145
+looking
+Center
+
+146
+looking
+
+147
+looking
+Center
+
+148
+looking
+
+149
+looking
+Center
+
+150
+looking
+
+151
+looking
+Center
+
+152
+looking
+
+153
+looking
+Center
+
+154
+looking
+
+155
+looking
+Center
+
+156
+looking
+
+157
+looking
+Center
+
+158
+looking
+
+159
+looking
+Center
+
+160
+looking
+
+161
+looking
+Center
+
+162
+looking
+
+163
+looking
+Center
+
+164
+looking
+
+165
+looking
+Center
+
+166
+looking
+
+167
+looking
+Center
+
+168
+looking
+
+169
+looking
+Center
+
+170
+looking
+
+171
+looking
+Center
+
+172
+speaking
+"now
+
+173
+looking
+
+174
+looking
+Up
+
+175
+looking
+
+176
+looking
+Up
+
+177
+looking
+
+178
+looking
+Up
+
+179
+looking
+
+180
+looking
+Up
+
+181
+looking
+
+182
+looking
+Up
+
+183
+looking
+
+184
+looking
+Up
+
+185
+looking
+
+186
+looking
+Up
+
+187
+looking
+
+188
+looking
+Up
+
+189
+looking
+
+190
+looking
+Up
+
+191
+looking
+
+192
+looking
+Up
+
+193
+looking
+
+194
+looking
+Up
+
+195
+looking
+
+196
+looking
+Up
+
+197
+looking
+
+198
+looking
+Up
+
+199
+looking
+
+200
+looking
+Up
+
+201
+looking
+
+202
+looking
+Up
+
+203
+looking
+
+204
+looking
+Up
+
+205
+looking
+
+206
+looking
+Up
+
+207
+looking
+
+208
+looking
+Up
+
+209
+looking
+
+210
+looking
+Up
+
+211
+looking
+
+212
+looking
+Up
+
+213
+looking
+
+214
+looking
+Up
+
+215
+looking
+
+216
+looking
+Up
+
+217
+looking
+
+218
+looking
+Up
+
+219
+looking
+
+220
+looking
+Center
+
+221
+looking
+
+222
+looking
+Center
+
+223
+looking
+
+224
+looking
+Center
+
+225
+looking
+
+226
+looking
+Center
+
+227
+looking
+
+228
+looking
+Center
+
+229
+looking
+
+230
+looking
+
+231
+looking
+Center
+
+232
+looking
+Center
+
+233
+looking
+
+234
+looking
+Center
+
+235
+looking
+Center
+
+236
+looking
+Center
+
+237
+looking
+Center
+
+238
+looking
+Center
+
+239
+looking
+Center
+
+240
+looking
+
+241
+looking
+
+242
+looking
+
+243
+looking
+
+244
+looking
+
+245
+looking
+
+246
+looking
+
+247
+looking
+Center
+
+248
+looking
+
+249
+looking
+Center
+
+250
+looking
+
+251
+looking
+Center
+
+252
+looking
+
+253
+looking
+Center
+
+254
+looking
+
+255
+looking
+Center
+
+256
+looking
+
+257
+looking
+Center
+
+258
+looking
+
+259
+looking
+Center
+
+260
+looking
+
+261
+looking
+Center
+
+262
+looking
+
+263
+looking
+Center
+
+264
+looking
+Center
+
+265
+looking
+
+266
+looking
+Center
+
+267
+looking
+
+268
+looking
+
+269
+looking
+Center
+
+270
+looking
+Center
+
+271
+looking
+
+272
+looking
+
+273
+looking
+Center
+
+274
+looking
+
+275
+looking
+Center
+
+276
+looking
+
+277
+looking
+Center
+
+278
+looking
+
+279
+looking
+Center
+
+280
+looking
+
+281
+looking
+Center
+
+282
+looking
+
+283
+looking
+Center
+
+284
+looking
+
+285
+looking
+Center
+
+286
+looking
+
+287
+looking
+Center
+
+288
+looking
+
+289
+looking
+Center
+
+290
+looking
+
+291
+looking
+Center
+
+292
+looking
+
+293
+looking
+Center
+
+294
+looking
+
+295
+looking
+Center
+
+296
+looking
+
+297
+looking
+Center
+
+298
+looking
+
+299
+looking
+Center
+
+300
+looking
+
+301
+looking
+Center
+
+302
+looking
+
+303
+looking
+Center
+
+304
+looking
+
+305
+looking
+Center
+
+306
+looking
+
+307
+looking
+Center
+
+308
+looking
+
+309
+looking
+Center
+
+310
+looking
+
+311
+looking
+Center
+
+312
+looking
+
+313
+looking
+Center
+
+314
+looking
+Center
+
+315
+looking
+
+316
+looking
+
+317
+looking
+Center
+
+318
+speaking
+"balsom
+
+319
+speaking
+"great
+
+320
+looking
+
+321
+looking
+Center
+
+322
+speaking
+"ne"
+
+323
+looking
+
+324
+looking
+Center
+
+325
+looking
+
+326
+looking
+Center
+
+327
+looking
+
+328
+looking
+Center
+
+329
+looking
+
+330
+looking
+Center
+
+331
+looking
+
+332
+looking
+Center
+
+333
+looking
+
+334
+looking
+Center
+
+335
+looking
+
+336
+looking
+Center
+
+337
+looking
+
+338
+looking
+Center
+
+339
+looking
+
+340
+looking
+Center
+
+341
+looking
+
+342
+looking
+Center
+
+343
+looking
+
+344
+looking
+Center
+
+345
+looking
+
+346
+looking
+Center
+
+347
+looking
+
+348
+looking
+Center
+
+349
+looking
+
+350
+looking
+Center
+
+351
+looking
+
+352
+looking
+Center
+
+353
+looking
+
+354
+looking
+Center
+
+355
+looking
+
+356
+looking
+Center
+
+357
+looking
+
+358
+looking
+Center
+
+359
+looking
+
+360
+looking
+Center
+
+361
+looking
+
+362
+looking
+Center
+
+363
+looking
+
+364
+looking
+Center
+
+365
+looking
+
+366
+looking
+Left
+
+367
+speaking
+"ne"
+
+368
+looking
+
+369
+looking
+Left
+
+370
+looking
+
+371
+looking
+Right
+
+372
+speaking
+"he"
+
+373
+speaking
+"nd"
+
+374
+looking
+
+375
+looking
+Center
+
+376
+speaking
+"nd"
+
+377
+looking
+
+378
+looking
+Center
+
+379
+speaking
+"he"
+
+380
+looking
+
+381
+looking
+Center
+
+382
+looking
+
+383
+looking
+Center
+
+384
+looking
+
+385
+looking
+Center
+
+386
+speaking
+"h"
+
+387
+speaking
+"nife"
+
+388
+looking
+
+389
+looking
+DownLeft
+
+390
+looking
+
+391
+looking
+DownLeft
+
+392
+looking
+
+393
+looking
+DownLeft
+
+394
+looking
+
+395
+looking
+DownLeft
+
+396
+looking
+
+397
+looking
+DownLeft
+
+398
+speaking
+"u"
+
+399
+speaking
+"e"
+
+400
+speaking
+"d"
+
+401
+looking
+
+402
+looking
+Center
+
+403
+speaking
+"e"
+
+404
+speaking
+"he"
+
+405
+speaking
+"he"
+
+406
+speaking
+"d"
+
+407
+speaking
+"nd"
+
+408
+looking
+
+409
+looking
+Center
+
+410
+speaking
+"the
+
+411
+speaking
+"and
+
+412
+looking
+
+413
+looking
+Up
+
+414
+looking
+
+415
+looking
+UpRight
+
+416
+looking
+
+417
+looking
+UpRight
+
+418
+looking
+
+419
+looking
+UpRight
+
+420
+looking
+
+421
+looking
+Up
+
+422
+looking
+
+423
+looking
+Up
+
+424
+looking
+
+425
+looking
+UpLeft
+
+426
+speaking
+"bi
+
+427
+looking
+
+428
+looking
+Center
+
+429
+looking
+
+430
+looking
+Center
+
+431
+looking
+Center
+
+432
+looking
+
+433
+speaking
+"you
+
+434
+speaking
+"ne"
+
+435
+looking
+
+436
+looking
+Center
+
+437
+looking
+
+438
+looking
+Center
+
+439
+looking
+
+440
+looking
+Center
+
+441
+looking
+
+442
+looking
+Up
+
+443
+looking
+
+444
+looking
+Up
+
+445
+looking
+
+446
+looking
+Up
+
+447
+speaking
+"he"
+
+448
+speaking
+"h"
+
+449
+looking
+
+450
+looking
+Center
+
+451
+looking
+
+452
+looking
+Center
+
+453
+looking
+
+454
+looking
+Center
+
+455
+looking
+
+456
+looking
+Center
+
+457
+looking
+
+458
+looking
+Center
+
+459
+looking
+
+460
+looking
+Center
+
+461
+looking
+
+462
+looking
+Center
+
+463
+looking
+
+464
+looking
+Center
+
+465
+looking
+
+466
+looking
+Center
+
+467
+looking
+
+468
+looking
+Center
+
+469
+looking
+
+470
+looking
+Center
+
+471
+looking
+
+472
+looking
+Center
+
+473
+looking
+
+474
+looking
+Center
+
+475
+looking
+
+476
+looking
+Center
+
+477
+looking
+
+478
+looking
+Center
+
+479
+looking
+
+480
+looking
+Center
+
+481
+looking
+
+482
+looking
+Center
+
+483
+looking
+
+484
+looking
+Center
+
+485
+looking
+
+486
+looking
+Center
+
+487
+looking
+
+488
+looking
+Center
+
+489
+looking
+
+490
+looking
+Center
+
+491
+looking
+
+492
+looking
+Center
+
+493
+looking
+
+494
+looking
+Center
+
+495
+looking
+
+496
+looking
+Center
+
+497
+looking
+
+498
+looking
+Center
+
+499
+looking
+
+500
+looking
+Center
+
+501
+looking
+
+502
+looking
+Center
+
+503
+looking
+
+504
+looking
+Center
+
+505
+looking
+
+506
+looking
+Center
+
+507
+looking
+
+508
+looking
+Center
+
+509
+looking
+
+510
+looking
+Center
+
+511
+looking
+
+512
+looking
+Center
+
+513
+looking
+
+514
+looking
+Center
+
+515
+looking
+
+516
+looking
+Center
+
+517
+looking
+
+518
+looking
+Center
+
+519
+looking
+
+520
+looking
+Center
+
+521
+looking
+
+522
+looking
+Center
+
+523
+speaking
+"ne"
+
+524
+looking
+
+525
+looking
+Center
+
+526
+looking
+
+527
+looking
+Center
+
+528
+looking
+
+529
+looking
+Center
+
+530
+looking
+
+531
+looking
+Center
+
+532
+looking
+
+533
+looking
+Center
+
+534
+looking
+
+535
+looking
+Center
+
+536
+looking
+
+537
+looking
+Center
+
+538
+looking
+
+539
+looking
+Center
+
+540
+looking
+
+541
+looking
+Center
+
+542
+looking
+
+543
+looking
+Center
+
+544
+looking
+
+545
+looking
+Center
+
+546
+looking
+
+547
+looking
+Center
+
+548
+looking
+
+549
+looking
+Center
+
+550
+looking
+
+551
+looking
+Center
+
+552
+looking
+
+553
+looking
+Center
+
+554
+looking
+
+555
+looking
+Center
+
+556
+looking
+
+557
+looking
+Center
+
+558
+looking
+
+559
+looking
+Center
+
+560
+looking
+
+561
+looking
+Center
+
+562
+looking
+
+563
+looking
+Center
+
+564
+looking
+
+565
+looking
+Center
+
+566
+looking
+
+567
+looking
+Center
+
+568
+looking
+
+569
+looking
+Center
+
+570
+looking
+
+571
+looking
+Center
+
+572
+looking
+
+573
+looking
+Center
+
+574
+looking
+
+575
+looking
+Center
+
+576
+looking
+
+577
+looking
+Center
+
+578
+looking
+
+579
+looking
+Center
+
+580
+looking
+
+581
+looking
+Center
+
+582
+looking
+
+583
+looking
+Center
+
+584
+looking
+
+585
+looking
+Center
+
+586
+looking
+
+587
+looking
+Center
+
+588
+looking
+
+589
+looking
+Center
+
+590
+looking
+
+591
+looking
+Center
+
+592
+looking
+
+593
+looking
+Center
+
+594
+looking
+
+595
+looking
+Center
+
+596
+looking
+
+597
+looking
+Center
+
+598
+looking
+
+599
+looking
+Center
+
+600
+looking
+
+601
+looking
+Center
+
+602
+looking
+Center
+
+603
+looking
+Center
+
+604
+looking
+Center
+
+605
+looking
+
+606
+looking
+
+607
+looking
+
+608
+looking
+
+609
+looking
+Center
+
+610
+looking
+
+611
+looking
+Center
+
+612
+looking
+
+613
+looking
+Center
+
+614
+looking
+
+615
+looking
+Center
+
+616
+looking
+
+617
+looking
+Center
+
+618
+looking
+
+619
+looking
+Center
+
+620
+looking
+
+621
+looking
+Center
+
+622
+looking
+
+623
+looking
+Center
+
+624
+looking
+
+625
+looking
+Center
+
+626
+looking
+
+627
+looking
+Center
+
+628
+speaking
+"he"
+
+629
+looking
+
+630
+looking
+Center
+
+631
+looking
+
+632
+looking
+Center
+
+633
+looking
+
+634
+looking
+Center
+
+635
+looking
+
+636
+looking
+Center
+
+637
+looking
+
+638
+looking
+Center
+
+639
+looking
+
+640
+looking
+Center
+
+641
+looking
+
+642
+looking
+Center
+
+643
+looking
+
+644
+looking
+Center
+
+645
+looking
+
+646
+looking
+Center
+
+647
+looking
+
+648
+looking
+Center
+
+649
+looking
+
+650
+looking
+Center
+
+651
+looking
+
+652
+looking
+Center
+
+653
+looking
+
+654
+looking
+Center
+
+655
+looking
+
+656
+looking
+Center
+
+657
+looking
+
+658
+looking
+Center
+
+659
+looking
+
+660
+looking
+Center
+
+661
+looking
+
+662
+looking
+Center
+
+663
+looking
+
+664
+looking
+Center
+
+665
+looking
+
+666
+looking
+Center
+
+667
+looking
+
+668
+looking
+Center
+
+669
+looking
+
+670
+looking
+Center
+
+671
+looking
+
+672
+looking
+Center
+
+673
+looking
+
+674
+looking
+Center
+
+675
+looking
+
+676
+looking
+Center
+
+677
+looking
+
+678
+looking
+Center
+
+679
+looking
+
+680
+looking
+Center
+
+681
+looking
+
+682
+looking
+Center
+
+683
+looking
+
+684
+looking
+Center
+
+685
+looking
+
+686
+looking
+Center
+
+687
+looking
+
+688
+looking
+Center
+
+689
+looking
+
+690
+looking
+Center
+
+691
+looking
+
+692
+looking
+Center
+
+693
+looking
+
+694
+looking
+Center
+
+695
+looking
+
+696
+looking
+Center
+
+697
+looking
+
+698
+looking
+Center
+
+699
+looking
+
+700
+looking
+Center
+
+701
+looking
+
+702
+looking
+Center
+
+703
+looking
+
+704
+looking
+Center
+
+705
+looking
+
+706
+looking
+Center
+
+707
+looking
+
+708
+looking
+Center
+
+709
+looking
+
+710
+looking
+Center
+
+711
+looking
+
+712
+looking
+Center
+
+713
+looking
+
+714
+looking
+Center
+
+715
+looking
+
+716
+looking
+Center
+
+717
+looking
+
+718
+looking
+Center
+
+719
+looking
+
+720
+looking
+Center
+
+721
+looking
+
+722
+looking
+Center
+
+723
+looking
+
+724
+looking
+Center
+
+725
+looking
+
+726
+looking
+Center
+
+727
+looking
+
+728
+looking
+Center
+
+729
+looking
+
+730
+looking
+Center
+
+731
+looking
+
+732
+looking
+Center
+
+733
+looking
+
+734
+looking
+Center
+
+735
+looking
+
+736
+looking
+Center
+
+737
+looking
+
+738
+looking
+Center
+
+739
+looking
+
+740
+looking
+Center
+
+741
+looking
+
+742
+looking
+Center
+
+743
+looking
+
+744
+looking
+Center
+
+745
+looking
+
+746
+looking
+Center
+
+747
+looking
+
+748
+looking
+Center
+
+749
+looking
+
+750
+looking
+Center
+
+751
+looking
+
+752
+looking
+Center
+
+753
+looking
+
+754
+looking
+Center
+
+755
+looking
+
+756
+looking
+Center
+
+757
+looking
+
+758
+looking
+Center
+
+759
+looking
+
+760
+looking
+Center
+
+761
+looking
+
+762
+looking
+Center
+
+763
+looking
+
+764
+looking
+Center
+
+765
+looking
+
+766
+looking
+Center
+
+767
+looking
+
+768
+looking
+Center
+
+769
+looking
+
+770
+looking
+Center
+
+771
+looking
+
+772
+looking
+Center
+
+773
+looking
+
+774
+looking
+Center
+
+775
+looking
+
+776
+looking
+Center
+
+777
+looking
+
+778
+looking
+Center
+
+779
+looking
+
+780
+looking
+Center
+
+781
+looking
+
+782
+looking
+Center
+
+783
+looking
+
+784
+looking
+Center
+
+785
+looking
+
+786
+looking
+Center
+
+787
+looking
+
+788
+looking
+Center
+
+789
+looking
+
+790
+looking
+Center
+
+791
+looking
+
+792
+looking
+Center
+
+793
+looking
+
+794
+looking
+Center
+
+795
+looking
+
+796
+looking
+Center
+
+797
+looking
+
+798
+looking
+Center
+
+799
+looking
+
+800
+looking
+Center
+
+801
+looking
+
+802
+looking
+Center
+
+803
+looking
+
+804
+looking
+Center
+
+805
+looking
+
+806
+looking
+Center
+
+807
+looking
+
+808
+looking
+Center
+
+809
+looking
+
+810
+looking
+Center
+
+811
+looking
+
+812
+looking
+Center
+
+813
+looking
+
+814
+looking
+Center
+
+815
+looking
+
+816
+looking
+Center
+
+817
+looking
+
+818
+looking
+Center
+
+819
+looking
+
+820
+looking
+Center
+
+821
+looking
+
+822
+looking
+Center
+
+823
+looking
+
+824
+looking
+Center
+
+825
+looking
+
+826
+looking
+Center
+
+827
+looking
+
+828
+looking
+Center
+
+829
+looking
+
+830
+looking
+Center
+
+831
+looking
+
+832
+looking
+Center
+
+833
+looking
+
+834
+looking
+Center
+
+835
+looking
+
+836
+looking
+Center
+
+837
+looking
+
+838
+looking
+Center
+
+839
+looking
+
+840
+looking
+Center
+
+841
+looking
+
+842
+looking
+Center
+
+843
+looking
+
+844
+looking
+Center
+
+845
+looking
+
+846
+looking
+Center
+
+847
+looking
+
+848
+looking
+Center
+
+849
+looking
+
+850
+looking
+Center
+
+851
+looking
+
+852
+looking
+Center
+
+853
+looking
+
+854
+looking
+Center
+
+855
+looking
+
+856
+looking
+Center
+
+857
+looking
+
+858
+looking
+Center
+
+859
+looking
+
+860
+looking
+Center
+
+861
+looking
+
+862
+looking
+Center
+
+863
+looking
+
+864
+looking
+Center
+
+865
+looking
+
+866
+looking
+Center
+
+867
+looking
+
+868
+looking
+Center
+
+869
+looking
+
+870
+looking
+Center
+
+871
+looking
+
+872
+looking
+Center
+
+873
+looking
+
+874
+looking
+Center
+
+875
+looking
+
+876
+looking
+Center
+
+877
+looking
+
+878
+looking
+Center
+
+879
+looking
+
+880
+looking
+Center
+
+881
+looking
+
+882
+looking
+Center
+
+883
+looking
+
+884
+looking
+Center
+
+885
+looking
+
+886
+looking
+Center
+
+887
+looking
+
+888
+looking
+Center
+
+889
+looking
+
+890
+looking
+Center
+
+891
+looking
+
+892
+looking
+Center
+
+893
+looking
+
+894
+looking
+Center
+
+895
+looking
+Center
+
+896
+looking
+
+897
+looking
+
+898
+looking
+
+899
+looking
+Center
+
+900
+looking
+Center
+
+901
+looking
+Center
+
+902
+looking
+
+903
+speaking
+"
+
+904
+looking
+
+905
+looking
+Center
+
+906
+looking
+
+907
+looking
+Center
+
+908
+looking
+
+909
+looking
+Center
+
+910
+looking
+
+911
+looking
+Center
+
+912
+looking
+
+913
+looking
+Center
+
+914
+looking
+
+915
+looking
+Center
+
+916
+looking
+
+917
+looking
+Center
+
+918
+looking
+
+919
+looking
+Center
+
+920
+looking
+
+921
+looking
+Left
+
+922
+looking
+
+923
+looking
+Left
+
+924
+looking
+
+925
+looking
+Center
+
+926
+looking
+
+927
+looking
+Center
+
+928
+looking
+
+929
+looking
+Center
+
+930
+looking
+
+931
+looking
+Center
+
+932
+looking
+
+933
+looking
+Center
+
+934
+looking
+
+935
+looking
+Center
+
+936
+looking
+
+937
+looking
+Center
+
+938
+looking
+
+939
+looking
+Center
+
+940
+looking
+
+941
+looking
+Center
+
+942
+looking
+
+943
+looking
+Center
+
+944
+looking
+
+945
+looking
+Center
+
+946
+looking
+
+947
+looking
+Center
+
+948
+looking
+
+949
+looking
+Center
+
+950
+looking
+
+951
+looking
+Center
+
+952
+looking
+
+953
+looking
+Center
+
+954
+looking
+
+955
+looking
+Center
+
+956
+looking
+
+957
+looking
+Center
+
+958
+looking
+
+959
+looking
+Center
+
+960
+looking
+
+961
+looking
+Center
+
+962
+looking
+
+963
+looking
+Center
+
+964
+looking
+
+965
+looking
+Center
+
+966
+looking
+
+967
+looking
+Center
+
+968
+looking
+
+969
+looking
+Center
+
+970
+looking
+
+971
+looking
+Center
+
+972
+looking
+
+973
+looking
+Center
+
+974
+looking
+
+975
+looking
+Center
+
+976
+looking
+
+977
+looking
+Center
+
+978
+looking
+
+979
+looking
+Center
+
+980
+looking
+
+981
+looking
+Center
+
+982
+looking
+
+983
+looking
+Center
+
+984
+looking
+
+985
+looking
+Center
+
+986
+looking
+
+987
+looking
+Center
+
+988
+looking
+
+989
+looking
+Center
+
+990
+looking
+
+991
+looking
+Center
+
+992
+looking
+
+993
+looking
+Center
+
+994
+looking
+
+995
+looking
+Center
+
+996
+looking
+
+997
+looking
+Center
+
+998
+looking
+
+999
+looking
+Center
+
+1000
+looking
+
+1001
+looking
+Center
+
+1002
+looking
+
+1003
+looking
+Center
+
+1004
+looking
+
+1005
+looking
+Center
+
+1006
+looking
+
+1007
+looking
+Center
+
+1008
+looking
+
+1009
+looking
+Center
+
+1010
+looking
+
+1011
+looking
+Center
+
+1012
+looking
+
+1013
+looking
+Center
+
+1014
+looking
+
+1015
+looking
+Center
+
+1016
+looking
+
+1017
+looking
+Center
+
+1018
+looking
+
+1019
+looking
+Center
+
+1020
+looking
+
+1021
+looking
+Center
+
+1022
+looking
+
+1023
+looking
+Center
+
+1024
+looking
+
+1025
+looking
+Center
+
+1026
+looking
+
+1027
+looking
+Center
+
+1028
+looking
+
+1029
+looking
+Center
+
+1030
+looking
+
+1031
+looking
+Center
+
+1032
+looking
+
+1033
+looking
+Center
+
+1034
+looking
+
+1035
+looking
+Center
+
+1036
+looking
+
+1037
+looking
+Center
+
+1038
+looking
+
+1039
+looking
+Center
+
+1040
+looking
+
+1041
+looking
+Center
+
+1042
+looking
+
+1043
+looking
+Center
+
+1044
+looking
+
+1045
+looking
+Center
+
+1046
+looking
+
+1047
+looking
+Center
+
+1048
+looking
+
+1049
+looking
+Center
+
+1050
+looking
+
+1051
+looking
+Center
+
+1052
+looking
+
+1053
+looking
+Center
+
+1054
+looking
+
+1055
+looking
+Center
+
+1056
+looking
+
+1057
+looking
+Center
+
+1058
+looking
+
+1059
+looking
+Center
+
+1060
+looking
+
+1061
+looking
+Center
+
+1062
+looking
+
+1063
+looking
+Center
+
+1064
+looking
+
+1065
+looking
+Center
+
+1066
+looking
+
+1067
+looking
+Center
+
+1068
+looking
+
+1069
+looking
+Center
+
+1070
+looking
+
+1071
+looking
+Center
+
+1072
+looking
+
+1073
+looking
+Center
+
+1074
+looking
+
+1075
+looking
+Center
+
+1076
+looking
+
+1077
+looking
+Center
+
+1078
+looking
+
+1079
+looking
+Center
+
+1080
+looking
+
+1081
+looking
+Center
+
+1082
+looking
+
+1083
+looking
+Center
+
+1084
+looking
+
+1085
+looking
+Center
+
+1086
+looking
+
+1087
+looking
+Center
+
+1088
+looking
+
+1089
+looking
+Center
+
+1090
+looking
+
+1091
+looking
+Center
+
+1092
+looking
+
+1093
+looking
+Center
+
+1094
+looking
+
+1095
+looking
+Center
+
+1096
+looking
+
+1097
+looking
+Center
+
+1098
+looking
+
+1099
+looking
+Center
+
+1100
+looking
+
+1101
+looking
+Center
+
+1102
+looking
+
+1103
+looking
+Center
+
+1104
+looking
+
+1105
+looking
+Center
+
+1106
+looking
+
+1107
+looking
+Center
+
+1108
+looking
+
+1109
+looking
+Center
+
+1110
+looking
+
+1111
+looking
+Center
+
+1112
+looking
+
+1113
+looking
+Center
+
+1114
+looking
+
+1115
+looking
+Center
+
+1116
+looking
+
+1117
+looking
+Center
+
+1118
+looking
+
+1119
+looking
+Center
+
+1120
+looking
+
+1121
+looking
+Center
+
+1122
+looking
+
+1123
+looking
+Center
+
+1124
+looking
+
+1125
+looking
+Center
+
+1126
+looking
+
+1127
+looking
+Center
+
+1128
+looking
+
+1129
+looking
+Right
+
+1130
+looking
+
+1131
+looking
+Right
+
+1132
+looking
+
+1133
+looking
+Center
+
+1134
+looking
+
+1135
+looking
+Center
+
+1136
+looking
+
+1137
+looking
+Left
+
+1138
+looking
+
+1139
+looking
+Left
+
+1140
+looking
+
+1141
+looking
+Left
+
+1142
+looking
+
+1143
+looking
+DownLeft
+
+1144
+looking
+
+1145
+looking
+DownLeft
+
+1146
+looking
+
+1147
+looking
+DownLeft
+
+1148
+looking
+
+1149
+looking
+DownLeft
+
+1150
+looking
+
+1151
+looking
+Left
+
+1152
+looking
+
+1153
+looking
+Left
+
+1154
+looking
+
+1155
+looking
+Left
+
+1156
+looking
+
+1157
+looking
+Left
+
+1158
+looking
+
+1159
+looking
+Left
+
+1160
+looking
+
+1161
+looking
+Left
+
+1162
+looking
+
+1163
+looking
+UpLeft
+
+1164
+looking
+
+1165
+looking
+Center
+
+1166
+looking
+
+1167
+looking
+Center
+
+1168
+looking
+
+1169
+looking
+Left
+
+1170
+looking
+
+1171
+looking
+Left
+
+1172
+looking
+
+1173
+looking
+UpRight
+
+1174
+looking
+
+1175
+looking
+UpRight
+
+1176
+looking
+
+1177
+looking
+UpLeft
+
+1178
+looking
+
+1179
+looking
+Right
