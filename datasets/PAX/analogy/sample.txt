@@ -1,0 +1,6 @@
+(causallyCooccurs-SitProp
+  (SituationSuchThatFn (LookingDownward look-d3)
+    (LookingDownRight look-c1) (looker look-d3 user)
+    (looker look-c1 user)
+    (noncausallyBefore-EventEvent look-d3 look-c1))
+  (changeLook-d-dr user look-d3 look-c1))
