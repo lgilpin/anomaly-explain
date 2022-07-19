@@ -13,8 +13,9 @@ import pandas as pd
 from commonsense.conceptnet import Fact, ConceptNet
 from commonsense.kb import KB
 from commonsense.logical_classes import to_data_frame, get_fact_query, Event
-from reasoning import rules
-from reasoning.production import IF, AND, OR, NOT, THEN, DELETE, forward_chain, pretty_goal_tree
+from reasoner import rules
+from reasoner.production import IF, AND, OR, NOT, THEN, DELETE, forward_chain, pretty_goal_tree
+from reasoner.chain import *
 
 data_header = ['fact', 'reason'] # DATA HEADERS
 
@@ -250,6 +251,10 @@ class SnapshotMonitor:
         # data = pd.DataFrame(reasons, columns=['fact', 'reason'])
         return data
         # else return []
+
+    def explain_analogy(self, query: Fact):
+        # make events from facts
+        print("testing")
         
     def explain_fact(self, starter_fact: Fact):
         """
@@ -271,6 +276,7 @@ class SnapshotMonitor:
         #     # get all commonsense facts
         #     print(concept)
         #     symbols = labels
+        # Add back in for a given set of relations.
         facts = self.kb.search(fact.subject, relation='IsA', reason=self.kb_name())
         facts += self.kb.search(fact.object, relation='IsA', reason=self.kb_name())
         logging.debug("Snapshot monitor made with the following data: %s" % facts)
@@ -279,21 +285,25 @@ class SnapshotMonitor:
         # return to_data_frame(facts)
 
 
-    def explain(self, facts: List, add_facts: List = None, preference: Fact = None):
+    def explain(self, facts: List, add_facts: List = None, preference: Fact = None, to_df: bool = False):
         if len(facts) == 1:
-            starter_facts = to_data_frame(self.explain_fact(facts[0]))
-            print(starter_facts)
+            starter_facts = self.explain_fact(facts[0])
             if add_facts:
+                all_facts = starter_facts + add_facts
                 domain_specific_facts = to_data_frame(add_facts)
-                all_facts = pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
+                #all_facts = \
+                    #pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
             else:
                 all_facts = to_data_frame(starter_facts)
-            print(all_facts)
         else: # if we have more than one fact then we want to explain all the events
             self.explain_events(facts, add_facts)
         if preference:
             print("Preference is %s"%preference.to_string())
-        explanation = self.chain()
+        explanation = chain_explanation(all_facts, preference)
+        # for item in explanation:
+        #     print("(%s)"%item.to_string())
+        explanation = summarize(all_facts, explanation[-1].subject)
+        return explanation
 
 
     def explain_all_events(self, facts: List, add_facts: List = None) -> None:
