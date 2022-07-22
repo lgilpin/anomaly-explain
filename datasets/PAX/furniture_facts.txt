@@ -1,0 +1,4 @@
+leg, attach, top
+screw, into, leg
+top, flip, top1
+top1, attach, leg

@@ -3,3 +3,4 @@ appt, IsA, activity, Given
 appt, atTime, 1pm, calendar
 appt, onDay, Wednesday, calendar
 1pm, IsA, afternoon
+pill, before, appt, Rule fired

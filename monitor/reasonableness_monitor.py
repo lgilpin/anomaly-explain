@@ -285,24 +285,28 @@ class SnapshotMonitor:
         # return to_data_frame(facts)
 
 
-    def explain(self, facts: List, add_facts: List = None, preference: Fact = None, to_df: bool = False):
+    def explain(self, facts: List, add_facts: List = None, preference: Fact = None, to_df: bool = False, verbose=False, kb_query:bool = True):
         if len(facts) == 1:
-            starter_facts = self.explain_fact(facts[0])
+            starter_facts = self.explain_fact(facts[0]) if kb_query else facts
             if add_facts:
                 all_facts = starter_facts + add_facts
                 domain_specific_facts = to_data_frame(add_facts)
                 #all_facts = \
                     #pd.concat([starter_facts, domain_specific_facts], ignore_index=True)
             else:
-                all_facts = to_data_frame(starter_facts)
+                all_facts = starter_facts
         else: # if we have more than one fact then we want to explain all the events
             self.explain_events(facts, add_facts)
         if preference:
             print("Preference is %s"%preference.to_string())
-        explanation = chain_explanation(all_facts, preference)
+            chain = chain_explanation(all_facts, preference, verbose=verbose)
+
+        if verbose:
+            print("Explanation is %s"%chain)
         # for item in explanation:
         #     print("(%s)"%item.to_string())
-        explanation = summarize(all_facts, explanation[-1].subject)
+        #explanation = summarize(all_facts, explanation[-1].subject)
+        explanation = summarize(chain, all_facts)
         return explanation
 
 
