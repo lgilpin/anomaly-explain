@@ -136,5 +136,3 @@
 
 ;; start from the end
 
-(define (intersection first second)
-  (if (null? first
